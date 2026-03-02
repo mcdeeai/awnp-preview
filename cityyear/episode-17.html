@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Culture of Continuous Learning | City Year × Applied Wisdom Podcast</title>
+  <meta name="description" content="How City Year proves that investing in people's growth is the ultimate retention strategy. Jim Morgan's continuous learning framework brought to life at national scale. Episode 17 of the Applied Wisdom for Nonprofits podcast.">
+  <meta name="keywords" content="City Year, continuous learning, nonprofit leadership, Jim Morgan, applied wisdom, employee development, retention strategy, AmeriCorps, service year">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A Culture of Continuous Learning | City Year × Applied Wisdom Podcast">
+  <meta property="og:description" content="How City Year proves development is your best retention strategy. Jim Morgan's framework in action at national scale.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/ep17-thumbnail.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    "name": "A Culture of Continuous Learning",
+    "episodeNumber": 17,
+    "partOfSeries": { "@type": "PodcastSeries", "name": "Applied Wisdom for Nonprofits Podcast" },
+    "author": { "@type": "Person", "name": "Jim Morgan" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Jim Morgan's continuous learning framework for nonprofits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jim Morgan teaches that development is a retention strategy, not a perk. Organizations that build learning into the daily rhythm, through feedback loops, stretch assignments, and teaching moments, retain their best people. The cost of replacing someone far exceeds the cost of developing them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does City Year demonstrate continuous learning at scale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "City Year places over 2,000 AmeriCorps members in 250+ schools across 29 cities each year. The service year is deliberately designed as a leadership development experience. Over 40,000 alumni now carry those skills into careers across every sector."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does development work better than salary for retention?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "According to Jim Morgan, the organizations retaining their strongest people aren't paying the highest salaries. They're the ones where culture treats professional development as a core operating commitment. People will work hard for modest pay when they feel like they're growing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is City Year's Whole School Whole Child approach?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "City Year places AmeriCorps members as near-peer mentors in high-need schools. Schools partnering with City Year see students with social-emotional support show an 11-point increase in grades and test scores, and students on track by 10th grade are 3 times more likely to graduate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Jim Morgan and what is Applied Wisdom for the Nonprofit Sector?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jim Morgan transformed Applied Materials into a global technology leader, then dedicated himself to the nonprofit sector. His book Applied Wisdom for the Nonprofit Sector distills decades of leadership into 66 practical concepts. Free at appliedwisdomfornonprofits.org."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #111111;
+      --ink-secondary: #555555;
+      --ink-tertiary: #999999;
+      --accent: #E41D36;
+      --surface: #ffffff;
+      --surface-alt: #fafafa;
+      --border: #e5e5e5;
+      --navy: #1a2744;
+      --unit: 8px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ═══ Grid ═══ */
+    .container { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+    .container-wide { max-width: 1040px; margin: 0 auto; padding: 0 32px; }
+
+    /* ═══ Top Identity Bar ═══ */
+    .identity-bar {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .identity-bar .container-wide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand-primary {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .brand-divider {
+      color: var(--border);
+      font-weight: 300;
+      font-size: 18px;
+    }
+    .brand-secondary {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-tertiary);
+      text-decoration: none;
+    }
+    .brand-secondary:hover { color: var(--ink-secondary); }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ═══ Hero ═══ */
+    .hero {
+      padding: 80px 0 64px;
+      border-bottom: 1px solid var(--border);
+    }
+    .episode-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      max-width: 680px;
+    }
+    .hero .subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--ink-secondary);
+      max-width: 560px;
+      line-height: 1.5;
+    }
+
+    /* ═══ Stats Row ═══ */
+    .stats-row {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+    .stat-item {}
+    .stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ═══ Video Section ═══ */
+    .video-section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .video-wrap {
+      position: relative;
+      cursor: pointer;
+      border-radius: 4px;
+      overflow: hidden;
+      background: var(--ink);
+      aspect-ratio: 16/9;
+    }
+    .video-wrap video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .play-overlay {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.25);
+      transition: opacity 0.3s;
+    }
+    .play-circle {
+      width: 64px; height: 64px;
+      background: var(--surface);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s;
+    }
+    .play-circle:hover { transform: scale(1.06); }
+    .play-circle svg { margin-left: 3px; }
+    .video-meta {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--ink-tertiary);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .video-meta a { color: var(--ink-secondary); text-decoration: none; font-weight: 500; }
+    .video-meta a:hover { color: var(--ink); }
+
+    /* ═══ Section ═══ */
+    .section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 12px;
+    }
+    .section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+    .section .lede {
+      font-size: 16px;
+      color: var(--ink-secondary);
+      margin-bottom: 32px;
+      max-width: 600px;
+    }
+
+    /* ═══ Audio Player ═══ */
+    .audio-player {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 32px;
+    }
+    .audio-player .now-playing {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 4px;
+    }
+    .audio-player .track-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+    }
+    .audio-player audio { width: 100%; }
+    .audio-duration {
+      font-size: 13px;
+      color: var(--ink-tertiary);
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* ═══ Buttons ═══ */
+    .btn-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.15s;
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary { background: var(--ink); color: var(--surface); }
+    .btn-primary:hover { background: #333; }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--ink); }
+    .btn-outline:hover { border-color: var(--ink-secondary); }
+    .btn-accent { background: var(--accent); color: var(--surface); }
+    .btn-accent:hover { background: #c4162d; }
+
+    /* ═══ Subscribe ═══ */
+    .subscribe-block {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 40px;
+      text-align: center;
+    }
+    .subscribe-block h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      letter-spacing: -0.3px;
+    }
+    .subscribe-block .sub-text {
+      font-size: 14px;
+      color: var(--ink-tertiary);
+      margin-bottom: 24px;
+    }
+    .subscribe-form {
+      display: flex;
+      gap: 8px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .subscribe-form input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: inherit;
+      background: var(--surface);
+    }
+    .subscribe-form input:focus { outline: none; border-color: var(--ink-secondary); }
+    .subscribe-form button {
+      padding: 12px 24px;
+      background: var(--ink);
+      color: var(--surface);
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .subscribe-form button:hover { background: #333; }
+    .privacy-note { font-size: 11px; color: var(--ink-tertiary); margin-top: 12px; }
+    @media (max-width: 600px) {
+      .subscribe-form { flex-direction: column; }
+    }
+
+    /* ═══ Placeholder ═══ */
+    .placeholder-block {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .placeholder-block .ph-icon { font-size: 32px; margin-bottom: 8px; opacity: 0.4; }
+    .placeholder-block .ph-title { font-size: 14px; font-weight: 600; color: var(--ink-secondary); }
+    .placeholder-block .ph-desc { font-size: 13px; color: var(--ink-tertiary); margin-top: 2px; }
+
+    /* ═══ Slides + Transcript ═══ */
+    .slides-block {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .slide-display {
+      background: var(--surface-alt);
+      text-align: center;
+      line-height: 0;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide-display img { max-width: 100%; display: block; margin: 0 auto; }
+    .slide-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--ink-tertiary);
+    }
+    .slide-nav button {
+      padding: 6px 14px;
+      background: var(--ink);
+      color: var(--surface);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: inherit;
+    }
+    .slide-nav button:hover { background: #333; }
+    .transcript-panel {
+      padding: 20px 24px;
+      max-height: 360px;
+      overflow-y: auto;
+      background: var(--surface);
+    }
+    .transcript-segment {
+      padding: 12px;
+      border-bottom: 1px solid var(--surface-alt);
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+    .transcript-segment:hover { background: var(--surface-alt); }
+    .transcript-segment:last-child { border-bottom: none; }
+    .transcript-segment.active {
+      background: #fef5f4;
+      border-left: 2px solid var(--accent);
+    }
+    .seg-time { font-size: 11px; font-weight: 600; color: var(--accent); margin-bottom: 2px; }
+    .seg-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-tertiary); margin-bottom: 4px; }
+    .seg-text { font-size: 14px; color: var(--ink-secondary); line-height: 1.6; }
+
+    /* ═══ Partner Feature ═══ */
+    .partner-feature {
+      background: var(--surface-alt);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 80px 0;
+    }
+    .partner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .partner-narrative h2 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      margin-bottom: 16px;
+    }
+    .partner-narrative p {
+      font-size: 15px;
+      color: var(--ink-secondary);
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    .partner-quote {
+      border-left: 2px solid var(--accent);
+      padding-left: 20px;
+      margin: 24px 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .partner-stats {
+      padding-top: 8px;
+    }
+    .partner-stat {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .partner-stat:last-child { border-bottom: none; }
+    .partner-stat .ps-number {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .partner-stat .ps-label {
+      font-size: 13px;
+      color: var(--ink-secondary);
+    }
+    .partner-stat .ps-detail {
+      font-size: 12px;
+      color: var(--ink-tertiary);
+      margin-top: 2px;
+    }
+    @media (max-width: 768px) {
+      .partner-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero h1 { font-size: 36px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+    }
+
+    /* ═══ FAQ ═══ */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item summary {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink-tertiary);
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after {
+      content: '-';
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item p {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.7;
+      max-width: 680px;
+    }
+
+    /* ═══ CTA ═══ */
+    .cta-section {
+      padding: 80px 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    .cta-section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    .cta-section p {
+      font-size: 16px;
+      color: var(--ink-secondary);
+      max-width: 460px;
+      margin: 0 auto 32px;
+    }
+
+    /* ═══ Footer ═══ */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+    }
+    .footer-brands {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+    .footer-brands a { color: var(--ink-secondary); text-decoration: none; font-weight: 500; }
+    .footer-brands a:hover { color: var(--ink); }
+    .footer-brands .divider { color: var(--border); }
+    .footer-quote {
+      font-size: 14px;
+      font-style: italic;
+      color: var(--ink-tertiary);
+      max-width: 480px;
+      margin: 0 auto 16px;
+      line-height: 1.6;
+    }
+    .footer .copyright {
+      font-size: 11px;
+      color: var(--ink-tertiary);
+    }
+    .footer .copyright a { color: var(--ink-tertiary); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ Identity Bar ═══ -->
+  <header class="identity-bar">
+    <div class="container-wide">
+      <div class="brand-group">
+        <a href="https://www.cityyear.org" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="assets/cityyear-logo.svg" alt="City Year" style="height: 48px; width: auto;">
+        </a>
+        <span class="brand-divider">/</span>
+        <a href="https://www.appliedwisdomfornonprofits.org" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 34px; width: auto;">
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="https://www.cityyear.org/about/">About City Year</a>
+        <a href="https://www.appliedwisdomfornonprofits.org">Free Book</a>
+        <a href="https://www.cityyear.org/apply-now/" style="color: var(--accent); font-weight: 600;">Join City Year</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══ Co-Brand Lockup ═══ -->
+  <section style="border-bottom: 1px solid var(--border); padding: 48px 0;">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap;">
+      <img src="assets/cityyear-logo.svg" alt="City Year" style="height: 80px; width: auto;">
+      <span style="font-size: 32px; font-weight: 200; color: var(--border);">×</span>
+      <img src="assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 52px; width: auto;">
+    </div>
+    <p style="text-align: center; font-size: 13px; color: var(--ink-tertiary); margin-top: 16px; letter-spacing: 0.5px;">A co-branded podcast episode from the Applied Wisdom series</p>
+  </section>
+
+  <!-- ═══ Hero: Video Intro + Podcast ═══ -->
+  <section style="border-bottom: 1px solid var(--border); padding: 64px 0;">
+    <div class="container">
+      <div class="episode-label">Episode 17</div>
+      <h1 style="font-size: 48px; font-weight: 700; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 8px; max-width: 680px;">A Culture of Continuous Learning</h1>
+      <p style="font-size: 20px; font-weight: 400; color: var(--ink-secondary); max-width: 560px; line-height: 1.5; margin-bottom: 40px;">How City Year proves that development is your best retention strategy</p>
+
+      <!-- Two-column: Video left, Podcast right -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+
+        <!-- Video Intro -->
+        <div>
+          <div style="font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-tertiary); margin-bottom: 10px;">▶ Watch the Intro</div>
+          <div class="video-wrap" id="video-wrapper" onclick="playVideo()" style="border-radius: 4px;">
+            <video id="intro-video" preload="metadata" poster="assets/ep17-thumbnail.jpg">
+              <source src="assets/ep17-intro-video.mp4" type="video/mp4">
+            </video>
+            <div class="play-overlay" id="play-overlay">
+              <div class="play-circle">
+                <svg width="24" height="28" viewBox="0 0 24 28" fill="none" style="margin-left: 2px;">
+                  <path d="M24 14L0 28V0L24 14Z" fill="#111"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-meta" style="margin-top: 8px;">
+            <span>Episode overview</span>
+            <a href="assets/ep17-intro-video.mp4" download>Download video</a>
+          </div>
+        </div>
+
+        <!-- Full Podcast -->
+        <div>
+          <div style="font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px;">🎧 Listen to the Full Episode</div>
+          <div style="background: var(--surface-alt); border: 1px solid var(--border); border-radius: 4px; padding: 24px;">
+            <div style="font-size: 18px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 4px;">A Culture of Continuous Learning</div>
+            <div style="font-size: 13px; color: var(--ink-tertiary); margin-bottom: 16px;">City Year × Applied Wisdom · ~20 min</div>
+            <audio controls preload="metadata" style="width: 100%;">
+              <source src="assets/ep17-deepdive.mp3" type="audio/mpeg">
+            </audio>
+            <p style="font-size: 13px; color: var(--ink-secondary); margin-top: 14px; line-height: 1.6;">Two hosts explore how City Year's national model validates Morgan's framework: invest in people's growth and they'll stay, perform, and lead.</p>
+            <div class="btn-row" style="margin-top: 14px;">
+              <a href="assets/ep17-deepdive.mp3" class="btn btn-primary" style="font-size: 12px; padding: 8px 16px;" download>Download Episode</a>
+              <a href="assets/ep17-transcript.txt" class="btn btn-outline" style="font-size: 12px; padding: 8px 16px;" download>Transcript</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Stats ═══ -->
+  <section class="stats-row">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+        <img src="assets/cityyear-logo.svg" alt="City Year" style="height: 32px; width: auto;">
+        <span style="font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ink-tertiary);">Impact</span>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2,000+</div>
+          <div class="stat-label">Corps Members / Year</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">29</div>
+          <div class="stat-label">Cities</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">250+</div>
+          <div class="stat-label">Partner Schools</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40,000+</div>
+          <div class="stat-label">Alumni</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-row" style="background: var(--surface-alt);">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+        <img src="assets/awnp-logo.svg" alt="Applied Wisdom" style="height: 22px; width: auto;">
+        <span style="font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--ink-tertiary);">Reach</span>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">64,975</div>
+          <div class="stat-label">Books Provided</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">7,264</div>
+          <div class="stat-label">Nonprofits</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50</div>
+          <div class="stat-label">States</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">192</div>
+          <div class="stat-label">Countries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video moved to hero -->
+
+  <!-- ═══ Deep Dive Audio ═══ -->
+  <!-- Audio moved to hero -->
+  <div class="container">
+    <!-- ═══ Subscribe ═══ -->
+    <section class="section" style="border-bottom: none; padding-bottom: 0;">
+      <div class="subscribe-block">
+        <h3>Never Miss an Episode</h3>
+        <p class="sub-text">Weekly leadership insights from Jim Morgan's playbook.</p>
+        <form class="subscribe-form" action="#" method="post">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="privacy-note">No spam. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Infographic ═══ -->
+    <section class="section">
+      <div class="section-label">Key Takeaways</div>
+      <h2>Episode Infographic</h2>
+      <p class="lede">The essential insights in a shareable visual.</p>
+      <div style="text-align: center;">
+        <img src="assets/infographic.jpg" alt="Episode 17 Infographic: Continuous Learning" style="max-width: 100%; border-radius: 4px; border: 1px solid var(--border);">
+      </div>
+      <div class="btn-row">
+        <a href="assets/infographic.jpg" class="btn btn-outline" download>Download Infographic</a>
+      </div>
+    </section>
+
+    <!-- ═══ Slides + Transcript ═══ -->
+    <section class="section">
+      <div class="section-label">Read Along</div>
+      <h2>Slides &amp; Transcript</h2>
+      <p class="lede">Presentation slides synced to the episode transcript.</p>
+      <div class="slides-block">
+        <div class="slide-display" id="slide-display">
+          <img id="slide-image" src="assets/slides/slide-01.jpg" alt="Slide 1 of 15" style="max-width: 100%; display: block; margin: 0 auto;">
+        </div>
+        <div class="slide-nav">
+          <button onclick="prevSlide()">← Prev</button>
+          <span id="slide-counter">Slide 1 of --</span>
+          <button onclick="nextSlide()">Next →</button>
+        </div>
+        <div class="transcript-panel">
+          <div class="transcript-segment active">
+            <div class="seg-label">Full transcript</div>
+            <div class="seg-text" style="color: var(--ink-tertiary); font-style: italic;">Transcript will appear here after production.</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <a href="assets/ep17-slides.pdf" class="btn btn-primary" download>Download Slides</a>
+        <a href="assets/ep17-transcript.txt" class="btn btn-outline" download>Download Transcript</a>
+      </div>
+    </section>
+
+    <!-- ═══ Mind Map ═══ -->
+    <section class="section">
+      <div class="section-label">Visual Overview</div>
+      <h2>Episode Mind Map</h2>
+      <p class="lede">How continuous learning connects to Morgan's broader culture framework.</p>
+      <div class="placeholder-block">
+        <div class="ph-icon">◎</div>
+        <div class="ph-title">Mind map coming soon</div>
+      </div>
+      <div class="btn-row">
+        <a href="assets/mindmap.jpg" class="btn btn-outline" download>Download Mind Map</a>
+      </div>
+    </section>
+
+    <!-- ═══ Episode Nav ═══ -->
+    <div style="display: flex; justify-content: space-between; padding: 40px 0; border-bottom: 1px solid var(--border);">
+      <a href="#" style="color: var(--ink-secondary); text-decoration: none; font-size: 13px; font-weight: 500;">← Episode 16</a>
+      <a href="#" style="color: var(--ink-secondary); text-decoration: none; font-size: 13px; font-weight: 500;">Episode 18 →</a>
+    </div>
+  </div>
+
+  <!-- ═══ Partner Feature ═══ -->
+  <section class="partner-feature">
+    <div class="container">
+      <div class="partner-grid">
+        <div class="partner-narrative">
+          <div class="section-label" style="color: var(--accent);">Featured Partner</div>
+          <h2>City Year: Where Development Is the Mission</h2>
+          <p>Since 1988, City Year has placed young adults in high-need schools as AmeriCorps members, proving that when you invest in people's growth through service, the return is extraordinary.</p>
+          <p>Corps members don't just serve. They grow. Every day in a partner school is a leadership development moment. The service IS the learning.</p>
+          <div class="partner-quote">
+            "Actions speak louder than your resume." Over 40,000 alumni carrying skills learned during service into communities and careers across every sector.
+          </div>
+          <p>Jim Morgan teaches that people stay where they're growing. City Year proves it at national scale.</p>
+          <div class="btn-row">
+            <a href="https://www.cityyear.org/apply-now/" target="_blank" class="btn btn-accent">Join City Year</a>
+            <a href="https://www.cityyear.org/about/" target="_blank" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        <div class="partner-stats">
+          <div class="partner-stat">
+            <div class="ps-number">84.6%</div>
+            <div class="ps-label">National graduation rate</div>
+            <div class="ps-detail">Rising rates show change is possible</div>
+          </div>
+          <div class="partner-stat">
+            <div class="ps-number">11pt</div>
+            <div class="ps-label">Grade and test score increase</div>
+            <div class="ps-detail">With social-emotional support</div>
+          </div>
+          <div class="partner-stat">
+            <div class="ps-number">3×</div>
+            <div class="ps-label">Higher graduation rate</div>
+            <div class="ps-detail">Students on track by 10th grade</div>
+          </div>
+          <div class="partner-stat">
+            <div class="ps-number">38</div>
+            <div class="ps-label">Years of impact</div>
+            <div class="ps-detail">Founded 1988</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <div class="container">
+    <section class="section">
+      <div class="section-label">Questions</div>
+      <h2>About This Episode</h2>
+      <div style="margin-top: 24px;">
+        <details class="faq-item">
+          <summary>What is Jim Morgan's continuous learning framework?</summary>
+          <p>Morgan teaches that development is a retention strategy, not a perk. Organizations that build learning into the daily rhythm, through feedback loops, stretch assignments, and teaching moments, retain their best people. The cost of replacing someone far exceeds the cost of developing them.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How does City Year demonstrate this at scale?</summary>
+          <p>City Year places over 2,000 AmeriCorps members in 250+ schools across 29 cities each year. The service year is deliberately designed as a leadership development experience. Corps members stay through a demanding year not because of the modest stipend, but because the culture invests in who they're becoming.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why does development matter more than salary for retention?</summary>
+          <p>Morgan's insight is that organizations retaining their strongest people aren't paying the highest salaries. They're the ones where culture treats professional development as a core operating commitment. People will work hard for modest pay when they feel like they're growing and see a connection between today's work and who they're becoming.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is "Whole School, Whole Child"?</summary>
+          <p>City Year's model places AmeriCorps members as near-peer mentors in high-need schools. Students with social-emotional support show an 11-point increase in grades and test scores, and students on track by 10th grade are 3 times more likely to graduate.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Who is Jim Morgan?</summary>
+          <p>Jim Morgan transformed Applied Materials into a global technology leader, then dedicated himself to the nonprofit sector. His book Applied Wisdom for the Nonprofit Sector distills decades of leadership into 66 practical concepts. Free at appliedwisdomfornonprofits.org.</p>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Get the Book + Weekly Episodes</h2>
+      <p>Download your free copy and join the community of nonprofit leaders.</p>
+      <a href="https://appliedwisdomfornonprofits.org" class="btn btn-primary" style="padding: 14px 36px; font-size: 15px;">Download Free Copy</a>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brands">
+        <a href="https://www.cityyear.org" target="_blank" style="display: inline-flex; align-items: center;">
+          <img src="assets/cityyear-logo.svg" alt="City Year" style="height: 40px; width: auto; filter: brightness(0) invert(1);">
+        </a>
+        <span class="divider">/</span>
+        <a href="https://www.appliedwisdomfornonprofits.org" target="_blank" style="display: inline-flex; align-items: center;">
+          <img src="assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 28px; width: auto; filter: brightness(0) invert(1);">
+        </a>
+      </div>
+      <p class="footer-quote">"If you want to keep your best people, invest in their growth. Not as a perk. As the strategy itself."</p>
+      <p class="copyright">© 2026 <a href="https://www.cityyear.org">cityyear.org</a> · <a href="https://www.appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></p>
+    </div>
+  </footer>
+
+  <!-- ═══ JS ═══ -->
+  <script>
+    function playVideo() {
+      var v = document.getElementById('intro-video');
+      var o = document.getElementById('play-overlay');
+      o.style.opacity = '0';
+      o.style.pointerEvents = 'none';
+      v.controls = true;
+      v.play();
+      document.getElementById('video-wrapper').style.cursor = 'default';
+    }
+    let currentSlide = 1, totalSlides = 15;
+    function goToSlide(n) {
+      if (n < 1 || n > totalSlides) return;
+      currentSlide = n;
+      var padded = String(n).padStart(2, '0');
+      var img = document.getElementById('slide-image');
+      img.src = 'assets/slides/slide-' + padded + '.jpg';
+      img.alt = 'Slide ' + n + ' of ' + totalSlides;
+      document.getElementById('slide-counter').textContent = 'Slide ' + n + ' of ' + totalSlides;
+    }
+    function nextSlide() { goToSlide(currentSlide + 1); }
+    function prevSlide() { goToSlide(currentSlide - 1); }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
