@@ -35,7 +35,7 @@
         "name": "What is Jim Morgan's continuous learning framework for nonprofits?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Jim Morgan teaches that you should treat your partner's success as equal to your own. This isn't a platitude but a survival strategy. When organizations genuinely invest in each other's success, they unlock a level of effectiveness that competition can never reach."
+          "text": "Jim Morgan teaches that you should treat your partner's success as equal to your own. When organizations genuinely invest in each other's success, they unlock a level of effectiveness that competition can never reach."
         }
       },
       {
@@ -629,24 +629,58 @@
         <a href="https://www.alfsv.org/fellows-program/" style="color: var(--accent); font-weight: 600;">Fellows Program</a>
       </nav>
     </div>
+    <div style="text-align: center; padding-top: 8px; font-size: 12px; color: var(--ink-tertiary); letter-spacing: 0.5px;">A co-branded podcast episode from the Applied Wisdom series</div>
   </header>
 
-  <!-- ═══ Co-Brand Lockup ═══ -->
-  <section style="border-bottom: 1px solid var(--border); padding: 48px 0;">
-    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap;">
-      <img src="assets/alfsv-logo.png" alt="ALF Silicon Valley" style="height: 80px; width: auto;">
-      <span style="font-size: 32px; font-weight: 200; color: var(--border);">×</span>
-      <img src="assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 52px; width: auto;">
-    </div>
-    <p style="text-align: center; font-size: 13px; color: var(--ink-tertiary); margin-top: 16px; letter-spacing: 0.5px;">A co-branded podcast episode from the Applied Wisdom series</p>
-  </section>
-
-  <!-- ═══ Hero ═══ -->
-  <section class="hero" style="padding-top: 56px;">
+  <!-- ═══ Hero: Video Intro + Podcast ═══ -->
+  <section style="border-bottom: 1px solid var(--border); padding: 64px 0;">
     <div class="container">
       <div class="episode-label">Episode 14</div>
-      <h1>Collaborative Mindset</h1>
-      <p class="subtitle">How ALF Silicon Valley proves that diverse leaders working together transform communities</p>
+      <h1 style="font-size: 48px; font-weight: 700; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 8px; max-width: 680px;">Collaborative Mindset</h1>
+      <p style="font-size: 20px; font-weight: 400; color: var(--ink-secondary); max-width: 560px; line-height: 1.5; margin-bottom: 40px;">How ALF Silicon Valley proves that diverse leaders working together transform communities</p>
+
+      <!-- Two-column: Video left, Podcast right -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+
+        <!-- Video Intro -->
+        <div>
+          <div style="font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-tertiary); margin-bottom: 10px;">▶ Watch the Intro</div>
+          <div class="video-wrap" id="video-wrapper" onclick="playVideo()" style="border-radius: 4px;">
+            <video id="intro-video" preload="metadata" poster="assets/ep14-thumbnail.jpg">
+              <source src="assets/ep14-intro-video.mp4" type="video/mp4">
+            </video>
+            <div class="play-overlay" id="play-overlay">
+              <div class="play-circle">
+                <svg width="24" height="28" viewBox="0 0 24 28" fill="none" style="margin-left: 2px;">
+                  <path d="M24 14L0 28V0L24 14Z" fill="#111"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="video-meta" style="margin-top: 8px;">
+            <span>Episode overview</span>
+            <a href="assets/ep14-intro-video.mp4" download>Download video</a>
+          </div>
+        </div>
+
+        <!-- Full Podcast -->
+        <div>
+          <div style="font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px;">🎧 Listen to the Full Episode</div>
+          <div style="background: var(--surface-alt); border: 1px solid var(--border); border-radius: 4px; padding: 24px;">
+            <div style="font-size: 18px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 4px;">Collaborative Mindset</div>
+            <div style="font-size: 13px; color: var(--ink-tertiary); margin-bottom: 16px;">ALF Silicon Valley × Applied Wisdom · ~20 min</div>
+            <audio controls preload="metadata" style="width: 100%;">
+              <source src="assets/ep14-deepdive.mp3" type="audio/mpeg">
+            </audio>
+            <p style="font-size: 13px; color: var(--ink-secondary); margin-top: 14px; line-height: 1.6;">Two hosts explore how ALF Silicon Valley's four-decade model validates Morgan's collaborative mindset framework: treat your partner's success as equal to your own.</p>
+            <div class="btn-row" style="margin-top: 14px;">
+              <a href="assets/ep14-deepdive.mp3" class="btn btn-primary" style="font-size: 12px; padding: 8px 16px;" download>Download Episode</a>
+              <a href="assets/ep14-transcript.txt" class="btn btn-outline" style="font-size: 12px; padding: 8px 16px;" download>Transcript</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -705,48 +739,11 @@
     </div>
   </section>
 
-  <!-- ═══ Video ═══ -->
-  <section class="video-section">
-    <div class="container">
-      <div class="video-wrap" id="video-wrapper" onclick="playVideo()">
-        <video id="intro-video" preload="metadata" poster="assets/ep14-thumbnail.jpg">
-          <source src="assets/ep14-intro-video.mp4" type="video/mp4">
-        </video>
-        <div class="play-overlay" id="play-overlay">
-          <div class="play-circle">
-            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" style="margin-left: 2px;">
-              <path d="M24 14L0 28V0L24 14Z" fill="#111"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="video-meta">
-        <span>Episode overview</span>
-        <a href="assets/ep14-intro-video.mp4" download>Download video</a>
-      </div>
-    </div>
-  </section>
+  <!-- Video moved to hero -->
 
   <!-- ═══ Deep Dive Audio ═══ -->
+  <!-- Audio moved to hero -->
   <div class="container">
-    <section class="section">
-      <div class="section-label">Deep Dive</div>
-      <h2>Listen to the Full Episode</h2>
-      <p class="lede">Two hosts explore Morgan's collaborative mindset framework through the lens of ALF Silicon Valley's four-decade impact.</p>
-      <div class="audio-player">
-        <div class="now-playing">ALF Silicon Valley × Applied Wisdom</div>
-        <div class="track-title">A Culture of Continuous Learning</div>
-        <audio controls preload="metadata" style="width: 100%; margin-top: 8px;">
-          <source src="assets/ep14-deepdive.mp3" type="audio/mpeg">
-        </audio>
-        <div class="audio-duration">~20 minutes</div>
-      </div>
-      <div class="btn-row">
-        <a href="assets/ep14-deepdive.mp3" class="btn btn-primary" download>Download Episode</a>
-        <a href="assets/ep14-transcript.txt" class="btn btn-outline" download>Download Transcript</a>
-      </div>
-    </section>
-
     <!-- ═══ Subscribe ═══ -->
     <section class="section" style="border-bottom: none; padding-bottom: 0;">
       <div class="subscribe-block">
@@ -757,20 +754,6 @@
           <button type="submit">Subscribe</button>
         </form>
         <p class="privacy-note">No spam. Unsubscribe anytime.</p>
-      </div>
-    </section>
-
-    <!-- ═══ Mind Map ═══ -->
-    <section class="section">
-      <div class="section-label">Visual Overview</div>
-      <h2>Episode Mind Map</h2>
-      <p class="lede">How continuous learning connects to Morgan's broader culture framework.</p>
-      <div class="placeholder-block">
-        <div class="ph-icon">◎</div>
-        <div class="ph-title">Mind map available after production</div>
-      </div>
-      <div class="btn-row">
-        <a href="assets/mindmap.jpg" class="btn btn-outline" download>Download Mind Map</a>
       </div>
     </section>
 
@@ -814,6 +797,20 @@
       </div>
     </section>
 
+    <!-- ═══ Mind Map ═══ -->
+    <section class="section">
+      <div class="section-label">Visual Overview</div>
+      <h2>Episode Mind Map</h2>
+      <p class="lede">How continuous learning connects to Morgan's broader culture framework.</p>
+      <div class="placeholder-block">
+        <div class="ph-icon">◎</div>
+        <div class="ph-title">Mind map coming soon</div>
+      </div>
+      <div class="btn-row">
+        <a href="assets/mindmap.jpg" class="btn btn-outline" download>Download Mind Map</a>
+      </div>
+    </section>
+
     <!-- ═══ Episode Nav ═══ -->
     <div style="display: flex; justify-content: space-between; padding: 40px 0; border-bottom: 1px solid var(--border);">
       <a href="#" style="color: var(--ink-secondary); text-decoration: none; font-size: 13px; font-weight: 500;">← Episode 13</a>
@@ -828,7 +825,7 @@
         <div class="partner-narrative">
           <div class="section-label" style="color: var(--accent);">Featured Partner</div>
           <h2>ALF Silicon Valley: Where Collaboration Transforms Communities</h2>
-          <p>Since 1980, the American Leadership Forum has joined and strengthened diverse leaders to serve the common good. The Silicon Valley chapter, founded in 1988, has trained hundreds of cross-sector leaders who form the backbone of regional civic leadership.</p>
+          <p>Since 1980, the American Leadership Forum has joined and strengthened diverse leaders to serve the common good. The Silicon Valley chapter has trained hundreds of cross-sector leaders who form the backbone of regional civic leadership.</p>
           <p>ALF Fellows don't just network. They transform. Through a year-long journey from I to WE to ALL OF US, diverse leaders build the trust and collaborative capacity to tackle challenges no single sector can solve alone.</p>
           <div class="partner-quote">
             "Joining and strengthening diverse leaders to serve the common good." The Senior Fellow network represents decades of accumulated trust, activated every time a complex community challenge demands leaders who can work across difference.
@@ -873,19 +870,19 @@
       <div style="margin-top: 24px;">
         <details class="faq-item">
           <summary>What is Jim Morgan's collaborative mindset framework?</summary>
-          <p>Morgan teaches that you should treat your partner's success as equal to your own. This isn't a platitude but a survival strategy. When organizations genuinely invest in each other's success, they unlock a level of effectiveness that competition can never reach.</p>
+          <p>Morgan teaches that you should treat your partner's success as equal to your own. When organizations genuinely invest in each other's success, they unlock a level of effectiveness that competition can never reach.</p>
         </details>
         <details class="faq-item">
           <summary>How does ALF Silicon Valley build collaborative leaders?</summary>
-          <p>ALF's Fellows Program takes proven leaders from different sectors and puts them through a year-long experience designed to build trust and collaborative capacity across difference. A tech CEO, school superintendent, police chief, and nonprofit director learn to lead together. Over 4,500 Fellows nationwide have completed the program.</p>
+          <p>ALF's Fellows Program takes proven leaders from different sectors and puts them through a year-long experience designed to build trust and collaborative capacity across difference. Over 4,500 Fellows nationwide have completed the program.</p>
         </details>
         <details class="faq-item">
           <summary>What is the I to WE to ALL OF US journey?</summary>
-          <p>ALF's model moves leaders through three phases: I (individual reflection and growth), WE (building trust and collaboration within the cohort), and ALL OF US (extending collaborative capacity outward to serve the community). This mirrors Morgan's principle that culture moves from individual commitment to collective impact.</p>
+          <p>ALF's model moves leaders through three phases: I (individual reflection and growth), WE (building trust and collaboration within the cohort), and ALL OF US (extending collaborative capacity outward to serve the community).</p>
         </details>
         <details class="faq-item">
           <summary>What makes the Senior Fellow network valuable?</summary>
-          <p>When Fellows complete the year-long program, they enter a network of hundreds of leaders who share a common experience and commitment to collaborative leadership. These relationships activate organically when community challenges require cross-sector collaboration. The network represents decades of accumulated trust.</p>
+          <p>When Fellows complete the program, they enter a network of hundreds of leaders who share a common experience and commitment to collaborative leadership. These relationships activate organically when community challenges require cross-sector collaboration.</p>
         </details>
         <details class="faq-item">
           <summary>Who is Jim Morgan?</summary>
@@ -904,20 +901,20 @@
     </div>
   </section>
 
-  <!-- ═══ Footer ═══ -->
-  <footer class="footer">
+  <!-- ═══ Footer Co-Brand Lockup ═══ -->
+  <footer style="border-top: 1px solid var(--border); padding: 64px 0 48px; text-align: center;">
     <div class="container">
-      <div class="footer-brands">
-        <a href="https://www.alfsv.org" target="_blank" style="display: inline-flex; align-items: center;">
-          <img src="assets/alfsv-logo.png" alt="ALF Silicon Valley" style="height: 40px; width: auto; filter: brightness(0) invert(1);">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 20px;">
+        <a href="https://www.alfsv.org" target="_blank">
+          <img src="assets/alfsv-logo.png" alt="ALF Silicon Valley" style="height: 80px; width: auto;">
         </a>
-        <span class="divider">/</span>
-        <a href="https://www.appliedwisdomfornonprofits.org" target="_blank" style="display: inline-flex; align-items: center;">
-          <img src="assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 28px; width: auto; filter: brightness(0) invert(1);">
+        <span style="font-size: 32px; font-weight: 200; color: var(--border);">×</span>
+        <a href="https://www.appliedwisdomfornonprofits.org" target="_blank">
+          <img src="assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 52px; width: auto;">
         </a>
       </div>
-      <p class="footer-quote">"Approach all teamwork with a collaborative mindset, where you treat your partner's success as equal to your own."</p>
-      <p class="copyright">© 2026 <a href="https://www.alfsv.org">alfsv.org</a> · <a href="https://www.appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></p>
+      <p style="font-size: 14px; font-style: italic; color: var(--ink-tertiary); max-width: 480px; margin: 0 auto 20px; line-height: 1.6;">"Approach all teamwork with a collaborative mindset, where you treat your partner's success as equal to your own."</p>
+      <p style="font-size: 11px; color: var(--ink-tertiary);">© 2026 <a href="https://www.alfsv.org" style="color: var(--ink-tertiary); text-decoration: none;">alfsv.org</a> · <a href="https://www.appliedwisdomfornonprofits.org" style="color: var(--ink-tertiary); text-decoration: none;">appliedwisdomfornonprofits.org</a></p>
     </div>
   </footer>
 
@@ -936,6 +933,10 @@
     function goToSlide(n) {
       if (n < 1 || n > totalSlides) return;
       currentSlide = n;
+      var padded = String(n).padStart(2, '0');
+      var img = document.getElementById('slide-image');
+      img.src = 'assets/slides/slide-' + padded + '.jpg';
+      img.alt = 'Slide ' + n + ' of ' + totalSlides;
       document.getElementById('slide-counter').textContent = 'Slide ' + n + ' of ' + totalSlides;
     }
     function nextSlide() { goToSlide(currentSlide + 1); }
