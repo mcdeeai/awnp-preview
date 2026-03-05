@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach Podcast Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.7; }
+
+    .nav-wrapper { background: #1a2744; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo .aw-mark { background: #e8553d; color: #fff; padding: 4px 9px; border-radius: 4px; font-size: 13px; font-weight: 700; }
+    .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
+    .nav-links { display: flex; gap: 6px; list-style: none; flex-wrap: wrap; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 4px; transition: all 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(232,85,61,0.25); }
+    .nav-links a.active { color: #e8553d; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 60px 24px 68px; }
+    .hero-inner { max-width: 1000px; margin: 0 auto; }
+    .hero-badge { display: inline-block; background: #e8553d; padding: 5px 18px; border-radius: 20px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 18px; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; line-height: 1.15; max-width: 700px; margin-bottom: 14px; }
+    .hero .sub { font-size: 17px; opacity: 0.78; max-width: 580px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+    .hero-tag { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22); padding: 6px 14px; border-radius: 20px; font-size: 13px; }
+
+    .pitch-banner { background: #e8553d; color: #fff; text-align: center; padding: 18px 24px; }
+    .pitch-banner p { font-size: 16px; font-weight: 600; max-width: 800px; margin: 0 auto; }
+
+    .main { max-width: 1000px; margin: 0 auto; padding: 52px 24px 80px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 48px; }
+    @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+    .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); }
+    .card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 10px; }
+    .card h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; color: #1a2744; margin-bottom: 14px; }
+    .card p { font-size: 14px; color: #555; margin-bottom: 10px; }
+    .card ul { margin-left: 18px; }
+    .card ul li { font-size: 14px; color: #555; margin-bottom: 7px; }
+    .card ul li strong { color: #1a2744; }
+
+    .hook-ep { background: #1a2744; border-radius: 10px; padding: 30px 32px; color: #fff; margin-bottom: 28px; }
+    .hook-ep-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .hook-ep-num { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; color: #e8553d; margin-bottom: 4px; }
+    .hook-ep-title { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: #fff; margin-bottom: 14px; }
+    .hook-ep-body { font-size: 15px; opacity: 0.85; line-height: 1.7; max-width: 680px; }
+
+    .episodes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 48px; }
+    .ep-card { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(26,39,68,0.07); display: flex; gap: 14px; align-items: flex-start; }
+    .ep-num { background: #1a2744; color: #fff; min-width: 44px; height: 44px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', Georgia, serif; font-size: 18px; flex-shrink: 0; }
+    .ep-info-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #e8553d; font-weight: 700; }
+    .ep-title { font-weight: 700; font-size: 14px; color: #1a2744; margin: 3px 0; }
+    .ep-why { font-size: 13px; color: #666; }
+
+    .email-wrap { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); overflow: hidden; margin-bottom: 48px; }
+    .email-header { background: #1a2744; padding: 18px 24px; }
+    .email-header .email-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 4px; }
+    .email-header h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; color: #fff; }
+    .email-body { padding: 28px; }
+    .email-meta { display: flex; gap: 28px; margin-bottom: 20px; flex-wrap: wrap; }
+    .email-meta-item { font-size: 13px; color: #888; }
+    .email-meta-item strong { color: #1a2744; display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    .email-text { font-size: 14px; line-height: 1.9; color: #333; white-space: pre-wrap; }
+    .email-note { margin-top: 20px; background: #f7f5f2; border-radius: 6px; padding: 14px 18px; font-size: 13px; color: #777; border-left: 3px solid #e8553d; }
+
+    .vision { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); border-radius: 10px; padding: 32px; color: #fff; margin-bottom: 48px; }
+    .vision-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .vision h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; margin-bottom: 16px; }
+    .vision p { font-size: 15px; opacity: 0.85; margin-bottom: 12px; }
+    .vision ul { margin-left: 20px; }
+    .vision ul li { font-size: 14px; opacity: 0.8; margin-bottom: 8px; }
+
+    .scale-box { background: #fff; border-radius: 10px; padding: 26px 28px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); margin-bottom: 48px; border-left: 5px solid #e8553d; }
+    .scale-box .card-label { margin-bottom: 10px; }
+    .scale-box h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; color: #1a2744; margin-bottom: 12px; }
+    .scale-box p { font-size: 14px; color: #555; }
+    .scale-num { font-family: 'Playfair Display', Georgia, serif; font-size: 42px; color: #e8553d; line-height: 1; margin: 10px 0 4px; }
+
+    footer { background: #1a2744; color: rgba(255,255,255,0.7); padding: 28px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 13px; }
+    .footer-left span { color: #e8553d; font-weight: 700; }
+    .footer-right { font-size: 12px; }
+    .footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-wrapper">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        <span>Outreach Podcast Playbook</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">Playbook</a></li>
+        <li><a href="alf.html">ALF</a></li>
+        <li><a href="pca.html" class="active">PCA</a></li>
+        <li><a href="ep14-alf.html">Ep 14</a></li>
+        <li><a href="ep05-pca.html">Ep 5</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Partner Page</div>
+      <h1>Positive Coaching Alliance</h1>
+      <p class="sub">The biggest potential subscriber channel in your portfolio. PCA's reach is massive -- and coaches are exactly the audience Jim Morgan's leadership framework was built for.</p>
+      <div class="hero-meta">
+        <span class="hero-tag">Founded 1998</span>
+        <span class="hero-tag">9M+ youth reached</span>
+        <span class="hero-tag">All 50 states</span>
+        <span class="hero-tag">Thousands of partner orgs</span>
+        <span class="hero-tag">50k-100k coaches in orbit</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="pitch-banner">
+    <p>"We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
+  </div>
+
+  <main class="main">
+
+    <!-- PARTNER INTEL + SCALE -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-label">Partner Intel</div>
+        <h3>Who They Are</h3>
+        <p>Positive Coaching Alliance is one of the largest youth sports leadership organizations in the United States. Founded in 1998, their mission is "Better Athletes, Better People" -- developing coaches who build character alongside athletic skill.</p>
+        <p>PCA trains coaches at every level, from recreational leagues to elite programs, in all 50 states. Their Double-Goal Coach framework teaches coaches to win AND build life skills in athletes.</p>
+        <ul>
+          <li><strong>Scale:</strong> 9M+ youth reached, thousands of partner school districts and sports orgs</li>
+          <li><strong>Framework:</strong> Double-Goal Coach -- Honor the Game while building positive team culture</li>
+          <li><strong>Reach:</strong> 50,000-100,000 coaches and program administrators in their network</li>
+          <li><strong>Channels:</strong> Strong email list, training programs, online resources, partner orgs</li>
+        </ul>
+      </div>
+      <div class="scale-box">
+        <div class="card-label">The Growth Opportunity</div>
+        <h3>PCA Is Your Highest-Volume Channel</h3>
+        <div class="scale-num">500-1,000</div>
+        <p style="margin-bottom:16px; font-size:15px; color:#444;">new subscribers projected in Year 1, based on just 1% conversion of their network.</p>
+        <p style="font-size:14px; color:#666;">PCA has the largest email reach of your three partners. A single newsletter mention to 50,000+ coaches could drive hundreds of new subscribers in a week. This is your highest-upside pitch.</p>
+      </div>
+    </div>
+
+    <!-- HOOK EPISODE -->
+    <div class="hook-ep">
+      <div class="hook-ep-label">Your Hook Episode for PCA</div>
+      <div class="hook-ep-num">Ep. 5</div>
+      <div class="hook-ep-title">"Tone at the Top"</div>
+      <p class="hook-ep-body">This is the episode that will make a PCA audience lean forward. Jim Morgan's principle is simple: the tone of any organization comes from its leaders. For PCA, that's the coach. Coaches ARE the tone. If a coach models winning at any cost, that's the culture. If they model honor, respect, and effort, that's the culture. This episode speaks directly to PCA's mission. When you show it to their leadership, they will see their own values in Jim Morgan's framework. It's a natural, powerful fit.</p>
+    </div>
+
+    <!-- TOP 5 EPISODES -->
+    <div class="card-label" style="margin-bottom:14px;">Top 5 Episodes That Resonate with PCA's Mission</div>
+    <div class="episodes-grid">
+      <div class="ep-card">
+        <div class="ep-num">5</div>
+        <div>
+          <div class="ep-info-label">Hook Episode</div>
+          <div class="ep-title">Tone at the Top</div>
+          <div class="ep-why">Coaches set the tone for everything. Perfect mirror of PCA's Double-Goal Coach model.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">3</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Culture by Decree</div>
+          <div class="ep-why">Culture can't be mandated -- it must be modeled. This speaks directly to coach development.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">8</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Walk the Talk</div>
+          <div class="ep-why">PCA teaches coaches to model the behavior they want from athletes. This episode is that principle in depth.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">15</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Mentoring</div>
+          <div class="ep-why">Coaching is mentoring. PCA's long-term development mission aligns directly with Jim Morgan's mentoring framework.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">9</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Trust</div>
+          <div class="ep-why">Athletes play best for coaches they trust. This episode grounds the science and practice of building trust.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL DRAFT -->
+    <div class="email-wrap">
+      <div class="email-header">
+        <div class="email-label">Customized Email Draft</div>
+        <h3>Outreach to PCA Leadership</h3>
+      </div>
+      <div class="email-body">
+        <div class="email-meta">
+          <div class="email-meta-item"><strong>To</strong> Director of Content / VP Communications / Director of Coach Education</div>
+          <div class="email-meta-item"><strong>Subject</strong> Free weekly leadership content for your coaches</div>
+          <div class="email-meta-item"><strong>Tone</strong> Peer-to-peer, value-forward</div>
+        </div>
+        <div class="email-text">Hi [Name],
+
+I'm Kathleen [last name], part of the team behind Applied Wisdom for the Nonprofit Sector -- a leadership series built on Jim Morgan's 40+ years developing high-performing organizations.
+
+I'd like to offer PCA something simple:
+
+We'll deliver a new co-branded leadership episode to your coaches every week. You just share it. We handle everything.
+
+There's no cost, no contract, and no production work on your side. Each episode is practical, 20-30 minutes, and speaks directly to the leadership challenges coaches face every day. Episode 5, "Tone at the Top," explores exactly what PCA teaches: the leader's behavior sets the culture. Coaches are the tone. Jim Morgan makes that case with 40 years of evidence behind it.
+
+We have 66 episodes ready -- on culture, trust, mentoring, walking the talk, and building teams that actually perform. All mapped to leadership themes your coaches are living every day.
+
+We'd co-brand each episode with PCA and deliver it ready to drop into your newsletter, coach portal, or training resources. Your coaches get world-class leadership content with PCA's name on it, every week, at no cost to you.
+
+I'd love to show you a sample episode on a 20-minute call. Would [day] or [day] work?
+
+Warmly,
+Kathleen [last name]
+Applied Wisdom for the Nonprofit Sector
+appliedwisdomfornonprofits.org</div>
+        <div class="email-note">Scale opportunity angle: If it resonates in one program, mention that all 66 episodes could be sequenced into a coach leadership development curriculum -- a ready-made, no-cost addition to their training resources.</div>
+      </div>
+    </div>
+
+    <!-- EPISODE CTAs -->
+    <a href="../ep05-landing-page/episode-5.html" style="display:block; background:#e8553d; border-radius:10px; padding:28px 32px; color:#fff; text-decoration:none; margin-bottom:16px; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(26,39,68,0.18)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:2px; font-weight:700; margin-bottom:8px; opacity:0.85;">Full Episode</div>
+      <div style="font-family:'Playfair Display',Georgia,serif; font-size:24px; margin-bottom:8px;">&#9654; Listen to Episode 5: Tone at the Top</div>
+      <div style="font-size:15px; opacity:0.85;">Stream the full co-branded podcast episode with Positive Coaching Alliance. Audio player, downloadable assets, and more.</div>
+    </a>
+    <a href="ep05-pca.html" style="display:block; background:#1a2744; border-radius:10px; padding:20px 32px; color:#fff; text-decoration:none; margin-bottom:28px; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(26,39,68,0.15)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:2px; font-weight:700; margin-bottom:6px; color:#e8553d;">Episode Brief</div>
+      <div style="font-size:16px;">Read the written brief: Morgan's insight, wisdom quotes, and actionable takeaway</div>
+    </a>
+
+    <!-- ONGOING PARTNERSHIP VISION -->
+    <div class="vision">
+      <div class="vision-label">Ongoing Partnership</div>
+      <h3>What a Yes Looks Like for PCA</h3>
+      <p>PCA already runs robust communications with coaches and program administrators. Adding a weekly co-branded leadership episode fits seamlessly into what they already do -- and gives their coaches something new to look forward to every week.</p>
+      <ul>
+        <li>One co-branded episode delivered per week, ready to drop into PCA's existing newsletter or coach communications</li>
+        <li>All 66 episodes cover the leadership themes coaches need: culture, trust, mentoring, accountability, communication</li>
+        <li>Potential to integrate episodes into PCA's formal coach training programs over time</li>
+        <li>Coaches share episodes with their teams -- creating organic reach beyond the initial distribution</li>
+        <li>Brendan and team handle all production, branding, and delivery. PCA's only job is to share it.</li>
+        <li>Quarterly check-ins to review which episodes resonate most with coaches and align with PCA's current programming</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><span>Applied Wisdom for the Nonprofit Sector</span> &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

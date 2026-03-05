@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach Podcast Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.7; }
+
+    .nav-wrapper { background: #1a2744; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo .aw-mark { background: #e8553d; color: #fff; padding: 4px 9px; border-radius: 4px; font-size: 13px; font-weight: 700; }
+    .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
+    .nav-links { display: flex; gap: 6px; list-style: none; flex-wrap: wrap; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 4px; transition: all 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(232,85,61,0.25); }
+    .nav-links a.active { color: #e8553d; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 60px 24px 68px; }
+    .hero-inner { max-width: 1000px; margin: 0 auto; }
+    .hero-badge { display: inline-block; background: #e8553d; padding: 5px 18px; border-radius: 20px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 18px; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; line-height: 1.15; max-width: 700px; margin-bottom: 14px; }
+    .hero .sub { font-size: 17px; opacity: 0.78; max-width: 580px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+    .hero-tag { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22); padding: 6px 14px; border-radius: 20px; font-size: 13px; }
+
+    .pitch-banner { background: #e8553d; color: #fff; text-align: center; padding: 18px 24px; }
+    .pitch-banner p { font-size: 16px; font-weight: 600; max-width: 800px; margin: 0 auto; }
+
+    .main { max-width: 1000px; margin: 0 auto; padding: 52px 24px 80px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 48px; }
+    @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+    .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); }
+    .card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 10px; }
+    .card h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; color: #1a2744; margin-bottom: 14px; }
+    .card p { font-size: 14px; color: #555; margin-bottom: 10px; }
+    .card ul { margin-left: 18px; }
+    .card ul li { font-size: 14px; color: #555; margin-bottom: 7px; }
+    .card ul li strong { color: #1a2744; }
+
+    /* HOOK EPISODE */
+    .hook-ep { background: #1a2744; border-radius: 10px; padding: 30px 32px; color: #fff; margin-bottom: 28px; }
+    .hook-ep-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .hook-ep-num { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; color: #e8553d; margin-bottom: 4px; }
+    .hook-ep-title { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: #fff; margin-bottom: 14px; }
+    .hook-ep-body { font-size: 15px; opacity: 0.85; line-height: 1.7; max-width: 680px; }
+
+    /* TOP EPISODES */
+    .episodes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 48px; }
+    .ep-card { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px rgba(26,39,68,0.07); display: flex; gap: 14px; align-items: flex-start; }
+    .ep-num { background: #1a2744; color: #fff; min-width: 44px; height: 44px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', Georgia, serif; font-size: 18px; flex-shrink: 0; }
+    .ep-info-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #e8553d; font-weight: 700; }
+    .ep-title { font-weight: 700; font-size: 14px; color: #1a2744; margin: 3px 0; }
+    .ep-why { font-size: 13px; color: #666; }
+
+    /* EMAIL DRAFT */
+    .email-wrap { background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); overflow: hidden; margin-bottom: 48px; }
+    .email-header { background: #1a2744; padding: 18px 24px; }
+    .email-header .email-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 4px; }
+    .email-header h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; color: #fff; }
+    .email-body { padding: 28px; }
+    .email-meta { display: flex; gap: 28px; margin-bottom: 20px; flex-wrap: wrap; }
+    .email-meta-item { font-size: 13px; color: #888; }
+    .email-meta-item strong { color: #1a2744; display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    .email-text { font-size: 14px; line-height: 1.9; color: #333; white-space: pre-wrap; }
+    .email-note { margin-top: 20px; background: #f7f5f2; border-radius: 6px; padding: 14px 18px; font-size: 13px; color: #777; border-left: 3px solid #e8553d; }
+
+    /* PARTNERSHIP VISION */
+    .vision { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); border-radius: 10px; padding: 32px; color: #fff; margin-bottom: 48px; }
+    .vision-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .vision h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; margin-bottom: 16px; }
+    .vision p { font-size: 15px; opacity: 0.85; margin-bottom: 12px; }
+    .vision ul { margin-left: 20px; }
+    .vision ul li { font-size: 14px; opacity: 0.8; margin-bottom: 8px; }
+
+    footer { background: #1a2744; color: rgba(255,255,255,0.7); padding: 28px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 13px; }
+    .footer-left span { color: #e8553d; font-weight: 700; }
+    .footer-right { font-size: 12px; }
+    .footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-wrapper">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        <span>Outreach Podcast Playbook</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">Playbook</a></li>
+        <li><a href="alf.html" class="active">ALF</a></li>
+        <li><a href="pca.html">PCA</a></li>
+        <li><a href="ep14-alf.html">Ep 14</a></li>
+        <li><a href="ep05-pca.html">Ep 5</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Partner Page</div>
+      <h1>American Leadership Forum<br>Silicon Valley Chapter</h1>
+      <p class="sub">A warm-intro opportunity with deep mission alignment. Kathleen, you have home-field advantage here.</p>
+      <div class="hero-meta">
+        <span class="hero-tag">501(c)(3)</span>
+        <span class="hero-tag">~400+ Senior Fellows</span>
+        <span class="hero-tag">Class XLV current</span>
+        <span class="hero-tag">Erica Yew, CEO</span>
+        <span class="hero-tag">Warm intro available</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="pitch-banner">
+    <p>"We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
+  </div>
+
+  <main class="main">
+
+    <!-- PARTNER INTEL + WARM INTRO -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-label">Partner Intel</div>
+        <h3>Who They Are</h3>
+        <p>The American Leadership Forum, Silicon Valley chapter, is a 501(c)(3) that brings together leaders across sectors for deep dialogue and collaborative leadership development. Their current cohort is Class XLV.</p>
+        <p>ALF is known for its rigorous, transformative fellowship experience. Senior Fellows span corporate, nonprofit, government, and community sectors. The unifying thread: a commitment to servant leadership and collaborative problem-solving.</p>
+        <ul>
+          <li><strong>Model:</strong> Dialogue-based leadership development</li>
+          <li><strong>Framework:</strong> I to WE to ALL OF US -- individual leadership to collective action</li>
+          <li><strong>Erica Yew</strong> is the new CEO. Fresh leadership, open to new partnerships.</li>
+          <li>Chapters nationally: Houston, Oregon, Sacramento, and more</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-label">Your Warm Intro Path</div>
+        <h3>You Have Home-Field Advantage</h3>
+        <p>This is not a cold call. You are an ALF SV member. You know the culture, the language, the values. That is your opening.</p>
+        <ul>
+          <li><strong>Kathleen is a member</strong> -- introduce this as something you're personally bringing to the organization because you believe it fits.</li>
+          <li><strong>Jim Morgan knows ALF.</strong> If a direct connection to Erica Yew or senior staff can be made through Jim, that is the gold-standard path.</li>
+          <li><strong>Peer outreach:</strong> Reach out to a fellow Senior Fellow you're close with and ask if they'd be willing to make the intro to Erica or the communications team.</li>
+          <li><strong>Frame it as a member initiative:</strong> "I found something I think would be valuable for fellows and wanted to bring it to the org." That's not a sales call. That's a contribution.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HOOK EPISODE -->
+    <div class="hook-ep">
+      <div class="hook-ep-label">Your Hook Episode for ALF</div>
+      <div class="hook-ep-num">Ep. 14</div>
+      <div class="hook-ep-title">"Collaborative Mindset"</div>
+      <p class="hook-ep-body">This is your door-opener for ALF. The entire ALF model is built on moving from I to WE to ALL OF US -- exactly the journey Jim Morgan describes in the Collaborative Mindset episode. When you show Erica Yew or her team this episode, they will immediately recognize their own values reflected back. The language, the framework, the outcomes -- they're speaking the same language. Lead with this one, every time.</p>
+    </div>
+
+    <!-- TOP 5 EPISODES -->
+    <div class="card-label" style="margin-bottom:14px;">Top 5 Episodes That Resonate with ALF's Mission</div>
+    <div class="episodes-grid">
+      <div class="ep-card">
+        <div class="ep-num">14</div>
+        <div>
+          <div class="ep-info-label">Hook Episode</div>
+          <div class="ep-title">Collaborative Mindset</div>
+          <div class="ep-why">The I to WE to ALL OF US arc. Perfect mirror of ALF's core framework.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">9</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Trust</div>
+          <div class="ep-why">Foundation of every ALF cohort. Trust is what makes the dialogue model work.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">10</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Psychological Safety</div>
+          <div class="ep-why">ALF creates spaces where honesty is possible. This episode explains why that matters.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">23</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Listen</div>
+          <div class="ep-why">Dialogue-based leadership starts with listening. A natural fit for ALF's methodology.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">25</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Servant Leadership</div>
+          <div class="ep-why">Core to ALF's philosophy. Senior Fellows will recognize this language immediately.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL DRAFT -->
+    <div class="email-wrap">
+      <div class="email-header">
+        <div class="email-label">Customized Email Draft</div>
+        <h3>Outreach to ALF SV Leadership</h3>
+      </div>
+      <div class="email-body">
+        <div class="email-meta">
+          <div class="email-meta-item"><strong>To</strong> Erica Yew, CEO (or your ALF contact)</div>
+          <div class="email-meta-item"><strong>Subject</strong> A weekly leadership resource for ALF fellows</div>
+          <div class="email-meta-item"><strong>Tone</strong> Warm, member-to-organization</div>
+        </div>
+        <div class="email-text">Hi Erica,
+
+I'm Kathleen [last name], an ALF SV member and a big believer in what this organization builds in people.
+
+I'm reaching out because I'm part of the team behind Applied Wisdom for the Nonprofit Sector -- a leadership series built on Jim Morgan's 40+ years of experience, including his transformative work at Applied Materials and the nonprofit sector.
+
+I think ALF fellows would love it, and I'd like to offer a simple partnership:
+
+We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything.
+
+Each episode is practical, 20-30 minutes, and maps directly to the leadership themes ALF fellows explore in the program. Episode 14, "Collaborative Mindset," was practically written for ALF -- it traces the journey from individual leadership to collective action, which is exactly the I to WE to ALL OF US arc your program is built on.
+
+There's no cost, no contract, and no production work on your side. We'd co-brand each episode with ALF SV and deliver it ready to share in your newsletter, member portal, or wherever it would be most useful.
+
+I'd love to show you a sample episode on a 20-minute call. Would [day] or [day] work?
+
+Warmly,
+Kathleen [last name]
+Applied Wisdom for the Nonprofit Sector
+appliedwisdomfornonprofits.org</div>
+        <div class="email-note">Personalization tip: If you have a warm intro from Jim Morgan or a fellow Senior Fellow, add a line referencing that. "Jim Morgan suggested I reach out directly" carries significant weight with any leadership organization.</div>
+      </div>
+    </div>
+
+    <!-- EPISODE CTAs -->
+    <a href="../ep14-landing-page/episode-14.html" style="display:block; background:#e8553d; border-radius:10px; padding:28px 32px; color:#fff; text-decoration:none; margin-bottom:16px; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 28px rgba(26,39,68,0.18)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:2px; font-weight:700; margin-bottom:8px; opacity:0.85;">Full Episode</div>
+      <div style="font-family:'Playfair Display',Georgia,serif; font-size:24px; margin-bottom:8px;">&#9654; Listen to Episode 14: Collaborative Mindset</div>
+      <div style="font-size:15px; opacity:0.85;">Stream the full co-branded podcast episode with ALF Silicon Valley. Audio player, downloadable assets, and more.</div>
+    </a>
+    <a href="ep14-alf.html" style="display:block; background:#1a2744; border-radius:10px; padding:20px 32px; color:#fff; text-decoration:none; margin-bottom:28px; transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(26,39,68,0.15)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+      <div style="font-size:11px; text-transform:uppercase; letter-spacing:2px; font-weight:700; margin-bottom:6px; color:#e8553d;">Episode Brief</div>
+      <div style="font-size:16px;">Read the written brief: Morgan's insight, wisdom quotes, and actionable takeaway</div>
+    </a>
+
+    <!-- ONGOING PARTNERSHIP VISION -->
+    <div class="vision">
+      <div class="vision-label">Ongoing Partnership</div>
+      <h3>What a Yes Looks Like for ALF</h3>
+      <p>Once ALF SV says yes, the partnership runs itself. Brendan and team deliver a co-branded episode each week. ALF includes it in their communications. Fellows receive world-class leadership content with ALF's name on it, at no cost.</p>
+      <ul>
+        <li>All 66 episodes have been mapped to leadership themes that align with ALF's mission</li>
+        <li>Episodes cover culture, planning, execution, communication, trust, and collaboration</li>
+        <li>ALF SV becomes the pilot for national chapter expansion: Houston, Oregon, Sacramento, and more</li>
+        <li>If SV proves the model, 5x the reach is available through other ALF chapters alone</li>
+        <li>Quarterly check-ins to review which episodes resonate most and align with the current class's journey</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><span>Applied Wisdom for the Nonprofit Sector</span> &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

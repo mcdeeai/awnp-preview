@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 5: Tone at the Top | Applied Wisdom x Positive Coaching Alliance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.7; }
+
+    .nav-wrapper { background: #1a2744; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo .aw-mark { background: #e8553d; color: #fff; padding: 4px 9px; border-radius: 4px; font-size: 13px; font-weight: 700; }
+    .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
+    .nav-links { display: flex; gap: 6px; list-style: none; flex-wrap: wrap; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 4px; transition: all 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(232,85,61,0.25); }
+    .nav-links a.active { color: #e8553d; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 60px 24px 68px; }
+    .hero-inner { max-width: 1000px; margin: 0 auto; }
+    .hero-badge { display: inline-block; background: #e8553d; padding: 5px 18px; border-radius: 20px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 18px; }
+    .hero-ep { font-family: 'Playfair Display', Georgia, serif; font-size: 54px; color: #e8553d; line-height: 1; margin-bottom: 8px; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; line-height: 1.15; max-width: 700px; margin-bottom: 14px; }
+    .hero .sub { font-size: 17px; opacity: 0.78; max-width: 620px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+    .hero-tag { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22); padding: 6px 14px; border-radius: 20px; font-size: 13px; }
+
+    .cta-banner { background: #e8553d; color: #fff; text-align: center; padding: 18px 24px; }
+    .cta-banner a { display: inline-block; color: #fff; text-decoration: none; font-size: 16px; font-weight: 700; }
+    .cta-banner a:hover { text-decoration: underline; }
+
+    .main { max-width: 860px; margin: 0 auto; padding: 52px 24px 80px; }
+
+    .section { margin-bottom: 48px; }
+    .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; color: #1a2744; margin-bottom: 16px; }
+    .section p { font-size: 15px; color: #444; margin-bottom: 14px; line-height: 1.8; }
+
+    .pull-quote { background: #1a2744; border-radius: 10px; padding: 30px 32px; color: #fff; margin: 36px 0; }
+    .pull-quote p { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; line-height: 1.5; color: #fff; margin: 0; }
+    .pull-quote .attrib { font-family: 'Open Sans', sans-serif; font-size: 13px; color: #e8553d; margin-top: 12px; font-weight: 700; }
+
+    .wisdom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+    @media (max-width: 700px) { .wisdom-grid { grid-template-columns: 1fr; } }
+    .wisdom-card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); }
+    .wisdom-card .wisdom-name { font-weight: 700; font-size: 14px; color: #1a2744; margin-bottom: 6px; }
+    .wisdom-card p { font-size: 14px; color: #555; margin: 0; }
+
+    .takeaway-box { background: #fff; border-left: 5px solid #e8553d; border-radius: 0 10px 10px 0; padding: 28px 32px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); margin-bottom: 48px; }
+    .takeaway-box h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; color: #1a2744; margin-bottom: 14px; }
+    .takeaway-box p { font-size: 15px; color: #444; line-height: 1.8; }
+
+    .closing { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); border-radius: 10px; padding: 36px; color: #fff; margin-bottom: 48px; }
+    .closing h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; margin-bottom: 16px; }
+    .closing p { font-size: 15px; opacity: 0.85; line-height: 1.8; }
+
+    .back-link { text-align: center; margin-bottom: 48px; }
+    .back-link a { display: inline-block; background: #1a2744; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 14px; transition: background 0.2s; }
+    .back-link a:hover { background: #e8553d; }
+
+    footer { background: #1a2744; color: rgba(255,255,255,0.7); padding: 28px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 13px; }
+    .footer-left span { color: #e8553d; font-weight: 700; }
+    .footer-right { font-size: 12px; }
+    .footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-wrapper">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        <span>Outreach Podcast Playbook</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">Playbook</a></li>
+        <li><a href="alf.html">ALF</a></li>
+        <li><a href="pca.html">PCA</a></li>
+        <li><a href="ep14-alf.html">Ep 14</a></li>
+        <li><a href="ep05-pca.html" class="active">Ep 5</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Co-Branded Episode Brief</div>
+      <div class="hero-ep">Ep. 5</div>
+      <h1>Tone at the Top</h1>
+      <p class="sub">Jim Morgan on why board culture IS organizational culture. Co-branded with Positive Coaching Alliance.</p>
+      <div class="hero-meta">
+        <span class="hero-tag">Applied Wisdom x PCA</span>
+        <span class="hero-tag">Leadership Series</span>
+        <span class="hero-tag">Double-Goal Coach</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <a href="../ep05-landing-page/episode-5.html">&#9654; Listen to Episode 5</a>
+  </div>
+
+  <main class="main">
+
+    <!-- THE MORGAN INSIGHT -->
+    <div class="section">
+      <div class="section-label">The Morgan Insight</div>
+      <h2>The Culture of the Board IS the Tone at the Top</h2>
+      <p>Jim Morgan makes this crystal clear: "The culture of the board is part of the 'tone at the top.'"</p>
+      <p>That one sentence rewrites the job description of every board member in the nonprofit sector. Morgan isn't talking about governance policies or fiduciary duties. He's talking about behavior. When board members treat each other and management with courtesy and respect, they set an example the entire staff emulates. When they don't? No amount of training, retreats, or culture initiatives will fix what flows downhill from a dysfunctional board.</p>
+
+      <div class="pull-quote">
+        <p>"The culture of the board is part of the 'tone at the top.'"</p>
+        <div class="attrib">Jim Morgan</div>
+      </div>
+
+      <p>This is Morgan at his most practical. He doesn't ask boards to be inspirational. He asks them to be intentional. Set the tone through your own conduct. Be curious. Ask hard questions respectfully. Disagree without being disagreeable. Show up prepared. Follow through. Because every staff member is watching, and they will mirror what they see at the top.</p>
+    </div>
+
+    <!-- A LIVING EXAMPLE -->
+    <div class="section">
+      <div class="section-label">A Living Example</div>
+      <h2>Positive Coaching Alliance</h2>
+      <p>If Morgan's principle needed a proof case, Positive Coaching Alliance has been building one since 1998.</p>
+      <p>PCA was founded on a radical bet: that the adults in youth sports, coaches, parents, league administrators, set the tone for every young athlete's experience. Not the rulebook. Not the training drills. The people at the top. Sound familiar?</p>
+      <p>PCA's Double-Goal Coach framework is Morgan's "tone at the top" translated to the sideline. The first goal is winning. The second, and more important, goal is teaching life lessons through sports. PCA trains coaches to understand that how they show up at practice, how they respond to a bad call, how they treat the opposing team, all of it echoes through every player on the roster.</p>
+
+      <div class="pull-quote">
+        <p>A coach who screams at referees teaches players that authority is something to fight. A coach who responds with composure teaches players that character holds under pressure.</p>
+      </div>
+
+      <p>And PCA doesn't stop at coaches. Their model recognizes that the entire culture around a young athlete matters. League administrators set the tone for coaches. Coaches set the tone for players. Parents set the tone from the stands. It's the same cascading leadership dynamic Morgan describes in nonprofit organizations: the behavior at the top flows through every level, whether you're intentional about it or not.</p>
+    </div>
+
+    <!-- WHY THIS MATTERS NOW -->
+    <div class="section">
+      <div class="section-label">Why This Matters Now</div>
+      <h2>The Gap Between Stated Values and Modeled Behavior</h2>
+      <p>Nonprofit boards are in crisis and most don't know it. Board members show up quarterly, skim the financials, nod through the agenda, and leave feeling they've done their duty. Meanwhile, executive directors burn out managing up instead of leading forward. Staff morale craters because they see the disconnect between what the org says it values and how the board actually behaves.</p>
+      <p>PCA faces the same dynamic in youth sports. Leagues adopt their curriculum, hang the banners, print the handbooks, then the head coach ignores all of it in the first tense game. The gap between stated values and modeled behavior is where culture goes to die, whether you're in a boardroom or on a sideline.</p>
+      <p>The boards and coaches getting it right are the ones where leaders understand that culture is performed, not declared. Every interaction sets the temperature for everyone watching.</p>
+    </div>
+
+    <!-- THE WISDOM RUNS DEEP -->
+    <div class="section">
+      <div class="section-label">The Wisdom Runs Deep</div>
+      <h2>From Plato to the Sideline</h2>
+
+      <div class="wisdom-grid">
+        <div class="wisdom-card">
+          <div class="wisdom-name">Plato</div>
+          <p>Argued in <em>The Republic</em> that the character of a state's leaders directly shapes the society's moral fabric. Your character IS the organization's character. Your sideline behavior IS the team's identity.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Aristotle</div>
+          <p>Asserted in <em>Politics</em> and <em>Nicomachean Ethics</em> that the ethical conduct of those in power is fundamental to a just society. The ethos of the governing body inevitably permeates everything beneath it.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Tony Dungy</div>
+          <p>The first African American head coach to win a Super Bowl built his teams around character, accountability, and consistency. He set the tone through steady, principled leadership. His teams didn't just win. They became known for their culture.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Edgar Schein</div>
+          <p>His MIT research confirmed it empirically: the deeply held assumptions set by leadership, not the stated values, are what actually shape daily behavior. The board's real values are in how members treat each other when they disagree.</p>
+        </div>
+      </div>
+
+      <div class="pull-quote" style="margin-top: 28px;">
+        <p>"What you are speaks so loudly, I can't hear what you're saying."</p>
+        <div class="attrib">Ralph Waldo Emerson</div>
+      </div>
+    </div>
+
+    <!-- THE TAKEAWAY -->
+    <div class="takeaway-box">
+      <h3>The Takeaway</h3>
+      <p>Before your next board meeting or your next practice, try this: arrive ten minutes early and have one genuine, non-agenda conversation with someone in the room. If you're a board member, talk to a staff member. If you're a coach, talk to a player. Ask how they're doing. Listen.</p>
+      <p style="margin-top: 12px;">Then during the meeting or practice, notice how you engage. Are you modeling the culture you want others to build? PCA teaches coaches that the first five minutes of practice set the tone for the whole session. Morgan teaches the same thing about the boardroom. Tone starts with you, in the room, right now. Not with a policy. With your presence.</p>
+    </div>
+
+    <!-- CLOSING THOUGHT -->
+    <div class="closing">
+      <div class="section-label" style="color: #e8553d;">Closing Thought</div>
+      <h3>The Mirror Test</h3>
+      <p>Morgan's lesson is both simple and uncomfortable: your board's culture IS your organization's culture. PCA's lesson is the same: your coaching behavior IS your team's identity. There's no firewall between how leaders behave in the boardroom and how staff behave in the field, just as there's no firewall between how a coach acts on the sideline and how players act on the court.</p>
+      <p style="margin-top: 14px;">If you want to change your culture, start with the mirror. As Emerson reminds us, what you are speaks so loudly that no one can hear what you're saying. What are you saying without words?</p>
+    </div>
+
+    <div class="back-link">
+      <a href="pca.html">&larr; Back to PCA Partner Page</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><span>Applied Wisdom for the Nonprofit Sector</span> &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
