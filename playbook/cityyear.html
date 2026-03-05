@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALF Silicon Valley | Outreach Podcast Playbook</title>
+  <title>City Year | Outreach Podcast Playbook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -33,7 +33,6 @@
 
     .main { max-width: 1000px; margin: 0 auto; padding: 52px 24px 80px; }
 
-    /* TWO COL */
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-bottom: 48px; }
     @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
     .panel { background: #fff; padding: 28px; }
@@ -44,7 +43,12 @@
     .panel ul li { font-size: 14px; color: #555; margin-bottom: 7px; }
     .panel ul li strong { color: #111; }
 
-    /* HOOK EPISODE */
+    /* IMPACT NUMBERS */
+    .impact-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-bottom: 48px; }
+    .impact-cell { background: #fff; padding: 20px 22px; }
+    .impact-num { font-size: 28px; font-weight: 800; color: #111; letter-spacing: -1px; }
+    .impact-label { font-size: 12px; color: #999; margin-top: 2px; line-height: 1.4; }
+
     .hook-ep { border: 1px solid #e5e5e5; margin-bottom: 28px; background: #fff; }
     .hook-ep-header { background: #f5f5f5; border-bottom: 1px solid #e5e5e5; padding: 16px 28px; }
     .hook-ep-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; }
@@ -53,7 +57,6 @@
     .hook-ep-title { font-size: 22px; font-weight: 700; color: #111; margin-bottom: 12px; }
     .hook-ep-text { font-size: 14px; color: #555; line-height: 1.7; max-width: 680px; }
 
-    /* TOP EPISODES */
     .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 14px; }
     .episodes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-bottom: 48px; }
     .ep-card { background: #fff; padding: 20px; display: flex; gap: 14px; align-items: flex-start; }
@@ -62,7 +65,6 @@
     .ep-title { font-weight: 700; font-size: 13px; color: #111; margin: 3px 0; }
     .ep-why { font-size: 12px; color: #999; line-height: 1.5; }
 
-    /* EMAIL DRAFT */
     .email-wrap { border: 1px solid #e5e5e5; overflow: hidden; margin-bottom: 48px; background: #fff; }
     .email-header { background: #f5f5f5; border-bottom: 1px solid #e5e5e5; padding: 16px 24px; }
     .email-header .email-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 4px; }
@@ -74,7 +76,6 @@
     .email-text { font-size: 13px; line-height: 1.9; color: #333; white-space: pre-wrap; }
     .email-note { margin-top: 20px; background: #f5f5f5; border-left: 3px solid #e8553d; padding: 12px 16px; font-size: 12px; color: #555; }
 
-    /* EPISODE CTAs */
     .ep-cta-primary { display: block; border: 2px solid #e8553d; padding: 24px 28px; color: #e8553d; text-decoration: none; margin-bottom: 12px; transition: background 0.15s; }
     .ep-cta-primary:hover { background: #e8553d; color: #fff; }
     .ep-cta-primary .cta-sub { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 6px; opacity: 0.7; }
@@ -85,7 +86,6 @@
     .ep-cta-secondary .cta-sub { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: #e8553d; margin-bottom: 4px; }
     .ep-cta-secondary .cta-title { font-size: 14px; color: #555; }
 
-    /* PARTNERSHIP VISION */
     .vision { border: 1px solid #e5e5e5; margin-bottom: 48px; background: #fff; }
     .vision-header { background: #f5f5f5; border-bottom: 1px solid #e5e5e5; padding: 16px 28px; }
     .vision-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; }
@@ -113,9 +113,9 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="playbook.html">Playbook</a></li>
-        <li><a href="alf.html" class="active">ALF</a></li>
+        <li><a href="alf.html">ALF</a></li>
         <li><a href="pca.html">PCA</a></li>
-        <li><a href="cityyear.html">City Year</a></li>
+        <li><a href="cityyear.html" class="active">City Year</a></li>
         <li><a href="growth.html">Growth</a></li>
       </ul>
     </nav>
@@ -124,14 +124,14 @@
   <section class="hero">
     <div class="hero-inner">
       <span class="label">Partner Page</span>
-      <h1>American Leadership Forum<br>Silicon Valley Chapter</h1>
-      <p class="sub">A warm-intro opportunity with deep mission alignment. Kathleen, you have home-field advantage here.</p>
+      <h1>City Year</h1>
+      <p class="sub">Where development IS the retention strategy. City Year proves Jim Morgan's framework at the hardest possible scale -- and Kathleen has a natural bridge through Jim Morgan's connections to their leadership.</p>
       <div class="hero-tags">
-        <span class="hero-tag">501(c)(3)</span>
-        <span class="hero-tag">~400+ Senior Fellows</span>
-        <span class="hero-tag">Class XLV current</span>
-        <span class="hero-tag">Erica Yew, CEO</span>
-        <span class="hero-tag">Warm intro available</span>
+        <span class="hero-tag">Founded 1988</span>
+        <span class="hero-tag">2,000+ AmeriCorps members/year</span>
+        <span class="hero-tag">29 cities</span>
+        <span class="hero-tag">250+ partner schools</span>
+        <span class="hero-tag">40,000+ alumni</span>
       </div>
     </div>
   </section>
@@ -144,75 +144,80 @@
 
   <main class="main">
 
+    <div class="impact-row">
+      <div class="impact-cell">
+        <div class="impact-num">84.6%</div>
+        <div class="impact-label">national graduation rate for students served</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">+11 pts</div>
+        <div class="impact-label">grade increase with social-emotional support</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">3x</div>
+        <div class="impact-label">graduation rate when on track by 10th grade</div>
+      </div>
+      <div class="impact-cell">
+        <div class="impact-num">29</div>
+        <div class="impact-label">cities with active City Year programs</div>
+      </div>
+    </div>
+
     <div class="two-col">
       <div class="panel">
         <div class="panel-label">Partner Intel</div>
         <h3>Who They Are</h3>
-        <p>The American Leadership Forum, Silicon Valley chapter, is a 501(c)(3) that brings together leaders across sectors for deep dialogue and collaborative leadership development. Their current cohort is Class XLV.</p>
-        <p>ALF is known for its rigorous, transformative fellowship experience. Senior Fellows span corporate, nonprofit, government, and community sectors. The unifying thread: a commitment to servant leadership and collaborative problem-solving.</p>
+        <p>City Year is a national AmeriCorps organization founded in 1988. Their model is "Whole School, Whole Child" -- near-peer mentors placed in high-need schools to provide academic and social-emotional support to students at risk of dropping out.</p>
+        <p>What makes City Year remarkable isn't just what they do for students. It's what they do for the people who show up to do it. Corps members are 17-25 year olds committing to one of the hardest jobs in education. City Year keeps them through a demanding year not by paying them more -- the stipend is modest -- but by investing relentlessly in who they're becoming.</p>
         <ul>
-          <li><strong>Model:</strong> Dialogue-based leadership development</li>
-          <li><strong>Framework:</strong> I to WE to ALL OF US -- individual leadership to collective action</li>
-          <li><strong>Erica Yew</strong> is the new CEO. Fresh leadership, open to new partnerships.</li>
-          <li>Chapters nationally: Houston, Oregon, Sacramento, and more</li>
+          <li><strong>Model:</strong> "Whole School, Whole Child" -- near-peer mentors in high-need schools</li>
+          <li><strong>Scale:</strong> 2,000+ AmeriCorps members/year, 250+ partner schools across 29 cities</li>
+          <li><strong>Alumni:</strong> 40,000+ City Year alumni in the workforce, many in education and social impact</li>
+          <li><strong>Current CTA:</strong> Recruiting AmeriCorps members for the 2026-2027 service year</li>
+          <li>National organization with strong city-level leadership networks</li>
         </ul>
       </div>
       <div class="panel">
-        <div class="panel-label">Your Warm Intro Path</div>
-        <h3>You Have Home-Field Advantage</h3>
-        <p>This is not a cold call. You are an ALF SV member. You know the culture, the language, the values. That is your opening.</p>
+        <div class="panel-label">Why This Partnership Works</div>
+        <h3>City Year IS Morgan's Framework in Action</h3>
+        <p>Jim Morgan teaches that developing people is the highest-leverage investment a leader can make. City Year has built their entire organization on that exact belief.</p>
+        <p>Corps members stay through an incredibly demanding year not because of the stipend -- they stay because City Year's culture invests in who they're becoming. Leadership training, mentorship, reflection, community. That's Morgan's "invest in people's growth" framework at operational scale, across 29 cities, year after year.</p>
         <ul>
-          <li><strong>Kathleen is a member</strong> -- introduce this as something you're personally bringing to the organization because you believe it fits.</li>
-          <li><strong>Jim Morgan knows ALF.</strong> If a direct connection to Erica Yew or senior staff can be made through Jim, that is the gold-standard path.</li>
-          <li><strong>Peer outreach:</strong> Reach out to a fellow Senior Fellow you're close with and ask if they'd be willing to make the intro to Erica or the communications team.</li>
-          <li><strong>Frame it as a member initiative:</strong> "I found something I think would be valuable for fellows and wanted to bring it to the org." That's not a sales call. That's a contribution.</li>
+          <li><strong>Jim Morgan knows City Year's leadership.</strong> This is a warm entry, not a cold call.</li>
+          <li><strong>AWNP as a co-brand is a natural bridge:</strong> Leadership content for a corps of 2,000 developing leaders is a perfect fit.</li>
+          <li><strong>Alumni audience:</strong> 40,000+ City Year alumni are now in leadership roles across education, nonprofit, and beyond. A long-tail audience for the podcast.</li>
+          <li><strong>Current recruitment angle:</strong> Ep 17 directly addresses the "why do corps members stay?" question that City Year needs to answer for prospective recruits.</li>
         </ul>
       </div>
     </div>
 
     <div class="hook-ep">
       <div class="hook-ep-header">
-        <div class="hook-ep-label">Your Hook Episode for ALF</div>
+        <div class="hook-ep-label">Your Hook Episode for City Year</div>
       </div>
       <div class="hook-ep-body">
-        <div class="hook-ep-num">Ep. 14</div>
-        <div class="hook-ep-title">"Collaborative Mindset"</div>
-        <p class="hook-ep-text">This is your door-opener for ALF. The entire ALF model is built on moving from I to WE to ALL OF US -- exactly the journey Jim Morgan describes in the Collaborative Mindset episode. When you show Erica Yew or her team this episode, they will immediately recognize their own values reflected back. The language, the framework, the outcomes -- they're speaking the same language. Lead with this one, every time.</p>
+        <div class="hook-ep-num">Ep. 17</div>
+        <div class="hook-ep-title">"A Culture of Continuous Learning"</div>
+        <p class="hook-ep-text">This is the episode that will make City Year's leadership lean forward. Morgan's central insight: development IS the retention strategy. Not a perk, not a benefit -- the strategy. City Year has been living this truth for over 35 years. When you show their team this episode, they will immediately recognize their own org in Morgan's framework. Corps members don't stay through a demanding year for the stipend. They stay because City Year's culture is invested in who they're becoming. Lead with this episode every time.</p>
       </div>
     </div>
 
-    <div class="section-label">Top 5 Episodes That Resonate with ALF's Mission</div>
+    <div class="section-label">Top 5 Episodes That Resonate with City Year's Mission</div>
     <div class="episodes-grid">
       <div class="ep-card">
-        <div class="ep-num">14</div>
+        <div class="ep-num">17</div>
         <div>
           <div class="ep-info-label">Hook Episode</div>
-          <div class="ep-title">Collaborative Mindset</div>
-          <div class="ep-why">The I to WE to ALL OF US arc. Perfect mirror of ALF's core framework.</div>
+          <div class="ep-title">A Culture of Continuous Learning</div>
+          <div class="ep-why">Development IS the retention strategy. This IS City Year's model, articulated by Morgan.</div>
         </div>
       </div>
       <div class="ep-card">
-        <div class="ep-num">9</div>
+        <div class="ep-num">15</div>
         <div>
           <div class="ep-info-label">Strong Fit</div>
-          <div class="ep-title">Trust</div>
-          <div class="ep-why">Foundation of every ALF cohort. Trust is what makes the dialogue model work.</div>
-        </div>
-      </div>
-      <div class="ep-card">
-        <div class="ep-num">10</div>
-        <div>
-          <div class="ep-info-label">Strong Fit</div>
-          <div class="ep-title">Psychological Safety</div>
-          <div class="ep-why">ALF creates spaces where honesty is possible. This episode explains why that matters.</div>
-        </div>
-      </div>
-      <div class="ep-card">
-        <div class="ep-num">23</div>
-        <div>
-          <div class="ep-info-label">Strong Fit</div>
-          <div class="ep-title">Listen</div>
-          <div class="ep-why">Dialogue-based leadership starts with listening. A natural fit for ALF's methodology.</div>
+          <div class="ep-title">Mentoring</div>
+          <div class="ep-why">Corps members ARE near-peer mentors. This episode goes deep on what makes mentoring work.</div>
         </div>
       </div>
       <div class="ep-card">
@@ -220,7 +225,23 @@
         <div>
           <div class="ep-info-label">Strong Fit</div>
           <div class="ep-title">Servant Leadership</div>
-          <div class="ep-why">Core to ALF's philosophy. Senior Fellows will recognize this language immediately.</div>
+          <div class="ep-why">City Year's entire mission is servant leadership in practice. Corps members will recognize themselves.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">9</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Trust</div>
+          <div class="ep-why">The near-peer relationship only works if students trust the corps member. Trust is foundational to City Year's model.</div>
+        </div>
+      </div>
+      <div class="ep-card">
+        <div class="ep-num">5</div>
+        <div>
+          <div class="ep-info-label">Strong Fit</div>
+          <div class="ep-title">Tone at the Top</div>
+          <div class="ep-why">City Year site leadership sets the tone for corps member experience. The boardroom-to-classroom parallel is direct.</div>
         </div>
       </div>
     </div>
@@ -228,27 +249,27 @@
     <div class="email-wrap">
       <div class="email-header">
         <div class="email-label">Customized Email Draft</div>
-        <h3>Outreach to ALF SV Leadership</h3>
+        <h3>Outreach to City Year Leadership</h3>
       </div>
       <div class="email-body">
         <div class="email-meta">
-          <div class="email-meta-item"><strong>To</strong> Erica Yew, CEO (or your ALF contact)</div>
-          <div class="email-meta-item"><strong>Subject</strong> A weekly leadership resource for ALF fellows</div>
-          <div class="email-meta-item"><strong>Tone</strong> Warm, member-to-organization</div>
+          <div class="email-meta-item"><strong>To</strong> Director of AmeriCorps Recruitment / VP of People / National Leadership</div>
+          <div class="email-meta-item"><strong>Subject</strong> Free weekly leadership content for your corps members and staff</div>
+          <div class="email-meta-item"><strong>Tone</strong> Peer-to-peer, mission-aligned</div>
         </div>
-        <div class="email-text">Hi Erica,
+        <div class="email-text">Hi [Name],
 
-I'm Kathleen [last name], an ALF SV member and a big believer in what this organization builds in people.
+I'm Kathleen [last name], part of the team behind Applied Wisdom for the Nonprofit Sector -- a leadership series built on Jim Morgan's 40+ years developing high-performing organizations. Jim knows City Year's leadership and suggested I reach out.
 
-I'm reaching out because I'm part of the team behind Applied Wisdom for the Nonprofit Sector -- a leadership series built on Jim Morgan's 40+ years of experience, including his transformative work at Applied Materials and the nonprofit sector.
+I'd like to offer City Year something simple:
 
-I think ALF fellows would love it, and I'd like to offer a simple partnership:
+We'll deliver a new co-branded leadership episode to your corps members and staff every week. You just share it. We handle everything.
 
-We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything.
+There's no cost, no contract, and no production work on your side. Each episode is practical, 20-30 minutes, and speaks directly to the leadership development that makes City Year's model work. Episode 17, "A Culture of Continuous Learning," explores exactly what City Year knows to be true: development IS the retention strategy. Corps members stay through a demanding year because City Year's culture is invested in who they're becoming -- not just what they're producing.
 
-Each episode is practical, 20-30 minutes, and maps directly to the leadership themes ALF fellows explore in the program. Episode 14, "Collaborative Mindset," was practically written for ALF -- it traces the journey from individual leadership to collective action, which is exactly the I to WE to ALL OF US arc your program is built on.
+We have 66 episodes ready -- on mentoring, trust, servant leadership, psychological safety, and building teams that actually perform. All mapped to the leadership themes your corps members and site staff are living every day.
 
-There's no cost, no contract, and no production work on your side. We'd co-brand each episode with ALF SV and deliver it ready to share in your newsletter, member portal, or wherever it would be most useful.
+We'd co-brand each episode with City Year and deliver it ready to drop into your existing communications with corps members, alumni, or staff. Your people get world-class leadership content with City Year's name on it, every week, at no cost to you.
 
 I'd love to show you a sample episode on a 20-minute call. Would [day] or [day] work?
 
@@ -256,18 +277,18 @@ Warmly,
 Kathleen [last name]
 Applied Wisdom for the Nonprofit Sector
 appliedwisdomfornonprofits.org</div>
-        <div class="email-note">Personalization tip: If you have a warm intro from Jim Morgan or a fellow Senior Fellow, add a line referencing that. "Jim Morgan suggested I reach out directly" carries significant weight with any leadership organization.</div>
+        <div class="email-note">Connection note: If Jim Morgan can make a direct introduction to City Year's national leadership, use that path first. "Jim Morgan suggested I reach out directly" is a strong opener with any leadership organization he has existing relationships with.</div>
       </div>
     </div>
 
-    <a href="../ep14-landing-page/episode-14.html" class="ep-cta-primary">
-      <div class="cta-sub">Full Episode</div>
-      <div class="cta-title">&#9654; Listen to Episode 14: Collaborative Mindset</div>
-      <div class="cta-desc">Stream the full co-branded podcast episode with ALF Silicon Valley. Audio player, downloadable assets, and more.</div>
-    </a>
-    <a href="ep14-alf.html" class="ep-cta-secondary">
+    <a href="ep17-cityyear.html" class="ep-cta-primary">
       <div class="cta-sub">Episode Brief</div>
-      <div class="cta-title">Read the written brief: Morgan's insight, wisdom quotes, and actionable takeaway</div>
+      <div class="cta-title">&#9654; Read the Episode 17 Brief: A Culture of Continuous Learning</div>
+      <div class="cta-desc">Morgan's insight on development as retention strategy, City Year as living proof, and the wisdom that runs through it.</div>
+    </a>
+    <a href="ep17-cityyear.html" class="ep-cta-secondary">
+      <div class="cta-sub">Episode 17</div>
+      <div class="cta-title">Share this brief with City Year's leadership to show the content depth and alignment</div>
     </a>
 
     <div class="vision">
@@ -275,14 +296,15 @@ appliedwisdomfornonprofits.org</div>
         <div class="vision-label">Ongoing Partnership</div>
       </div>
       <div class="vision-body">
-        <h3>What a Yes Looks Like for ALF</h3>
-        <p>Once ALF SV says yes, the partnership runs itself. Brendan and team deliver a co-branded episode each week. ALF includes it in their communications. Fellows receive world-class leadership content with ALF's name on it, at no cost.</p>
+        <h3>What a Yes Looks Like for City Year</h3>
+        <p>City Year already runs substantial internal communications for their corps members, site staff, and alumni network. A weekly co-branded leadership episode fits naturally into their corps member development programming -- and gives them something valuable to offer the 40,000+ alumni who want to stay connected to the mission.</p>
         <ul>
-          <li>All 66 episodes have been mapped to leadership themes that align with ALF's mission</li>
-          <li>Episodes cover culture, planning, execution, communication, trust, and collaboration</li>
-          <li>ALF SV becomes the pilot for national chapter expansion: Houston, Oregon, Sacramento, and more</li>
-          <li>If SV proves the model, 5x the reach is available through other ALF chapters alone</li>
-          <li>Quarterly check-ins to review which episodes resonate most and align with the current class's journey</li>
+          <li>One co-branded episode per week, delivered ready to share with corps members, site staff, or alumni</li>
+          <li>All 66 episodes cover leadership themes central to corps member development: mentoring, trust, servant leadership, resilience, communication</li>
+          <li>Alumni engagement angle: a weekly touchpoint that keeps 40,000+ alumni connected to City Year's leadership identity long after their service year</li>
+          <li>Recruitment asset: Morgan's "development IS retention" framing is a direct answer to the "why should I do a City Year?" question prospective corps members ask</li>
+          <li>29-city network: a partnership that starts nationally can be customized for individual city site communications over time</li>
+          <li>Brendan and team handle all production, branding, and delivery. City Year's only job is to share it.</li>
         </ul>
       </div>
     </div>

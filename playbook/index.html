@@ -5,201 +5,195 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outreach Podcast Playbook | Applied Wisdom for Nonprofits</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.7; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #111; line-height: 1.7; }
 
     /* NAV */
-    .nav-wrapper { background: #1a2744; }
-    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .nav-logo .aw-mark { background: #e8553d; color: #fff; padding: 4px 9px; border-radius: 4px; font-size: 13px; font-weight: 700; }
-    .nav-logo span { color: #fff; font-weight: 700; font-size: 16px; }
-    .nav-links { display: flex; gap: 6px; list-style: none; flex-wrap: wrap; }
-    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 4px; transition: all 0.2s; }
-    .nav-links a:hover, .nav-links a.active { color: #fff; background: rgba(232,85,61,0.25); }
-    .nav-links a.active { color: #e8553d; }
+    .nav-bar { background: #fff; border-bottom: 1px solid #e5e5e5; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #111; font-weight: 700; font-size: 14px; }
+    .nav-logo .aw-mark { color: #e8553d; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+    .nav-links { display: flex; list-style: none; }
+    .nav-links a { color: #555; text-decoration: none; font-size: 13px; padding: 8px 12px; display: block; transition: color 0.15s; }
+    .nav-links a:hover { color: #111; }
+    .nav-links a.active { color: #e8553d; font-weight: 600; }
 
     /* HERO */
-    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 72px 24px 80px; text-align: center; }
-    .hero-badge { display: inline-block; background: #e8553d; padding: 5px 18px; border-radius: 20px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 22px; }
-    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 44px; line-height: 1.15; max-width: 720px; margin: 0 auto 16px; }
-    .hero .sub { font-size: 18px; opacity: 0.8; max-width: 580px; margin: 0 auto 12px; }
-    .hero .north-star { display: inline-block; margin-top: 20px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; padding: 14px 28px; font-size: 15px; font-style: italic; max-width: 600px; }
-    .hero .north-star strong { color: #e8553d; font-style: normal; }
+    .hero { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 64px 24px 72px; }
+    .hero-inner { max-width: 720px; }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 14px; display: block; }
+    .hero h1 { font-size: 44px; font-weight: 800; line-height: 1.1; color: #111; margin-bottom: 18px; letter-spacing: -0.5px; }
+    .hero .sub { font-size: 17px; color: #555; max-width: 560px; margin-bottom: 24px; }
+    .north-star { border-left: 3px solid #e5e5e5; padding-left: 20px; margin-top: 24px; }
+    .north-star p { font-size: 15px; color: #555; font-style: italic; }
+    .north-star strong { color: #111; font-style: normal; }
 
-    /* PITCH BANNER */
-    .pitch-banner { background: #e8553d; color: #fff; text-align: center; padding: 22px 24px; }
-    .pitch-banner p { font-size: 18px; font-weight: 600; max-width: 800px; margin: 0 auto; line-height: 1.5; }
-    .pitch-banner em { font-style: italic; opacity: 0.85; font-size: 14px; display: block; margin-top: 4px; }
+    /* PITCH STRIP */
+    .pitch-strip { border-bottom: 1px solid #e5e5e5; padding: 20px 24px; background: #f5f5f5; }
+    .pitch-strip-inner { max-width: 1100px; margin: 0 auto; }
+    .pitch-strip p { font-size: 15px; color: #111; font-weight: 500; }
+    .pitch-strip em { font-size: 12px; color: #999; display: block; margin-top: 2px; font-style: normal; }
 
-    /* MAIN CONTENT */
-    .main { max-width: 1100px; margin: 0 auto; padding: 56px 24px; }
+    /* MAIN */
+    .main { max-width: 1100px; margin: 0 auto; padding: 56px 24px 80px; }
+
     .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
-    .section-title { font-family: 'Playfair Display', Georgia, serif; font-size: 30px; color: #1a2744; margin-bottom: 10px; }
-    .section-desc { color: #666; max-width: 680px; margin-bottom: 36px; font-size: 15px; }
+    .section-title { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 10px; letter-spacing: -0.2px; }
+    .section-desc { color: #555; max-width: 680px; margin-bottom: 36px; font-size: 15px; }
 
     /* PARTNER CARDS */
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 60px; }
-    .card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(26,39,68,0.08); transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; display: block; color: inherit; }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(26,39,68,0.14); }
-    .card-top { background: #1a2744; padding: 22px 24px 18px; color: #fff; }
-    .card-org { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 6px; }
-    .card-title { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; line-height: 1.25; }
-    .card-body { padding: 20px 24px 22px; }
-    .card-meta { font-size: 13px; color: #888; margin-bottom: 12px; }
-    .card-hook { font-size: 14px; color: #444; margin-bottom: 14px; line-height: 1.6; }
-    .card-ep { display: inline-block; background: #f7f5f2; border: 1px solid #e8553d; color: #e8553d; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 4px; margin-bottom: 12px; }
-    .card-link { display: flex; align-items: center; gap: 6px; color: #e8553d; font-size: 13px; font-weight: 700; }
-    .card-link::after { content: '→'; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); background: #e5e5e5; gap: 1px; border: 1px solid #e5e5e5; margin-bottom: 60px; }
+    .card { background: #fff; padding: 28px; text-decoration: none; color: inherit; display: block; }
+    .card:hover { background: #f5f5f5; }
+    .card-org { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .card-title { font-size: 17px; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.3; }
+    .card-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
+    .card-ep-label { font-size: 11px; color: #e8553d; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; display: block; }
+    .card-hook { font-size: 14px; color: #555; margin-bottom: 14px; line-height: 1.6; }
+    .card-link { font-size: 13px; color: #e8553d; font-weight: 600; }
 
     /* QUICK NAV */
-    .quick-nav { background: #fff; border-radius: 10px; padding: 32px; box-shadow: 0 2px 12px rgba(26,39,68,0.08); margin-bottom: 60px; }
-    .quick-nav h3 { font-family: 'Playfair Display', Georgia, serif; color: #1a2744; font-size: 22px; margin-bottom: 20px; }
-    .nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
-    .nav-item { display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: #f7f5f2; border-radius: 8px; text-decoration: none; color: inherit; transition: background 0.2s; }
-    .nav-item:hover { background: #1a2744; }
-    .nav-item:hover .nav-item-title { color: #fff; }
-    .nav-item:hover .nav-item-desc { color: rgba(255,255,255,0.65); }
-    .nav-item-icon { width: 36px; height: 36px; background: #e8553d; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; flex-shrink: 0; }
-    .nav-item-title { font-weight: 700; font-size: 14px; color: #1a2744; margin-bottom: 2px; }
-    .nav-item-desc { font-size: 12px; color: #888; }
+    .quick-nav { border: 1px solid #e5e5e5; margin-bottom: 60px; }
+    .quick-nav-header { padding: 20px 24px; border-bottom: 1px solid #e5e5e5; }
+    .quick-nav-header h3 { font-size: 16px; font-weight: 700; color: #111; }
+    .nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); background: #e5e5e5; gap: 1px; }
+    .nav-item { display: flex; align-items: flex-start; gap: 14px; padding: 20px 24px; background: #fff; text-decoration: none; color: inherit; transition: background 0.15s; }
+    .nav-item:hover { background: #f5f5f5; }
+    .nav-item-icon { font-size: 16px; color: #e8553d; flex-shrink: 0; margin-top: 2px; }
+    .nav-item-title { font-weight: 700; font-size: 13px; color: #111; margin-bottom: 2px; }
+    .nav-item-desc { font-size: 12px; color: #999; line-height: 1.4; }
 
     /* GROWTH SNAPSHOT */
-    .growth-snap { background: #1a2744; border-radius: 10px; padding: 36px; color: #fff; margin-bottom: 60px; }
-    .growth-snap h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; margin-bottom: 6px; }
-    .growth-snap .snap-sub { opacity: 0.7; font-size: 14px; margin-bottom: 28px; }
-    .snap-rows { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-    .snap-row { background: rgba(255,255,255,0.07); border-radius: 8px; padding: 20px; }
-    .snap-org { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #e8553d; font-weight: 700; margin-bottom: 6px; }
-    .snap-num { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; color: #fff; }
-    .snap-label { font-size: 12px; opacity: 0.6; margin-top: 2px; }
-    .snap-cta { margin-top: 24px; text-align: right; }
-    .snap-cta a { color: #e8553d; text-decoration: none; font-weight: 700; font-size: 13px; }
-    .snap-cta a:hover { text-decoration: underline; }
+    .growth-snap { border: 1px solid #e5e5e5; margin-bottom: 60px; }
+    .growth-snap-header { padding: 24px; border-bottom: 1px solid #e5e5e5; }
+    .growth-snap-header h3 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 4px; letter-spacing: -0.2px; }
+    .growth-snap-header p { font-size: 13px; color: #999; }
+    .snap-rows { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); background: #e5e5e5; gap: 1px; }
+    .snap-row { background: #fff; padding: 24px; }
+    .snap-org { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .snap-num { font-size: 32px; font-weight: 800; color: #111; letter-spacing: -1px; }
+    .snap-label { font-size: 12px; color: #999; margin-top: 4px; }
+    .snap-cta { padding: 16px 24px; border-top: 1px solid #e5e5e5; text-align: right; }
+    .snap-cta a { color: #e8553d; text-decoration: none; font-size: 13px; font-weight: 600; }
 
     /* FOOTER */
-    footer { background: #1a2744; color: rgba(255,255,255,0.7); padding: 28px 24px; }
+    footer { border-top: 1px solid #e5e5e5; padding: 24px; background: #fff; }
     .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-    .footer-left { font-size: 13px; }
-    .footer-left span { color: #e8553d; font-weight: 700; }
-    .footer-right { font-size: 12px; }
-    .footer-right a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .footer-left { font-size: 12px; color: #555; }
+    .footer-right a { font-size: 12px; color: #999; text-decoration: none; }
     .footer-right a:hover { color: #e8553d; }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <div class="nav-wrapper">
+  <div class="nav-bar">
     <nav class="nav">
       <a class="nav-logo" href="index.html">
         <span class="aw-mark">AW</span>
-        <span>Outreach Podcast Playbook</span>
+        Outreach Podcast Playbook
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="playbook.html">Playbook</a></li>
         <li><a href="alf.html">ALF</a></li>
         <li><a href="pca.html">PCA</a></li>
-        <li><a href="ep14-alf.html">Ep 14</a></li>
-        <li><a href="ep05-pca.html">Ep 5</a></li>
+        <li><a href="cityyear.html">City Year</a></li>
         <li><a href="growth.html">Growth</a></li>
       </ul>
     </nav>
   </div>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge">Kathleen's Outreach Command Center</div>
-    <h1>Outreach Podcast Playbook</h1>
-    <p class="sub">Everything you need to walk into any meeting, pitch any partner, and build a distribution engine that grows every week.</p>
-    <div class="north-star">
-      <strong>North Star:</strong> Empower every nonprofit leader seeking to grow.
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="hero-inner">
+        <span class="label">Kathleen's Outreach Command Center</span>
+        <h1>Outreach Podcast Playbook</h1>
+        <p class="sub">Everything you need to walk into any meeting, pitch any partner, and build a distribution engine that grows every week.</p>
+        <div class="north-star">
+          <p><strong>North Star:</strong> Empower every nonprofit leader seeking to grow.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- PITCH BANNER -->
-  <div class="pitch-banner">
-    <p>"We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
-    <em>Your one-liner. Use it everywhere.</em>
+  <div class="pitch-strip">
+    <div class="pitch-strip-inner">
+      <p>"We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
+      <em>Your one-liner. Use it everywhere.</em>
+    </div>
   </div>
 
-  <!-- MAIN -->
   <main class="main">
 
-    <!-- PARTNER CARDS -->
     <div class="section-label">Your Three Priority Partners</div>
     <h2 class="section-title">Ready to Pitch</h2>
     <p class="section-desc">Each partner page includes intel, a hook episode, a customized email draft, and the ongoing partnership vision. You have everything you need.</p>
 
-    <div class="cards">
+    <div class="cards-grid">
       <a class="card" href="alf.html">
-        <div class="card-top">
-          <div class="card-org">ALF Silicon Valley</div>
-          <div class="card-title">American Leadership Forum, SV Chapter</div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">501(c)(3) &middot; ~400+ Senior Fellows &middot; Class XLV current</div>
-          <div class="card-ep">Hook: Ep 14 "Collaborative Mindset"</div>
-          <p class="card-hook">Kathleen is a member. Jim Morgan knows the org. The I to WE to ALL OF US framework mirrors ALF's dialogue-based leadership model perfectly.</p>
-          <div class="card-link">Open ALF Partner Page</div>
-        </div>
+        <div class="card-org">ALF Silicon Valley</div>
+        <div class="card-title">American Leadership Forum, SV Chapter</div>
+        <div class="card-meta">501(c)(3) &middot; ~400+ Senior Fellows &middot; Class XLV current</div>
+        <span class="card-ep-label">Hook: Ep 14 "Collaborative Mindset"</span>
+        <p class="card-hook">Kathleen is a member. Jim Morgan knows the org. The I to WE to ALL OF US framework mirrors ALF's dialogue-based leadership model perfectly.</p>
+        <div class="card-link">Open ALF Partner Page &rarr;</div>
       </a>
 
       <a class="card" href="pca.html">
-        <div class="card-top">
-          <div class="card-org">Positive Coaching Alliance</div>
-          <div class="card-title">Better Athletes, Better People</div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">Founded 1998 &middot; 9M+ youth reached &middot; All 50 states</div>
-          <div class="card-ep">Hook: Ep 5 "Tone at the Top"</div>
-          <p class="card-hook">Coaches ARE the tone. PCA's Double-Goal Coach framework is built on the same leadership principles Jim Morgan teaches. Massive email reach.</p>
-          <div class="card-link">Open PCA Partner Page</div>
-        </div>
+        <div class="card-org">Positive Coaching Alliance</div>
+        <div class="card-title">Better Athletes, Better People</div>
+        <div class="card-meta">Founded 1998 &middot; 9M+ youth reached &middot; All 50 states</div>
+        <span class="card-ep-label">Hook: Ep 5 "Tone at the Top"</span>
+        <p class="card-hook">Coaches ARE the tone. PCA's Double-Goal Coach framework is built on the same leadership principles Jim Morgan teaches. Massive email reach.</p>
+        <div class="card-link">Open PCA Partner Page &rarr;</div>
       </a>
 
-      <!-- CalNonprofits hidden for now -->
+      <a class="card" href="cityyear.html">
+        <div class="card-org">City Year</div>
+        <div class="card-title">A Culture of Continuous Learning</div>
+        <div class="card-meta">Founded 1988 &middot; 2,000+ AmeriCorps members/year &middot; 29 cities</div>
+        <span class="card-ep-label">Hook: Ep 17 "A Culture of Continuous Learning"</span>
+        <p class="card-hook">City Year is the proof that Morgan's "invest in people's growth" framework works at the hardest possible scale. Jim Morgan knows their leadership. Natural bridge.</p>
+        <div class="card-link">Open City Year Partner Page &rarr;</div>
+      </a>
     </div>
 
-    <!-- FEATURED EPISODES -->
     <div class="section-label">Featured Episodes</div>
     <h2 class="section-title">Co-Branded Episode Briefs</h2>
     <p class="section-desc">Rich, immersive episode briefs tailored to each partner. Share these to show the depth and quality of the content.</p>
 
-    <div class="cards" style="margin-bottom: 60px;">
+    <div class="cards-grid" style="margin-bottom:60px;">
       <a class="card" href="ep14-alf.html">
-        <div class="card-top">
-          <div class="card-org">Episode 14 &middot; ALF Silicon Valley</div>
-          <div class="card-title">Collaborative Mindset</div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">Jim Morgan on treating your partner's success as equal to your own</div>
-          <p class="card-hook">The I to WE to ALL OF US journey. Quotes from Aristotle, Confucius, Dawn Staley, Henry Ford, and John Wooden. A perfect mirror of ALF's core framework.</p>
-          <div class="card-link">Read Episode Brief</div>
-        </div>
+        <div class="card-org">Episode 14 &middot; ALF Silicon Valley</div>
+        <div class="card-title">Collaborative Mindset</div>
+        <div class="card-meta">Jim Morgan on treating your partner's success as equal to your own</div>
+        <p class="card-hook">The I to WE to ALL OF US journey. Quotes from Aristotle, Confucius, Dawn Staley, Henry Ford, and John Wooden. A perfect mirror of ALF's core framework.</p>
+        <div class="card-link">Read Episode Brief &rarr;</div>
       </a>
 
       <a class="card" href="ep05-pca.html">
-        <div class="card-top">
-          <div class="card-org">Episode 5 &middot; Positive Coaching Alliance</div>
-          <div class="card-title">Tone at the Top</div>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">Jim Morgan on why board culture IS organizational culture</div>
-          <p class="card-hook">Coaches ARE the tone. From Plato's Republic to Tony Dungy's sideline, this episode speaks directly to PCA's Double-Goal Coach mission.</p>
-          <div class="card-link">Read Episode Brief</div>
-        </div>
+        <div class="card-org">Episode 5 &middot; Positive Coaching Alliance</div>
+        <div class="card-title">Tone at the Top</div>
+        <div class="card-meta">Jim Morgan on why board culture IS organizational culture</div>
+        <p class="card-hook">Coaches ARE the tone. From Plato's Republic to Tony Dungy's sideline, this episode speaks directly to PCA's Double-Goal Coach mission.</p>
+        <div class="card-link">Read Episode Brief &rarr;</div>
       </a>
 
-      <!-- Ep01 CalNonprofits hidden for now -->
+      <a class="card" href="ep17-cityyear.html">
+        <div class="card-org">Episode 17 &middot; City Year</div>
+        <div class="card-title">A Culture of Continuous Learning</div>
+        <div class="card-meta">Jim Morgan on why development IS the retention strategy</div>
+        <p class="card-hook">Corps members stay through a demanding year not for the stipend, but because City Year's culture invests in who they're becoming. Morgan's framework lived at scale.</p>
+        <div class="card-link">Read Episode Brief &rarr;</div>
+      </a>
     </div>
 
-    <!-- QUICK NAV -->
     <div class="quick-nav">
-      <h3>Everything You Need, Organized for You</h3>
+      <div class="quick-nav-header">
+        <h3>Everything You Need, Organized for You</h3>
+      </div>
       <div class="nav-grid">
         <a class="nav-item" href="playbook.html">
           <div class="nav-item-icon">&#9654;</div>
@@ -222,7 +216,13 @@
             <div class="nav-item-desc">Partner intel, hook episode, email draft</div>
           </div>
         </a>
-        <!-- CalNonprofits nav item hidden for now -->
+        <a class="nav-item" href="cityyear.html">
+          <div class="nav-item-icon">&#9670;</div>
+          <div>
+            <div class="nav-item-title">City Year</div>
+            <div class="nav-item-desc">Partner intel, hook episode, email draft</div>
+          </div>
+        </a>
         <a class="nav-item" href="growth.html">
           <div class="nav-item-icon">&#8599;</div>
           <div>
@@ -233,10 +233,11 @@
       </div>
     </div>
 
-    <!-- GROWTH SNAPSHOT -->
     <div class="growth-snap">
-      <h3>3-Partner Baseline: Year 1</h3>
-      <p class="snap-sub">Conservative estimates. The real ceiling is much higher.</p>
+      <div class="growth-snap-header">
+        <h3>3-Partner Baseline: Year 1</h3>
+        <p>Conservative estimates. The real ceiling is much higher.</p>
+      </div>
       <div class="snap-rows">
         <div class="snap-row">
           <div class="snap-org">ALF Silicon Valley</div>
@@ -249,13 +250,13 @@
           <div class="snap-label">new subscribers (1% of 50k-100k reach)</div>
         </div>
         <div class="snap-row">
-          <div class="snap-org">+ Additional Partners</div>
-          <div class="snap-num">500-1,000+</div>
-          <div class="snap-label">each new partner adds to the growth flywheel</div>
+          <div class="snap-org">City Year</div>
+          <div class="snap-num">300-600</div>
+          <div class="snap-label">new subscribers (corps members, alumni, school partners)</div>
         </div>
         <div class="snap-row">
-          <div class="snap-org">2-Partner Baseline</div>
-          <div class="snap-num">550-1,050</div>
+          <div class="snap-org">3-Partner Baseline</div>
+          <div class="snap-num">850-1,650</div>
           <div class="snap-label">Year 1 from partners alone. Plus organic growth on top.</div>
         </div>
       </div>
@@ -264,10 +265,9 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-left"><span>Applied Wisdom for the Nonprofit Sector</span> &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-left">Applied Wisdom for the Nonprofit Sector &bull; Kathleen's Outreach Podcast Playbook</div>
       <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
     </div>
   </footer>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 17: A Culture of Continuous Learning | Applied Wisdom x City Year</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #111; line-height: 1.7; }
+
+    .nav-bar { background: #fff; border-bottom: 1px solid #e5e5e5; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #111; font-weight: 700; font-size: 14px; }
+    .nav-logo .aw-mark { color: #e8553d; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+    .nav-links { display: flex; list-style: none; }
+    .nav-links a { color: #555; text-decoration: none; font-size: 13px; padding: 8px 12px; display: block; transition: color 0.15s; }
+    .nav-links a:hover { color: #111; }
+    .nav-links a.active { color: #e8553d; font-weight: 600; }
+
+    .hero { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 64px 24px 72px; }
+    .hero-inner { max-width: 860px; margin: 0 auto; }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 14px; display: block; }
+    .hero-ep { font-size: 72px; font-weight: 800; color: #111; line-height: 1; margin-bottom: 8px; letter-spacing: -3px; }
+    .hero h1 { font-size: 38px; font-weight: 800; line-height: 1.1; color: #111; max-width: 700px; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .hero .sub { font-size: 16px; color: #555; max-width: 620px; margin-bottom: 20px; }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .hero-tag { font-size: 12px; color: #555; border: 1px solid #e5e5e5; padding: 4px 10px; background: #fafafa; }
+
+    .cta-strip { border-bottom: 1px solid #e5e5e5; padding: 14px 24px; background: #f5f5f5; }
+    .cta-strip-inner { max-width: 860px; margin: 0 auto; }
+    .cta-strip a { color: #e8553d; text-decoration: none; font-size: 14px; font-weight: 600; }
+    .cta-strip a:hover { text-decoration: underline; }
+
+    .main { max-width: 860px; margin: 0 auto; padding: 52px 24px 80px; }
+
+    .section { margin-bottom: 52px; }
+    .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .section h2 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 16px; letter-spacing: -0.2px; }
+    .section p { font-size: 15px; color: #555; margin-bottom: 14px; line-height: 1.8; }
+
+    .pull-quote { border-left: 3px solid #e8553d; padding: 20px 28px; background: #f5f5f5; margin: 36px 0; }
+    .pull-quote p { font-size: 20px; line-height: 1.5; color: #111; font-style: italic; margin: 0; }
+    .pull-quote .attrib { font-size: 11px; color: #e8553d; margin-top: 10px; font-style: normal; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* IMPACT NUMBERS */
+    .impact-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin: 32px 0; }
+    .impact-cell { background: #fff; padding: 18px 20px; }
+    .impact-num { font-size: 24px; font-weight: 800; color: #111; letter-spacing: -0.5px; }
+    .impact-label { font-size: 11px; color: #999; margin-top: 2px; line-height: 1.4; }
+
+    .wisdom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-top: 24px; }
+    @media (max-width: 700px) { .wisdom-grid { grid-template-columns: 1fr; } }
+    .wisdom-card { background: #fff; padding: 24px; }
+    .wisdom-card .wisdom-name { font-weight: 700; font-size: 13px; color: #111; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .wisdom-card p { font-size: 13px; color: #555; margin: 0; line-height: 1.7; }
+
+    .takeaway-box { border: 1px solid #e5e5e5; border-left: 3px solid #111; padding: 28px 32px; background: #fff; margin-bottom: 48px; }
+    .takeaway-box h3 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 14px; }
+    .takeaway-box p { font-size: 15px; color: #555; line-height: 1.8; }
+
+    .closing { background: #f5f5f5; border: 1px solid #e5e5e5; padding: 36px; margin-bottom: 48px; }
+    .closing h3 { font-size: 22px; font-weight: 700; color: #111; margin-bottom: 14px; letter-spacing: -0.2px; }
+    .closing p { font-size: 15px; color: #555; line-height: 1.8; }
+
+    .back-link { text-align: center; margin-bottom: 48px; }
+    .back-link a { display: inline-block; border: 1px solid #e5e5e5; color: #111; padding: 10px 24px; text-decoration: none; font-size: 13px; font-weight: 600; transition: background 0.15s; }
+    .back-link a:hover { background: #f5f5f5; }
+
+    footer { border-top: 1px solid #e5e5e5; padding: 24px; background: #fff; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 12px; color: #555; }
+    .footer-right a { font-size: 12px; color: #999; text-decoration: none; }
+    .footer-right a:hover { color: #e8553d; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        Outreach Podcast Playbook
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">Playbook</a></li>
+        <li><a href="alf.html">ALF</a></li>
+        <li><a href="pca.html">PCA</a></li>
+        <li><a href="cityyear.html">City Year</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="label">Co-Branded Episode Brief</span>
+      <div class="hero-ep">17</div>
+      <h1>A Culture of Continuous Learning</h1>
+      <p class="sub">Jim Morgan on why development IS the retention strategy. Co-branded with City Year.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">Applied Wisdom x City Year</span>
+        <span class="hero-tag">Leadership Series</span>
+        <span class="hero-tag">Development as Retention</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <div class="cta-strip-inner">
+      <a href="cityyear.html">&#9670; Back to City Year Partner Page</a>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="section">
+      <div class="section-label">The Morgan Insight</div>
+      <h2>Development IS the Retention Strategy</h2>
+      <p>Jim Morgan's principle is stated plainly: if you want people to stay, invest in who they're becoming -- not just in what they're producing.</p>
+      <p>This sounds obvious. Most organizations don't live it. They treat professional development as a perk, something offered when budgets are flush and cut when they're not. Morgan says that's exactly backwards. In organizations where people are asked to do genuinely hard things -- serve in under-resourced schools, turn around struggling companies, lead through crisis -- the investment in people's growth isn't optional. It's the reason they show up, and the reason they stay.</p>
+      <p>Morgan watched this play out at Applied Materials across decades. The people who stayed through the hard stretches weren't the ones who were paid the most. They were the ones who felt their growth was being taken seriously. They stayed because the organization was invested in who they were becoming -- as leaders, as professionals, as people.</p>
+
+      <div class="pull-quote">
+        <p>"A culture of continuous learning is not a training budget. It's a belief that the people you serve are worth growing."</p>
+        <div class="attrib">Jim Morgan</div>
+      </div>
+
+      <p>The organization that builds this culture doesn't just retain people. It attracts people who want to grow. It becomes the kind of place that draws talented, mission-driven individuals who could go anywhere -- and choose to come here because they know they'll leave better than they arrived.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">A Living Example</div>
+      <h2>City Year Is the Proof</h2>
+      <p>City Year has been quietly proving Morgan's framework for over 35 years. They just don't always have the language to explain why it works.</p>
+      <p>Think about what City Year asks of its corps members. You're 18-24 years old. You're committing to a full service year in a high-need school, working with students who face real structural challenges. The stipend is modest. The hours are long. The emotional weight is real. By any rational calculation, it should be hard to keep people through the year.</p>
+      <p>And yet City Year's retention through the service year is strong. Corps members complete. Many come back for a second year. Thousands go into education, social work, and nonprofit leadership afterward. Why?</p>
+
+      <div class="impact-row">
+        <div class="impact-cell">
+          <div class="impact-num">2,000+</div>
+          <div class="impact-label">AmeriCorps members serving each year</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">29</div>
+          <div class="impact-label">cities with active programs</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">40,000+</div>
+          <div class="impact-label">alumni in the workforce</div>
+        </div>
+        <div class="impact-cell">
+          <div class="impact-num">250+</div>
+          <div class="impact-label">partner schools across the country</div>
+        </div>
+      </div>
+
+      <p>Corps members stay because City Year's culture is built around their development. Leadership training, team rituals, reflection practices, mentorship from site staff who believe in what they're building together. The org is genuinely invested in who corps members are becoming -- not just what they're producing in the classroom.</p>
+      <p>That's Morgan's principle, operationalized. City Year figured it out not by reading a framework, but by building something and watching what worked. What worked was treating every corps member as someone worth investing in -- someone whose growth was worth the organization's sustained attention.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why This Matters Now</div>
+      <h2>The Talent Crisis Is a Development Crisis</h2>
+      <p>Every nonprofit leader is having the same conversation right now: we can't keep good people. Staff turnover is high. Burnout is real. People leave for private sector jobs that pay more and ask less.</p>
+      <p>What most organizations haven't figured out is that this isn't primarily a compensation problem. It's a development problem. People leave organizations where they don't feel their growth is being taken seriously -- where they're being used, not grown. The organizations holding onto their best people aren't necessarily paying the most. They're investing the most in who those people are becoming.</p>
+      <p>City Year is the counterexample. They work with a population that could get paid more doing almost anything else. They ask for a year of hard, often emotionally draining work in under-resourced schools. And they keep people. Because the culture says: you matter here. Your growth matters here. We are investing in who you are becoming.</p>
+      <p>That's not soft. That's strategic. And Morgan's framework explains exactly why it works.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">The Wisdom Runs Deep</div>
+      <h2>Learning as Leadership</h2>
+      <p>Morgan's continuous learning principle connects to centuries of thought on what makes organizations -- and people -- durable.</p>
+
+      <div class="wisdom-grid">
+        <div class="wisdom-card">
+          <div class="wisdom-name">Aristotle</div>
+          <p>Believed that human flourishing -- eudaimonia -- came from the ongoing exercise of one's capacities toward virtue. Growth isn't a destination. It's a practice. The organization that provides conditions for that practice creates something people want to stay inside of.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Peter Senge</div>
+          <p>In <em>The Fifth Discipline</em>, argued that the learning organization is the only sustainable competitive advantage. Teams that learn continuously outperform teams that execute without reflection. City Year builds reflection into the corps experience by design.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Carol Dweck</div>
+          <p>Her research on growth mindset is essentially Morgan's principle translated into psychology. Organizations that cultivate growth mindset retain people who believe their intelligence and ability can develop. That's the kind of person City Year wants in its corps -- and the kind they build.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Frederick Douglass</div>
+          <p>Once said that "once you learn to read, you'll be forever free." He wasn't just talking about literacy. He was talking about what happens to a person when they realize their own capacity for growth. That's what City Year gives corps members: the experience of their own development at scale.</p>
+        </div>
+      </div>
+
+      <div class="pull-quote" style="margin-top: 28px;">
+        <p>"Tell me and I forget. Teach me and I remember. Involve me and I learn."</p>
+        <div class="attrib">Benjamin Franklin</div>
+      </div>
+    </div>
+
+    <div class="takeaway-box">
+      <h3>The Takeaway</h3>
+      <p>This week, have one conversation with a team member that is entirely about their growth -- not their deliverables, not their performance, not the project. Ask: "What do you want to be better at a year from now? How can I help?" Then listen. Really listen.</p>
+      <p style="margin-top: 12px;">If you lead a City Year site, you already know this conversation. You've had versions of it with corps members in your team rituals and check-ins. Take it up a level. Have it with your site staff. As Morgan teaches, development is not something you offer the people below you in the hierarchy. It's the water the whole organization swims in. Every leader, at every level, deserves someone asking who they're becoming.</p>
+    </div>
+
+    <div class="closing">
+      <div class="section-label">Closing Thought</div>
+      <h3>The People Who Stay Are the People Who Grow</h3>
+      <p>Morgan's message is clear: if you want people to stay through hard work, invest in who they're becoming. City Year has proven this works at scale, in 29 cities, with 2,000+ corps members a year, asking those people to do genuinely difficult things in genuinely under-resourced environments.</p>
+      <p style="margin-top: 14px;">The lesson isn't complicated. It's just hard to sustain without making it a cultural commitment rather than a program. City Year made it a cultural commitment. Morgan gives us the framework for why that was the right call -- and why every leader in every organization should make the same one.</p>
+    </div>
+
+    <div class="back-link">
+      <a href="cityyear.html">&larr; Back to City Year Partner Page</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">Applied Wisdom for the Nonprofit Sector &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
