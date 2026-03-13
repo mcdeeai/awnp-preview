@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner Leverage Model — Applied Wisdom Podcast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.8; }
+
+    .nav { background: #1a2744; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+    .nav .badge { background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+    .nav .back { color: rgba(255,255,255,0.7); font-size: 13px; }
+    .nav .back:hover { color: #fff; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 60px 24px 50px; text-align: center; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; margin-bottom: 12px; max-width: 750px; margin-left: auto; margin-right: auto; }
+    .hero p { font-size: 18px; opacity: 0.75; max-width: 650px; margin: 0 auto; }
+
+    .content { max-width: 800px; margin: 0 auto; padding: 48px 24px; }
+    h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: #1a2744; margin: 40px 0 16px; }
+    h2:first-of-type { margin-top: 0; }
+    p { margin-bottom: 16px; font-size: 16px; }
+
+    .pullquote {
+      background: #1a2744; color: #fff; padding: 32px 36px; border-radius: 8px;
+      font-family: 'Playfair Display', Georgia, serif; font-size: 22px; line-height: 1.5;
+      margin: 36px 0; border-left: 4px solid #e8553d;
+    }
+
+    .highlight {
+      background: #fef5f3; border-left: 3px solid #e8553d;
+      padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 20px 0;
+    }
+    .highlight strong { color: #e8553d; }
+
+    /* Co-brand mockup */
+    .cobrand-demo {
+      background: #fff; border: 1px solid #e8e8e8; border-radius: 8px;
+      overflow: hidden; margin: 28px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .cobrand-header {
+      background: #1a2744; padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .cobrand-header .left { display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 700; font-size: 14px; }
+    .cobrand-header .divider { color: rgba(255,255,255,0.3); font-size: 18px; }
+    .cobrand-header .partner-name { color: #e8553d; font-weight: 700; font-size: 14px; }
+    .cobrand-body { padding: 24px; text-align: center; }
+    .cobrand-body .tag { display: inline-block; background: #e8553d; color: #fff; padding: 3px 12px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+    .cobrand-body h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; color: #1a2744; margin-bottom: 8px; }
+    .cobrand-body p { font-size: 14px; color: #777; margin-bottom: 16px; }
+    .cobrand-body .cta-btn { display: inline-block; background: #e8553d; color: #fff; padding: 10px 28px; border-radius: 6px; font-weight: 700; font-size: 14px; text-decoration: none; }
+    .cobrand-footer { background: #f7f5f2; padding: 12px 24px; font-size: 12px; color: #999; text-align: center; border-top: 1px solid #e8e8e8; }
+
+    /* Partner types */
+    .partner-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+    }
+    .partner-card {
+      background: #fff; border: 1px solid #e8e8e8; border-radius: 8px; padding: 20px;
+    }
+    .partner-card .icon { font-size: 28px; margin-bottom: 8px; }
+    .partner-card strong { display: block; color: #1a2744; font-size: 15px; margin-bottom: 4px; }
+    .partner-card span { font-size: 13px; color: #777; line-height: 1.5; }
+
+    /* Flow */
+    .flow-steps {
+      display: flex; gap: 0; margin: 28px 0; align-items: stretch;
+    }
+    .flow-step {
+      flex: 1; padding: 20px 16px; text-align: center; position: relative;
+    }
+    .flow-step:not(:last-child)::after {
+      content: '→'; position: absolute; right: -8px; top: 50%; transform: translateY(-50%);
+      color: #e8553d; font-size: 20px; font-weight: 700; z-index: 1;
+    }
+    .flow-step .step-num {
+      background: #e8553d; color: #fff; width: 28px; height: 28px; border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700; margin-bottom: 8px;
+    }
+    .flow-step strong { display: block; color: #1a2744; font-size: 13px; margin-bottom: 4px; }
+    .flow-step span { font-size: 11px; color: #888; }
+
+    /* Value props */
+    .value-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+    }
+    .value-card {
+      background: #1a2744; color: #fff; border-radius: 8px; padding: 24px;
+    }
+    .value-card .emoji { font-size: 28px; margin-bottom: 8px; }
+    .value-card strong { display: block; font-size: 16px; margin-bottom: 6px; }
+    .value-card span { font-size: 13px; opacity: 0.75; line-height: 1.5; }
+
+    .scenario {
+      background: #fff; border: 1px solid #e8e8e8; border-radius: 8px;
+      padding: 24px 28px; margin: 20px 0;
+    }
+    .scenario-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .scenario h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; color: #1a2744; margin-bottom: 8px; }
+    .scenario p { font-size: 14px; color: #666; margin-bottom: 8px; }
+    .scenario p:last-child { margin-bottom: 0; }
+
+    .footer { background: #1a2744; color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 13px; margin-top: 40px; }
+    .footer a { color: #e8553d; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 26px; }
+      .partner-grid, .value-grid { grid-template-columns: 1fr; }
+      .flow-steps { flex-direction: column; }
+      .flow-step:not(:last-child)::after { content: '↓'; right: auto; left: 50%; top: auto; bottom: -14px; transform: translateX(-50%); }
+      .pullquote { font-size: 18px; padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="https://appliedwisdomfornonprofits.org"><span class="badge">AW</span> Applied Wisdom</a>
+    <a href="series-index.html" class="back">&larr; Back to Series Index</a>
+  </nav>
+
+  <section class="hero">
+    <h1>The Co-Branded Partner Model</h1>
+    <p>How AWNP grows through other organizations' audiences - without spending a dollar on ads</p>
+  </section>
+
+  <div class="content">
+
+    <div class="pullquote">
+      "We don't need to build an audience from scratch. We need to plug into the audiences that already exist - and give those organizations a reason to share."
+    </div>
+
+    <h2>The Concept</h2>
+
+    <p>Every organization in the nonprofit ecosystem has an audience of leaders, board members, and professionals who need exactly what Jim Morgan teaches. State associations, university programs, community foundations, leadership networks - they all have email lists, social channels, and events filled with our target audience.</p>
+
+    <p>The co-branded partner model turns each of these organizations into a distribution channel for AWNP. Partners get free, high-quality leadership content branded alongside their name. We get access to their audience. Everyone wins.</p>
+
+    <h2>How It Works</h2>
+
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="step-num">1</div>
+        <strong>Identify Partner</strong>
+        <span>Org with aligned audience</span>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">2</div>
+        <strong>Co-Brand Pages</strong>
+        <span>Their logo + AWNP on episode pages</span>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">3</div>
+        <strong>Partner Shares</strong>
+        <span>To their audience via email, social, events</span>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">4</div>
+        <strong>Capture & Tag</strong>
+        <span>Subscribers tagged by partner source</span>
+      </div>
+    </div>
+
+    <h2>What Partners See</h2>
+
+    <p>Each partner gets a co-branded version of the episode pages. Their audience sees a professional collaboration, not a redirect to someone else's site:</p>
+
+    <div class="cobrand-demo">
+      <div class="cobrand-header">
+        <div class="left">
+          <span style="background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px; color: #fff;">AW</span>
+          Applied Wisdom
+          <span class="divider">×</span>
+          <span class="partner-name">Positive Coaching Alliance</span>
+        </div>
+      </div>
+      <div class="cobrand-body">
+        <div class="tag">Episode 7 · Season 1</div>
+        <h3>Culture Eats Strategy for Breakfast</h3>
+        <p>Brought to you by Applied Wisdom for Nonprofits and the Positive Coaching Alliance</p>
+        <a href="#" class="cta-btn">Listen Now & Get the Free Book</a>
+      </div>
+      <div class="cobrand-footer">
+        A partnership between Applied Wisdom for the Nonprofit Sector and Positive Coaching Alliance
+      </div>
+    </div>
+
+    <p style="font-size: 14px; color: #888; text-align: center; font-style: italic;">Mockup showing co-branded episode header. Partner logo and name appear throughout the page.</p>
+
+    <h2>Why Partners Say Yes</h2>
+
+    <p>This isn't a hard sell. We're offering partners something they actually want:</p>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="emoji">🎁</div>
+        <strong>Free Premium Content</strong>
+        <span>22+ hours of professional leadership content they can share with their audience. No cost, no production effort on their end.</span>
+      </div>
+      <div class="value-card">
+        <div class="emoji">🏷️</div>
+        <strong>Their Brand, Front and Center</strong>
+        <span>Co-branded pages feature their identity alongside AWNP. They look like thought leaders, not content redistributors.</span>
+      </div>
+      <div class="value-card">
+        <div class="emoji">📊</div>
+        <strong>Engagement Data</strong>
+        <span>Partners can see how their audience engages with the content. It becomes a value-add for their own membership programs.</span>
+      </div>
+      <div class="value-card">
+        <div class="emoji">🤝</div>
+        <strong>Mission Alignment</strong>
+        <span>Nonprofit-serving organizations exist to help nonprofits succeed. Morgan's practical wisdom is exactly what their audience needs.</span>
+      </div>
+    </div>
+
+    <h2>Ideal Partner Types</h2>
+
+    <div class="partner-grid">
+      <div class="partner-card">
+        <div class="icon">🏛️</div>
+        <strong>State Nonprofit Associations</strong>
+        <span>50 state associations, each with thousands of member organizations. Built-in distribution to executive directors and board members.</span>
+      </div>
+      <div class="partner-card">
+        <div class="icon">🎓</div>
+        <strong>University Nonprofit Programs</strong>
+        <span>MPA programs, nonprofit management certificates, continuing education. Faculty share as curriculum supplements.</span>
+      </div>
+      <div class="partner-card">
+        <div class="icon">💰</div>
+        <strong>Community Foundations</strong>
+        <span>Hundreds across the country, each serving local nonprofits. They can offer the podcast as a grantee resource.</span>
+      </div>
+      <div class="partner-card">
+        <div class="icon">🌐</div>
+        <strong>Leadership Networks</strong>
+        <span>BoardSource, Independent Sector, local nonprofit leadership groups. Professional development is their core offering.</span>
+      </div>
+      <div class="partner-card">
+        <div class="icon">⚽</div>
+        <strong>Mission-Aligned Organizations</strong>
+        <span>Like Positive Coaching Alliance - organizations whose values overlap with Morgan's teachings. Natural cross-promotion.</span>
+      </div>
+      <div class="partner-card">
+        <div class="icon">📰</div>
+        <strong>Sector Media & Publications</strong>
+        <span>Nonprofit Quarterly, Chronicle of Philanthropy, Stanford Social Innovation Review. Content partnerships for mutual reach.</span>
+      </div>
+    </div>
+
+    <h2>Real-World Scenarios</h2>
+
+    <div class="scenario">
+      <div class="scenario-label">Scenario 1</div>
+      <h4>Positive Coaching Alliance Partnership</h4>
+      <p>PCA (pca.org) works with coaches, parents, and athletic directors across thousands of youth sports organizations nationwide. Their mission - developing "Better Athletes, Better People" - aligns directly with Morgan's leadership principles around culture, tone at the top, and walking the talk.</p>
+      <p>PCA shares co-branded episodes with their network of coaches and organizational leaders. Their audience already thinks about culture-building and leadership development daily. Episodes on culture, psychological safety, and collaborative mindset resonate directly.</p>
+      <p>PCA's national reach + aligned audience + their existing communication channels: <strong>a natural first partner that validates the model for every partnership conversation that follows.</strong></p>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-label">Scenario 2</div>
+      <h4>University Program Integration</h4>
+      <p>A graduate nonprofit management program assigns 3 episodes per semester as supplemental listening. 60 students per cohort, 2 cohorts per year. Students share with their organizations.</p>
+      <p>Direct subscribers from students + ripple effect into their organizations: <strong>~200-400 subscribers per university per year.</strong></p>
+    </div>
+
+    <div class="scenario">
+      <div class="scenario-label">Scenario 3</div>
+      <h4>Community Foundation Grantee Resource</h4>
+      <p>A community foundation adds the co-branded podcast to their grantee resource library. 150 active grantees, each with leadership teams of 3-8 people.</p>
+      <p>Positioned as professional development for grantees: <strong>~300-600 subscribers over 12 months.</strong></p>
+    </div>
+
+    <h2>The Multiplier Effect</h2>
+
+    <div class="highlight">
+      <strong>5 active partners, each driving 200-400 subscribers per month, means 1,000-2,000 new community members monthly - without a single dollar in ad spend.</strong> And every partner we add increases the total without increasing our production cost, because the content is already made.
+    </div>
+
+    <p>The podcast library is produced once. But it can be co-branded and distributed infinitely. Each new partner is pure leverage - their audience, their channels, their credibility, our content.</p>
+
+    <h2>What We Need From Partners</h2>
+
+    <p>The ask is intentionally light. We want partners to say yes quickly:</p>
+
+    <div class="scenario" style="background: #fef5f3; border: none;">
+      <p>✅ Permission to use their logo on co-branded pages</p>
+      <p>✅ Share episodes with their audience (email, social, website)</p>
+      <p>✅ Brief intro to their communications team for coordination</p>
+      <p style="margin-bottom: 0;">That's it. We handle all production, hosting, page creation, and email capture infrastructure.</p>
+    </div>
+
+    <div class="pullquote">
+      "The best growth strategy isn't to build your own audience from zero. It's to create something so valuable that other organizations want to share it with theirs."
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Applied Wisdom for the Nonprofit Sector &bull; <a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a>
+  </div>
+
+</body>
+</html>

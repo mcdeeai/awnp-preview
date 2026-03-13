@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast as Acquisition Engine — Applied Wisdom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.8; }
+
+    .nav { background: #1a2744; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+    .nav .badge { background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+    .nav .back { color: rgba(255,255,255,0.7); font-size: 13px; }
+    .nav .back:hover { color: #fff; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 60px 24px 50px; text-align: center; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; margin-bottom: 12px; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .hero p { font-size: 18px; opacity: 0.75; max-width: 600px; margin: 0 auto; }
+
+    .content { max-width: 800px; margin: 0 auto; padding: 48px 24px; }
+
+    .pullquote {
+      background: #1a2744;
+      color: #fff;
+      padding: 32px 36px;
+      border-radius: 8px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      line-height: 1.5;
+      margin: 36px 0;
+      border-left: 4px solid #e8553d;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      color: #1a2744;
+      margin: 40px 0 16px;
+    }
+
+    .section-num {
+      display: inline-block;
+      background: #e8553d;
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    p { margin-bottom: 16px; font-size: 16px; }
+
+    .highlight {
+      background: #fef5f3;
+      border-left: 3px solid #e8553d;
+      padding: 16px 20px;
+      border-radius: 0 6px 6px 0;
+      margin: 20px 0;
+    }
+    .highlight strong { color: #e8553d; }
+
+    .math-box {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 28px;
+      margin: 24px 0;
+    }
+    .math-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 15px;
+    }
+    .math-row:last-child { border-bottom: none; }
+    .math-row .label { color: #555; }
+    .math-row .value { font-weight: 700; color: #1a2744; font-size: 17px; }
+    .math-row.total { background: #fef5f3; margin: 8px -16px -8px; padding: 14px 16px; border-radius: 0 0 6px 6px; border-bottom: none; }
+    .math-row.total .value { color: #e8553d; font-size: 20px; }
+
+    .partner-flow {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0;
+      text-align: center;
+    }
+    .partner-step {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 16px 12px;
+    }
+    .partner-step strong { display: block; color: #1a2744; font-size: 14px; margin-bottom: 4px; }
+    .partner-step span { font-size: 12px; color: #777; }
+    .partner-arrow { color: #e8553d; font-size: 24px; font-weight: 700; }
+
+    .cta-box {
+      background: #1a2744;
+      color: #fff;
+      padding: 36px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .cta-box h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; margin-bottom: 12px; }
+    .cta-box p { opacity: 0.8; margin-bottom: 0; }
+
+    .footer { background: #1a2744; color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 13px; margin-top: 40px; }
+    .footer a { color: #e8553d; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 26px; }
+      .partner-flow { grid-template-columns: 1fr; }
+      .partner-arrow { transform: rotate(90deg); }
+      .pullquote { font-size: 18px; padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav style="background: #1a2744; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+    <a href="index.html" style="color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px;"><span style="background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px;">AW</span> Applied Wisdom</a>
+    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+      <a href="series-index.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">📚 Series</a>
+      <a href="how-it-works.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">⚙️ Process</a>
+      <a href="outreach-playbook.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">🤝 Outreach</a>
+      <a href="acquisition-strategy.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">📈 Growth</a>
+      <a href="episode-brief.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">📄 Brief</a>
+      <a href="episode-7.html" style="background: #e8553d; color: #fff; padding: 4px 12px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 12px;">▶ Episode 7</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>The Podcast as Acquisition Engine</h1>
+    <p>How 66 episodes become 66 permanent doors into the AWNP community</p>
+  </section>
+
+  <div class="content">
+
+    <div class="pullquote">
+      "Each episode isn't just content. It's a permanent landing page that works for us every day. 66 episodes means 66 doors into the community. Add co-branded partners and we're not just growing our audience - we're growing through other people's audiences."
+    </div>
+
+    <!-- Section 1 -->
+    <h2><span class="section-num">1</span> Search & AI Discovery</h2>
+    <p>Every episode is a standalone, SEO-optimized landing page targeting specific nonprofit leadership queries. When someone searches "how to build nonprofit culture" or "board governance best practices," Morgan's framework shows up.</p>
+    
+    <div class="highlight">
+      <strong>GEO Optimization:</strong> Each episode includes FAQ sections specifically structured for AI engines (ChatGPT, Perplexity, Gemini). When nonprofit leaders ask AI for advice, Jim Morgan's name and AWNP are in the answer.
+    </div>
+
+    <p>66 content-rich pages don't just attract visitors individually. They compound the main domain's authority across the entire nonprofit leadership space. Every page makes every other page rank higher.</p>
+
+    <!-- Section 2 -->
+    <h2><span class="section-num">2</span> The Co-Branded Partner Model</h2>
+    <p>This is the force multiplier. Partner organizations get co-branded versions of episode pages featuring their logo alongside AWNP's. Each partner drives their existing audience to pages that capture emails tagged by partner.</p>
+
+    <div class="partner-flow">
+      <div class="partner-step">
+        <strong>Partner Org</strong>
+        <span>Shares co-branded episodes with their audience</span>
+      </div>
+      <div class="partner-arrow">→</div>
+      <div class="partner-step">
+        <strong>Co-Branded Page</strong>
+        <span>Their logo + AWNP, tagged email capture</span>
+      </div>
+      <div class="partner-arrow">→</div>
+      <div class="partner-step">
+        <strong>AWNP Community</strong>
+        <span>New subscriber, source tracked</span>
+      </div>
+    </div>
+
+    <p>Partners share it because it makes <em>them</em> look smart - free, high-quality leadership content with their brand on it. We're not building one audience. We're plugging into dozens of existing audiences simultaneously.</p>
+
+    <div class="highlight">
+      <strong>Examples:</strong> State nonprofit associations, university nonprofit programs, community foundations, leadership development organizations. Each one has an audience of exactly the people AWNP wants to reach.
+    </div>
+
+    <!-- Section 3 -->
+    <h2><span class="section-num">3</span> Every Episode, One CTA</h2>
+    <p>Every single episode ends the same way: <em>"Download your free copy and join the community at appliedwisdomfornonprofits.org."</em></p>
+
+    <p>Free book download = email capture. 66 episodes across multiple channels means 66 conversion opportunities per listener journey. The podcast doesn't compete with the book - it drives people to it.</p>
+
+    <!-- Section 4 -->
+    <h2><span class="section-num">4</span> The Compound Effect</h2>
+    <p>Weekly releases create habit. 22+ hours of content means deep engagement, not drive-by traffic. Listeners who consume multiple episodes become evangelists - they share with their boards, their peer networks, their professional associations.</p>
+
+    <p>The nonprofit sector runs on peer recommendation more than any other sector. One convinced ED tells three board members, who each sit on two other boards. That's how 10,000 subscribers happens.</p>
+
+    <!-- The Math -->
+    <h2>The Math (24-Month Ramp)</h2>
+
+    <p>Starting from zero means organic search takes time to index and rank, and partner relationships take time to close. Here's a realistic 24-month trajectory:</p>
+
+    <div class="math-box">
+      <div style="font-weight: 700; color: #1a2744; margin-bottom: 12px; font-size: 15px;">Months 1-8: Building the Library</div>
+      <div class="math-row">
+        <span class="label">Episodes published (2-3/week)</span>
+        <span class="value">All 66 live by month 8</span>
+      </div>
+      <div class="math-row">
+        <span class="label">Organic search (ramping)</span>
+        <span class="value">~10-25 visitors/page/mo</span>
+      </div>
+      <div class="math-row">
+        <span class="label">Email capture at 8%</span>
+        <span class="value">~100-200 subscribers/month</span>
+      </div>
+      <div class="math-row">
+        <span class="label">First 1-2 co-branded partners signed</span>
+        <span class="value">+200/mo</span>
+      </div>
+      <div class="math-row">
+        <span class="label">Year 1 total</span>
+        <span class="value">~2,500-4,000 subscribers</span>
+      </div>
+    </div>
+
+    <div class="math-box">
+      <div style="font-weight: 700; color: #1a2744; margin-bottom: 12px; font-size: 15px;">Months 9-24: Compound Growth</div>
+      <div class="math-row">
+        <span class="label">66 pages indexed, domain authority building</span>
+        <span class="value">~40-60 visitors/page/mo</span>
+      </div>
+      <div class="math-row">
+        <span class="label">Organic monthly subscribers</span>
+        <span class="value">~300-500/month</span>
+      </div>
+      <div class="math-row">
+        <span class="label">3-5 active co-branded partners</span>
+        <span class="value">+500-800/month</span>
+      </div>
+      <div class="math-row">
+        <span class="label">Peer referral & word-of-mouth</span>
+        <span class="value">+100-200/month</span>
+      </div>
+      <div class="math-row total">
+        <span class="label">24-month cumulative total</span>
+        <span class="value">10,000-16,000 subscribers</span>
+      </div>
+    </div>
+
+    <p style="font-size: 14px; color: #888; text-align: center;">Estimates assume consistent publishing, active partner outreach, and no paid promotion. Social media, podcast directories, and paid campaigns would accelerate the timeline.</p>
+
+    <!-- Why This Works -->
+    <h2>Why This Works for AWNP Specifically</h2>
+
+    <p><strong>The content already exists.</strong> Jim Morgan wrote 66 concepts worth of wisdom. We're not creating from scratch - we're unlocking what's already in the book and making it discoverable.</p>
+
+    <p><strong>The production is scalable.</strong> Episode 7 is the proof of concept. The same pipeline produces all 66 episodes with consistent quality. One person can run the production workflow.</p>
+
+    <p><strong>The cost is minimal.</strong> AI-generated audio and visuals, templated landing pages, automated branding. The investment is in strategy and quality control, not studio time.</p>
+
+    <p><strong>It compounds forever.</strong> Unlike paid ads that stop working when you stop paying, every episode page is a permanent asset. Episode 1 is still generating subscribers when Episode 66 launches.</p>
+
+    <div class="cta-box">
+      <h3>The Podcast Is the Acquisition Strategy</h3>
+      <p>66 episodes. 66 landing pages. 66 doors into the AWNP community.<br>Each one working 24/7, forever.</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Applied Wisdom for the Nonprofit Sector &bull; <a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a>
+  </div>
+
+</body>
+</html>
