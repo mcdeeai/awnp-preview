@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 14: Collaborative Mindset | Applied Wisdom x ALF Silicon Valley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #111; line-height: 1.7; }
+
+    .nav-bar { background: #fff; border-bottom: 1px solid #e5e5e5; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #111; font-weight: 700; font-size: 14px; }
+    .nav-logo .aw-mark { color: #e8553d; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+    .nav-links { display: flex; list-style: none; }
+    .nav-links a { color: #555; text-decoration: none; font-size: 13px; padding: 8px 12px; display: block; transition: color 0.15s; }
+    .nav-links a:hover { color: #111; }
+    .nav-links a.active { color: #e8553d; font-weight: 600; }
+
+    .hero { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 64px 24px 72px; }
+    .hero-inner { max-width: 860px; margin: 0 auto; }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 14px; display: block; }
+    .hero-ep { font-size: 72px; font-weight: 800; color: #111; line-height: 1; margin-bottom: 8px; letter-spacing: -3px; }
+    .hero h1 { font-size: 38px; font-weight: 800; line-height: 1.1; color: #111; max-width: 700px; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .hero .sub { font-size: 16px; color: #555; max-width: 620px; margin-bottom: 20px; }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .hero-tag { font-size: 12px; color: #555; border: 1px solid #e5e5e5; padding: 4px 10px; background: #fafafa; }
+
+    .cta-strip { border-bottom: 1px solid #e5e5e5; padding: 14px 24px; background: #f5f5f5; }
+    .cta-strip-inner { max-width: 860px; margin: 0 auto; }
+    .cta-strip a { color: #e8553d; text-decoration: none; font-size: 14px; font-weight: 600; }
+    .cta-strip a:hover { text-decoration: underline; }
+
+    .main { max-width: 860px; margin: 0 auto; padding: 52px 24px 80px; }
+
+    .section { margin-bottom: 52px; }
+    .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .section h2 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 16px; letter-spacing: -0.2px; }
+    .section p { font-size: 15px; color: #555; margin-bottom: 14px; line-height: 1.8; }
+
+    .pull-quote { border-left: 3px solid #e8553d; padding: 20px 28px; background: #f5f5f5; margin: 36px 0; }
+    .pull-quote p { font-size: 20px; line-height: 1.5; color: #111; font-style: italic; margin: 0; }
+    .pull-quote .attrib { font-size: 11px; color: #e8553d; margin-top: 10px; font-style: normal; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+    .wisdom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-top: 24px; }
+    @media (max-width: 700px) { .wisdom-grid { grid-template-columns: 1fr; } }
+    .wisdom-card { background: #fff; padding: 24px; }
+    .wisdom-card .wisdom-name { font-weight: 700; font-size: 13px; color: #111; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .wisdom-card p { font-size: 13px; color: #555; margin: 0; line-height: 1.7; }
+
+    .takeaway-box { border-left: 3px solid #111; padding: 28px 32px; background: #fff; border: 1px solid #e5e5e5; border-left: 3px solid #111; margin-bottom: 48px; }
+    .takeaway-box h3 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 14px; }
+    .takeaway-box p { font-size: 15px; color: #555; line-height: 1.8; }
+
+    .closing { background: #f5f5f5; border: 1px solid #e5e5e5; padding: 36px; margin-bottom: 48px; }
+    .closing h3 { font-size: 22px; font-weight: 700; color: #111; margin-bottom: 14px; letter-spacing: -0.2px; }
+    .closing p { font-size: 15px; color: #555; line-height: 1.8; }
+
+    .back-link { text-align: center; margin-bottom: 48px; }
+    .back-link a { display: inline-block; border: 1px solid #e5e5e5; color: #111; padding: 10px 24px; text-decoration: none; font-size: 13px; font-weight: 600; transition: background 0.15s; }
+    .back-link a:hover { background: #f5f5f5; }
+
+    footer { border-top: 1px solid #e5e5e5; padding: 24px; background: #fff; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 12px; color: #555; }
+    .footer-right a { font-size: 12px; color: #999; text-decoration: none; }
+    .footer-right a:hover { color: #e8553d; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        Outreach Podcast Playbook
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">Playbook</a></li>
+        <li><a href="alf.html">ALF</a></li>
+        <li><a href="pca.html">PCA</a></li>
+        <li><a href="cityyear.html">City Year</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="label">Co-Branded Episode Brief</span>
+      <div class="hero-ep">14</div>
+      <h1>Collaborative Mindset</h1>
+      <p class="sub">Jim Morgan on treating your partner's success as equal to your own. Co-branded with American Leadership Forum Silicon Valley.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">Applied Wisdom x ALF SV</span>
+        <span class="hero-tag">Leadership Series</span>
+        <span class="hero-tag">I to WE to ALL OF US</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-strip">
+    <div class="cta-strip-inner">
+      <a href="../ep14-landing-page/episode-14.html">&#9654; Listen to Episode 14</a>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="section">
+      <div class="section-label">The Morgan Insight</div>
+      <h2>Treat Your Partner's Success as Equal to Your Own</h2>
+      <p>Jim Morgan is direct about this: approach all teamwork with a collaborative mindset, where you treat your partner's success as equal to your own.</p>
+      <p>That's not a platitude. It's a survival strategy. Morgan watched it work at Applied Materials across 18 countries and nearly three decades, and he watched it fail at nonprofit after nonprofit where organizations competed for the same funding, duplicated each other's work, and treated partnerships as transactions rather than relationships.</p>
+      <p>The instinct in the nonprofit world is to protect your turf. Your donors, your programs, your credit. Morgan says that instinct will kill you. When you genuinely invest in your partner's success, when their win IS your win, you unlock a level of effectiveness that competition can never reach.</p>
+
+      <div class="pull-quote">
+        <p>"When no one is concerned about who gets credit, remarkable things become possible."</p>
+        <div class="attrib">Jim Morgan</div>
+      </div>
+
+      <p>This isn't about being nice. It's about being strategic. Morgan understood that in a world of limited resources, collaboration isn't charity. It's leverage. The organizations that figure this out don't just survive. They multiply their impact.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">A Living Example</div>
+      <h2>The American Leadership Forum</h2>
+      <p>If you want to see Morgan's collaborative mindset in action, look at what the American Leadership Forum has been building for over forty years.</p>
+      <p>ALF's entire model is built on the premise that diverse leaders -- people from different sectors, different backgrounds, different worldviews -- can learn to collaborate at a level that transforms their communities. Their Fellows Program takes proven leaders and puts them through a year-long experience designed to break down the walls between sectors: business, nonprofit, government, education. Not because it's nice to cross those boundaries, but because the problems worth solving demand it.</p>
+      <p>What makes ALF's approach remarkable is how closely it mirrors Morgan's framework. ALF teaches what they call the journey from <strong>I to WE to ALL OF US</strong>. Start with individual leadership development. Move to building trust and collaboration within the cohort. Then extend that collaborative capacity outward to serve the greater good. That's Morgan's individual-to-team-to-organizational-culture arc, lived out in practice.</p>
+      <p>And here's the key for Senior Fellows: the formal program ends, but the collaborative mindset doesn't. ALF's Senior Fellow network is proof that when you build genuine collaborative relationships, they compound over years and decades.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why This Matters Now</div>
+      <h2>The Sector Is Drowning in Duplication</h2>
+      <p>Three organizations in the same city serving the same population, each with their own overhead, each competing for the same grant dollars. Funders are exhausted by it. Communities are underserved because of it.</p>
+      <p>The organizations breaking through right now aren't the ones with the best individual programs. They're the ones forming genuine partnerships where each organization's strengths complement the others. Shared services, joint proposals, coordinated outreach. Not because a funder required it, but because the leaders involved actually believe their partner's success matters as much as their own.</p>
+      <p>ALF has been training leaders for exactly this kind of breakthrough for four decades. Their Fellows learn that collaboration isn't about compromising your mission. It's about amplifying it through relationships built on trust and mutual investment.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">The Wisdom Runs Deep</div>
+      <h2>Centuries of Leadership Wisdom</h2>
+      <p>Morgan's collaborative principle echoes through centuries of leadership thinking.</p>
+
+      <div class="wisdom-grid">
+        <div class="wisdom-card">
+          <div class="wisdom-name">Aristotle</div>
+          <p>In the <em>Nicomachean Ethics</em>, described the highest form of friendship as one based on virtue, where individuals wish well to each other for their own sake. Morgan is saying the same thing about organizational partnerships: the ones that last are built on mutual good, not mutual convenience.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Confucius</div>
+          <p>Taught that harmony doesn't mean sameness. Morally refined people work together while maintaining distinct roles, each contributing to a greater collective good. You don't lose your identity in partnership. You amplify it.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Dawn Staley</div>
+          <p>Built a dynasty at South Carolina on shared accountability and role respect. Every player's contribution serves the collective objective. She builds teams where your teammate's success IS your success.</p>
+        </div>
+        <div class="wisdom-card">
+          <div class="wisdom-name">Henry Ford</div>
+          <p>"Coming together is a beginning. Keeping together is progress. Working together is success." The collaborative mindset isn't a single decision. It's a sustained practice.</p>
+        </div>
+      </div>
+
+      <div class="pull-quote" style="margin-top: 28px;">
+        <p>"Much can be accomplished by teamwork when no one is concerned about who gets credit."</p>
+        <div class="attrib">John Wooden</div>
+      </div>
+    </div>
+
+    <div class="takeaway-box">
+      <h3>The Takeaway</h3>
+      <p>This week, identify one organization you consider a "competitor" for funding, visibility, or influence. Reach out to their leader. Not with a proposal. Not with an ask. Just with a question: "What are you working on that's exciting, and how could we help?" That one conversation, entered with genuine curiosity rather than strategic calculation, is where collaborative mindset begins.</p>
+      <p style="margin-top: 12px;">If you're an ALF Fellow or Senior Fellow, you already know how to do this. You've practiced it. Now take it to your organization. As Morgan teaches, treat their success as equal to your own, and watch what becomes possible.</p>
+    </div>
+
+    <div class="closing">
+      <div class="section-label">Closing Thought</div>
+      <h3>Your Partner's Success IS Your Success</h3>
+      <p>Morgan's message is deceptively simple: your partner's success IS your success. In a sector built on serving others, the organizations that actually live this principle don't just do more good. They transform what's possible. ALF has spent four decades proving that diverse leaders can learn to collaborate at levels that change communities. Morgan gives us the practical framework for why it works. Together, they remind us: the only question is whether you're willing to let go of credit long enough to find out.</p>
+    </div>
+
+    <div class="back-link">
+      <a href="alf.html">&larr; Back to ALF Partner Page</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">Applied Wisdom for the Nonprofit Sector &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

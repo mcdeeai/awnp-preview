@@ -1,0 +1,968 @@
+1
+00:00:00,000 --> 00:00:08,760
+Welcome to today's deep dive. I want you to to visualize a document for a second. I'm a document. Yeah, like a job description for a board member
+
+2
+00:00:08,760 --> 00:00:15,620
+Oh, right. Maybe it's for a massive fortune 500 company or or just you know, the local nonprofit down the street
+
+3
+00:00:15,700 --> 00:00:19,820
+Exactly, and you know exactly what's on that paper. It's a list of very dry
+
+4
+00:00:20,740 --> 00:00:22,740
+very serious bullet points
+
+5
+00:00:22,960 --> 00:00:24,800
+fiduciary oversight
+
+6
+00:00:24,800 --> 00:00:26,020
+governance
+
+7
+00:00:26,020 --> 00:00:33,240
+Strategic planning adherence to bylaws, right adherence to bylaws. It smells like like stale coffee and legal pads
+
+8
+00:00:33,260 --> 00:00:35,100
+It's the standard operating procedure
+
+9
+00:00:35,100 --> 00:00:38,760
+I mean, it's what the lawyers tell you to write down so you don't get sued basically, right?
+
+10
+00:00:39,060 --> 00:00:42,100
+But we have a stack of sources today that we're diving into
+
+11
+00:00:42,280 --> 00:00:48,260
+Centered around the work of Jim Morgan and also this really interesting case study from the positive coaching alliance
+
+12
+00:00:48,260 --> 00:00:53,820
+Yeah, the PCA and these sources suggest that that piece of paper is missing the single most important requirement
+
+13
+00:00:54,540 --> 00:00:57,380
+Morgan's stance on this is it's pretty provocative
+
+14
+00:00:57,660 --> 00:01:04,420
+It really is he argues that you can follow every rule on that list perfectly like you can check every single fiduciary box and
+
+15
+00:01:04,760 --> 00:01:12,860
+Still absolutely destroy the organization, right? Because essentially he's saying that the job description is a bit of a red herring
+
+16
+00:01:12,860 --> 00:01:19,660
+Yeah, the real job isn't about policy. It's about behavior. It's not what you vote on it's
+
+17
+00:01:19,980 --> 00:01:26,280
+It's how you act in the hallway and that's exactly what our mission is for this deep dive today
+
+18
+00:01:26,280 --> 00:01:30,700
+We are exploring this concept called tone at the top tone of the top right now
+
+19
+00:01:30,700 --> 00:01:33,860
+Usually when I hear corporate culture, I kind of roll my eyes a little bit
+
+20
+00:01:33,860 --> 00:01:40,380
+Oh, I think of you know HR initiatives or mandatory fun days or there's motivational posters in the break room
+
+21
+00:01:40,380 --> 00:01:42,380
+Yes, the ones about synergy with the rowers
+
+22
+00:01:42,900 --> 00:01:47,540
+But the argument here is that culture isn't a program you run. It's a physics problem
+
+23
+00:01:47,700 --> 00:01:51,620
+It flows downhill and it closed from a very specific source
+
+24
+00:01:52,300 --> 00:01:55,580
+We aren't just talking about the CEO or the executive director here
+
+25
+00:01:55,580 --> 00:02:01,300
+We are talking about the board of directors the people who might only meet what four times a year exactly and
+
+26
+00:02:01,940 --> 00:02:06,100
+Morgan's central thesis and this is the part that might make some listeners a little uncomfortable
+
+27
+00:02:06,220 --> 00:02:10,500
+Is that the way those people treat each other inside a closed room?
+
+28
+00:02:11,300 --> 00:02:16,860
+Dictates how the receptionist treats a client six months later see and that's where I get stuck
+
+29
+00:02:16,860 --> 00:02:24,140
+That feels like a massive leap to me. Does the receptionist or the mid-level manager really care what the board does?
+
+30
+00:02:24,140 --> 00:02:27,940
+Well, they might not consciously care right because they might never even meet these people
+
+31
+00:02:27,940 --> 00:02:29,940
+How does the behavior of a board member?
+
+32
+00:02:30,740 --> 00:02:34,860
+Infect the daily culture of the office if they aren't even in the building most of the time
+
+33
+00:02:34,940 --> 00:02:39,820
+That is exactly the question we need to answer today because the mechanism is invisible
+
+34
+00:02:39,820 --> 00:02:45,620
+But it is incredibly potent and to understand it. We're gonna look at two very different worlds
+
+35
+00:02:45,660 --> 00:02:47,780
+The boardroom in the basketball court, right?
+
+36
+00:02:47,780 --> 00:02:49,900
+We've got the high stakes world of corporate governance
+
+37
+00:02:49,900 --> 00:02:53,420
+And then we have this sort of lab experiment that I think makes this much clear
+
+38
+00:02:53,500 --> 00:02:59,820
+Which is the sidelines of youth sports, which I honestly didn't expect to see in a business research packet
+
+39
+00:03:00,180 --> 00:03:05,580
+But you're saying a little league dugout has the exact same political structure as a corporate boardroom
+
+40
+00:03:05,620 --> 00:03:11,100
+It really does the dynamics of authority in emulation and those unwritten rules. They're identical
+
+41
+00:03:11,380 --> 00:03:16,420
+If we can understand why a dad screaming at a referee ruins a soccer team
+
+42
+00:03:16,700 --> 00:03:21,980
+We can understand why a board member checking their email ruins a non-profit. All right
+
+43
+00:03:21,980 --> 00:03:28,660
+Well, let's get into the mechanism first tone at the top. It sounds like a buzzword. What does Jim Morgan actually mean by this?
+
+44
+00:03:28,660 --> 00:03:35,380
+So Morgan strips away the jargon entirely he defines tone at the top specifically regarding boards as the
+
+45
+00:03:35,820 --> 00:03:40,340
+interpersonal culture of the board itself not by a loss, right is not about the strategic plan
+
+46
+00:03:40,340 --> 00:03:43,940
+They write it is about how they treat one another while they are running it
+
+47
+00:03:44,100 --> 00:03:49,300
+He argues that the board doesn't just supervise the organization. The board is the organization's nervous system
+
+48
+00:03:49,300 --> 00:03:55,220
+But typically the board is seen as a separate entity, right? They are the oversight the staff does the actual work
+
+49
+00:03:55,220 --> 00:04:00,940
+Why isn't there a firewall there because humans are social animals and we are wired for survival in
+
+50
+00:04:01,380 --> 00:04:08,300
+Any hierarchy the people at the bottom are constantly scanning the people at the top for cues like how do I survive here?
+
+51
+00:04:08,740 --> 00:04:11,140
+Exactly. What is rewarded? What is punished?
+
+52
+00:04:11,820 --> 00:04:19,180
+Morgan explains that behavior flows downhill because staff emulate their superiors to stay safe. So it's not just mimicry
+
+53
+00:04:19,180 --> 00:04:22,540
+It's signaling exactly. It's profound signaling
+
+54
+00:04:23,020 --> 00:04:30,020
+If the board members are courteous and respectful and genuinely engaged with one another the senior management sees that they say
+
+55
+00:04:30,020 --> 00:04:32,720
+Okay to succeed here. I need to be collaborative
+
+56
+00:04:32,720 --> 00:04:36,760
+So they emulate it and then middle management emulate senior management, right?
+
+57
+00:04:36,920 --> 00:04:44,000
+but the inverse is where it gets incredibly dangerous if the board is dysfunctional if they are snippy with each other or if they roll
+
+58
+00:04:44,000 --> 00:04:51,040
+Their eyes when someone speaks or if they are dismissive of the executive director that toxicity flows right down to the intern
+
+59
+00:04:51,200 --> 00:04:57,560
+You mentioned rolling eyes or checking phones. That seems so minor though. Does that really move the needle on a whole culture?
+
+60
+00:04:57,560 --> 00:05:01,880
+It's a massive signal actually. It signals what you are saying doesn't matter
+
+61
+00:05:02,680 --> 00:05:04,680
+And once that signal is sent from the top
+
+62
+00:05:05,320 --> 00:05:09,880
+You cannot stop it from reaching the bottom. Wow. Morgan is very clear on this
+
+63
+00:05:10,560 --> 00:05:18,640
+No amount of staff retreats or sensitivity training or culture initiatives will fix a toxicity that is originating from the board
+
+64
+00:05:19,080 --> 00:05:22,680
+You can't clean the river if someone is dumping sludge at the source
+
+65
+00:05:23,400 --> 00:05:26,400
+So let's look at what this dysfunction actually looks like in practice
+
+66
+00:05:27,120 --> 00:05:30,480
+Because I assume most board members think they're doing a good job
+
+67
+00:05:30,720 --> 00:05:39,560
+They aren't waking up thinking I'm gonna go be toxic today rare is the villain who thinks they're the villain Morgan identifies two main modes of failure for struggling boards
+
+68
+00:05:39,800 --> 00:05:44,960
+They are opposites, but they're equally damaging. Let's hear them. The first is the micromanager
+
+69
+00:05:44,960 --> 00:05:50,160
+Oh, the helicopter parent of the boardroom. Exactly. This is the board that just doesn't trust the staff
+
+70
+00:05:50,160 --> 00:05:54,000
+They pick apart every single line item on the budget. They red line press releases
+
+71
+00:05:54,000 --> 00:06:00,200
+They debate the color of the napkins at the annual gala and the message that sends to the staff is pretty clear
+
+72
+00:06:00,200 --> 00:06:06,280
+You are incompetent or we don't trust you and think about the result of that if I don't trust you
+
+73
+00:06:06,920 --> 00:06:09,880
+You stop taking risks. You stop being creative
+
+74
+00:06:09,880 --> 00:06:16,920
+You just try to avoid getting yelled at and so the organization stagnates. Okay, so that's one extreme
+
+75
+00:06:16,920 --> 00:06:22,400
+What's the other failure mode? The second one is actually more common in the nonprofit world and it's arguably
+
+76
+00:06:22,800 --> 00:06:28,680
+More insidious. It's the rubber stamp the just sign it and let's go home approach precisely
+
+77
+00:06:28,880 --> 00:06:31,240
+This is the board that engages in zero debate
+
+78
+00:06:31,240 --> 00:06:36,200
+Yeah, they skim the packet five minutes before the meeting or honestly, maybe they don't read it at all right
+
+79
+00:06:36,200 --> 00:06:39,040
+They're just physically present barely they nod their heads
+
+80
+00:06:39,040 --> 00:06:44,920
+They prove the motion and they check their watches because they have a tea time or a dinner reservation on the surface though
+
+81
+00:06:44,920 --> 00:06:50,840
+Wouldn't a staff actually prefer that you get your approval? You don't get micromanaged and you move on it sounds easier short term
+
+82
+00:06:50,840 --> 00:06:57,240
+Yes, it's easier long term. It's fatal because the message the rubber stamp board sends is we don't care
+
+83
+00:06:57,240 --> 00:07:00,520
+And if the top authority doesn't care, why should the staff?
+
+84
+00:07:00,880 --> 00:07:05,840
+Why should the development director stay late to finish that grant application if the board won't even read it?
+
+85
+00:07:06,040 --> 00:07:12,280
+It breeds a culture of deep apathy. So between the micromanaging and the neglect you have this mirror effect
+
+86
+00:07:12,360 --> 00:07:14,360
+That's the key phrase in the research
+
+87
+00:07:14,560 --> 00:07:18,760
+Leaders need to understand that how they show up in the room echoes through every hallway
+
+88
+00:07:19,280 --> 00:07:22,320
+Morgan emphasizes that this isn't about being inspirational
+
+89
+00:07:22,480 --> 00:07:30,760
+We tend to overvalue charisma in leadership. We want the big speech from Braveheart. We do we want the Steve Jobs reality distortion field
+
+90
+00:07:31,280 --> 00:07:38,720
+But Morgan says forget inspirational. Just be intentional be curious ask hard questions, but do it respectfully
+
+91
+00:07:39,400 --> 00:07:45,240
+Disagree without being disagreeable because everyone is watching it's about the subtle signals of respect
+
+92
+00:07:45,400 --> 00:07:47,400
+Okay, so that's the boardroom theory
+
+93
+00:07:47,400 --> 00:07:53,360
+But the sources take this high-level corporate concept and drop it into a context that feels a lot more visceral
+
+94
+00:07:53,520 --> 00:07:58,480
+We're moving from the boardroom to the basketball court now. Yes, the positive coaching alliance or PCA
+
+95
+00:07:58,840 --> 00:08:04,160
+Think of this as our living lab for these theories. They've been testing this in the real world since 1998
+
+96
+00:08:04,160 --> 00:08:09,160
+And honestly the stakes feel most clearer here if a board is dysfunctional
+
+97
+00:08:09,160 --> 00:08:13,400
+You lose money or efficiency if a youth sports environment is toxic
+
+98
+00:08:13,960 --> 00:08:20,600
+You're actually damaging kids. That's totally fair and the PCA framework is basically Jim Morgan's philosophy
+
+99
+00:08:20,600 --> 00:08:22,600
+But with a whistle and a clipboard
+
+100
+00:08:22,600 --> 00:08:28,840
+Their premise is that in youth sports the adults the coaches the parents the league admins
+
+101
+00:08:29,240 --> 00:08:32,240
+They set the tone for the child's experience
+
+102
+00:08:32,240 --> 00:08:35,560
+The rulebook is irrelevant if the humans are flawed precise
+
+103
+00:08:35,560 --> 00:08:39,440
+They have a specific term for the ideal leader here to the double goal coach
+
+104
+00:08:39,640 --> 00:08:44,520
+Break that down for us because usually a coach just has one goal, which is win the game, right?
+
+105
+00:08:44,520 --> 00:08:46,880
+So goal one is winning they aren't naive
+
+106
+00:08:46,880 --> 00:08:51,360
+I know scoreboards exist and competition is healthy. They aren't saying winning doesn't matter, right?
+
+107
+00:08:51,400 --> 00:08:54,700
+But goal two which they argue must be superior to
+
+108
+00:08:55,160 --> 00:08:58,440
+Goal one is teaching life lessons through sports
+
+109
+00:08:58,640 --> 00:09:01,440
+Now that sounds like a really nice poster to hang in the locker room
+
+110
+00:09:01,440 --> 00:09:07,000
+But in the heat of a game when you're down by two points with a minute left those two goals are gonna collide constantly and
+
+111
+00:09:07,520 --> 00:09:12,880
+That collision is where the culture is actually formed. That's the moment of truth
+
+112
+00:09:13,440 --> 00:09:15,280
+Let's look at the behavioral echoes
+
+113
+00:09:15,280 --> 00:09:22,440
+Imagine a close game a referee makes a terrible call against your team just blatantly wrong the coach has two choices
+
+114
+00:09:23,160 --> 00:09:29,320
+Choice a the coach screams at the referee throws their hat kicks the dirt and turns purple
+
+115
+00:09:29,320 --> 00:09:35,240
+Which I have seen happen a hundred times. I've probably seen it this month. We all have now forget the referee for a second
+
+116
+00:09:35,440 --> 00:09:39,320
+What is the lesson that flows downhill to the players watching that coach?
+
+117
+00:09:39,320 --> 00:09:45,920
+The lesson is the system is rate authority is the enemy and the way to handle adversity is to throw a tantrum exactly
+
+118
+00:09:45,920 --> 00:09:50,220
+You are teaching players that lack of control is an acceptable response to pressure
+
+119
+00:09:50,520 --> 00:09:57,160
+You're teaching them that the external world is always to blame for their problems, but look at choice beat. Okay, the coach gets the bad call
+
+120
+00:09:57,680 --> 00:10:03,040
+They are angry because they're human, but they respond with composure. They ask for clarification calmly
+
+121
+00:10:03,080 --> 00:10:06,080
+They turn back to the huddle and say bad call play on
+
+122
+00:10:06,560 --> 00:10:09,040
+Focus on the next play that teaches resilience
+
+123
+00:10:09,080 --> 00:10:16,880
+It teaches that you can control your reaction even when you can't control the outcome and that lesson sticks way longer than the score
+
+124
+00:10:16,880 --> 00:10:20,760
+The game that is tone at the top translated to the sideline
+
+125
+00:10:21,000 --> 00:10:25,520
+But the source material points out that this ecosystem is even larger than the coach
+
+126
+00:10:25,560 --> 00:10:31,360
+It's not just one person the coach has a boss to it's a hierarchy just like the corporation
+
+127
+00:10:31,800 --> 00:10:34,600
+The league administrator sets the tone for the coaches
+
+128
+00:10:35,000 --> 00:10:41,520
+If the league director is disorganized or cuts corners on safety checks or plays favorites with scheduling
+
+129
+00:10:42,080 --> 00:10:45,120
+The coaches feel permitted to do the exact same thing
+
+130
+00:10:45,120 --> 00:10:48,640
+Then the coaches set the tone for the players and then you have the third rail
+
+131
+00:10:49,240 --> 00:10:51,480
+The parents the parents in the stands
+
+132
+00:10:51,520 --> 00:10:57,320
+This is where the culture usually falls apart in my experience it is and think about the flow downhill concept again
+
+133
+00:10:57,360 --> 00:11:00,800
+If a parent is screaming at the umpire from the bleachers
+
+134
+00:11:01,040 --> 00:11:04,720
+They are actively undermining the coach's attempt to teach respect
+
+135
+00:11:04,720 --> 00:11:07,800
+They are creating a counterculture right there in the stands
+
+136
+00:11:07,800 --> 00:11:11,320
+There's a visual from the source that really stuck with me regarding this disconnect
+
+137
+00:11:11,320 --> 00:11:16,640
+They talk about wallpaper and this is where it really clicks for me. I love this analogy. It's haunting actually
+
+138
+00:11:16,680 --> 00:11:20,640
+The idea is that you can have the best youth sports policy in the world
+
+139
+00:11:20,760 --> 00:11:23,480
+You can have a shiny handbook that says we value
+
+140
+00:11:23,840 --> 00:11:25,400
+Sportsmanship and respect
+
+141
+00:11:25,400 --> 00:11:32,160
+But if the head coach is angry and the director is cutting corners that policy is just wallpaper. It's decoration
+
+142
+00:11:32,480 --> 00:11:36,760
+It covers the cracks in the wall, but doesn't hold the house up. In fact, it's worse than that
+
+143
+00:11:36,840 --> 00:11:39,720
+It creates an illusion of structural integrity
+
+144
+00:11:39,720 --> 00:11:46,000
+You think you have a values-based organization because it's written on the wall, but the foundation is rotting
+
+145
+00:11:46,000 --> 00:11:52,040
+That applies to so many things beyond sports to corporate value statements wallpaper
+
+146
+00:11:52,760 --> 00:11:55,760
+Family rules that the parents don't follow wall paper
+
+147
+00:11:55,760 --> 00:12:00,000
+It's the difference between what is declared and what is performed culture is performed
+
+148
+00:12:00,000 --> 00:12:05,040
+If your values are only on paper, you don't actually have values. You just have marketing now
+
+149
+00:12:05,040 --> 00:12:08,600
+We're treating this like a discovery of modern organizational psychology
+
+150
+00:12:08,600 --> 00:12:12,320
+But looking at the broader historical context in the notes, this isn't exactly new
+
+151
+00:12:12,320 --> 00:12:19,760
+We are effectively rediscovering something that was obvious to people 2000 years ago. We really are if we zoom out Jim Morgan
+
+152
+00:12:19,760 --> 00:12:26,400
+Isn't just quoting business theory. He's channeling ancient political philosophy. He's just wearing a suit instead of a toga
+
+153
+00:12:27,040 --> 00:12:29,320
+You're referencing the Play-Doh connection here
+
+154
+00:12:29,320 --> 00:12:34,200
+I am in the Republic Play-Doh spent a lot of time arguing that the character of a state's leaders
+
+155
+00:12:34,700 --> 00:12:41,480
+Directly shapes the moral fabric of society. He didn't talk about skills or efficiency or q3 earnings
+
+156
+00:12:41,480 --> 00:12:48,360
+He talked about virtue. He argued for philosopher kings who embodied prudence and justice not just because it's nice to be nice though
+
+157
+00:12:48,360 --> 00:12:55,480
+No strictly practical he believed the conduct of the leader was inseparable from the health of the society if the leader is corrupt
+
+158
+00:12:55,520 --> 00:13:01,040
+The society inevitable becomes corrupt. It's a contagion and Aristotle backed this up, too, right?
+
+159
+00:13:01,040 --> 00:13:06,720
+He did in his ethics. He asserted that the ethical conduct of those in power permeates everything beneath it
+
+160
+00:13:07,160 --> 00:13:11,720
+So when Morgan talks about a board member needing to show respect to a colleague during a budget dispute
+
+161
+00:13:11,840 --> 00:13:13,760
+He's basically proving Aristotle, right?
+
+162
+00:13:13,760 --> 00:13:20,500
+There is a quote from Ralph Waldo Emerson in the notes that I think captures this better than any business textbook
+
+163
+00:13:20,760 --> 00:13:23,960
+What you are speak so loudly. I can't hear what you're saying. It's
+
+164
+00:13:24,640 --> 00:13:30,920
+Devastatingly accurate think about that in the context of the rubber stamp board member. We talked about earlier. They might be saying
+
+165
+00:13:31,880 --> 00:13:34,880
+We are committed to this non-profit submission
+
+166
+00:13:34,960 --> 00:13:43,240
+But if they show up unprepared and check their emails their behavior is screaming, I don't care and that screen drowns out the mission statement
+
+167
+00:13:43,240 --> 00:13:49,800
+And we should note this isn't just philosophy either. We have modern data on this the notes reference Edgar shines research at MIT
+
+168
+00:13:49,800 --> 00:13:55,880
+Wait, he's the organizational culture guy. He found that an organization's behavior is shaped by deeply held assumptions
+
+169
+00:13:55,920 --> 00:13:59,240
+That's academic speak for how leaders act when things get real
+
+170
+00:13:59,480 --> 00:14:04,160
+It's easy to have good values when profits are up or when the team is winning by 20 points
+
+171
+00:14:04,560 --> 00:14:07,800
+Anyone can be a double-goal coach when they're winning exactly
+
+172
+00:14:08,360 --> 00:14:11,680
+The board's real values aren't in the strategic plan
+
+173
+00:14:11,680 --> 00:14:19,000
+They're revealed in how they treat each other when they disagree on a budget cut the coach's real values aren't in the pregame speech
+
+174
+00:14:19,000 --> 00:14:23,600
+They're revealed when the team is down by 10 points with two minutes left and the ref is blowing calls
+
+175
+00:14:23,840 --> 00:14:27,680
+That is the moment the culture is set speaking of sports and values
+
+176
+00:14:27,960 --> 00:14:32,640
+the source brings up Tony Dungey and I think he is the perfect
+
+177
+00:14:32,880 --> 00:14:36,720
+Counter-argument to the idea that you have to be a loud aggressive
+
+178
+00:14:36,960 --> 00:14:42,920
+Alpha leader to set a strong tone because we usually think tone at the top means volume at the top absolutely
+
+179
+00:14:43,040 --> 00:14:48,520
+Tony Dungey was the first African-American head coach to win a Super Bowl and if you watch him on the sidelines
+
+180
+00:14:48,520 --> 00:14:52,880
+His style was famously quiet. He didn't scream. He didn't rule through fear. He didn't throw headsets
+
+181
+00:14:52,880 --> 00:14:59,480
+He built his teams on consistency character and accountability. He proved that tone doesn't mean volume. That's the key distinction
+
+182
+00:15:00,000 --> 00:15:03,280
+Tone is not volume. It's values made visible
+
+183
+00:15:03,800 --> 00:15:07,880
+Dungey expected his players to follow his lead and because his lead was so steady they did
+
+184
+00:15:07,880 --> 00:15:14,920
+He didn't just win games. He built a culture that survived even when he left the room. So we've established the mechanism here
+
+185
+00:15:14,920 --> 00:15:18,200
+We have the philosophy the data the sports analogies
+
+186
+00:15:18,960 --> 00:15:24,440
+But looking at the current landscape described in the sources, we seem to be in a bit of a crisis
+
+187
+00:15:24,440 --> 00:15:26,920
+This isn't just theoretical organizations are hurting
+
+188
+00:15:27,000 --> 00:15:31,160
+They are in the nonprofit world the data shows boards are struggling significantly
+
+189
+00:15:31,720 --> 00:15:37,160
+You have members who show up quarterly skim the financials nod through the agenda and feel like they've done their duty
+
+190
+00:15:37,720 --> 00:15:42,280
+Meanwhile executive directors are burning out at record rates because they are managing up
+
+191
+00:15:42,360 --> 00:15:45,880
+Right, they're spending all their energy trying to keep the board happy or engaged
+
+192
+00:15:46,280 --> 00:15:52,360
+Instead of leading the organization and the staff sees this they see the gap between the stated values of the mission
+
+193
+00:15:52,840 --> 00:15:58,360
+And the disengagement of leadership that gap is where cynicism is born and in youth sports
+
+194
+00:15:58,440 --> 00:16:00,440
+It's the exact same gap
+
+195
+00:16:00,600 --> 00:16:07,400
+Leagues print beautiful handbooks about respect and then the first tense game happens the parents go wild and the handbook is ignored
+
+196
+00:16:07,560 --> 00:16:09,560
+It's the wallpaper effect in action
+
+197
+00:16:09,640 --> 00:16:15,160
+Everyone knows the values are fake and that breeds profound cynicism. Okay, so let's get practical here for a minute
+
+198
+00:16:15,960 --> 00:16:20,120
+If you are listening to this whether you are a ceo a board member
+
+199
+00:16:20,760 --> 00:16:22,760
+A soccer coach or just a parent
+
+200
+00:16:23,480 --> 00:16:27,240
+How do you fix the wallpaper? How do you make the culture real? Because
+
+201
+00:16:28,120 --> 00:16:31,560
+Be virtuous like play-doh is a pretty tall order for a Tuesday morning
+
+202
+00:16:31,880 --> 00:16:37,240
+The sources give us a really specific actionable tip. They do and I love how deceptively simple this is
+
+203
+00:16:37,400 --> 00:16:41,640
+It's called the 10 minute rule walk us through it. The advice is arrive 10 minutes early
+
+204
+00:16:42,040 --> 00:16:45,400
+Whether it's a board meeting a shift at work or a soccer practice
+
+205
+00:16:45,880 --> 00:16:49,640
+And in those 10 minutes your only job is to have one genuine
+
+206
+00:16:50,200 --> 00:16:54,440
+Non-agenda conversation just talk to someone that's the fix that sounds almost too easy
+
+207
+00:16:54,520 --> 00:16:59,000
+It sounds too small doesn't it but think about the intent if you're a board member you find a staff member
+
+208
+00:16:59,160 --> 00:17:03,400
+Maybe someone you usually ignore if you're a coach you find a player who had a rough week
+
+209
+00:17:03,640 --> 00:17:06,760
+Yes, how are you or how was school and you actually listen to the answer?
+
+210
+00:17:06,840 --> 00:17:11,160
+Why does that change the culture? It shifts the dynamic from transactional to relational
+
+211
+00:17:11,720 --> 00:17:14,600
+It establishes a human connection before the business begins
+
+212
+00:17:15,640 --> 00:17:20,440
+PCA teaches coaches that the first five minutes of practice set the tone for the whole session
+
+213
+00:17:21,160 --> 00:17:26,360
+If you start with connection the rest follows if you start with chaos or detachment
+
+214
+00:17:27,080 --> 00:17:32,680
+You're fighting uphill for the next hour. It forces the leader to be present. You can't fake that. Yes
+
+215
+00:17:33,160 --> 00:17:37,480
+You can't have a genuine conversation if you're checking your email or thinking about your next meeting
+
+216
+00:17:38,120 --> 00:17:42,040
+It forces you to model the engagement you want to see it signals
+
+217
+00:17:42,440 --> 00:17:46,040
+I am here and I see you it's a small investment just 10 minutes
+
+218
+00:17:46,280 --> 00:17:50,120
+But it builds incredible social capital and notice it doesn't cost any money
+
+219
+00:17:50,440 --> 00:17:54,680
+You don't need a consultant for this. You don't need a budget approval. You just need to show up and be a human being
+
+220
+00:17:55,400 --> 00:17:59,960
+It turns the tone at the top from a concept into an action as we wrap this up
+
+221
+00:17:59,960 --> 00:18:01,480
+Let's circle back to that job description
+
+222
+00:18:01,480 --> 00:18:06,520
+We started with the one with the bullet points about governance and duties the one that completely misses the point
+
+223
+00:18:06,920 --> 00:18:11,400
+We've effectively rewritten the job description for anyone in charge of anything today
+
+224
+00:18:11,800 --> 00:18:19,560
+The sources are uncompromising on this. There is no firewall. No firewall. You cannot separate who you are from how you lead
+
+225
+00:18:20,440 --> 00:18:23,160
+The board's culture is the nonprofit's culture
+
+226
+00:18:23,720 --> 00:18:26,040
+The coach's behavior is the team's identity
+
+227
+00:18:26,520 --> 00:18:29,400
+You can't outsource culture to a committee or a document
+
+228
+00:18:29,800 --> 00:18:35,720
+It's a sobering thought whether you are running a fortune 500 company or just running a car pool
+
+229
+00:18:36,280 --> 00:18:37,400
+You are setting a tone
+
+230
+00:18:37,480 --> 00:18:42,920
+You are creating a microculture in that car or that boardroom and the question isn't are you setting a tone?
+
+231
+00:18:42,920 --> 00:18:45,480
+You are whether you like it or not. The question is
+
+232
+00:18:46,200 --> 00:18:48,200
+Is it the tone you want?
+
+233
+00:18:48,440 --> 00:18:55,320
+Intentionality is the only difference between a toxic culture and a thriving one. Well, this has been a fantastic look at the invisible forces that shape
+
+234
+00:18:55,320 --> 00:18:56,440
+Our organizations
+
+235
+00:18:56,440 --> 00:19:00,600
+I'm definitely going to be thinking about that wallpaper analogy the next time I see a mission statement on a wall
+
+236
+00:19:00,760 --> 00:19:03,320
+It's a hard image to shake once you see it before we go
+
+237
+00:19:03,480 --> 00:19:07,240
+I want to leave everyone with that final provocative thought from our source material
+
+238
+00:19:07,560 --> 00:19:11,480
+We talked about emerson saying what you are speak so loudly. I can't hear what you're saying
+
+239
+00:19:11,800 --> 00:19:15,480
+It brings it all back to behavior. So the question for you to mull over today is this
+
+240
+00:19:17,000 --> 00:19:19,000
+If you stop talking right now
+
+241
+00:19:19,080 --> 00:19:22,040
+What are you still saying to the people around you just by being you?
+
+242
+00:19:22,680 --> 00:19:25,480
+That's the question. Thanks for diving in with us. We'll see you next time
+

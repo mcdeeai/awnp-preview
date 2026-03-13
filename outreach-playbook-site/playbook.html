@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach Podcast Playbook | Applied Wisdom for Nonprofits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #111; line-height: 1.7; }
+
+    .nav-bar { background: #fff; border-bottom: 1px solid #e5e5e5; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #111; font-weight: 700; font-size: 14px; }
+    .nav-logo .aw-mark { color: #e8553d; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+    .nav-links { display: flex; list-style: none; }
+    .nav-links a { color: #555; text-decoration: none; font-size: 13px; padding: 8px 12px; display: block; transition: color 0.15s; }
+    .nav-links a:hover { color: #111; }
+    .nav-links a.active { color: #e8553d; font-weight: 600; }
+
+    .hero { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 64px 24px 72px; }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 14px; display: block; }
+    .hero h1 { font-size: 42px; font-weight: 800; line-height: 1.1; color: #111; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .hero .sub { font-size: 16px; color: #555; max-width: 560px; }
+
+    .pitch-strip { border-bottom: 1px solid #e5e5e5; padding: 18px 24px; background: #f5f5f5; }
+    .pitch-strip-inner { max-width: 900px; margin: 0 auto; }
+    .pitch-strip p { font-size: 15px; color: #111; font-weight: 500; }
+
+    .main { max-width: 900px; margin: 0 auto; padding: 56px 24px 80px; }
+
+    /* TALKING POINTS */
+    .talking-points { border: 1px solid #e5e5e5; padding: 28px 32px; margin-bottom: 48px; background: #fff; }
+    .talking-points h3 { font-size: 16px; font-weight: 700; color: #111; margin-bottom: 20px; }
+    .tp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .tp-item { display: flex; align-items: flex-start; gap: 10px; }
+    .tp-check { width: 20px; height: 20px; background: #e8553d; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; margin-top: 3px; }
+    .tp-text { font-size: 13px; color: #555; font-weight: 500; }
+
+    /* PHASES */
+    .phase { border: 1px solid #e5e5e5; overflow: hidden; margin-bottom: 20px; background: #fff; }
+    .phase-header { display: flex; align-items: stretch; border-bottom: 1px solid #e5e5e5; }
+    .phase-num-block { background: #111; color: #fff; min-width: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px 12px; }
+    .phase-num-block .phase-n { font-size: 22px; font-weight: 800; line-height: 1; }
+    .phase-num-block .phase-word { font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.5); margin-top: 3px; }
+    .phase-title-block { padding: 16px 24px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .phase-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 2px; }
+    .phase-title { font-size: 20px; font-weight: 700; color: #111; }
+    .phase-body { padding: 24px 28px; }
+    .phase-body p { font-size: 14px; color: #555; margin-bottom: 12px; line-height: 1.7; }
+    .phase-body ul { margin-left: 18px; margin-bottom: 14px; }
+    .phase-body ul li { font-size: 14px; color: #555; margin-bottom: 7px; }
+    .phase-body ul li strong { color: #111; }
+
+    /* TEMPLATE BOXES */
+    .template-box { background: #f5f5f5; border: 1px solid #e5e5e5; padding: 20px 24px; margin-top: 14px; }
+    .template-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 10px; }
+    .template-box pre { font-family: 'Inter', sans-serif; font-size: 13px; color: #333; white-space: pre-wrap; line-height: 1.7; }
+
+    /* HIGHLIGHT */
+    .highlight { background: #f5f5f5; border-left: 3px solid #e8553d; padding: 16px 20px; margin-top: 14px; }
+    .highlight p { font-size: 14px; line-height: 1.6; color: #111; }
+    .highlight strong { color: #111; }
+
+    footer { border-top: 1px solid #e5e5e5; padding: 24px; background: #fff; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 12px; color: #555; }
+    .footer-right a { font-size: 12px; color: #999; text-decoration: none; }
+    .footer-right a:hover { color: #e8553d; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        Outreach Podcast Playbook
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html" class="active">Playbook</a></li>
+        <li><a href="alf.html">ALF</a></li>
+        <li><a href="pca.html">PCA</a></li>
+        <li><a href="cityyear.html">City Year</a></li>
+        <li><a href="growth.html">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="label">Step-by-Step Guide</span>
+      <h1>Your Partner Outreach Podcast Playbook</h1>
+      <p class="sub">Six phases from first contact to ongoing partnership. Everything you need to run a confident, effective outreach campaign.</p>
+    </div>
+  </section>
+
+  <div class="pitch-strip">
+    <div class="pitch-strip-inner">
+      <p>"We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="talking-points">
+      <h3>Your Key Talking Points</h3>
+      <div class="tp-grid">
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">It's completely free for the partner</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">No contract, no commitment required</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">Ongoing weekly value, every single week</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">They look like thought leaders to their audience</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">Co-branded with their identity</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">66 episodes mapped to their mission</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">Brendan and team handle all production</div></div>
+        <div class="tp-item"><div class="tp-check">&#10003;</div><div class="tp-text">They just share it. That's it.</div></div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-num-block"><div class="phase-n">1</div><div class="phase-word">Phase</div></div>
+        <div class="phase-title-block">
+          <div class="phase-label">Before You Reach Out</div>
+          <div class="phase-title">Prepare</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Walk in informed. Spend 30 minutes with the partner's page before any outreach.</p>
+        <ul>
+          <li><strong>Review the hook episode</strong> for this partner (see each partner page for the specific ep). Know the key ideas cold.</li>
+          <li><strong>Understand the value prop</strong> from their perspective: what problem does this solve for them? (Hint: weekly content without any production effort.)</li>
+          <li><strong>Know their audience.</strong> ALF = senior fellows and leaders. PCA = coaches and admins. City Year = corps members, staff, alumni, school partners. Tailor your language.</li>
+          <li><strong>Review Brendan and team's production assets</strong> so you can speak to the co-branding process confidently.</li>
+          <li><strong>Check the landing page</strong> at appliedwisdomfornonprofits.org so you can demo it in real time.</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>The mental model:</strong> You are not selling them something. You are bringing them a gift. A weekly gift of thought leadership content, delivered, co-branded, and ready to share. Your job is to make sure they understand what they're saying yes to.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-num-block"><div class="phase-n">2</div><div class="phase-word">Phase</div></div>
+        <div class="phase-title-block">
+          <div class="phase-label">Who to Contact</div>
+          <div class="phase-title">Identify</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Find the right person. The wrong contact is wasted energy. You're looking for the person who owns content, communications, or member value.</p>
+        <ul>
+          <li><strong>ALF Silicon Valley:</strong> Erica Yew is the new CEO. You know this org from the inside as a member. Jim Morgan has existing relationships. Start with a warm intro.</li>
+          <li><strong>PCA:</strong> Look for Director of Content, VP of Communications, or the Director of Coach Education. Their team runs programs in all 50 states.</li>
+          <li><strong>City Year:</strong> Focus on the Director of AmeriCorps Recruitment or VP of People. Jim Morgan knows their leadership -- use that connection.</li>
+        </ul>
+        <ul>
+          <li><strong>Warm intro paths:</strong> Always prefer a warm intro over cold outreach. Ask Jim Morgan if he has a connection. LinkedIn second-degree check. Your own ALF network.</li>
+          <li><strong>Decision signal:</strong> You want someone with enough authority to say "yes, let's include this in our communications" without committee approval.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-num-block"><div class="phase-n">3</div><div class="phase-word">Phase</div></div>
+        <div class="phase-title-block">
+          <div class="phase-label">The Ask</div>
+          <div class="phase-title">Pitch</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Lead with the one-liner. Let it land. Then fill in the details only if they ask.</p>
+        <div class="highlight">
+          <p><strong>The one-liner:</strong> "We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
+        </div>
+        <div class="template-box">
+          <div class="template-label">Email Template (customize per partner)</div>
+          <pre>Subject: Free weekly leadership content for your [fellows / coaches / members]
+
+Hi [Name],
+
+My name is Kathleen [last name]. I'm part of the team behind Applied Wisdom for the Nonprofit Sector, a leadership series built on Jim Morgan's 40+ years of experience transforming organizations.
+
+I have a simple offer for [organization name]:
+
+We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything.
+
+There's no cost, no contract, and no production work on your side. Each episode is co-branded with your organization and directly relevant to your [fellows / coaches / members]. We have 66 episodes ready, covering everything from building culture to strategic planning to execution.
+
+I'd love to set up a 20-minute call to show you the format and walk through how it works. Would [day] or [day] work for you?
+
+Warmly,
+Kathleen [last name]
+Applied Wisdom for the Nonprofit Sector
+appliedwisdomfornonprofits.org</pre>
+        </div>
+        <div class="template-box" style="margin-top:16px;">
+          <div class="template-label">Call Script (opening 60 seconds)</div>
+          <pre>"Thanks for taking the time. I'll be brief.
+
+We've built a leadership series called Applied Wisdom for the Nonprofit Sector -- 66 short, practical episodes drawn from Jim Morgan's 40 years leading organizations. Jim turned around Applied Materials, then spent decades in the nonprofit sector.
+
+Here's the offer: we'll co-brand a new episode each week for [their org] and deliver it ready to share. Your team doesn't produce anything. You just put it in front of your audience and they get world-class leadership content with your name on it.
+
+It's free. No contract. And honestly, the easiest 'yes' you'll make this year.
+
+Can I show you a sample?"</pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-num-block"><div class="phase-n">4</div><div class="phase-word">Phase</div></div>
+        <div class="phase-title-block">
+          <div class="phase-label">Show, Don't Tell</div>
+          <div class="phase-title">Demo</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>The demo is your most powerful moment. A live look at a co-branded episode turns a "maybe" into a "yes."</p>
+        <ul>
+          <li><strong>Share the landing page link:</strong> appliedwisdomfornonprofits.org -- walk them through the episode format, the key takeaways, the production quality.</li>
+          <li><strong>Show the hook episode for their org</strong> (see each partner page). It's the one most directly tied to their mission. Start there.</li>
+          <li><strong>Point to the co-branding:</strong> Show them where their logo would appear, how the intro would reference their organization.</li>
+          <li><strong>Keep it under 10 minutes.</strong> The goal is "I can see exactly how this works." Not an exhaustive tour.</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>Best line during demo:</strong> "Imagine your [fellows / coaches / members] getting something this useful with your name on it every week. And you didn't have to produce a word of it."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-num-block"><div class="phase-n">5</div><div class="phase-word">Phase</div></div>
+        <div class="phase-title-block">
+          <div class="phase-label">What Yes Looks Like</div>
+          <div class="phase-title">Close</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Make the yes as easy as possible. Be very clear about what they are agreeing to.</p>
+        <ul>
+          <li><strong>What they commit to:</strong> Share one co-branded episode per week via their existing channels (email newsletter, social, member portal, etc.).</li>
+          <li><strong>What we provide:</strong> The episode, the co-branded assets, the copy, all production. Delivered to them, ready to post.</li>
+          <li><strong>The ask is minimal:</strong> Forward an email. Post a link. Add a section to their newsletter. That's it.</li>
+          <li><strong>Start small if needed:</strong> "Let's run a 4-week pilot. If your audience loves it, we keep going." Remove any hesitation about long-term commitment.</li>
+        </ul>
+        <div class="highlight">
+          <p><strong>The close line:</strong> "All I need from you is a contact on your comms team and the best way to deliver assets to them. We take it from there."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-num-block"><div class="phase-n">6</div><div class="phase-word">Phase</div></div>
+        <div class="phase-title-block">
+          <div class="phase-label">After Yes</div>
+          <div class="phase-title">Follow Up</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>A partner who says yes needs to feel supported and glad they did. This is where the relationship compounds.</p>
+        <ul>
+          <li><strong>Week 1:</strong> Send the first co-branded episode package within 48 hours of agreement. Make the first delivery outstanding.</li>
+          <li><strong>Week 2:</strong> Check in briefly. "How did your audience respond? Any feedback?" Show you care.</li>
+          <li><strong>Month 1:</strong> Share any subscriber or engagement data you have from their channel. Make the value visible.</li>
+          <li><strong>Month 3:</strong> Revisit: "We've delivered 12 episodes. Want to review what's resonating and think about whether other chapters or programs would benefit?"</li>
+          <li><strong>Ongoing cadence:</strong> Quarterly check-in, annual review of which episodes mapped best to their programming calendar.</li>
+        </ul>
+        <ul>
+          <li><strong>For ALF specifically:</strong> Success with the SV chapter opens the door to Houston, Oregon, Sacramento, and national chapters. Flag this at the 3-month check-in.</li>
+          <li><strong>Reporting:</strong> Even simple metrics (how many times the episode was forwarded, click rates) go a long way in reinforcing the partnership value.</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">Applied Wisdom for the Nonprofit Sector &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

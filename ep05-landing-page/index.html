@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWNP Weekly Update — Meeting Agenda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.8; }
+
+    .nav { background: #1a2744; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+    .nav .badge { background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+    .nav-links { display: flex; gap: 12px; align-items: center; }
+    .nav-links a { 
+      color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none;
+      padding: 5px 14px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.2s;
+    }
+    .nav-links a:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+    .nav-links a.primary { background: #e8553d; color: #fff; border-color: #e8553d; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 50px 24px 40px; text-align: center; }
+    .hero .label { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.5; margin-bottom: 12px; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; margin-bottom: 8px; }
+    .hero .date { font-size: 16px; opacity: 0.6; }
+
+    .content { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
+
+    .greeting { font-size: 17px; color: #555; margin-bottom: 32px; }
+
+    .agenda-item {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin: 20px 0;
+      border-left: 4px solid #e8553d;
+    }
+    .agenda-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #e8553d;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .agenda-item h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      color: #1a2744;
+      margin-bottom: 12px;
+      display: inline;
+      vertical-align: middle;
+    }
+    .agenda-item p { margin-bottom: 10px; font-size: 15px; color: #555; }
+    .agenda-item p:last-child { margin-bottom: 0; }
+    .agenda-item ul { margin: 8px 0 8px 20px; }
+    .agenda-item li { font-size: 15px; color: #555; margin-bottom: 6px; }
+
+    .demo-link {
+      display: inline-block;
+      background: #e8553d;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .demo-link:hover { background: #d14832; }
+
+    .observations {
+      background: #1a2744;
+      color: #fff;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin: 32px 0;
+    }
+    .observations h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    .observations p { opacity: 0.85; margin-bottom: 14px; font-size: 15px; }
+    .observations p:last-child { margin-bottom: 0; }
+    .obs-label { 
+      display: inline-block; background: rgba(232,85,61,0.2); color: #e8553d; 
+      padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: 700; 
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;
+    }
+
+    .signoff {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #e8e8e8;
+      font-size: 16px;
+      color: #888;
+    }
+
+    .footer { background: #1a2744; color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 13px; margin-top: 40px; }
+    .footer a { color: #e8553d; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 26px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#"><span class="badge">AW</span> Applied Wisdom</a>
+    <div class="nav-links">
+      <a href="series-index.html">📚 Series Index</a>
+      <a href="how-it-works.html">⚙️ How It Works</a>
+      <a href="outreach-playbook.html">🤝 Outreach Playbook</a>
+      <a href="acquisition-strategy.html">📈 Acquisition</a>
+      <a href="episode-brief.html" style="color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none; padding: 5px 14px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2);">📄 Episode Brief</a>
+      <a href="episode-7.html" class="primary">▶ Episode 7 Demo</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="label">Meeting Agenda</div>
+    <h1>AWNP Weekly Update</h1>
+    <div class="date">Week of February 24, 2026</div>
+  </section>
+
+  <div class="content">
+
+    <div style="background: linear-gradient(135deg, #1a2744, #2a3d5e); color: #fff; border-radius: 8px; padding: 28px 32px; margin-bottom: 32px;">
+      <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; margin-bottom: 10px; text-align: center;">North Star</div>
+      <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; text-align: center; margin-bottom: 16px;">Empower every nonprofit leader seeking to grow</div>
+      <div style="text-align: center; margin-bottom: 12px;">
+        <span style="background: rgba(232,85,61,0.2); color: #e8553d; padding: 4px 14px; border-radius: 20px; font-size: 14px; font-weight: 700;">2026 Target: 10,000 New Subscribers (8,500 → 18,500)</span>
+      </div>
+      <details style="margin-top: 12px; cursor: pointer;">
+        <summary style="font-size: 13px; opacity: 0.6; text-align: center; list-style: none;">▸ Why this matters</summary>
+        <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; opacity: 0.85;">
+          <p style="font-style: italic; margin-bottom: 12px;">"I believe that every person, regardless of their education or training, is capable of improving their leadership and management skills." — Jim Morgan</p>
+          <p style="margin-bottom: 8px;">Each visit = someone searching for leadership help</p>
+          <p style="margin-bottom: 8px;">Each conversion = a leader seeking growth</p>
+          <p style="margin-bottom: 8px;">Each subscriber = a sustained channel for impact</p>
+          <p><strong>How we measure:</strong> Email list growth</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Item 1 -->
+    <div class="agenda-item">
+      <span class="agenda-num">1</span>
+      <h3>Prioritize and Focus</h3>
+      <ul style="margin-top: 12px;">
+        <li>Rebuilt and launched campaigns in both the paid and grant accounts</li>
+        <li>GenZ efforts slowed but not stopped - videos in the system, evaluated and edited for marketing campaigns</li>
+        <li>Both accounts currently in training mode until ~Feb 26-27 - seeing positive initial activity signals from paid account; grant new campaign not producing yet</li>
+      </ul>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="agenda-item">
+      <span class="agenda-num">2</span>
+      <h3>Weekly Podcast — Content Flywheel Demo</h3>
+      <p style="margin-top: 12px;">Brendan has been working on a new AI podcast approach - we'll demo it today.</p>
+      <a href="episode-7.html" class="demo-link">▶ See the Episode 7 Demo</a>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="agenda-item">
+      <span class="agenda-num">3</span>
+      <h3>PCA Outreach Playbook</h3>
+      <p style="margin-top: 12px;">The format from the demo will be the reference for this and future partner opportunities. Plug and play - no effort from the partner.</p>
+      <p><strong>Next step:</strong> Build the playbook for Kathleen to use with partner orgs.</p>
+      <a href="outreach-playbook.html" class="demo-link" style="background: #1a2744;">🤝 See the Outreach Playbook</a>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="agenda-item">
+      <span class="agenda-num">4</span>
+      <h3>MOU & Budget</h3>
+      <p style="margin-top: 12px;">Budget sheet will be updated and sent prior to the meeting.</p>
+      <p><strong>Discussion point:</strong> The MOU currently contains aspirational numbers. Want to align on methodology - should we treat these as stretch targets (motivational, knowing we'll land on a good number even if we don't hit the moon), or shift to a more conservative approach where hitting the number = great, beating it = exceptional? Looking for Linda and Mary's advice on how they'd prefer to frame this.</p>
+    </div>
+
+    <!-- Observations -->
+    <div class="observations">
+      <h3>Other Observations</h3>
+
+      <div style="margin-bottom: 18px;">
+        <div class="obs-label">Newsletter</div>
+        <p>Editions are trending longer than our original short-snippet format. Should we lean into long-form, tighten back up, or find a hybrid?</p>
+      </div>
+
+      <div style="margin-bottom: 18px;">
+        <div class="obs-label">Community</div>
+        <p>Interest is real. Superusers rise organically from within - look for people already implementing, not just raising their hand.</p>
+      </div>
+
+      <div style="margin-bottom: 18px;">
+        <div class="obs-label">Digital Strategy</div>
+        <p>Scale awareness, not overhead. Give leaders digital self-help tools they use on their own terms. Resist the trap of staff-run programs inside orgs.</p>
+      </div>
+
+      <div>
+        <div class="obs-label">Good News</div>
+        <p>The monks reached their destination. What's our next uplifting story?</p>
+      </div>
+    </div>
+
+    <!-- signoff removed -->
+
+  </div>
+
+  <div class="footer">
+    Applied Wisdom for the Nonprofit Sector &bull; <a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a>
+  </div>
+
+</body>
+</html>

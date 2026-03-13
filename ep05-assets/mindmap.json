@@ -1,0 +1,110 @@
+{
+  "name": "Tone at the Top",
+  "children": [
+    {
+      "name": "The Morgan Insight",
+      "children": [
+        {
+          "name": "Board Culture is Organizational Culture"
+        },
+        {
+          "name": "Behavior Over Policy"
+        },
+        {
+          "name": "Leading by Example"
+        },
+        {
+          "name": "Cascading Leadership Dynamic"
+        }
+      ]
+    },
+    {
+      "name": "Positive Coaching Alliance (PCA)",
+      "children": [
+        {
+          "name": "Double-Goal Coach Framework"
+        },
+        {
+          "name": "Adults Set the Tone"
+        },
+        {
+          "name": "Sideline Behavior as Team Identity"
+        },
+        {
+          "name": "Values Made Visible"
+        }
+      ]
+    },
+    {
+      "name": "Core Leadership Principles",
+      "children": [
+        {
+          "name": "Intentionality vs. Inspiration"
+        },
+        {
+          "name": "Respectful Disagreement"
+        },
+        {
+          "name": "Curiosity and Preparation"
+        },
+        {
+          "name": "Authentic Presence"
+        }
+      ]
+    },
+    {
+      "name": "Historical and Empirical Wisdom",
+      "children": [
+        {
+          "name": "Plato: Character of Leaders"
+        },
+        {
+          "name": "Aristotle: Ethical Conduct"
+        },
+        {
+          "name": "Emerson: Actions Speak Louder"
+        },
+        {
+          "name": "Edgar Schein: Deeply Held Assumptions"
+        },
+        {
+          "name": "Tony Dungy: Principled Leadership"
+        }
+      ]
+    },
+    {
+      "name": "The Crisis in Nonprofit Boards",
+      "children": [
+        {
+          "name": "Passive Governance"
+        },
+        {
+          "name": "Executive Director Burnout"
+        },
+        {
+          "name": "Disconnected Values"
+        },
+        {
+          "name": "Culture as Performance"
+        }
+      ]
+    },
+    {
+      "name": "Actionable Takeaways",
+      "children": [
+        {
+          "name": "Arrive Early"
+        },
+        {
+          "name": "Non-Agenda Conversations"
+        },
+        {
+          "name": "Active Listening"
+        },
+        {
+          "name": "Self-Reflection in the Mirror"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2712 @@
+1
+00:00:00,000 --> 00:00:02,880
+Culture eats strategy for breakfast.
+
+2
+00:00:02,880 --> 00:00:03,720
+Yeah.
+
+3
+00:00:03,720 --> 00:00:05,360
+You have heard it, I have heard it.
+
+4
+00:00:05,360 --> 00:00:08,440
+It's probably plastered on a poster
+
+5
+00:00:08,440 --> 00:00:10,000
+in your break room right now,
+
+6
+00:00:10,000 --> 00:00:11,440
+maybe peeling a little at the corners.
+
+7
+00:00:11,440 --> 00:00:14,600
+And honestly, I kind of hate that phrase.
+
+8
+00:00:14,600 --> 00:00:15,440
+You hate it.
+
+9
+00:00:15,440 --> 00:00:18,720
+That's a pretty strong reaction to a business classic.
+
+10
+00:00:18,720 --> 00:00:19,560
+I do.
+
+11
+00:00:19,560 --> 00:00:21,200
+It just feels like one of those things consultants say
+
+12
+00:00:21,200 --> 00:00:23,880
+when they don't really have a real answer.
+
+13
+00:00:23,880 --> 00:00:24,720
+Right.
+
+14
+00:00:25,560 --> 00:00:28,160
+It is catchy, sure, but what does it actually mean?
+
+15
+00:00:28,160 --> 00:00:30,640
+It feels like a cliche that just gets thrown around
+
+16
+00:00:30,640 --> 00:00:33,680
+in boardrooms to sort of shut down the conversation.
+
+17
+00:00:33,680 --> 00:00:37,960
+It is basically the live laugh love of the corporate world.
+
+18
+00:00:37,960 --> 00:00:40,080
+Okay, that is a fair critique.
+
+19
+00:00:40,080 --> 00:00:42,200
+It has absolutely become a bumper sticker,
+
+20
+00:00:42,200 --> 00:00:44,040
+but here's the thing about cliches,
+
+21
+00:00:44,040 --> 00:00:45,800
+and I really hate to be the one to defend them,
+
+22
+00:00:45,800 --> 00:00:47,080
+but usually they become cliches
+
+23
+00:00:47,080 --> 00:00:49,440
+because there is a massive fundamental truth
+
+24
+00:00:49,440 --> 00:00:51,040
+buried in there somewhere.
+
+25
+00:00:51,040 --> 00:00:52,720
+We just stop hearing it
+
+26
+00:00:52,720 --> 00:00:54,960
+because we have heard it way too often.
+
+27
+00:00:54,960 --> 00:00:55,960
+Okay, so you were saying
+
+28
+00:00:55,960 --> 00:00:58,040
+there is actually some meat on the bone here.
+
+29
+00:00:58,080 --> 00:01:00,080
+There is a lot of meat,
+
+30
+00:01:00,080 --> 00:01:02,320
+and that is exactly what we are doing today
+
+31
+00:01:02,320 --> 00:01:03,480
+in this deep dive.
+
+32
+00:01:03,480 --> 00:01:05,040
+We are dusting off that phrase
+
+33
+00:01:05,040 --> 00:01:06,640
+and looking at what it actually means,
+
+34
+00:01:06,640 --> 00:01:09,480
+not as a slogan, but as a literal survival mechanism.
+
+35
+00:01:09,480 --> 00:01:12,360
+Right, and before we really get into the how of all this,
+
+36
+00:01:12,360 --> 00:01:14,880
+I need to wrap my head around our source material for today.
+
+37
+00:01:14,880 --> 00:01:15,720
+Sure.
+
+38
+00:01:15,720 --> 00:01:17,840
+Because we are looking at insights from Jim Morgan
+
+39
+00:01:17,840 --> 00:01:21,840
+who led applied materials.
+
+40
+00:01:21,840 --> 00:01:23,360
+That's a massive high tech company.
+
+41
+00:01:23,360 --> 00:01:25,080
+Right, a global tech giant.
+
+42
+00:01:25,080 --> 00:01:28,000
+Exactly, but this analysis is being presented
+
+43
+00:01:28,000 --> 00:01:31,920
+in a co-branded deep dive with Kalan Profits,
+
+44
+00:01:31,920 --> 00:01:35,120
+the California Association of Non-profits.
+
+45
+00:01:35,120 --> 00:01:37,080
+That just seems like a really odd couple to me.
+
+46
+00:01:37,080 --> 00:01:38,680
+It does sound like a total mismatch, doesn't it?
+
+47
+00:01:38,680 --> 00:01:39,520
+Yeah.
+
+48
+00:01:39,520 --> 00:01:40,560
+I have this Titan of Silicon Valley,
+
+49
+00:01:40,560 --> 00:01:43,280
+a guy who ran a hardware empire for nearly three decades,
+
+50
+00:01:43,280 --> 00:01:45,200
+and then you have the nonprofit sector.
+
+51
+00:01:45,200 --> 00:01:46,720
+But the reason they are paired up
+
+52
+00:01:46,720 --> 00:01:48,560
+is really the core of our discussion today.
+
+53
+00:01:48,560 --> 00:01:49,560
+Which is what exactly?
+
+54
+00:01:49,560 --> 00:01:51,840
+That human behavior doesn't change
+
+55
+00:01:51,840 --> 00:01:53,560
+just because your tax status does.
+
+56
+00:01:53,560 --> 00:01:55,800
+Oh, wow, okay.
+
+57
+00:01:55,840 --> 00:01:58,800
+Morgan's entire argument is that organizations,
+
+58
+00:01:58,800 --> 00:02:01,600
+whether they are manufacturing microchips
+
+59
+00:02:01,600 --> 00:02:03,520
+or feeding the unhoused,
+
+60
+00:02:03,520 --> 00:02:06,160
+they all fall into the exact same traps
+
+61
+00:02:06,160 --> 00:02:07,560
+when things get tough.
+
+62
+00:02:07,560 --> 00:02:09,280
+Okay, let's talk about those traps then.
+
+63
+00:02:09,280 --> 00:02:11,640
+Because usually when an organization is struggling,
+
+64
+00:02:11,640 --> 00:02:14,920
+right, sales are down, or maybe donors are ghosting you,
+
+65
+00:02:14,920 --> 00:02:18,080
+morale is just in the toilet.
+
+66
+00:02:18,080 --> 00:02:21,040
+Leadership loves to pivot to strategy.
+
+67
+00:02:21,040 --> 00:02:23,760
+Oh, we are completely addicted to strategy.
+
+68
+00:02:23,760 --> 00:02:26,680
+It feels safe, it feels intellectual and rigorous.
+
+69
+00:02:26,680 --> 00:02:28,080
+You hire a consultant,
+
+70
+00:02:28,080 --> 00:02:30,200
+you draft this massive five-year plan,
+
+71
+00:02:30,200 --> 00:02:32,320
+maybe you reorganize the whole org chart,
+
+72
+00:02:32,320 --> 00:02:35,520
+it feels like you are doing something productive.
+
+73
+00:02:35,520 --> 00:02:38,680
+But Morgan is saying that is the wrong move.
+
+74
+00:02:38,680 --> 00:02:40,480
+He says it is effectively useless
+
+75
+00:02:40,480 --> 00:02:41,640
+if your culture is broken.
+
+76
+00:02:41,640 --> 00:02:42,480
+Useless.
+
+77
+00:02:42,480 --> 00:02:43,320
+Completely.
+
+78
+00:02:43,320 --> 00:02:45,200
+He argues that if the underlying system
+
+79
+00:02:45,200 --> 00:02:47,800
+of how people actually interact with each other is flawed,
+
+80
+00:02:47,800 --> 00:02:50,200
+no amount of brilliant strategy is gonna save you.
+
+81
+00:02:50,200 --> 00:02:51,520
+You can have the best map in the world,
+
+82
+00:02:51,520 --> 00:02:53,840
+but if your car has no engine, you aren't going anywhere.
+
+83
+00:02:53,840 --> 00:02:55,520
+So the mission for today's deep dive
+
+84
+00:02:55,520 --> 00:02:59,520
+is to explain why culture isn't just a vibe.
+
+85
+00:02:59,520 --> 00:03:01,120
+I feel like we use that word way too much,
+
+86
+00:03:01,120 --> 00:03:02,840
+like, oh, the culture's a bad vibe.
+
+87
+00:03:02,840 --> 00:03:04,680
+Yeah, way too much.
+
+88
+00:03:04,680 --> 00:03:07,800
+We want to look at it as a system of deliberate actions.
+
+89
+00:03:07,800 --> 00:03:11,560
+And specifically, we are going to see how this applies
+
+90
+00:03:11,560 --> 00:03:13,400
+to the nonprofit sector in California,
+
+91
+00:03:13,400 --> 00:03:16,120
+where the stakes for you and your communities
+
+92
+00:03:16,120 --> 00:03:18,160
+are honestly terrifyingly high.
+
+93
+00:03:18,160 --> 00:03:19,840
+They are incredibly high.
+
+94
+00:03:19,840 --> 00:03:22,560
+And I think we need to start by dismantling the thing
+
+95
+00:03:22,560 --> 00:03:26,560
+most companies do instead of actually fixing their culture.
+
+96
+00:03:26,560 --> 00:03:27,400
+The ritual.
+
+97
+00:03:27,400 --> 00:03:29,360
+Yes, the offsite ritual.
+
+98
+00:03:29,360 --> 00:03:31,080
+Oh, man, I know this ritual.
+
+99
+00:03:31,080 --> 00:03:33,680
+I have lived this ritual so many times.
+
+100
+00:03:33,680 --> 00:03:34,520
+Walk me through it.
+
+101
+00:03:34,520 --> 00:03:35,360
+What does it look like?
+
+102
+00:03:35,360 --> 00:03:36,560
+Okay, so the numbers are bad.
+
+103
+00:03:36,560 --> 00:03:37,400
+Yeah.
+
+104
+00:03:37,400 --> 00:03:38,400
+Everyone is completely stressed out.
+
+105
+00:03:38,400 --> 00:03:41,080
+The CEO stands up and says, we have a culture problem.
+
+106
+00:03:41,080 --> 00:03:41,920
+So what do they do?
+
+107
+00:03:41,920 --> 00:03:43,240
+They book a hotel.
+
+108
+00:03:43,240 --> 00:03:44,080
+Exactly.
+
+109
+00:03:44,080 --> 00:03:45,960
+They book a hotel conference room
+
+110
+00:03:45,960 --> 00:03:48,600
+with those terrible humming, fluorescent lights.
+
+111
+00:03:48,600 --> 00:03:50,520
+They order some stale pastries.
+
+112
+00:03:50,520 --> 00:03:52,800
+And they hold the offsite.
+
+113
+00:03:52,800 --> 00:03:54,720
+The dreaded two-day offsite.
+
+114
+00:03:54,720 --> 00:03:55,720
+Yes.
+
+115
+00:03:55,720 --> 00:03:59,840
+You spend two whole days doing trust falls
+
+116
+00:03:59,840 --> 00:04:01,840
+or putting sticky notes on a whiteboard.
+
+117
+00:04:01,840 --> 00:04:04,240
+You come up with big buzzwords like synergy
+
+118
+00:04:04,240 --> 00:04:06,440
+and excellence and innovation.
+
+119
+00:04:06,440 --> 00:04:08,520
+And everyone feels really good for about,
+
+120
+00:04:08,520 --> 00:04:10,320
+I don't know, six hours.
+
+121
+00:04:10,320 --> 00:04:11,720
+It is like a sugar rush.
+
+122
+00:04:11,720 --> 00:04:12,720
+And then what happens?
+
+123
+00:04:12,720 --> 00:04:15,360
+Then you go back to the office on Monday morning.
+
+124
+00:04:15,360 --> 00:04:17,080
+You open your laptop.
+
+125
+00:04:17,080 --> 00:04:20,240
+The huge pile of work is still sitting right there.
+
+126
+00:04:20,240 --> 00:04:24,280
+The annoying coworker is still just as annoying.
+
+127
+00:04:24,280 --> 00:04:26,160
+And by Tuesday at lunch,
+
+128
+00:04:26,160 --> 00:04:28,320
+that new culture is completely dead.
+
+129
+00:04:28,320 --> 00:04:29,160
+Exactly.
+
+130
+00:04:29,160 --> 00:04:32,720
+Morgan has seen this exact scenario a thousand times.
+
+131
+00:04:32,720 --> 00:04:34,440
+He says the reason the offsite fails
+
+132
+00:04:34,440 --> 00:04:36,840
+is that it treats culture as an event.
+
+133
+00:04:36,840 --> 00:04:37,680
+An event.
+
+134
+00:04:37,680 --> 00:04:38,520
+Yeah.
+
+135
+00:04:38,520 --> 00:04:40,320
+You cannot change an organization's character
+
+136
+00:04:40,320 --> 00:04:43,000
+just by telling people it needs to change for 48 hours.
+
+137
+00:04:43,000 --> 00:04:44,400
+It feels like trying to get in shape
+
+138
+00:04:44,400 --> 00:04:45,880
+by reading a book about jogging
+
+139
+00:04:45,880 --> 00:04:47,040
+while you're eating a donut.
+
+140
+00:04:47,040 --> 00:04:48,600
+That is a perfect analogy.
+
+141
+00:04:48,600 --> 00:04:50,920
+The offsite is the book about jogging.
+
+142
+00:04:50,920 --> 00:04:53,320
+It might help you diagnose that you are out of shape.
+
+143
+00:04:53,320 --> 00:04:55,360
+Sure, it might even get everyone in the room
+
+144
+00:04:55,360 --> 00:04:57,520
+to agree that jogging is a good idea.
+
+145
+00:04:57,520 --> 00:04:59,840
+But it is not the run itself.
+
+146
+00:04:59,840 --> 00:05:01,880
+Morgan's entire philosophy pivots
+
+147
+00:05:01,880 --> 00:05:03,720
+on this idea of deliberate action.
+
+148
+00:05:03,720 --> 00:05:05,120
+Deliberate action.
+
+149
+00:05:05,120 --> 00:05:06,560
+That sounds a lot less fluffy
+
+150
+00:05:06,560 --> 00:05:08,640
+than trust falls and sticky notes.
+
+151
+00:05:08,640 --> 00:05:10,520
+It is basically engineering.
+
+152
+00:05:10,520 --> 00:05:13,560
+Morgan insists that culture is built through structure,
+
+153
+00:05:13,560 --> 00:05:15,560
+processes, and people.
+
+154
+00:05:15,560 --> 00:05:17,560
+It is reinforced day after day
+
+155
+00:05:17,560 --> 00:05:20,440
+in all the boring mundane stuff.
+
+156
+00:05:20,440 --> 00:05:23,520
+It is not a feeling, it is the operating system.
+
+157
+00:05:23,520 --> 00:05:24,360
+Oh, I like that.
+
+158
+00:05:24,360 --> 00:05:25,960
+The offsite is just a screensaver.
+
+159
+00:05:25,960 --> 00:05:27,720
+It looks pretty, it bounces around,
+
+160
+00:05:27,720 --> 00:05:30,040
+but it doesn't do any of the actual processing work.
+
+161
+00:05:30,040 --> 00:05:31,320
+That distinction is great.
+
+162
+00:05:31,320 --> 00:05:33,480
+Operating system versus screensaver.
+
+163
+00:05:33,480 --> 00:05:35,400
+But let me push back a little bit here.
+
+164
+00:05:35,400 --> 00:05:39,000
+It is really easy for a billionaire tech CEO
+
+165
+00:05:39,000 --> 00:05:41,600
+to talk about deliberate action and structure.
+
+166
+00:05:41,600 --> 00:05:42,440
+True.
+
+167
+00:05:42,440 --> 00:05:43,600
+He has infinite resources.
+
+168
+00:05:43,600 --> 00:05:46,360
+He has armies of people to implement these things.
+
+169
+00:05:46,360 --> 00:05:48,640
+We are applying this to the nonprofit sector.
+
+170
+00:05:48,640 --> 00:05:51,120
+Does this actually translate to a small organization
+
+171
+00:05:51,120 --> 00:05:53,600
+that is just screaching by on grants?
+
+172
+00:05:53,600 --> 00:05:55,480
+That is the million dollar question right there.
+
+173
+00:05:55,480 --> 00:05:56,640
+Or actually looking at the data,
+
+174
+00:05:56,640 --> 00:05:58,680
+it's the 200 billion dollar question.
+
+175
+00:05:58,680 --> 00:05:59,960
+Wait, 200 billion?
+
+176
+00:05:59,960 --> 00:06:03,000
+Let's look at the actual data from count nonprofits.
+
+177
+00:06:03,000 --> 00:06:06,120
+They released a research report called Causes Count.
+
+178
+00:06:06,120 --> 00:06:07,440
+And I think most people,
+
+179
+00:06:07,440 --> 00:06:08,800
+when they hear the word nonprofit,
+
+180
+00:06:08,800 --> 00:06:11,760
+they picture a local soup kitchen or a tiny charity.
+
+181
+00:06:11,760 --> 00:06:13,080
+They just think small.
+
+182
+00:06:13,080 --> 00:06:15,080
+Right, just nice people doing nice things
+
+183
+00:06:15,080 --> 00:06:16,320
+on a shoestring budget.
+
+184
+00:06:16,320 --> 00:06:19,520
+But the reality is that the nonprofit sector in California
+
+185
+00:06:19,520 --> 00:06:22,360
+employs over 1.2 million people.
+
+186
+00:06:22,360 --> 00:06:24,920
+Whoa, 1.2 million.
+
+187
+00:06:24,920 --> 00:06:27,040
+Yeah, let's put that number in perspective for you.
+
+188
+00:06:27,040 --> 00:06:30,200
+That is bigger than the entire construction industry
+
+189
+00:06:30,200 --> 00:06:31,040
+in California.
+
+190
+00:06:31,040 --> 00:06:31,880
+You're kidding.
+
+191
+00:06:31,880 --> 00:06:34,560
+No, it is bigger than the finance and insurance sectors too.
+
+192
+00:06:34,560 --> 00:06:37,880
+It generates over $200 billion in revenue.
+
+193
+00:06:37,880 --> 00:06:40,960
+So if the nonprofit sector has a culture crisis,
+
+194
+00:06:40,960 --> 00:06:42,880
+it is not just a charity problem.
+
+195
+00:06:42,880 --> 00:06:46,280
+It is a massive economic liability for the entire state.
+
+196
+00:06:46,280 --> 00:06:49,320
+That completely changes the gravity of the conversation.
+
+197
+00:06:49,320 --> 00:06:51,000
+We aren't just talking about making volunteers
+
+198
+00:06:51,000 --> 00:06:52,520
+feel fuzzy and appreciated.
+
+199
+00:06:52,520 --> 00:06:54,120
+We are talking about the efficiency
+
+200
+00:06:54,120 --> 00:06:56,320
+of a huge chunk of the economy.
+
+201
+00:06:56,320 --> 00:06:58,760
+Exactly, we are talking about the engine
+
+202
+00:06:58,760 --> 00:07:01,080
+that holds the entire social safety net together.
+
+203
+00:07:01,080 --> 00:07:03,240
+And right now it's running on broken pistons.
+
+204
+00:07:03,240 --> 00:07:04,720
+And the source material highlights
+
+205
+00:07:04,720 --> 00:07:07,000
+that this engine is running incredibly hot.
+
+206
+00:07:07,000 --> 00:07:08,760
+Because they're under resourced.
+
+207
+00:07:08,760 --> 00:07:11,520
+Right, these organizations are often under staff,
+
+208
+00:07:11,560 --> 00:07:13,480
+underfunded, and they are dealing with some
+
+209
+00:07:13,480 --> 00:07:15,800
+of the most difficult, heartbreaking,
+
+210
+00:07:15,800 --> 00:07:18,360
+societal problems imaginable.
+
+211
+00:07:18,360 --> 00:07:22,280
+Which creates a very specific, intense kind of burnout,
+
+212
+00:07:22,280 --> 00:07:23,120
+doesn't it?
+
+213
+00:07:23,120 --> 00:07:24,640
+Because in the corporate world,
+
+214
+00:07:24,640 --> 00:07:26,920
+if you burn out and drop the ball,
+
+215
+00:07:26,920 --> 00:07:29,400
+maybe you lose a quarterly bonus.
+
+216
+00:07:29,400 --> 00:07:32,400
+But in the nonprofit world, if you burn out,
+
+217
+00:07:32,400 --> 00:07:35,600
+maybe a vulnerable community doesn't get fed that week.
+
+218
+00:07:35,600 --> 00:07:37,760
+The guilt factor alone must be huge.
+
+219
+00:07:37,760 --> 00:07:39,960
+It is immense, the pressure is constant.
+
+220
+00:07:39,960 --> 00:07:42,120
+And that leads directly to the trap we mentioned earlier
+
+221
+00:07:42,120 --> 00:07:43,760
+with the strategy obsession.
+
+222
+00:07:43,760 --> 00:07:45,040
+When you are that overwhelmed
+
+223
+00:07:45,040 --> 00:07:46,840
+and you are running on fumes,
+
+224
+00:07:46,840 --> 00:07:49,880
+your human instinct is to do something to fix it.
+
+225
+00:07:49,880 --> 00:07:50,720
+Right.
+
+226
+00:07:50,720 --> 00:07:52,120
+So you launch a brand new initiative.
+
+227
+00:07:52,120 --> 00:07:54,760
+You write a new glossy strategic plan
+
+228
+00:07:54,760 --> 00:07:56,800
+to show your donors that you are innovating.
+
+229
+00:07:56,800 --> 00:07:58,880
+Because you always have to show impact
+
+230
+00:07:58,880 --> 00:08:00,120
+to get the next grant.
+
+231
+00:08:00,120 --> 00:08:01,200
+Exactly.
+
+232
+00:08:01,200 --> 00:08:03,960
+But Morgan points out that adding a new strategic plan
+
+233
+00:08:03,960 --> 00:08:06,440
+on top of a broken, burnt out culture
+
+234
+00:08:06,440 --> 00:08:08,560
+is like building a second story on a house
+
+235
+00:08:08,560 --> 00:08:10,600
+that has a crumbling foundation.
+
+236
+00:08:10,600 --> 00:08:12,200
+It's just gonna collapse faster.
+
+237
+00:08:12,200 --> 00:08:13,320
+Exactly.
+
+238
+00:08:13,320 --> 00:08:14,800
+The weight of the new strategy
+
+239
+00:08:14,800 --> 00:08:17,520
+just crushes whatever morale is left.
+
+240
+00:08:17,520 --> 00:08:20,920
+So the solution isn't a flashier fundraising gala
+
+241
+00:08:20,920 --> 00:08:22,320
+or a better brochure.
+
+242
+00:08:22,320 --> 00:08:23,320
+No.
+
+243
+00:08:23,320 --> 00:08:25,160
+The solution is to treat your culture
+
+244
+00:08:25,160 --> 00:08:27,520
+as a core organizational asset.
+
+245
+00:08:27,520 --> 00:08:29,640
+An asset just like your office building
+
+246
+00:08:29,640 --> 00:08:32,320
+or your donor database or your endowment.
+
+247
+00:08:32,320 --> 00:08:33,160
+Right.
+
+248
+00:08:33,160 --> 00:08:35,400
+The organizations that actually thrive,
+
+249
+00:08:35,400 --> 00:08:36,760
+the ones that retain their staff
+
+250
+00:08:36,760 --> 00:08:39,240
+and keep donors coming back year after year
+
+251
+00:08:39,240 --> 00:08:41,360
+are the ones that ruthlessly prioritize
+
+252
+00:08:41,360 --> 00:08:43,320
+the internal way they work together.
+
+253
+00:08:43,320 --> 00:08:45,160
+There is this concept of the ripple effect
+
+254
+00:08:45,160 --> 00:08:46,920
+mentioned in the source material.
+
+255
+00:08:46,920 --> 00:08:50,120
+And since we're talking about 10,000 member organizations
+
+256
+00:08:50,120 --> 00:08:51,320
+and counting profits,
+
+257
+00:08:51,320 --> 00:08:53,600
+that ripple could really be a tidal wave.
+
+258
+00:08:53,600 --> 00:08:55,280
+Think about the sheer scale of it.
+
+259
+00:08:55,280 --> 00:08:57,760
+If just a fraction of those 10,000 organizations
+
+260
+00:08:57,760 --> 00:08:59,920
+improve their culture, even just incrementally,
+
+261
+00:08:59,920 --> 00:09:03,040
+you get what Morgan calls compound interest on culture.
+
+262
+00:09:03,040 --> 00:09:04,520
+Compound interest on culture.
+
+263
+00:09:04,520 --> 00:09:05,360
+I love that.
+
+264
+00:09:05,360 --> 00:09:07,800
+Because less burnout means lower turnover.
+
+265
+00:09:07,800 --> 00:09:11,080
+And turnover is so incredibly expensive.
+
+266
+00:09:11,080 --> 00:09:12,880
+It is devastating to a budget.
+
+267
+00:09:12,880 --> 00:09:16,040
+Think about the recruitment costs, the training time,
+
+268
+00:09:16,040 --> 00:09:18,320
+the lost institutional knowledge.
+
+269
+00:09:18,320 --> 00:09:20,640
+If you fix the culture, you keep the people.
+
+270
+00:09:20,640 --> 00:09:22,800
+If you keep the people, you keep the expertise.
+
+271
+00:09:22,800 --> 00:09:24,320
+Which means more money and time
+
+272
+00:09:24,320 --> 00:09:25,960
+actually goes directly to the mission.
+
+273
+00:09:25,960 --> 00:09:26,800
+Yes.
+
+274
+00:09:26,800 --> 00:09:30,440
+So paradoxically, stopping to fix your internal feelings
+
+275
+00:09:30,440 --> 00:09:32,800
+and workflows is actually the most efficient,
+
+276
+00:09:32,800 --> 00:09:35,440
+hard-nosed financial decision a leader can make.
+
+277
+00:09:35,440 --> 00:09:36,280
+Okay.
+
+278
+00:09:36,280 --> 00:09:38,160
+I am totally sold on the why here.
+
+279
+00:09:38,160 --> 00:09:40,320
+Fixing culture is an efficiency strategy,
+
+280
+00:09:40,320 --> 00:09:41,600
+plain and simple.
+
+281
+00:09:41,600 --> 00:09:44,200
+But let's get into the how for the listeners.
+
+282
+00:09:44,200 --> 00:09:46,840
+Because deliberate action still feels
+
+283
+00:09:46,840 --> 00:09:48,120
+just a little vague to me.
+
+284
+00:09:48,120 --> 00:09:51,120
+If I am a leader listening to this right now,
+
+285
+00:09:51,120 --> 00:09:52,400
+what am I actually supposed to do
+
+286
+00:09:52,400 --> 00:09:54,360
+on a random Tuesday morning?
+
+287
+00:09:54,360 --> 00:09:57,680
+Like, does this start with HR at the CEO's job?
+
+288
+00:09:57,680 --> 00:09:58,960
+This is where it gets really interesting
+
+289
+00:09:58,960 --> 00:10:00,680
+and honestly, maybe a little uncomfortable
+
+290
+00:10:00,680 --> 00:10:01,920
+for some of the people listening.
+
+291
+00:10:01,960 --> 00:10:03,720
+Morgan is absolutely adamant about this.
+
+292
+00:10:03,720 --> 00:10:05,640
+Culture starts at the board level.
+
+293
+00:10:05,640 --> 00:10:06,480
+The board.
+
+294
+00:10:06,480 --> 00:10:07,320
+Really?
+
+295
+00:10:07,320 --> 00:10:09,040
+That feels so distant from the day to day.
+
+296
+00:10:09,040 --> 00:10:10,160
+I know it does.
+
+297
+00:10:10,160 --> 00:10:11,960
+Usually the board shows up, you know,
+
+298
+00:10:11,960 --> 00:10:13,680
+once a quarter of the educated sandwich,
+
+299
+00:10:13,680 --> 00:10:16,520
+they look at a spreadsheet and then they leave.
+
+300
+00:10:16,520 --> 00:10:20,280
+How on earth do they impact the daily culture
+
+301
+00:10:20,280 --> 00:10:21,440
+of the frontline staff?
+
+302
+00:10:21,440 --> 00:10:23,560
+Morgan calls it tone at the top.
+
+303
+00:10:23,560 --> 00:10:26,320
+And he isn't talking about their fun reason connections
+
+304
+00:10:26,320 --> 00:10:28,120
+or their wealth, he is talking strictly
+
+305
+00:10:28,120 --> 00:10:30,400
+about their behavior in those meetings.
+
+306
+00:10:30,400 --> 00:10:32,000
+Give me a specific example.
+
+307
+00:10:32,000 --> 00:10:33,280
+What does that look like?
+
+308
+00:10:33,280 --> 00:10:36,160
+Okay, imagine a quarterly board meeting.
+
+309
+00:10:36,160 --> 00:10:37,840
+The executive director is presenting
+
+310
+00:10:37,840 --> 00:10:39,720
+a really critical report.
+
+311
+00:10:39,720 --> 00:10:42,000
+One of the board members is just staring down,
+
+312
+00:10:42,000 --> 00:10:44,680
+checking their email on their phone the whole time.
+
+313
+00:10:44,680 --> 00:10:47,040
+Another one interrupts the director mid-sentence
+
+314
+00:10:47,040 --> 00:10:48,680
+to ask a question that was already answered
+
+315
+00:10:48,680 --> 00:10:50,360
+on page one of the packet.
+
+316
+00:10:50,360 --> 00:10:52,720
+Okay, I am physically cringing right now
+
+317
+00:10:52,720 --> 00:10:55,680
+because I have seen that exact scenario happen.
+
+318
+00:10:55,680 --> 00:10:56,800
+We all have.
+
+319
+00:10:56,800 --> 00:10:59,800
+Now, what does that behavior actually signal to the room?
+
+320
+00:10:59,800 --> 00:11:02,520
+It signals that listening isn't important.
+
+321
+00:11:02,520 --> 00:11:06,200
+It signals that hierarchy matters more than basic respect.
+
+322
+00:11:06,200 --> 00:11:09,200
+It signals that we don't really care what you have to say.
+
+323
+00:11:09,200 --> 00:11:10,040
+Wow.
+
+324
+00:11:10,040 --> 00:11:11,080
+And that energy flows downhill.
+
+325
+00:11:11,080 --> 00:11:11,920
+Like gravity.
+
+326
+00:11:11,920 --> 00:11:13,920
+It is exactly like gravity.
+
+327
+00:11:13,920 --> 00:11:16,960
+If the board treats the CEO with disrespect,
+
+328
+00:11:16,960 --> 00:11:20,200
+the CEO is going to leave that meeting stressed out.
+
+329
+00:11:20,200 --> 00:11:23,000
+They are more likely to be short with their VPs.
+
+330
+00:11:23,000 --> 00:11:25,400
+The VPs take that stress out on the managers
+
+331
+00:11:25,400 --> 00:11:29,300
+and eventually the frontline staff is absolutely miserable.
+
+332
+00:11:29,300 --> 00:11:30,260
+That makes total sense.
+
+333
+00:11:30,260 --> 00:11:31,740
+You cannot have a toxic board
+
+334
+00:11:31,740 --> 00:11:33,460
+and expect a healthy staff culture.
+
+335
+00:11:33,460 --> 00:11:34,940
+It just doesn't work.
+
+336
+00:11:34,940 --> 00:11:37,300
+That is a pretty heavy realization
+
+337
+00:11:37,300 --> 00:11:40,180
+because it means no amount of staff, pizza parties
+
+338
+00:11:40,180 --> 00:11:44,260
+or employee of the month awards can fix a rot
+
+339
+00:11:44,260 --> 00:11:46,460
+that is coming from the very top of the org chart.
+
+340
+00:11:46,460 --> 00:11:47,340
+Precisely.
+
+341
+00:11:47,340 --> 00:11:48,740
+You cannot train your way
+
+342
+00:11:48,740 --> 00:11:50,780
+out of a leadership modeling problem.
+
+343
+00:11:50,780 --> 00:11:53,460
+But, and this is a really big but,
+
+344
+00:11:53,460 --> 00:11:55,540
+Morgan also insists that while it starts at the top,
+
+345
+00:11:55,540 --> 00:11:57,620
+it absolutely does not stay there.
+
+346
+00:11:57,620 --> 00:11:58,460
+What do you mean by that?
+
+347
+00:11:58,460 --> 00:12:00,660
+He talks about this idea of collective ownership.
+
+348
+00:12:00,660 --> 00:12:02,860
+He says it is every single team member's job
+
+349
+00:12:02,860 --> 00:12:03,900
+to walk the talk.
+
+350
+00:12:03,900 --> 00:12:04,740
+Okay.
+
+351
+00:12:04,740 --> 00:12:06,580
+It isn't a special project for the HR department
+
+352
+00:12:06,580 --> 00:12:08,060
+to just roll out and memo.
+
+353
+00:12:08,060 --> 00:12:09,140
+Culture is what happens
+
+354
+00:12:09,140 --> 00:12:11,500
+in every single interaction between colleagues.
+
+355
+00:12:11,500 --> 00:12:13,860
+So it's not just the board member checking their email.
+
+356
+00:12:13,860 --> 00:12:16,100
+It's, you know, how I respond to you
+
+357
+00:12:16,100 --> 00:12:17,500
+when you make a mistake on a project.
+
+358
+00:12:17,500 --> 00:12:18,340
+Exactly.
+
+359
+00:12:18,340 --> 00:12:19,860
+Do I shame you in front of the team?
+
+360
+00:12:19,860 --> 00:12:23,820
+Do I ignore it and fix it myself aggressively?
+
+361
+00:12:23,820 --> 00:12:25,260
+Or do I pull you aside
+
+362
+00:12:25,260 --> 00:12:26,740
+and help you figure out what went wrong?
+
+363
+00:12:26,740 --> 00:12:27,580
+Right.
+
+364
+00:12:27,660 --> 00:12:30,620
+Micro interaction, that right there is the culture.
+
+365
+00:12:30,620 --> 00:12:33,340
+It is the aggregate of a thousand tiny decisions
+
+366
+00:12:33,340 --> 00:12:35,940
+made by everyone every single day.
+
+367
+00:12:35,940 --> 00:12:38,020
+You know, as we are talking about all of this,
+
+368
+00:12:38,020 --> 00:12:41,580
+Morgan's advice, the structure, the discipline of it all,
+
+369
+00:12:41,580 --> 00:12:43,220
+it sounds very modern.
+
+370
+00:12:43,220 --> 00:12:44,060
+Yeah.
+
+371
+00:12:44,060 --> 00:12:44,880
+It sounds like something you would hear
+
+372
+00:12:44,880 --> 00:12:46,540
+at a slick TED talk in San Francisco.
+
+373
+00:12:47,420 --> 00:12:49,420
+But reading through the deep dive materials,
+
+374
+00:12:49,420 --> 00:12:52,340
+what really struck me is that none of this is actually new.
+
+375
+00:12:52,340 --> 00:12:53,860
+Oh no, it is not new at all.
+
+376
+00:12:53,860 --> 00:12:55,140
+In fact, the commentary suggests
+
+377
+00:12:55,140 --> 00:12:57,020
+that Morgan is basically just channeling
+
+378
+00:12:57,020 --> 00:12:58,180
+some very old ghosts here.
+
+379
+00:12:58,180 --> 00:12:59,020
+Absolutely.
+
+380
+00:12:59,020 --> 00:13:01,340
+And this is honestly one of my favorite parts
+
+381
+00:13:01,340 --> 00:13:02,820
+of this entire analysis.
+
+382
+00:13:02,820 --> 00:13:05,380
+Morgan sounds like a modern tech CEO,
+
+383
+00:13:05,380 --> 00:13:08,140
+but he is essentially preaching ancient philosophy.
+
+384
+00:13:08,140 --> 00:13:09,340
+I really want to dig into this
+
+385
+00:13:09,340 --> 00:13:12,500
+because it feels like a bit of a stretch at first glance.
+
+386
+00:13:12,500 --> 00:13:16,540
+How do we get from a Silicon Valley executive to,
+
+387
+00:13:16,540 --> 00:13:19,460
+well, I assume we are going to ancient Greece.
+
+388
+00:13:19,460 --> 00:13:21,660
+We are definitely going to ancient Greece.
+
+389
+00:13:21,660 --> 00:13:23,860
+Plato and Aristotle specifically.
+
+390
+00:13:23,860 --> 00:13:25,260
+Okay, connect those dots for me.
+
+391
+00:13:25,260 --> 00:13:27,700
+How does Plato fit into corporate culture?
+
+392
+00:13:27,700 --> 00:13:29,700
+Let's look at Plato's Republic.
+
+393
+00:13:29,700 --> 00:13:33,380
+We are talking over 2,400 years ago.
+
+394
+00:13:33,380 --> 00:13:35,220
+Plato argued that the character
+
+395
+00:13:35,220 --> 00:13:37,180
+and the virtues of a state's leaders
+
+396
+00:13:37,180 --> 00:13:40,460
+shape the entire society's moral fabric.
+
+397
+00:13:40,460 --> 00:13:42,880
+Which is exactly the tone at the top concept.
+
+398
+00:13:42,880 --> 00:13:44,140
+It is almost verbatim.
+
+399
+00:13:44,140 --> 00:13:45,300
+Plato was basically saying,
+
+400
+00:13:45,300 --> 00:13:46,940
+you cannot legislate greatness.
+
+401
+00:13:46,940 --> 00:13:50,500
+You cannot write a law that simply forces people to be good.
+
+402
+00:13:50,500 --> 00:13:51,340
+Just like Morgan says,
+
+403
+00:13:51,340 --> 00:13:53,940
+you can't just send out a memo to create a good culture.
+
+404
+00:13:53,940 --> 00:13:56,060
+The leader's virtue sets the ceiling
+
+405
+00:13:56,060 --> 00:13:57,780
+for the entire organization.
+
+406
+00:13:57,780 --> 00:14:01,140
+If the leader is corrupt or lazy, the state is corrupt.
+
+407
+00:14:01,140 --> 00:14:04,380
+Okay, so Plato gives us the leadership modeling angles.
+
+408
+00:14:04,380 --> 00:14:06,140
+What about the deliberate action part?
+
+409
+00:14:06,140 --> 00:14:07,020
+Where does that come in?
+
+410
+00:14:07,020 --> 00:14:08,580
+That is all Aristotle.
+
+411
+00:14:08,580 --> 00:14:10,780
+In Nicomachean ethics, Aristotle argues
+
+412
+00:14:10,780 --> 00:14:14,060
+that virtue is not a state of being, it is a habit.
+
+413
+00:14:14,060 --> 00:14:14,900
+A habit?
+
+414
+00:14:14,900 --> 00:14:17,500
+Yes, he has this incredibly famous idea
+
+415
+00:14:17,500 --> 00:14:19,820
+that we are what we repeatedly do.
+
+416
+00:14:19,820 --> 00:14:21,580
+We are what we repeatedly do.
+
+417
+00:14:21,580 --> 00:14:23,180
+You know, that sounds like a poster too.
+
+418
+00:14:23,180 --> 00:14:25,740
+It does, but think about the actual mechanics
+
+419
+00:14:25,740 --> 00:14:27,020
+of what he is saying.
+
+420
+00:14:27,020 --> 00:14:29,780
+Aristotle would have absolutely hated the corporate offside.
+
+421
+00:14:29,780 --> 00:14:31,620
+Oh, he would have stormed out of the conference room.
+
+422
+00:14:31,620 --> 00:14:32,460
+He would have.
+
+423
+00:14:32,460 --> 00:14:33,300
+He would have said,
+
+424
+00:14:33,300 --> 00:14:36,580
+you don't become brave by going to a two day seminar
+
+425
+00:14:36,580 --> 00:14:38,300
+on the theory of bravery.
+
+426
+00:14:38,300 --> 00:14:41,580
+You become brave by actually doing brave things
+
+427
+00:14:41,580 --> 00:14:43,820
+repeatedly until it's natural.
+
+428
+00:14:43,820 --> 00:14:45,260
+Right, you don't become a master pianist
+
+429
+00:14:45,260 --> 00:14:46,660
+just by watching a concert.
+
+430
+00:14:46,660 --> 00:14:48,380
+You have to do the scales every day.
+
+431
+00:14:48,380 --> 00:14:49,220
+Exactly.
+
+432
+00:14:49,220 --> 00:14:52,100
+And Morgan is saying the exact same thing to leaders today.
+
+433
+00:14:52,100 --> 00:14:55,100
+You become a transparent, respectful organization
+
+434
+00:14:55,100 --> 00:14:58,180
+by actually practicing transparency and respect
+
+435
+00:14:58,180 --> 00:15:01,460
+every single day until it becomes a reflex.
+
+436
+00:15:01,460 --> 00:15:02,780
+That makes so much sense.
+
+437
+00:15:02,780 --> 00:15:05,900
+It takes the concept out of the realm of corporate speak
+
+438
+00:15:05,900 --> 00:15:09,020
+and puts it right into the realm of basic human nature.
+
+439
+00:15:09,020 --> 00:15:10,380
+I love that framing.
+
+440
+00:15:10,380 --> 00:15:13,060
+It really validates the idea
+
+441
+00:15:13,060 --> 00:15:15,660
+that this isn't just some passing business fad.
+
+442
+00:15:15,660 --> 00:15:19,620
+It is literally how humans are wired to operate.
+
+443
+00:15:19,620 --> 00:15:23,500
+But the source material also bridges this ancient wisdom
+
+444
+00:15:23,500 --> 00:15:27,460
+to something a bit more modern and relatable than Aristotle.
+
+445
+00:15:27,460 --> 00:15:28,300
+Yes.
+
+446
+00:15:28,300 --> 00:15:29,140
+Sports legends.
+
+447
+00:15:29,140 --> 00:15:31,300
+Yeah, and I think this is where the discipline aspect
+
+448
+00:15:31,300 --> 00:15:32,900
+really shines through because sometimes
+
+449
+00:15:32,900 --> 00:15:35,540
+when we talk about culture, it still sounds a bit soft.
+
+450
+00:15:35,540 --> 00:15:37,300
+But then you look at someone like Pat Summit.
+
+451
+00:15:37,300 --> 00:15:39,700
+The legendary Tennessee women's basketball coach.
+
+452
+00:15:39,700 --> 00:15:41,740
+Right, the winningest coach in division I history
+
+453
+00:15:41,740 --> 00:15:42,860
+at the time she retired.
+
+454
+00:15:42,860 --> 00:15:46,180
+She did not build that absolute powerhouse
+
+455
+00:15:46,180 --> 00:15:48,660
+of a program on vibes or just holding hands.
+
+456
+00:15:48,660 --> 00:15:49,500
+Definitely not.
+
+457
+00:15:49,540 --> 00:15:51,700
+She's invested on explicit, rigorous standards
+
+458
+00:15:51,700 --> 00:15:52,540
+of accountability.
+
+459
+00:15:52,540 --> 00:15:55,460
+She has this incredible quote that I think sums it all up.
+
+460
+00:15:55,460 --> 00:15:57,820
+Culture isn't inspiration.
+
+461
+00:15:57,820 --> 00:15:59,260
+It's infrastructure.
+
+462
+00:15:59,260 --> 00:16:01,540
+Culture is infrastructure.
+
+463
+00:16:01,540 --> 00:16:03,220
+I want to pause on that word for a second
+
+464
+00:16:03,220 --> 00:16:05,380
+because infrastructure feels really cold.
+
+465
+00:16:05,380 --> 00:16:07,980
+It feels like concrete and rebar and bridges.
+
+466
+00:16:07,980 --> 00:16:10,060
+It doesn't feel like a people focused word.
+
+467
+00:16:10,060 --> 00:16:12,700
+But that is exactly why it is so brilliant.
+
+468
+00:16:12,700 --> 00:16:13,940
+Think about it.
+
+469
+00:16:13,940 --> 00:16:17,140
+Infrastructure supports everything else you want to do.
+
+470
+00:16:17,180 --> 00:16:19,660
+If the bridge is out, it doesn't matter how fast
+
+471
+00:16:19,660 --> 00:16:22,500
+or nice your car is, you are not crossing the river.
+
+472
+00:16:22,500 --> 00:16:23,340
+That's true.
+
+473
+00:16:23,340 --> 00:16:26,420
+Summit meant that you build standards, how we practice,
+
+474
+00:16:26,420 --> 00:16:28,540
+how we treat each other in the locker room,
+
+475
+00:16:28,540 --> 00:16:31,220
+how we study film, and those standards,
+
+476
+00:16:31,220 --> 00:16:34,980
+that infrastructure holds the weight of the team
+
+477
+00:16:34,980 --> 00:16:36,580
+when things get really hard.
+
+478
+00:16:36,580 --> 00:16:38,180
+So when the pressure's on in the fourth quarter
+
+479
+00:16:38,180 --> 00:16:40,980
+of a championship game, you don't magically rise
+
+480
+00:16:40,980 --> 00:16:42,900
+to the occasion, you just fall back
+
+481
+00:16:42,900 --> 00:16:44,060
+to the level of your training.
+
+482
+00:16:44,060 --> 00:16:47,100
+Exactly, you fall to the level of your infrastructure.
+
+483
+00:16:47,100 --> 00:16:49,420
+And John Wooden is mentioned in there too, right?
+
+484
+00:16:49,420 --> 00:16:50,980
+The famous pyramid of success.
+
+485
+00:16:50,980 --> 00:16:53,220
+Yeah, you really can't talk about team culture
+
+486
+00:16:53,220 --> 00:16:55,220
+without bringing up Wooden.
+
+487
+00:16:55,220 --> 00:16:57,380
+His whole philosophy was about losing yourself
+
+488
+00:16:57,380 --> 00:16:58,540
+for the good of the group.
+
+489
+00:16:58,540 --> 00:17:00,660
+Which connects perfectly back to Morgan's point
+
+490
+00:17:00,660 --> 00:17:01,900
+about collective ownership.
+
+491
+00:17:01,900 --> 00:17:05,580
+Exactly, it is not about you being a superstar player.
+
+492
+00:17:05,580 --> 00:17:08,420
+It is about the team functioning seamlessly
+
+493
+00:17:08,420 --> 00:17:10,060
+as a single unit.
+
+494
+00:17:10,060 --> 00:17:11,520
+And just to bring this all the way back
+
+495
+00:17:11,520 --> 00:17:13,860
+to the nonprofit world for our listeners,
+
+496
+00:17:13,860 --> 00:17:16,700
+the source also mentions Francis Husslebeam.
+
+497
+00:17:16,700 --> 00:17:20,060
+Oh, she is an absolute giant in the nonprofit field,
+
+498
+00:17:20,060 --> 00:17:22,180
+former CEO of the Girl Scouts.
+
+499
+00:17:22,180 --> 00:17:25,020
+She argued that values are not just nice ideas,
+
+500
+00:17:25,020 --> 00:17:26,780
+they are operational standards.
+
+501
+00:17:26,780 --> 00:17:29,500
+Okay, operational standards sounds a bit jargonetomy.
+
+502
+00:17:29,500 --> 00:17:31,660
+Can we unpack what that actually means on the ground?
+
+503
+00:17:31,660 --> 00:17:34,660
+Sure, think of it like the speed limit on a highway.
+
+504
+00:17:34,660 --> 00:17:37,060
+The employee handbook, which is your strategy,
+
+505
+00:17:37,060 --> 00:17:39,940
+might say the speed limit is 55 miles per hour.
+
+506
+00:17:39,940 --> 00:17:42,700
+But let's say the CEO drives past you
+
+507
+00:17:42,700 --> 00:17:44,740
+every single morning doing 90,
+
+508
+00:17:44,740 --> 00:17:46,180
+and nobody ever gets a ticket.
+
+509
+00:17:46,180 --> 00:17:48,500
+What is the actual speed limit on that road?
+
+510
+00:17:48,500 --> 00:17:49,660
+Well, it's 90.
+
+511
+00:17:49,660 --> 00:17:53,500
+Exactly, the behavior completely overrides the rulebook.
+
+512
+00:17:53,500 --> 00:17:56,100
+That behavior is the operational standard.
+
+513
+00:17:56,100 --> 00:17:58,860
+Husslebeam, Morgan, Plato, Pat, Summit,
+
+514
+00:17:58,860 --> 00:18:02,260
+they are all saying the exact same thing across centuries.
+
+515
+00:18:02,260 --> 00:18:03,100
+Which is?
+
+516
+00:18:03,100 --> 00:18:05,620
+If you say you value work-life balance in your strategy,
+
+517
+00:18:05,620 --> 00:18:08,140
+but your operational standard is that you email your staff
+
+518
+00:18:08,140 --> 00:18:11,940
+at 11.00 PM on a Saturday and demand an immediate answer,
+
+519
+00:18:11,940 --> 00:18:16,300
+the 11.00 PM email wins every single time.
+
+520
+00:18:16,300 --> 00:18:18,820
+That is the culture eats strategy moment right there,
+
+521
+00:18:18,820 --> 00:18:19,660
+isn't it?
+
+522
+00:18:19,660 --> 00:18:20,500
+It is.
+
+523
+00:18:20,500 --> 00:18:23,620
+Your strategy says retain our valuable staff,
+
+524
+00:18:23,620 --> 00:18:25,540
+but your operational standard says
+
+525
+00:18:25,540 --> 00:18:27,540
+burn them out on the weekends.
+
+526
+00:18:27,540 --> 00:18:31,540
+Culture wins, the staff leaves, the strategy fails.
+
+527
+00:18:31,540 --> 00:18:34,740
+Every single time, you simply cannot fool the room.
+
+528
+00:18:34,740 --> 00:18:37,500
+People will always believe what they see you do,
+
+529
+00:18:37,500 --> 00:18:39,180
+not what they hear you say.
+
+530
+00:18:39,180 --> 00:18:40,940
+All right, so we have established the problem,
+
+531
+00:18:40,980 --> 00:18:44,060
+which is the offsite trap and the reliance on strategy.
+
+532
+00:18:44,060 --> 00:18:45,980
+We have established the stakes,
+
+533
+00:18:45,980 --> 00:18:47,860
+looking at the massive economic engine
+
+534
+00:18:47,860 --> 00:18:49,740
+of the nonprofit sector,
+
+535
+00:18:49,740 --> 00:18:51,740
+and we have connected it to the deep history
+
+536
+00:18:51,740 --> 00:18:54,500
+of how humans have always organized themselves.
+
+537
+00:18:54,500 --> 00:18:56,340
+But as we wrap up, I wanna leave the listener
+
+538
+00:18:56,340 --> 00:18:58,020
+with something they can actually do today.
+
+539
+00:18:58,020 --> 00:19:00,140
+Yes, because if we just sit here
+
+540
+00:19:00,140 --> 00:19:02,140
+and talk about it abstractly,
+
+541
+00:19:02,140 --> 00:19:03,900
+we are falling into the exact same trap
+
+542
+00:19:03,900 --> 00:19:06,100
+we just spent 20 minutes criticizing.
+
+543
+00:19:06,100 --> 00:19:08,140
+We are just having a podcast offsite.
+
+544
+00:19:08,140 --> 00:19:10,300
+Exactly, I don't wanna just talk about jogging.
+
+545
+00:19:10,300 --> 00:19:11,860
+I want everyone to put on their shoes.
+
+546
+00:19:11,860 --> 00:19:12,980
+Yeah.
+
+547
+00:19:12,980 --> 00:19:15,340
+So Morgan has a very specific challenge
+
+548
+00:19:15,340 --> 00:19:16,740
+for you, the listener,
+
+549
+00:19:16,740 --> 00:19:18,780
+and I have to be completely honest.
+
+550
+00:19:18,780 --> 00:19:21,980
+When I read this in the deep dive,
+
+551
+00:19:21,980 --> 00:19:23,460
+my stomach dropped a little bit.
+
+552
+00:19:23,460 --> 00:19:24,500
+It is intimidating.
+
+553
+00:19:24,500 --> 00:19:26,980
+It sounds so simple,
+
+554
+00:19:26,980 --> 00:19:30,620
+but it sounds genuinely scary for a leader to actually do.
+
+555
+00:19:30,620 --> 00:19:32,900
+It is terrifying if you do it right,
+
+556
+00:19:32,900 --> 00:19:34,580
+but it is really the only way
+
+557
+00:19:34,580 --> 00:19:38,020
+to get an honest baseline of your current infrastructure.
+
+558
+00:19:38,020 --> 00:19:40,500
+Okay, so here is the exercise for you.
+
+559
+00:19:41,580 --> 00:19:42,860
+Sometime this week,
+
+560
+00:19:42,860 --> 00:19:45,980
+find three people in your organization,
+
+561
+00:19:45,980 --> 00:19:47,980
+but, and this is the crucial part,
+
+562
+00:19:47,980 --> 00:19:50,020
+do not ask your direct reports.
+
+563
+00:19:50,020 --> 00:19:51,540
+Right, because if you ask the people
+
+564
+00:19:51,540 --> 00:19:53,100
+whose performance reviews you write,
+
+565
+00:19:53,100 --> 00:19:55,020
+they are gonna tell you exactly what you wanna hear.
+
+566
+00:19:55,020 --> 00:19:56,340
+Right, self-preservation.
+
+567
+00:19:56,340 --> 00:19:57,620
+You need to go deeper,
+
+568
+00:19:57,620 --> 00:19:59,620
+go a level or two down the work chart,
+
+569
+00:19:59,620 --> 00:20:01,740
+or ask people in a completely different department.
+
+570
+00:20:01,740 --> 00:20:04,020
+You have to get out of your immediate echo chamber.
+
+571
+00:20:04,020 --> 00:20:05,980
+Okay, so you find these three people
+
+572
+00:20:05,980 --> 00:20:08,220
+and you ask them one simple question, ready?
+
+573
+00:20:08,220 --> 00:20:09,380
+The question is,
+
+574
+00:20:09,380 --> 00:20:11,900
+what is one thing about how we work together
+
+575
+00:20:11,900 --> 00:20:13,540
+that we say we value,
+
+576
+00:20:13,540 --> 00:20:15,100
+but we don't actually do?
+
+577
+00:20:15,100 --> 00:20:18,300
+Yeah, that right there is the seto gap.
+
+578
+00:20:18,300 --> 00:20:19,460
+And here is the rule,
+
+579
+00:20:19,460 --> 00:20:21,260
+which I think is definitely the hardest part
+
+580
+00:20:21,260 --> 00:20:22,820
+of the whole exercise.
+
+581
+00:20:22,820 --> 00:20:24,020
+You have to just listen.
+
+582
+00:20:24,020 --> 00:20:25,740
+You cannot defend yourself.
+
+583
+00:20:25,740 --> 00:20:28,500
+You cannot explain away their answer.
+
+584
+00:20:28,500 --> 00:20:29,780
+That is the killer.
+
+585
+00:20:29,780 --> 00:20:31,620
+The urge to explain is so strong.
+
+586
+00:20:31,620 --> 00:20:32,700
+Oh, it really is.
+
+587
+00:20:32,700 --> 00:20:34,180
+If they look at you and say,
+
+588
+00:20:34,180 --> 00:20:36,300
+well, we say we value transparency,
+
+589
+00:20:36,300 --> 00:20:39,580
+but all the real decisions are made behind closed doors.
+
+590
+00:20:39,580 --> 00:20:41,140
+You cannot say, well, actually,
+
+591
+00:20:41,140 --> 00:20:43,660
+that was because of specific legal issue.
+
+592
+00:20:43,660 --> 00:20:46,140
+You just have to nod and say, thank you for telling me.
+
+593
+00:20:46,140 --> 00:20:47,900
+And that uncomfortable silence?
+
+594
+00:20:47,900 --> 00:20:50,180
+That is where the actual learning happens,
+
+595
+00:20:50,180 --> 00:20:51,780
+because whatever they tell you,
+
+596
+00:20:51,780 --> 00:20:54,780
+that specific gap between the shiny poster on the wall
+
+597
+00:20:54,780 --> 00:20:56,940
+and the messy reality on the ground,
+
+598
+00:20:56,940 --> 00:20:59,020
+that is where your culture actually lives.
+
+599
+00:20:59,020 --> 00:20:59,860
+Wow.
+
+600
+00:20:59,860 --> 00:21:01,220
+That gap is your culture.
+
+601
+00:21:01,220 --> 00:21:03,380
+It is a massive reality check.
+
+602
+00:21:03,380 --> 00:21:06,740
+And I can completely see why leaders avoid doing this.
+
+603
+00:21:06,740 --> 00:21:08,500
+Who wants to voluntarily hear
+
+604
+00:21:08,500 --> 00:21:10,700
+that they aren't living up to their own stated values?
+
+605
+00:21:10,700 --> 00:21:12,060
+Nobody wants to hear that.
+
+606
+00:21:12,060 --> 00:21:13,460
+It hurts your ego.
+
+607
+00:21:13,460 --> 00:21:15,540
+But for the Count and Profits members listening to this,
+
+608
+00:21:15,540 --> 00:21:17,420
+or really anyone leading a team,
+
+609
+00:21:17,420 --> 00:21:19,900
+imagine if every leader did that this week.
+
+610
+00:21:19,900 --> 00:21:20,740
+The ripple effect.
+
+611
+00:21:20,740 --> 00:21:21,560
+Exactly.
+
+612
+00:21:21,560 --> 00:21:23,380
+Imagine the uncomfortable,
+
+613
+00:21:23,380 --> 00:21:25,380
+but entirely necessary conversations
+
+614
+00:21:25,380 --> 00:21:27,020
+that would finally start happening.
+
+615
+00:21:27,020 --> 00:21:30,940
+That is the exact deliberate action Morgan is talking about.
+
+616
+00:21:30,940 --> 00:21:32,940
+It starts with facing reality.
+
+617
+00:21:32,940 --> 00:21:35,740
+It starts with facing the reality of your current culture,
+
+618
+00:21:35,740 --> 00:21:37,380
+not the fantasy version you put
+
+619
+00:21:37,380 --> 00:21:39,860
+on the About Us page of your website.
+
+620
+00:21:39,860 --> 00:21:42,580
+It reminds me of that one quote from the source material.
+
+621
+00:21:42,580 --> 00:21:46,120
+Morgan says, every organization already has a culture.
+
+622
+00:21:46,120 --> 00:21:48,660
+The only question is whether it's the one they want.
+
+623
+00:21:48,660 --> 00:21:49,540
+Exactly.
+
+624
+00:21:49,540 --> 00:21:51,700
+And that is the final thought I really want
+
+625
+00:21:51,700 --> 00:21:53,920
+everyone to sit with today.
+
+626
+00:21:53,920 --> 00:21:56,780
+You don't get to choose whether you have a culture or not.
+
+627
+00:21:56,780 --> 00:21:58,540
+You have one right now.
+
+628
+00:21:58,540 --> 00:22:00,340
+It is forming while we speak.
+
+629
+00:22:00,340 --> 00:22:02,280
+It is forming in your Slack channels.
+
+630
+00:22:02,280 --> 00:22:03,880
+It's forming in your Zoom chats,
+
+631
+00:22:03,880 --> 00:22:05,320
+in the hallway conversations,
+
+632
+00:22:05,320 --> 00:22:07,440
+and the way you structure your meeting agendas.
+
+633
+00:22:07,440 --> 00:22:08,720
+It is never neutral.
+
+634
+00:22:08,720 --> 00:22:10,240
+It is never, ever neutral.
+
+635
+00:22:10,240 --> 00:22:12,520
+Every single interaction is either building
+
+636
+00:22:12,520 --> 00:22:15,080
+the culture you want or it is destroying it.
+
+637
+00:22:15,080 --> 00:22:16,320
+It is compound interest,
+
+638
+00:22:16,320 --> 00:22:18,880
+and it's accumulating every second of every day.
+
+639
+00:22:18,880 --> 00:22:19,800
+That is powerful.
+
+640
+00:22:19,800 --> 00:22:21,680
+We are all architects of this stuff,
+
+641
+00:22:21,680 --> 00:22:23,440
+whether we realize it or not.
+
+642
+00:22:23,440 --> 00:22:24,600
+But let me add one more thought
+
+643
+00:22:24,600 --> 00:22:25,920
+for you to show on before we go.
+
+644
+00:22:25,920 --> 00:22:26,760
+Okay.
+
+645
+00:22:26,760 --> 00:22:28,680
+When you go out and ask those three people
+
+646
+00:22:28,680 --> 00:22:31,140
+that scary say-to-gap question this week,
+
+647
+00:22:32,020 --> 00:22:34,260
+pay close attention if they hesitate.
+
+648
+00:22:34,260 --> 00:22:35,420
+Oh, that's good.
+
+649
+00:22:35,420 --> 00:22:38,340
+What if the silence you hear when you ask that question
+
+650
+00:22:38,340 --> 00:22:41,140
+is actually the loudest part of your culture?
+
+651
+00:22:41,140 --> 00:22:44,100
+If they are too afraid to even answer you honestly,
+
+652
+00:22:44,100 --> 00:22:46,220
+that tells you everything you need to know
+
+653
+00:22:46,220 --> 00:22:47,980
+about your infrastructure.
+
+654
+00:22:47,980 --> 00:22:49,780
+That is a brilliant point.
+
+655
+00:22:49,780 --> 00:22:52,100
+If fear is your operational standard,
+
+656
+00:22:52,100 --> 00:22:54,500
+no strategy can save you.
+
+657
+00:22:54,500 --> 00:22:57,460
+So the real question isn't, do we have a culture?
+
+658
+00:22:57,460 --> 00:23:00,220
+The question is, is this the one we intended to build?
+
+659
+00:23:00,220 --> 00:23:01,060
+Right.
+
+660
+00:23:01,060 --> 00:23:01,940
+If the answer is no,
+
+661
+00:23:01,940 --> 00:23:03,780
+then you need to cancel the offsite,
+
+662
+00:23:03,780 --> 00:23:05,180
+stop printing the coffee mugs,
+
+663
+00:23:05,180 --> 00:23:07,380
+and start looking really closely at your daily habits.
+
+664
+00:23:07,380 --> 00:23:09,740
+Start looking at the speed limit you are actually driving.
+
+665
+00:23:09,740 --> 00:23:11,140
+Deliberate action.
+
+666
+00:23:11,140 --> 00:23:12,820
+That is the true takeaway here.
+
+667
+00:23:12,820 --> 00:23:15,300
+Thank you so much for walking us through this deep dive.
+
+668
+00:23:15,300 --> 00:23:17,940
+It has definitely made me rethink how I approach
+
+669
+00:23:17,940 --> 00:23:21,820
+my own team and maybe my own emails on the weekend.
+
+670
+00:23:21,820 --> 00:23:22,660
+My pleasure.
+
+671
+00:23:22,660 --> 00:23:25,740
+Just please, don't send the middle 11, 0 p.m.
+
+672
+00:23:25,740 --> 00:23:27,180
+I will do my absolute best.
+
+673
+00:23:27,180 --> 00:23:28,540
+And to you, the listener.
+
+674
+00:23:28,540 --> 00:23:30,460
+Good luck with those three questions this week.
+
+675
+00:23:30,460 --> 00:23:31,940
+It might be tough, but remember,
+
+676
+00:23:31,940 --> 00:23:33,540
+culture eats strategy for breakfast.
+
+677
+00:23:33,540 --> 00:23:36,180
+You might as well make sure it is a healthy breakfast.
+
+678
+00:23:36,180 --> 00:23:38,180
+Thanks for joining us on this deep dive.
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applied Wisdom Podcast — Full Series Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #f7f5f2; color: #333; line-height: 1.7; }
+    
+    .nav { background: #1a2744; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav a { color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+    .nav .badge { background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+    .nav .back { color: rgba(255,255,255,0.7); font-size: 13px; }
+    .nav .back:hover { color: #fff; }
+
+    .hero { background: linear-gradient(135deg, #1a2744 0%, #2a3f6a 100%); color: #fff; padding: 60px 24px 50px; text-align: center; }
+    .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 38px; margin-bottom: 12px; }
+    .hero p { font-size: 18px; opacity: 0.75; max-width: 600px; margin: 0 auto 20px; }
+    .hero .stats { display: flex; gap: 32px; justify-content: center; margin-top: 24px; }
+    .hero .stat { text-align: center; }
+    .hero .stat-num { font-size: 36px; font-weight: 700; color: #e8553d; }
+    .hero .stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.6; }
+
+    .content { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    
+    .season { margin-bottom: 48px; }
+    .season-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #e8553d; }
+    .season-badge { background: #e8553d; color: #fff; padding: 4px 14px; border-radius: 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    .season-title { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: #1a2744; }
+    .season-subtitle { font-size: 14px; color: #888; margin-left: auto; }
+
+    .episode-list { list-style: none; }
+    .episode-item { display: flex; align-items: flex-start; gap: 16px; padding: 14px 16px; border-bottom: 1px solid #e8e8e8; transition: background 0.2s; border-radius: 4px; }
+    .episode-item:hover { background: #fff; }
+    .episode-item.pilot { background: #fef5f3; border-left: 3px solid #e8553d; }
+    .ep-num { min-width: 36px; height: 36px; background: #1a2744; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+    .episode-item.pilot .ep-num { background: #e8553d; }
+    .ep-content { flex: 1; }
+    .ep-title { font-weight: 700; color: #1a2744; font-size: 15px; }
+    .ep-desc { font-size: 13px; color: #777; margin-top: 2px; }
+    .ep-tag { display: inline-block; background: #e8553d; color: #fff; font-size: 10px; padding: 1px 8px; border-radius: 10px; font-weight: 700; margin-left: 8px; vertical-align: middle; }
+
+    .footer { background: #1a2744; color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 13px; margin-top: 40px; }
+    .footer a { color: #e8553d; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 28px; }
+      .hero .stats { flex-direction: column; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav style="background: #1a2744; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+    <a href="index.html" style="color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px;"><span style="background: #e8553d; padding: 2px 6px; border-radius: 3px; font-size: 11px;">AW</span> Applied Wisdom</a>
+    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+      <a href="series-index.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">📚 Series</a>
+      <a href="how-it-works.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">⚙️ Process</a>
+      <a href="outreach-playbook.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">🤝 Outreach</a>
+      <a href="acquisition-strategy.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">📈 Growth</a>
+      <a href="episode-brief.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 12px; font-weight: 600;">📄 Brief</a>
+      <a href="episode-7.html" style="background: #e8553d; color: #fff; padding: 4px 12px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 12px;">▶ Episode 7</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>The Full Podcast Series</h1>
+    <p>66 episodes of practical nonprofit leadership wisdom from Jim Morgan's <em>Applied Wisdom for the Nonprofit Sector</em></p>
+    <div class="stats">
+      <div class="stat"><div class="stat-num">66</div><div class="stat-label">Episodes</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Seasons</div></div>
+      <div class="stat"><div class="stat-num">~22</div><div class="stat-label">Hours</div></div>
+    </div>
+  </section>
+
+  <div class="content">
+
+    <!-- Season 1: Culture -->
+    <div class="season">
+      <div class="season-header">
+        <span class="season-badge">Season 1</span>
+        <span class="season-title">Culture</span>
+        <span class="season-subtitle">25 episodes</span>
+      </div>
+      <ol class="episode-list">
+        <li class="episode-item"><span class="ep-num">1</span><div class="ep-content"><div class="ep-title">Values-Based Culture</div><div class="ep-desc">Culture is built on articulated values, not slogans</div></div></li>
+        <li class="episode-item"><span class="ep-num">2</span><div class="ep-content"><div class="ep-title">Reward the Behaviors You Want</div><div class="ep-desc">Culture is shaped by what you reinforce</div></div></li>
+        <li class="episode-item"><span class="ep-num">3</span><div class="ep-content"><div class="ep-title">Culture Can't Be Changed by Decree</div><div class="ep-desc">Offsites and slogans don't work</div></div></li>
+        <li class="episode-item"><span class="ep-num">4</span><div class="ep-content"><div class="ep-title">Walk the Talk</div><div class="ep-desc">Culture is built by consistent collective action</div></div></li>
+        <li class="episode-item"><span class="ep-num">5</span><div class="ep-content"><div class="ep-title">Tone at the Top</div><div class="ep-desc">Board culture IS organizational culture</div></div></li>
+        <li class="episode-item"><span class="ep-num">6</span><div class="ep-content"><div class="ep-title">Culture is Externally Visible</div><div class="ep-desc">Stakeholders can see your culture</div></div></li>
+        <li class="episode-item pilot"><span class="ep-num">7</span><div class="ep-content"><div class="ep-title">Culture Eats Strategy for Breakfast <span class="ep-tag">PILOT</span></div><div class="ep-desc">Without culture, no strategy survives</div></div></li>
+        <li class="episode-item"><span class="ep-num">8</span><div class="ep-content"><div class="ep-title">The Never-Done Principle</div><div class="ep-desc">You're never done building culture</div></div></li>
+        <li class="episode-item"><span class="ep-num">9</span><div class="ep-content"><div class="ep-title">Trust is Born of Respect</div><div class="ep-desc">Respect comes first, trust follows</div></div></li>
+        <li class="episode-item"><span class="ep-num">10</span><div class="ep-content"><div class="ep-title">Psychological Safety</div><div class="ep-desc">Regard for dignity, comfort, and safety</div></div></li>
+        <li class="episode-item"><span class="ep-num">11</span><div class="ep-content"><div class="ep-title">You're Always Being Evaluated</div><div class="ep-desc">Leadership is performed under observation</div></div></li>
+        <li class="episode-item"><span class="ep-num">12</span><div class="ep-content"><div class="ep-title">Caring and Collaboration</div><div class="ep-desc">Wellness enables performance</div></div></li>
+        <li class="episode-item"><span class="ep-num">13</span><div class="ep-content"><div class="ep-title">Walking Meetings</div><div class="ep-desc">Connections start with conversations</div></div></li>
+        <li class="episode-item"><span class="ep-num">14</span><div class="ep-content"><div class="ep-title">Collaborative Mindset</div><div class="ep-desc">Treat your partner's success as equal to your own</div></div></li>
+        <li class="episode-item"><span class="ep-num">15</span><div class="ep-content"><div class="ep-title">Hire Deliberately</div><div class="ep-desc">Purpose and potential first, skills second</div></div></li>
+        <li class="episode-item"><span class="ep-num">16</span><div class="ep-content"><div class="ep-title">High-Caliber ≠ Competent</div><div class="ep-desc">Seek resilient, intelligent problem-solvers</div></div></li>
+        <li class="episode-item"><span class="ep-num">17</span><div class="ep-content"><div class="ep-title">Culture of Continuous Learning</div><div class="ep-desc">Development is a retention strategy</div></div></li>
+        <li class="episode-item"><span class="ep-num">18</span><div class="ep-content"><div class="ep-title">Do Well While Doing Good</div><div class="ep-desc">Nonprofit professionals deserve fair pay</div></div></li>
+        <li class="episode-item"><span class="ep-num">19</span><div class="ep-content"><div class="ep-title">The Bad News Hierarchy</div><div class="ep-desc">Good news is no news, no news is bad news, bad news is good news</div></div></li>
+        <li class="episode-item"><span class="ep-num">20</span><div class="ep-content"><div class="ep-title">Porpoising</div><div class="ep-desc">Dive deep beyond direct reports to hear what's really happening</div></div></li>
+        <li class="episode-item"><span class="ep-num">21</span><div class="ep-content"><div class="ep-title">No News IS Bad News</div><div class="ep-desc">Silence is a warning sign</div></div></li>
+        <li class="episode-item"><span class="ep-num">22</span><div class="ep-content"><div class="ep-title">Solutions Over Blame</div><div class="ep-desc">Celebrate fixes, never punish the messenger</div></div></li>
+        <li class="episode-item"><span class="ep-num">23</span><div class="ep-content"><div class="ep-title">Speak Once, Listen Twice</div><div class="ep-desc">More listening than talking</div></div></li>
+        <li class="episode-item"><span class="ep-num">24</span><div class="ep-content"><div class="ep-title">Bad News Builds Board Trust</div><div class="ep-desc">Sharing problems builds partnership</div></div></li>
+        <li class="episode-item"><span class="ep-num">25</span><div class="ep-content"><div class="ep-title">Brainstorming New Paths Together</div><div class="ep-desc">Bad news as catalyst for generative problem-solving</div></div></li>
+      </ol>
+    </div>
+
+    <!-- Season 2: Planning -->
+    <div class="season">
+      <div class="season-header">
+        <span class="season-badge">Season 2</span>
+        <span class="season-title">Planning</span>
+        <span class="season-subtitle">20 episodes</span>
+      </div>
+      <ol class="episode-list">
+        <li class="episode-item"><span class="ep-num">26</span><div class="ep-content"><div class="ep-title">Court Sense</div><div class="ep-desc">Awareness of multiple variables simultaneously</div></div></li>
+        <li class="episode-item"><span class="ep-num">27</span><div class="ep-content"><div class="ep-title">The River Rafting Metaphor</div><div class="ep-desc">Head up, eyes open, adjust when conditions change</div></div></li>
+        <li class="episode-item"><span class="ep-num">28</span><div class="ep-content"><div class="ep-title">Systems Thinking</div><div class="ep-desc">Can't check boxes linearly, must anticipate and adjust</div></div></li>
+        <li class="episode-item"><span class="ep-num">29</span><div class="ep-content"><div class="ep-title">Driving Forces</div><div class="ep-desc">Assess macro and micro forces early and often</div></div></li>
+        <li class="episode-item"><span class="ep-num">30</span><div class="ep-content"><div class="ep-title">The Inspirational Why</div><div class="ep-desc">Keep the team focused on purpose during disruption</div></div></li>
+        <li class="episode-item"><span class="ep-num">31</span><div class="ep-content"><div class="ep-title">Change Management as Emotional Intelligence</div><div class="ep-desc">Rapid change is rough on people</div></div></li>
+        <li class="episode-item"><span class="ep-num">32</span><div class="ep-content"><div class="ep-title">The Whole Job</div><div class="ep-desc">Invest across ALL functions, not just mission specialty</div></div></li>
+        <li class="episode-item"><span class="ep-num">33</span><div class="ep-content"><div class="ep-title">Face the Elevator Door</div><div class="ep-desc">Be prepared for opportunity at any time</div></div></li>
+        <li class="episode-item"><span class="ep-num">34</span><div class="ep-content"><div class="ep-title">Cash is King</div><div class="ep-desc">Build 3-6 months reserves, raise when you can</div></div></li>
+        <li class="episode-item"><span class="ep-num">35</span><div class="ep-content"><div class="ep-title">Unrestricted Dollars</div><div class="ep-desc">General operating support over restricted gifts</div></div></li>
+        <li class="episode-item"><span class="ep-num">36</span><div class="ep-content"><div class="ep-title">The Four Marks of an Effective Nonprofit</div><div class="ep-desc">Leadership, mission, transparency, partnerships</div></div></li>
+        <li class="episode-item"><span class="ep-num">37</span><div class="ep-content"><div class="ep-title">A Humble Approach to Giving</div><div class="ep-desc">Trust leadership, contribute unrestricted</div></div></li>
+        <li class="episode-item"><span class="ep-num">38</span><div class="ep-content"><div class="ep-title">The 10% Rule</div><div class="ep-desc">Spend 10% of your week planning</div></div></li>
+        <li class="episode-item"><span class="ep-num">39</span><div class="ep-content"><div class="ep-title">The Rule of Three</div><div class="ep-desc">Always focus on three priorities at each time horizon</div></div></li>
+        <li class="episode-item"><span class="ep-num">40</span><div class="ep-content"><div class="ep-title">Priority Management over Time Management</div><div class="ep-desc">Manage priorities not hours</div></div></li>
+        <li class="episode-item"><span class="ep-num">41</span><div class="ep-content"><div class="ep-title">The Board's Three Governance Responsibilities</div><div class="ep-desc">The essential board duties</div></div></li>
+        <li class="episode-item"><span class="ep-num">42</span><div class="ep-content"><div class="ep-title">The Conversation Map</div><div class="ep-desc">Annual map of decisions and timing</div></div></li>
+        <li class="episode-item"><span class="ep-num">43</span><div class="ep-content"><div class="ep-title">Succession Planning</div><div class="ep-desc">Maintain a list of 3 potential additions</div></div></li>
+        <li class="episode-item"><span class="ep-num">44</span><div class="ep-content"><div class="ep-title">Performance Reviews as Trust-Builders</div><div class="ep-desc">Reviews are relationship tools</div></div></li>
+        <li class="episode-item"><span class="ep-num">45</span><div class="ep-content"><div class="ep-title">Plan to Succeed / Plan... to Succeed</div><div class="ep-desc">The double meaning of planning</div></div></li>
+      </ol>
+    </div>
+
+    <!-- Season 3: Implementation -->
+    <div class="season">
+      <div class="season-header">
+        <span class="season-badge">Season 3</span>
+        <span class="season-title">Implementation</span>
+        <span class="season-subtitle">21 episodes</span>
+      </div>
+      <ol class="episode-list">
+        <li class="episode-item"><span class="ep-num">46</span><div class="ep-content"><div class="ep-title">Book It and Ship It</div><div class="ep-desc">Stop dithering, put decisions in motion</div></div></li>
+        <li class="episode-item"><span class="ep-num">47</span><div class="ep-content"><div class="ep-title">The Cliff Metaphor</div><div class="ep-desc">No answer is as bad as a wrong answer</div></div></li>
+        <li class="episode-item"><span class="ep-num">48</span><div class="ep-content"><div class="ep-title">Decisions Create Momentum</div><div class="ep-desc">Organizations in motion course-correct faster</div></div></li>
+        <li class="episode-item"><span class="ep-num">49</span><div class="ep-content"><div class="ep-title">The Cost of Perfect Information</div><div class="ep-desc">Don't let perfect be the enemy of good</div></div></li>
+        <li class="episode-item"><span class="ep-num">50</span><div class="ep-content"><div class="ep-title">Ride Momentum Over Waiting</div><div class="ep-desc">Choose momentum over complete data</div></div></li>
+        <li class="episode-item"><span class="ep-num">51</span><div class="ep-content"><div class="ep-title">Plan B at the Ready</div><div class="ep-desc">Benchmarks and contingency plans</div></div></li>
+        <li class="episode-item"><span class="ep-num">52</span><div class="ep-content"><div class="ep-title">Communication is Step One</div><div class="ep-desc">Clarity in writing reduces risk</div></div></li>
+        <li class="episode-item"><span class="ep-num">53</span><div class="ep-content"><div class="ep-title">More Was Said Than Done</div><div class="ep-desc">Action over talk</div></div></li>
+        <li class="episode-item"><span class="ep-num">54</span><div class="ep-content"><div class="ep-title">The Monkey Metaphor</div><div class="ep-desc">Problems leave with the person who brought them</div></div></li>
+        <li class="episode-item"><span class="ep-num">55</span><div class="ep-content"><div class="ep-title">Five Degrees of Initiative</div><div class="ep-desc">From "wait until told" to "act and report"</div></div></li>
+        <li class="episode-item"><span class="ep-num">56</span><div class="ep-content"><div class="ep-title">First Assistant To</div><div class="ep-desc">Management as servant leadership</div></div></li>
+        <li class="episode-item"><span class="ep-num">57</span><div class="ep-content"><div class="ep-title">Hierarchy Speeds Decision-Making</div><div class="ep-desc">Structure serves speed</div></div></li>
+        <li class="episode-item"><span class="ep-num">58</span><div class="ep-content"><div class="ep-title">No Victim Mindset</div><div class="ep-desc">Take responsibility, no excuses</div></div></li>
+        <li class="episode-item"><span class="ep-num">59</span><div class="ep-content"><div class="ep-title">Honest Mistakes vs Failure to Learn</div><div class="ep-desc">Mistakes ok, refusing to grow is not</div></div></li>
+        <li class="episode-item"><span class="ep-num">60</span><div class="ep-content"><div class="ep-title">Respect Through Standards</div><div class="ep-desc">High standards respect high performers</div></div></li>
+        <li class="episode-item"><span class="ep-num">61</span><div class="ep-content"><div class="ep-title">The Cannery to the Boardroom</div><div class="ep-desc">Timeless principles across contexts</div></div></li>
+        <li class="episode-item"><span class="ep-num">62</span><div class="ep-content"><div class="ep-title">Management vs Leadership</div><div class="ep-desc">Doing things right vs doing the right things</div></div></li>
+        <li class="episode-item"><span class="ep-num">63</span><div class="ep-content"><div class="ep-title">The Continuous Learner</div><div class="ep-desc">Build your own toolkit over a lifetime</div></div></li>
+        <li class="episode-item"><span class="ep-num">64</span><div class="ep-content"><div class="ep-title">Board-Staff Partnership</div><div class="ep-desc">The dynamic that makes or breaks nonprofits</div></div></li>
+        <li class="episode-item"><span class="ep-num">65</span><div class="ep-content"><div class="ep-title">Donor as Partner, Not ATM</div><div class="ep-desc">Humble approach to giving relationships</div></div></li>
+        <li class="episode-item"><span class="ep-num">66</span><div class="ep-content"><div class="ep-title">The Marathon Metaphor</div><div class="ep-desc">Sustainability over burnout</div></div></li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Based on <em>Applied Wisdom for the Nonprofit Sector</em> by Jim Morgan<br>
+    <a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a>
+  </div>
+
+</body>
+</html>

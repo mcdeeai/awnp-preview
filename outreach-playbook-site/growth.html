@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growth Projections | Outreach Podcast Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #111; line-height: 1.7; }
+
+    .nav-bar { background: #fff; border-bottom: 1px solid #e5e5e5; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #111; font-weight: 700; font-size: 14px; }
+    .nav-logo .aw-mark { color: #e8553d; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+    .nav-links { display: flex; list-style: none; }
+    .nav-links a { color: #555; text-decoration: none; font-size: 13px; padding: 8px 12px; display: block; transition: color 0.15s; }
+    .nav-links a:hover { color: #111; }
+    .nav-links a.active { color: #e8553d; font-weight: 600; }
+
+    .hero { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 64px 24px 72px; text-align: left; }
+    .hero-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+    .hero-text { flex: 1; min-width: 280px; }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 14px; display: block; }
+    .hero h1 { font-size: 40px; font-weight: 800; line-height: 1.1; color: #111; max-width: 600px; margin-bottom: 14px; letter-spacing: -0.5px; }
+    .hero .sub { font-size: 16px; color: #555; max-width: 520px; }
+    .hero-stat { text-align: right; }
+    .hero-big-num { font-size: 80px; font-weight: 800; color: #111; line-height: 1; letter-spacing: -4px; }
+    .hero-num-label { font-size: 13px; color: #999; margin-top: 4px; }
+
+    .pitch-strip { border-bottom: 1px solid #e5e5e5; padding: 18px 24px; background: #f5f5f5; }
+    .pitch-strip-inner { max-width: 1060px; margin: 0 auto; }
+    .pitch-strip p { font-size: 15px; color: #111; font-weight: 500; }
+
+    .main { max-width: 1060px; margin: 0 auto; padding: 52px 24px 80px; }
+
+    .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .section-title { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 10px; letter-spacing: -0.2px; }
+    .section-desc { color: #555; max-width: 680px; margin-bottom: 32px; font-size: 15px; }
+
+    /* PARTNER MATH */
+    .partner-math { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-bottom: 56px; }
+    .partner-card { background: #fff; }
+    .partner-card-top { background: #f5f5f5; border-bottom: 1px solid #e5e5e5; padding: 16px 22px; }
+    .partner-card-org { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 2px; }
+    .partner-card-name { font-size: 16px; font-weight: 700; color: #111; }
+    .partner-card-body { padding: 20px 22px; }
+    .math-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid #f5f5f5; }
+    .math-row:last-of-type { border-bottom: none; }
+    .math-label { font-size: 12px; color: #999; }
+    .math-val { font-weight: 700; font-size: 13px; color: #111; }
+    .math-result { margin-top: 14px; background: #fafafa; border: 1px solid #e5e5e5; padding: 14px 16px; }
+    .math-result-num { font-size: 28px; font-weight: 800; color: #111; letter-spacing: -1px; }
+    .math-result-label { font-size: 12px; color: #999; margin-top: 2px; }
+    .math-upside { margin-top: 10px; font-size: 12px; color: #555; padding: 8px 10px; background: #fafafa; border-left: 2px solid #e8553d; }
+
+    /* SCENARIO GRID */
+    .scenario-section { margin-bottom: 56px; }
+    .scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; }
+    .scenario { background: #fff; padding: 24px; }
+    .scenario.featured { background: #111; }
+    .scenario-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 6px; }
+    .scenario:not(.featured) .scenario-label { color: #e8553d; }
+    .scenario.featured .scenario-label { color: #e8553d; }
+    .scenario-partners { font-size: 12px; color: #999; margin-bottom: 10px; }
+    .scenario.featured .scenario-partners { color: rgba(255,255,255,0.5); }
+    .scenario-range { font-size: 24px; font-weight: 800; color: #111; letter-spacing: -0.5px; }
+    .scenario.featured .scenario-range { color: #fff; }
+    .scenario-sub { font-size: 12px; color: #999; margin-top: 4px; }
+    .scenario.featured .scenario-sub { color: rgba(255,255,255,0.5); }
+
+    /* CHART */
+    .chart-section { background: #fff; border: 1px solid #e5e5e5; padding: 32px; margin-bottom: 56px; }
+    .chart-section h3 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 4px; }
+    .chart-section .chart-sub { font-size: 13px; color: #999; margin-bottom: 28px; }
+    .chart-container { position: relative; padding: 10px 0 40px; }
+    .chart-labels-y { position: absolute; left: 0; top: 10px; height: calc(100% - 50px); display: flex; flex-direction: column; justify-content: space-between; }
+    .chart-label-y { font-size: 10px; color: #bbb; text-align: right; width: 52px; }
+    .chart-inner { margin-left: 62px; border-left: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; position: relative; height: 240px; }
+    .chart-bars { display: flex; align-items: flex-end; height: 100%; gap: 4px; padding: 0 12px; }
+    .bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .bar { width: 100%; }
+    .bar-partner { background: #e5e5e5; }
+    .bar-compound { background: #111; }
+    .bar-month { font-size: 9px; color: #bbb; margin-top: 6px; text-align: center; }
+    .bar-month.highlight { color: #e8553d; font-weight: 700; }
+    .chart-legend { display: flex; gap: 20px; margin-top: 16px; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #999; }
+    .legend-dot { width: 12px; height: 8px; }
+
+    /* TIMELINE */
+    .timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-bottom: 56px; }
+    .milestone { padding: 24px; background: #fff; }
+    .milestone-time { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #e8553d; font-weight: 700; margin-bottom: 8px; }
+    .milestone-num { font-size: 28px; font-weight: 800; color: #111; letter-spacing: -1px; }
+    .milestone-label { font-size: 12px; color: #999; margin-top: 4px; line-height: 1.5; }
+
+    /* CADENCE */
+    .cadence-box { background: #f5f5f5; border: 1px solid #e5e5e5; padding: 32px; margin-bottom: 56px; }
+    .cadence-box h3 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 12px; }
+    .cadence-box p { font-size: 14px; color: #555; max-width: 720px; line-height: 1.7; margin-bottom: 12px; }
+    .cadence-stats { display: flex; flex-wrap: wrap; gap: 1px; background: #e5e5e5; border: 1px solid #e5e5e5; margin-top: 20px; }
+    .cadence-stat { background: #fff; padding: 20px 24px; flex: 1; min-width: 140px; }
+    .cadence-stat-num { font-size: 32px; font-weight: 800; color: #111; letter-spacing: -1px; }
+    .cadence-stat-label { font-size: 12px; color: #999; margin-top: 2px; }
+
+    /* COMPOUND */
+    .compound { background: #fff; border: 1px solid #e5e5e5; border-left: 3px solid #111; padding: 32px; margin-bottom: 56px; }
+    .compound h3 { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 16px; }
+    .compound ul { margin-left: 18px; }
+    .compound ul li { font-size: 14px; color: #555; margin-bottom: 10px; line-height: 1.6; }
+    .compound ul li strong { color: #111; }
+
+    footer { border-top: 1px solid #e5e5e5; padding: 24px; background: #fff; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-left { font-size: 12px; color: #555; }
+    .footer-right a { font-size: 12px; color: #999; text-decoration: none; }
+    .footer-right a:hover { color: #e8553d; }
+  </style>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <span class="aw-mark">AW</span>
+        Outreach Podcast Playbook
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="playbook.html">Playbook</a></li>
+        <li><a href="alf.html">ALF</a></li>
+        <li><a href="pca.html">PCA</a></li>
+        <li><a href="cityyear.html">City Year</a></li>
+        <li><a href="growth.html" class="active">Growth</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="label">Growth Projections</span>
+        <h1>The Path to 10,000 Subscribers</h1>
+        <p class="sub">Three partners. Conservative math. A very achievable North Star -- and a clear roadmap to get there.</p>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-big-num">10K</div>
+        <div class="hero-num-label">subscribers -- the North Star</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pitch-strip">
+    <div class="pitch-strip-inner">
+      <p>"We'll deliver a new co-branded leadership episode to your audience every week. You just share it. We handle everything."</p>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <div class="section-label">Partner Channel Math</div>
+    <h2 class="section-title">Conservative Estimates, Real Upside</h2>
+    <p class="section-desc">These numbers use intentionally conservative conversion rates. The real numbers, especially with PCA's reach, could be significantly higher.</p>
+
+    <div class="partner-math">
+      <div class="partner-card">
+        <div class="partner-card-top">
+          <div class="partner-card-org">Partner 1</div>
+          <div class="partner-card-name">ALF Silicon Valley</div>
+        </div>
+        <div class="partner-card-body">
+          <div class="math-row"><span class="math-label">Reachable network</span><span class="math-val">~1,000</span></div>
+          <div class="math-row"><span class="math-label">Conversion rate</span><span class="math-val">5% (conservative)</span></div>
+          <div class="math-row"><span class="math-label">Timeframe</span><span class="math-val">6 months</span></div>
+          <div class="math-result">
+            <div class="math-result-num">50+</div>
+            <div class="math-result-label">new subscribers from SV chapter alone</div>
+          </div>
+          <div class="math-upside">Upside: ALF has chapters nationally -- Houston, Oregon, Sacramento, and more. If SV proves the model, expansion to other chapters could 5x this number.</div>
+        </div>
+      </div>
+
+      <div class="partner-card">
+        <div class="partner-card-top">
+          <div class="partner-card-org">Partner 2</div>
+          <div class="partner-card-name">Positive Coaching Alliance</div>
+        </div>
+        <div class="partner-card-body">
+          <div class="math-row"><span class="math-label">Reachable network</span><span class="math-val">50,000-100,000</span></div>
+          <div class="math-row"><span class="math-label">Conversion rate</span><span class="math-val">1% (conservative)</span></div>
+          <div class="math-row"><span class="math-label">Timeframe</span><span class="math-val">Year 1</span></div>
+          <div class="math-result">
+            <div class="math-result-num">500-1,000</div>
+            <div class="math-result-label">new subscribers from PCA's massive email reach</div>
+          </div>
+          <div class="math-upside">PCA has the largest email reach of the three. A single newsletter placement could drive hundreds of subscribers in a single week. Highest-upside channel.</div>
+        </div>
+      </div>
+
+      <div class="partner-card">
+        <div class="partner-card-top">
+          <div class="partner-card-org">Partner 3</div>
+          <div class="partner-card-name">City Year</div>
+        </div>
+        <div class="partner-card-body">
+          <div class="math-row"><span class="math-label">AmeriCorps members/year</span><span class="math-val">2,000+</span></div>
+          <div class="math-row"><span class="math-label">Alumni network</span><span class="math-val">40,000+</span></div>
+          <div class="math-row"><span class="math-label">Conversion rate</span><span class="math-val">1-2% (conservative)</span></div>
+          <div class="math-result">
+            <div class="math-result-num">300-600</div>
+            <div class="math-result-label">new subscribers from corps members, alumni, school partners</div>
+          </div>
+          <div class="math-upside">City Year's deep investment in corps member development makes them a natural audience for Applied Wisdom content. Jim Morgan's connection to leadership gives this a warm entry point.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROWTH SCENARIOS -->
+    <div class="scenario-section">
+      <div class="section-label">Growth Scenarios</div>
+      <h2 class="section-title">From 3 Partners to 10</h2>
+      <p class="section-desc">Subscriber growth compounds as each partner adds weekly touchpoints and organic sharing creates new exposure.</p>
+      <div class="scenario-grid">
+        <div class="scenario">
+          <div class="scenario-label">3-Partner Baseline</div>
+          <div class="scenario-partners">ALF + PCA + City Year</div>
+          <div class="scenario-range">850-1,650</div>
+          <div class="scenario-sub">subscribers from partner channels, Year 1</div>
+        </div>
+        <div class="scenario featured">
+          <div class="scenario-label">5 Partners</div>
+          <div class="scenario-partners">Baseline + 2 more</div>
+          <div class="scenario-range">2,000-4,000</div>
+          <div class="scenario-sub">subscribers from partner channels</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-label">10 Partners</div>
+          <div class="scenario-partners">Full network effect</div>
+          <div class="scenario-range">4,000-8,000</div>
+          <div class="scenario-sub">subscribers from partner channels alone</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-label">10k North Star</div>
+          <div class="scenario-partners">Organic + Partner</div>
+          <div class="scenario-range">Month 18-24</div>
+          <div class="scenario-sub">realistic path to 10,000 with organic layered on top</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROWTH CURVE CHART -->
+    <div class="chart-section">
+      <h3>Subscriber Growth Curve</h3>
+      <p class="chart-sub">Illustrative projection: partner channels + organic growth. Month 18-24 target: 10,000.</p>
+
+      <div class="chart-container">
+        <div class="chart-labels-y">
+          <span class="chart-label-y">10,000</span>
+          <span class="chart-label-y">7,500</span>
+          <span class="chart-label-y">5,000</span>
+          <span class="chart-label-y">2,500</span>
+          <span class="chart-label-y">0</span>
+        </div>
+
+        <div class="chart-inner">
+          <div class="chart-bars">
+            <div class="bar-group"><div class="bar bar-partner" style="height:2%"></div><div class="bar-month">M1</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:4%"></div><div class="bar-month">M2</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:8%"></div><div class="bar-month">M3</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:13%"></div><div class="bar-month">M4</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:18%"></div><div class="bar-month">M5</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:24%"></div><div class="bar-month">M6</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:30%"></div><div class="bar-month">M7</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:36%"></div><div class="bar-month">M8</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:42%"></div><div class="bar-month">M9</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:48%"></div><div class="bar-month">M10</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:54%"></div><div class="bar-month">M11</div></div>
+            <div class="bar-group"><div class="bar bar-partner" style="height:60%"></div><div class="bar-month">M12</div></div>
+            <div class="bar-group"><div class="bar bar-compound" style="height:72%"></div><div class="bar-month">M15</div></div>
+            <div class="bar-group"><div class="bar bar-compound" style="height:83%"></div><div class="bar-month">M18</div></div>
+            <div class="bar-group"><div class="bar bar-compound" style="height:92%"></div><div class="bar-month">M21</div></div>
+            <div class="bar-group"><div class="bar bar-compound" style="height:100%"></div><div class="bar-month highlight">M24</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#e5e5e5;"></div> Partner channel growth (Year 1)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#111;"></div> Organic + partner compound effect (Year 2)</div>
+      </div>
+    </div>
+
+    <!-- WEEKLY CADENCE -->
+    <div class="cadence-box">
+      <h3>The Weekly Cadence Advantage</h3>
+      <p>66 episodes over approximately 8 months means partners are sharing new content every single week. That's not one campaign -- it's a sustained presence in front of their audience for over half a year. Each episode is a new touchpoint, a new reason to engage, a new way to grow.</p>
+      <p>After the 66-episode run, partners have had eight months of consistent touchpoints with their audiences. The relationship is established. The subscribers are loyal. The brand is recognized.</p>
+      <div class="cadence-stats">
+        <div class="cadence-stat"><div class="cadence-stat-num">66</div><div class="cadence-stat-label">episodes in the library</div></div>
+        <div class="cadence-stat"><div class="cadence-stat-num">~8</div><div class="cadence-stat-label">months of weekly content</div></div>
+        <div class="cadence-stat"><div class="cadence-stat-num">66</div><div class="cadence-stat-label">new touchpoints per partner audience</div></div>
+        <div class="cadence-stat"><div class="cadence-stat-num">3+</div><div class="cadence-stat-label">partners sharing weekly = exponential reach</div></div>
+      </div>
+    </div>
+
+    <!-- MILESTONE TIMELINE -->
+    <div class="section-label">Subscriber Milestones</div>
+    <h2 class="section-title" style="margin-bottom:24px;">The Journey to 10,000</h2>
+    <div class="timeline" style="margin-bottom:56px;">
+      <div class="milestone">
+        <div class="milestone-time">Month 3</div>
+        <div class="milestone-num">250-400</div>
+        <div class="milestone-label">All 3 partners active, early organic momentum</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-time">Month 6</div>
+        <div class="milestone-num">800-1,200</div>
+        <div class="milestone-label">Partner channels at full cadence, referrals growing</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-time">Month 12</div>
+        <div class="milestone-num">2,000-3,500</div>
+        <div class="milestone-label">66 episodes delivered, compound effect in full swing</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-time">Month 18-24</div>
+        <div class="milestone-num">10,000</div>
+        <div class="milestone-label">North Star achieved. Organic + 5-10 partners.</div>
+      </div>
+    </div>
+
+    <div class="compound">
+      <h3>The Compound Effect</h3>
+      <ul>
+        <li><strong>Every share creates new exposure.</strong> When a partner shares an episode, their audience sees it. Some of those people share it further. Each episode is a new opportunity for this to happen -- 66 times.</li>
+        <li><strong>Partners become advocates.</strong> As their audience responds positively, partners are motivated to share more enthusiastically. The relationship deepens over time.</li>
+        <li><strong>Organic growth layers on top.</strong> As the subscriber base grows, word-of-mouth increases. Leaders who find the content valuable recommend it to peers. No additional effort required.</li>
+        <li><strong>New partners become easier to close.</strong> With PCA or City Year in the portfolio, every future outreach conversation starts with a credible example. "Here's what we've already built with them."</li>
+        <li><strong>ALF's national chapters multiply the model.</strong> Prove it in Silicon Valley, expand to Houston, Oregon, Sacramento. Each new chapter is a multiplier on the subscriber math.</li>
+        <li><strong>City Year's 29 cities are a network effect waiting to happen.</strong> One national co-brand with City Year opens doors to their entire organizational ecosystem across the country.</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">Applied Wisdom for the Nonprofit Sector &bull; Kathleen's Outreach Podcast Playbook</div>
+      <div class="footer-right"><a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
