@@ -207,6 +207,54 @@
     .footer-right a { font-size: 12px; color: var(--ink-faint); text-decoration: none; }
     .footer-right a:hover { color: var(--accent); }
 
+    /* MORGANISM STICKY NOTES */
+    .morganism-note {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-left: 4px solid #f59e0b;
+      padding: 16px 20px;
+      margin: 20px 0;
+      position: relative;
+    }
+    .morganism-note::before {
+      content: 'MORGANISM';
+      position: absolute;
+      top: -10px;
+      left: 16px;
+      background: #f59e0b;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+    .morganism-note .mn-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #92400e;
+      margin-bottom: 4px;
+    }
+    .morganism-note .mn-ep {
+      font-size: 11px;
+      color: #b45309;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .morganism-note .mn-quote {
+      font-size: 15px;
+      color: #78350f;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .morganism-note .mn-connect {
+      font-size: 13px;
+      color: #92400e;
+      margin-top: 8px;
+    }
+
     @media (max-width: 900px) {
       .tracks-grid, .stats-grid, .topics-grid, .two-col, .hero-meta { grid-template-columns: 1fr; }
       .grid-header, .grid-row { grid-template-columns: 1fr; }
@@ -235,7 +283,7 @@
 
   <section class="hero" id="top">
     <div class="hero-inner">
-      <span class="label">Campaign Presentation Draft</span>
+      <span class="label" style="background: #fef3c7; color: #92400e; padding: 6px 14px; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; border: 1px solid #fde68a; display: inline-block; margin-bottom: 12px;">Marketing Campaign Concept Draft</span>
       <h1>The Succession Crisis</h1>
       <p class="subtitle">Boomer retirement, Gen Z burnout, and the nonprofit leadership vacuum</p>
       <p class="sub">Leaders leaving is normal. Empty seats signal trouble. The crisis begins when experienced leaders retire and nobody is ready to step in. Succession can be built before it becomes urgent, but only if leaders treat it as part of the job.</p>
@@ -291,6 +339,12 @@
         <blockquote>"You aren't a failure until you start to blame."</blockquote>
         <p>The backbone of this campaign. Tell the truth about what is broken without turning the story into blame.</p>
       </div>
+
+      <div class="morganism-note">
+        <div class="mn-ep">Episode 22 &middot; Solutions Over Blame</div>
+        <div class="mn-title">"Celebrate fixes, never punish the messenger."</div>
+        <div class="mn-connect">The Succession Crisis names a problem without assigning fault. This Morganism sets the editorial standard for how we talk about what went wrong.</div>
+      </div>
     </section>
 
     <section class="section">
@@ -325,6 +379,11 @@
             <li>Channels: short-form video, social, email, audio snippets</li>
           </ul>
           <div class="note"><strong>Messenger:</strong> Brendo should be the face here. Credibility matters.</div>
+          <div class="morganism-note">
+            <div class="mn-ep">Episode 18 &middot; Do Well While Doing Good</div>
+            <div class="mn-title">"Nonprofit professionals deserve fair pay."</div>
+            <div class="mn-connect">Gen Z workers see the compensation gap clearly. This Morganism validates that seeing it is not disloyalty.</div>
+          </div>
         </div>
 
         <div class="track track-boomer">
@@ -337,6 +396,11 @@
             <li>Channels: LinkedIn, newsletter, podcast, partner conversations</li>
           </ul>
           <div class="note"><strong>Messenger:</strong> Jim Morgan is the natural peer voice here. He can challenge without sounding accusatory.</div>
+          <div class="morganism-note">
+            <div class="mn-ep">Episode 18 (Planning) &middot; Succession Planning</div>
+            <div class="mn-title">"Maintain a list of 3 potential additions."</div>
+            <div class="mn-connect">Morgan's own succession practice: always know who could step in. The bench is not an abstraction, it is a list with names on it.</div>
+          </div>
         </div>
 
         <div class="track track-bridge">
@@ -349,6 +413,11 @@
             <li>Channels: pillar pieces, partner briefs, talks, keynote material</li>
           </ul>
           <div class="note"><strong>Writing note:</strong> Earn trust by being specific about what is no longer sustainable. Then show what stronger leadership actually looks like in practice.</div>
+          <div class="morganism-note">
+            <div class="mn-ep">Episode 5 &middot; Tone at the Top</div>
+            <div class="mn-title">"Board culture IS organizational culture."</div>
+            <div class="mn-connect">The bridge track connects generations, but the tone is set at the top. If the board models intergenerational respect, the rest of the organization follows.</div>
+          </div>
         </div>
       </div>
     </section>
@@ -393,6 +462,18 @@
         <div class="g">They are not feeling heard</div>
         <div class="b">They are not hearing enough back</div>
         <div class="y">Listening is a leadership design problem</div>
+      </div>
+
+      <div class="morganism-note">
+        <div class="mn-ep">Episode 23 &middot; Speak Once, Listen Twice</div>
+        <div class="mn-title">"More listening than talking."</div>
+        <div class="mn-connect">The Voice &amp; Agency row above is where this lands hardest. Both generations feel unheard. Morgan's principle: listen first, talk second.</div>
+      </div>
+
+      <div class="morganism-note">
+        <div class="mn-ep">Episode 20 &middot; Porpoising</div>
+        <div class="mn-title">"Dive deep beyond direct reports to hear what's really happening."</div>
+        <div class="mn-connect">Leaders who only hear from their inner circle miss the turnover warning signs. Porpoising is how you catch the succession crisis before it arrives.</div>
       </div>
     </section>
 
@@ -475,6 +556,12 @@
           <h4>Prefer lateral growth over management</h4>
           <p>They want to contribute. They just don't want the current version of the leadership deal.</p>
         </div>
+      </div>
+
+      <div class="morganism-note">
+        <div class="mn-ep">Episode 17 &middot; Culture of Continuous Learning</div>
+        <div class="mn-title">"Development is a retention strategy."</div>
+        <div class="mn-connect">The 65% Gen Z turnover stat and the 50% lateral-growth preference tell the same story: people stay where they can grow. Morgan knew this from Applied Materials.</div>
       </div>
     </section>
 
