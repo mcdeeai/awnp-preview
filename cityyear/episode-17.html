@@ -607,6 +607,63 @@
       color: var(--ink-tertiary);
     }
     .footer .copyright a { color: var(--ink-tertiary); text-decoration: none; }
+
+    /* Mind Map Tree */
+    .mindmap-container {
+      background: #f7f5f2;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 24px;
+      overflow-x: auto;
+    }
+    .mm-tree, .mm-children {
+      list-style: none;
+      padding-left: 20px;
+      margin: 0;
+    }
+    .mm-tree { padding-left: 0; }
+    .mm-node, .mm-node-leaf {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      margin: 3px 0;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .mm-node.mm-level-0 {
+      background: #1a2744;
+      color: #fff;
+      font-size: 16px;
+      padding: 8px 18px;
+    }
+    .mm-node.mm-level-1 {
+      background: #E41D36;
+      color: #fff;
+    }
+    .mm-node.mm-level-2 {
+      background: #2a3f66;
+      color: #fff;
+      font-weight: 500;
+    }
+    .mm-node-leaf {
+      background: #eee;
+      color: #1a2744;
+      font-weight: 400;
+      cursor: default;
+      font-size: 13px;
+    }
+    .mm-branch > details > summary::before {
+      content: "\25B6 ";
+      font-size: 10px;
+      margin-right: 4px;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+    .mm-branch > details[open] > summary::before {
+      transform: rotate(90deg);
+    }
   </style>
 </head>
 <body>
@@ -800,15 +857,94 @@
     <!-- ═══ Mind Map ═══ -->
     <section class="section">
       <div class="section-label">Visual Overview</div>
-      <h2>Episode Mind Map</h2>
-      <p class="lede">How continuous learning connects to Morgan's broader culture framework.</p>
-      <div class="placeholder-block">
-        <div class="ph-icon">◎</div>
-        <div class="ph-title">Mind map coming soon</div>
-      </div>
-      <div class="btn-row">
-        <a href="assets/mindmap.jpg" class="btn btn-outline" download>Download Mind Map</a>
-      </div>
+      <details class="accordion-section" style="cursor: pointer;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0;">
+          <h2 style="margin: 0;">Episode Mind Map</h2>
+          <span style="font-size: 20px; color: var(--accent); transition: transform 0.2s;">&#9654;</span>
+        </summary>
+        <p style="margin-top: 8px; color: var(--ink-secondary); font-size: 15px;">See how the key concepts in this episode connect to each other and to Morgan's broader framework.</p>
+        <div class="mindmap-container">
+          <ul class="mm-tree">
+            <li class="mm-branch">
+              <details open>
+                <summary class="mm-node mm-level-0">Culture of Continuous Learning</summary>
+                <ul class="mm-children">
+                  <li class="mm-branch">
+                    <details>
+                      <summary class="mm-node mm-level-1">The City Year Model</summary>
+                      <ul class="mm-children">
+                        <li class="mm-leaf"><span class="mm-node-leaf">Whole School, Whole Child Approach</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Service as Leadership Curriculum</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Near-Peer Tutoring & Mentoring</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">2,000+ Corps Members Annually</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">40,000+ Alumni Network</span></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="mm-branch">
+                    <details>
+                      <summary class="mm-node mm-level-1">Morgan's Leadership Principles</summary>
+                      <ul class="mm-children">
+                        <li class="mm-leaf"><span class="mm-node-leaf">"Culture Eats Strategy for Breakfast"</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">"Doing the Whole Job"</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">"Invest in Their Growth. As the Strategy Itself."</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Tone at the Top</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Porpoising: Dive Deep, Surface to Lead</span></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="mm-branch">
+                    <details>
+                      <summary class="mm-node mm-level-1">The Development Engine</summary>
+                      <ul class="mm-children">
+                        <li class="mm-leaf"><span class="mm-node-leaf">Morning Huddles & Daily Rhythm</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Structured Reflection</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Team-Based Problem Solving</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Continuous Feedback Loops</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Mid-Year Reviews & Mentorship</span></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="mm-branch">
+                    <details>
+                      <summary class="mm-node mm-level-1">Why People Stay</summary>
+                      <ul class="mm-children">
+                        <li class="mm-leaf"><span class="mm-node-leaf">The Retention Paradox: Low Pay, High Completion</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Growth as Retention Strategy</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Culture Over Compensation</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Shared Purpose & Discipline</span></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="mm-branch">
+                    <details>
+                      <summary class="mm-node mm-level-1">The Alumni Effect</summary>
+                      <ul class="mm-children">
+                        <li class="mm-leaf"><span class="mm-node-leaf">Leadership Skills Beyond Service</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Compounding Returns Over Decades</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">"Actions Speak Louder Than Your Resume"</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Develop the Person, Multiply the Impact</span></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="mm-branch">
+                    <details>
+                      <summary class="mm-node mm-level-1">Wisdom of the Ages</summary>
+                      <ul class="mm-children">
+                        <li class="mm-leaf"><span class="mm-node-leaf">Aristotle: Flourishing Through Active Virtue</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Confucius: Lifelong Self-Cultivation</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Seneca: "Keep Learning How to Live"</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">Marcus Aurelius: Shared Internal Discipline</span></li>
+                        <li class="mm-leaf"><span class="mm-node-leaf">U.S. Marines: Develop Leaders, Not Just Soldiers</span></li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </details>
     </section>
 
     <!-- ═══ Episode Nav ═══ -->

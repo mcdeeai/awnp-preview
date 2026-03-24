@@ -1,0 +1,63 @@
+{
+  "name": "Culture of Continuous Learning",
+  "children": [
+    {
+      "name": "The City Year Model",
+      "children": [
+        {"name": "Whole School, Whole Child Approach"},
+        {"name": "Service as Leadership Curriculum"},
+        {"name": "Near-Peer Tutoring & Mentoring"},
+        {"name": "2,000+ Corps Members Annually"},
+        {"name": "40,000+ Alumni Network"}
+      ]
+    },
+    {
+      "name": "Morgan's Leadership Principles",
+      "children": [
+        {"name": "Culture Eats Strategy for Breakfast"},
+        {"name": "Doing the Whole Job"},
+        {"name": "Invest in Their Growth. As the Strategy Itself."},
+        {"name": "Tone at the Top"},
+        {"name": "Porpoising: Dive Deep, Surface to Lead"}
+      ]
+    },
+    {
+      "name": "The Development Engine",
+      "children": [
+        {"name": "Morning Huddles & Daily Rhythm"},
+        {"name": "Structured Reflection"},
+        {"name": "Team-Based Problem Solving"},
+        {"name": "Continuous Feedback Loops"},
+        {"name": "Mid-Year Reviews & Mentorship"}
+      ]
+    },
+    {
+      "name": "Why People Stay",
+      "children": [
+        {"name": "The Retention Paradox: Low Pay, High Completion"},
+        {"name": "Growth as Retention Strategy"},
+        {"name": "Culture Over Compensation"},
+        {"name": "Shared Purpose & Discipline"}
+      ]
+    },
+    {
+      "name": "The Alumni Effect",
+      "children": [
+        {"name": "Leadership Skills Beyond Service"},
+        {"name": "Compounding Returns Over Decades"},
+        {"name": "Actions Speak Louder Than Your Resume"},
+        {"name": "Develop the Person, Multiply the Impact"}
+      ]
+    },
+    {
+      "name": "Wisdom of the Ages",
+      "children": [
+        {"name": "Aristotle: Flourishing Through Active Virtue"},
+        {"name": "Confucius: Lifelong Self-Cultivation"},
+        {"name": "Seneca: Keep Learning How to Live"},
+        {"name": "Marcus Aurelius: Shared Internal Discipline"},
+        {"name": "U.S. Marines: Develop Leaders, Not Just Soldiers"}
+      ]
+    }
+  ]
+}

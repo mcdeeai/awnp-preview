@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applied Wisdom × City Year: Partnership Overview</title>
+  <meta name="description" content="Follow-up from our March 23, 2026 conversation. A leadership podcast series for City Year corps members, alumni, and staff.">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #111111;
+      --ink-secondary: #555555;
+      --ink-tertiary: #999999;
+      --accent: #E41D36;
+      --surface: #ffffff;
+      --surface-alt: #fafafa;
+      --border: #e5e5e5;
+      --navy: #1a2744;
+      --max: 860px;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--ink);
+      background: var(--surface);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Identity Bar ── */
+    .identity-bar {
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 100;
+    }
+
+    .identity-logos {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .identity-logos img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    .identity-logos .slash {
+      color: var(--ink-tertiary);
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .identity-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .identity-nav a {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+
+    .identity-nav a:hover { color: var(--ink); }
+
+    .identity-nav a.nav-cta {
+      color: var(--accent);
+    }
+
+    /* ── Hero ── */
+    .hero {
+      border-bottom: 1px solid var(--border);
+      padding: 72px 24px 64px;
+      text-align: center;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--ink-secondary);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .hero-date {
+      font-size: 13px;
+      color: var(--ink-tertiary);
+      font-style: italic;
+    }
+
+    /* ── Layout ── */
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 64px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 16px;
+      color: var(--ink-secondary);
+      line-height: 1.75;
+      margin-bottom: 16px;
+      max-width: 680px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    /* ── Episode Cards ── */
+    .episode-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .episode-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .episode-card:hover {
+      border-color: #ccc;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .episode-card.featured {
+      border-color: var(--accent);
+      background: #fff8f8;
+    }
+
+    .episode-card .ep-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 10px;
+    }
+
+    .episode-card.featured .ep-label {
+      color: var(--accent);
+    }
+
+    .episode-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .episode-card p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .episode-card a.demo-link {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .episode-card a.demo-link:hover { text-decoration: underline; }
+
+    /* ── Full-width image ── */
+    .visual-block {
+      margin-top: 36px;
+    }
+
+    .visual-block img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    /* ── Audience Cards ── */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+      margin-bottom: 36px;
+    }
+
+    .audience-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .audience-card .aud-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .audience-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .audience-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .audience-card ul li {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 4px;
+    }
+
+    .audience-card ul li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ── How It Works ── */
+    .how-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 600px) {
+      .how-grid { grid-template-columns: 1fr; }
+    }
+
+    .how-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    /* ── Review Steps ── */
+    .review-steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 28px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 600px) {
+      .review-steps { grid-template-columns: 1fr; }
+    }
+
+    .review-step {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      background: var(--surface-alt);
+    }
+
+    .review-step .step-num {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .review-step h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .review-step p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      margin-bottom: 0;
+    }
+
+    /* ── Stats Bar ── */
+    .stats-bar {
+      background: var(--navy);
+      padding: 48px 24px;
+    }
+
+    .stats-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .stat-item .stat-num {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .stat-item .stat-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.05em;
+      margin-top: 6px;
+    }
+
+    /* ── Quote Block ── */
+    .quote-block {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 40px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .quote-block img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    /* ── CTA Cards ── */
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 600px) {
+      .cta-grid { grid-template-columns: 1fr; }
+    }
+
+    .cta-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      background: var(--surface-alt);
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .cta-card:hover {
+      border-color: #ccc;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .cta-card.featured-cta {
+      border-color: var(--accent);
+      background: #fff8f8;
+    }
+
+    .cta-card .cta-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 10px;
+    }
+
+    .cta-card.featured-cta .cta-label {
+      color: var(--accent);
+    }
+
+    .cta-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .cta-card p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .cta-card .cta-arrow {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ── Next Steps ── */
+    .next-steps-list {
+      margin-top: 24px;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .next-steps-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 16px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+    }
+
+    .next-steps-list li .step-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface-alt);
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--ink-tertiary);
+      line-height: 1.7;
+    }
+
+    footer a {
+      color: var(--ink-secondary);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    footer .footer-divider {
+      margin: 0 10px;
+      color: var(--border);
+    }
+
+    /* ── Responsive nav ── */
+    @media (max-width: 640px) {
+      .identity-nav { display: none; }
+      .identity-bar { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ IDENTITY BAR ══ -->
+  <header class="identity-bar">
+    <div class="identity-logos">
+      <img src="images/cityyear-logo.svg" alt="City Year">
+      <span class="slash">/</span>
+      <img src="images/awnp-logo.svg" alt="Applied Wisdom for Nonprofits">
+    </div>
+    <nav class="identity-nav">
+      <a href="../episode-17.html">Episode 17</a>
+      <a href="../../outreach-playbook-site/series-index.html">Full Series</a>
+      <a href="https://appliedwisdomfornonprofits.org" target="_blank" rel="noopener">Free Book</a>
+      <a href="https://www.cityyear.org" target="_blank" rel="noopener" class="nav-cta">cityyear.org</a>
+    </nav>
+  </header>
+
+
+  <!-- ══ HERO ══ -->
+  <section style="border-bottom: 1px solid var(--border);">
+    <div class="hero">
+      <p class="hero-eyebrow">Partnership Overview</p>
+      <h1>Applied Wisdom × City Year</h1>
+      <p class="hero-subtitle">A Leadership Podcast Series for Corps Members, Alumni &amp; Staff</p>
+      <p class="hero-date">Follow-up from our March 23, 2026 conversation</p>
+    </div>
+  </section>
+
+
+  <!-- ══ WHAT WE DISCUSSED ══ -->
+  <section class="section">
+    <p class="section-label">What We Discussed</p>
+    <h2>A Partnership Built Around City Year's Mission</h2>
+    <p>We explored a collaboration centered on Applied Wisdom for Nonprofits, a 66-episode leadership podcast series from Jim Morgan's book. The framework maps directly onto what City Year already does: building leaders through service, developing people at every level, and treating culture as the core asset. Your staff are already using Applied Wisdom in weekly meetings, and we discussed the Wednesday Specialized Learning sessions and alumni newsletter as natural integration points.</p>
+    <p>We took an initial pass at five topics that felt relevant and walked through a co-branded demo. The real opportunity is for City Year to review the full 66 episodes and choose topics that resonate for each audience: corps members, alumni, or staff. The goal now is to get the right people aligned before moving into production.</p>
+  </section>
+
+
+  <!-- ══ FIVE EPISODES ══ -->
+  <section class="section">
+    <p class="section-label">Five Topics We Think Fit</p>
+    <h2>An Initial Pass</h2>
+    <p>Based on our understanding of City Year's model, we identified five topics from the 66-episode series that felt like natural fits. These are starting points. The real value is City Year choosing the topics that resonate most for each specific audience.</p>
+
+    <div class="episode-grid">
+
+      <div class="episode-card featured">
+        <p class="ep-label">Episode 17 · Demo Available</p>
+        <h3>Culture of Continuous Learning</h3>
+        <p>If you want to keep your best people, invest in their growth. This episode explores how organizations that treat development as a core commitment, not a perk, build the strongest, most loyal teams. Direct mirror of City Year's model.</p>
+        <a href="../episode-17.html" class="demo-link">View the City Year demo →</a>
+      </div>
+
+      <div class="episode-card">
+        <p class="ep-label">Episode</p>
+        <h3>Court Sense</h3>
+        <p>The ability to read a situation in real time and act on instinct sharpened by experience. Exactly what corps members build over a service year, and what separates great leaders from good ones.</p>
+      </div>
+
+      <div class="episode-card">
+        <p class="ep-label">Episode</p>
+        <h3>Purposing</h3>
+        <p>How leaders align people around shared meaning, not just tasks. Particularly relevant for corps member orientation and for staff navigating large, mission-driven organizations.</p>
+      </div>
+
+      <div class="episode-card">
+        <p class="ep-label">Episode</p>
+        <h3>Servant Leadership</h3>
+        <p>The leadership philosophy that runs through City Year's DNA. This episode gives corps members and alumni a framework for what they already live, and language to carry it forward in any career.</p>
+      </div>
+
+      <div class="episode-card">
+        <p class="ep-label">Episode</p>
+        <h3>Trust</h3>
+        <p>How trust is built, maintained, and lost, and why it's the foundation of every high-performing team. Connects directly to the cohort dynamics corps members navigate every day in schools.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ WHAT EACH EPISODE INCLUDES ══ -->
+  <section class="section">
+    <p class="section-label">What Each Episode Includes</p>
+    <h2>A Complete Production Suite</h2>
+    <p>Every episode in the series comes with a full asset package, built for sharing, teaching, and discussion. Nothing requires additional production from City Year.</p>
+    <p>Each episode includes: a 1-2 minute video overview, a deep-dive podcast conversation, presentation slides, an infographic, a mind map, and a full transcript. It's a self-contained learning unit, ready to drop into Wednesday sessions, newsletters, or team meetings.</p>
+    <div class="visual-block">
+      <img src="images/cityyear-asset-package.png" alt="Asset package for each episode">
+    </div>
+  </section>
+
+
+  <!-- ══ MORGAN QUOTE 1 ══ -->
+  <div class="quote-block">
+    <img src="images/morganism-culture-strategy.png" alt="Culture eats strategy for breakfast">
+  </div>
+
+
+  <!-- ══ THREE AUDIENCES ══ -->
+  <section class="section">
+    <p class="section-label">Three Audiences, One Series</p>
+    <h2>City Year Has a Unique Three-Layer Reach</h2>
+    <p>Most organizations have one audience for professional development content. City Year has three, and all three are well-positioned to engage with this series in different ways.</p>
+
+    <div class="audience-grid">
+      <div class="audience-card">
+        <p class="aud-label">Corps Members</p>
+        <h3>2,000+ Nationally</h3>
+        <ul>
+          <li>Wednesday Specialized Learning integration</li>
+          <li>Journaling prompts paired with each episode</li>
+          <li>Cohort discussion guides</li>
+          <li>Reflection assignments tied to service year milestones</li>
+        </ul>
+      </div>
+      <div class="audience-card">
+        <p class="aud-label">Alumni Network</p>
+        <h3>40,000+ Strong</h3>
+        <ul>
+          <li>Monthly newsletter distribution</li>
+          <li>Ongoing leadership development post-service</li>
+          <li>Bay Area pilot as proving ground</li>
+          <li>Connecting service values to career growth</li>
+        </ul>
+      </div>
+      <div class="audience-card">
+        <p class="aud-label">Staff</p>
+        <h3>Already Engaged</h3>
+        <ul>
+          <li>Weekly team meeting integration (already happening)</li>
+          <li>National convenings and leadership gatherings</li>
+          <li>Shared language across sites and regions</li>
+          <li>Leadership development for emerging managers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="visual-block">
+      <img src="images/cityyear-ecosystem-value.png" alt="City Year ecosystem value">
+    </div>
+  </section>
+
+
+  <!-- ══ HOW IT WORKS ══ -->
+  <section class="section">
+    <p class="section-label">How It Works</p>
+    <h2>We Produce. You Share.</h2>
+    <p>Applied Wisdom handles all production. City Year gets a co-branded landing page with the full asset suite for each episode we produce together, plus access to the complete 66-episode Applied Wisdom podcast series for your corps members, alumni, and staff.</p>
+    <p>We start with one co-branded episode. Episode 17 is already built. If it lands well, we can produce additional co-branded episodes, potentially tailoring one to each of your key audiences. City Year shares the content through your existing channels. Your community gets leadership content connected to your brand.</p>
+
+    <div class="how-grid">
+      <img src="images/cityyear-flywheel.png" alt="Partnership flywheel">
+      <img src="images/cityyear-mutual-value.png" alt="Mutual value">
+    </div>
+  </section>
+
+
+  <!-- ══ MORGAN QUOTE 2 ══ -->
+  <div class="quote-block">
+    <img src="images/morganism-partner-success.png" alt="Treat a partner's success as equal to your own">
+  </div>
+
+
+  <!-- ══ REVIEW PROCESS ══ -->
+  <section class="section">
+    <p class="section-label">The Review Process</p>
+    <h2>From Topic to Landing Page</h2>
+    <p>Every episode follows the same clear process. City Year's input shapes the brief, and the brief drives everything else.</p>
+
+    <ol style="padding-left: 20px; margin: 24px 0; line-height: 1.8;">
+      <li style="margin-bottom: 16px;"><strong>Topic Selection:</strong> Together, we choose an episode topic from the 66-episode series that fits City Year's audience and priorities.</li>
+      <li style="margin-bottom: 16px;"><strong>Brief Development:</strong> We create an episode brief that frames the topic through City Year's lens. This is where City Year gives input and direction: tone, emphasis, what to highlight, what to avoid. <a href="episode-17-brief.html" style="color: var(--accent); font-weight: 600;">See the Episode 17 brief →</a></li>
+      <li style="margin-bottom: 16px;"><strong>Brief Approval:</strong> City Year reviews and approves the brief. This is the go/no-go decision point. Once approved, the brief becomes the source material for everything that follows.</li>
+      <li style="margin-bottom: 16px;"><strong>Asset Production:</strong> From the approved brief, we generate the complete asset suite: video overview, deep-dive podcast, slides, infographic, mind map, and transcript. No additional input needed from City Year at this stage.</li>
+      <li style="margin-bottom: 16px;"><strong>Content Review:</strong> City Year reviews the finished assets. If the tone or emphasis needs adjustment, we can regenerate with your direction. One focused round.</li>
+      <li style="margin-bottom: 16px;"><strong>Live:</strong> The co-branded landing page goes live with the full asset suite. City Year shares it with your audience.</li>
+    </ol>
+
+    <div class="visual-block">
+      <img src="images/cityyear-review-process.png" alt="Review process">
+    </div>
+  </section>
+
+
+  <!-- ══ STATS BAR ══ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">64,975</div>
+        <div class="stat-label">Books Provided</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7,264</div>
+        <div class="stat-label">Nonprofits</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50</div>
+        <div class="stat-label">States</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">192</div>
+        <div class="stat-label">Countries</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ APPLIED WISDOM REACH ══ -->
+  <section class="section">
+    <p class="section-label">Applied Wisdom Reach</p>
+    <h2>66 Episodes. 3 Seasons. ~22 Hours.</h2>
+    <p>The series covers the full arc of nonprofit leadership: from building culture to making decisions under pressure, from purposing a team to managing through uncertainty. Each episode stands alone; together they form a comprehensive leadership curriculum.</p>
+
+    <div class="visual-block">
+      <img src="images/cityyear-66-episodes.png" alt="The full 66-episode series grid">
+    </div>
+  </section>
+
+
+  <!-- ══ MORGAN QUOTE 3 ══ -->
+  <div class="quote-block">
+    <img src="images/morganism-invest-growth.png" alt="If you want to keep your best people, invest in their growth">
+  </div>
+
+
+  <!-- ══ FULL SERIES + EPISODE 17 CTAs ══ -->
+  <section class="section">
+    <p class="section-label">Explore</p>
+    <h2>See It for Yourself</h2>
+    <p>The full series index and the City Year–specific Episode 17 demo are both ready to browse.</p>
+
+    <div class="cta-grid">
+      <a href="../../outreach-playbook-site/series-index.html" class="cta-card">
+        <p class="cta-label">Full Series</p>
+        <h3>All 66 Episodes</h3>
+        <p>Browse the complete Applied Wisdom series: 3 seasons, ~22 hours, covering the full range of nonprofit leadership.</p>
+        <span class="cta-arrow">Browse the series →</span>
+      </a>
+      <a href="../episode-17.html" class="cta-card featured-cta">
+        <p class="cta-label">Episode 17 · City Year Demo</p>
+        <h3>Culture of Continuous Learning</h3>
+        <p>The co-branded City Year episode, complete with video, podcast, slides, infographic, and transcript. Ready to explore.</p>
+        <span class="cta-arrow">View Episode 17 →</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ══ AGREED NEXT STEPS ══ -->
+  <section class="section">
+    <p class="section-label">Agreed Next Steps</p>
+    <h2>Where We Go From Here</h2>
+    <p>From our conversation today, here's what we agreed to move forward on:</p>
+
+    <ol class="next-steps-list">
+      <li>
+        <span class="step-icon">1</span>
+        <span>Luke presents the concept to City Year Bay Area's marketing/communications and impact teams for internal alignment.</span>
+      </li>
+      <li>
+        <span class="step-icon">2</span>
+        <span>Applied Wisdom shares sandbox access so Luke can explore Episode 17 and the series index firsthand before sharing.</span>
+      </li>
+      <li>
+        <span class="step-icon">3</span>
+        <span>Discussion with national alumni network leadership about the alumni newsletter distribution opportunity.</span>
+      </li>
+      <li>
+        <span class="step-icon">4</span>
+        <span>Potential CEO conversation at the Chicago leadership convening, pending internal alignment.</span>
+      </li>
+      <li>
+        <span class="step-icon">5</span>
+        <span>Bay Area pilot planning: scoping how the series could live inside Wednesday Specialized Learning sessions and the alumni channel.</span>
+      </li>
+    </ol>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>
+      <strong>Applied Wisdom for Nonprofits</strong>
+      <span class="footer-divider">·</span>
+      <a href="https://appliedwisdomfornonprofits.org" target="_blank" rel="noopener">appliedwisdomfornonprofits.org</a>
+    </p>
+    <p style="margin-top: 8px;">Prepared for City Year Bay Area · March 2026 · Jim McDonough</p>
+  </footer>
+
+</body>
+</html>

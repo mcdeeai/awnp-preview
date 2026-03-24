@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWNP x City Year: Partner Preview | March 23, 2026</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #111111;
+      --ink-secondary: #555555;
+      --ink-tertiary: #999999;
+      --accent: #E41D36;
+      --surface: #ffffff;
+      --surface-alt: #fafafa;
+      --border: #e5e5e5;
+      --navy: #1a2744;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ═══ Grid ═══ */
+    .container { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+    .container-wide { max-width: 1040px; margin: 0 auto; padding: 0 32px; }
+
+    /* ═══ Identity Bar ═══ */
+    .identity-bar {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .identity-bar .container-wide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand-primary {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .brand-divider {
+      color: var(--border);
+      font-weight: 300;
+      font-size: 18px;
+    }
+    .brand-secondary {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-tertiary);
+      text-decoration: none;
+    }
+    .brand-secondary:hover { color: var(--ink-secondary); }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ═══ Hero ═══ */
+    .hero {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -1.2px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .hero .subtitle {
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--ink-secondary);
+      margin-bottom: 6px;
+    }
+    .hero .meta {
+      font-size: 13px;
+      color: var(--ink-tertiary);
+    }
+
+    /* ═══ Section ═══ */
+    .section {
+      padding: 56px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 12px;
+    }
+    .section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+    .section .lede {
+      font-size: 15px;
+      color: var(--ink-secondary);
+      margin-bottom: 32px;
+    }
+
+    /* ═══ Attendees ═══ */
+    .attendees-grid {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .attendee {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 14px 20px;
+    }
+    .attendee .name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .attendee .role {
+      font-size: 12px;
+      color: var(--ink-tertiary);
+      margin-top: 2px;
+    }
+
+    /* ═══ Demo Cards ═══ */
+    .demo-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 600px) {
+      .demo-cards { grid-template-columns: 1fr; }
+    }
+    .demo-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 28px 24px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.15s;
+      display: block;
+    }
+    .demo-card:hover { border-color: var(--ink-secondary); }
+    .demo-card.featured { border-color: var(--accent); }
+    .demo-card .version-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 3px 10px;
+      border-radius: 2px;
+      margin-bottom: 14px;
+    }
+    .demo-card .version-tag.plain {
+      background: var(--border);
+      color: var(--ink-tertiary);
+    }
+    .demo-card .version-tag.current {
+      background: var(--accent);
+      color: var(--surface);
+    }
+    .demo-card .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .demo-card .card-desc {
+      font-size: 13px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .demo-card .card-cta {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ═══ Agenda ═══ */
+    .agenda-list { margin-top: 4px; }
+    .agenda-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .agenda-item:last-of-type { border-bottom: none; }
+    .agenda-visual {
+      margin: 4px 0 24px 56px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+    .agenda-visual img {
+      width: 100%;
+      max-width: 560px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .agenda-visual .visual-caption {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink-tertiary);
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 600px) {
+      .agenda-visual { margin-left: 0; }
+    }
+    .agenda-num {
+      background: var(--navy);
+      color: var(--surface);
+      min-width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .agenda-content { flex: 1; }
+    .agenda-content h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+      letter-spacing: -0.2px;
+    }
+    .agenda-content .time {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--ink-tertiary);
+      margin-bottom: 10px;
+    }
+    .agenda-content p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+    }
+    .agenda-content ul {
+      margin-left: 0;
+      list-style: none;
+      margin-top: 8px;
+    }
+    .agenda-content ul li {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      padding: 3px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+    .agenda-content ul li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: var(--border);
+      font-weight: 300;
+    }
+    .inline-link {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(228, 29, 54, 0.28);
+      font-weight: 500;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .inline-link:hover {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+    .inline-links {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--ink-tertiary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+    }
+
+    /* ═══ Highlight Box ═══ */
+    .highlight-box {
+      background: var(--navy);
+      color: var(--surface);
+      border-radius: 4px;
+      padding: 32px;
+      margin: 8px 0 0;
+    }
+    .value-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 16px;
+    }
+    .value-col h4 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--navy);
+    }
+    .value-col.awnp h4 {
+      border-bottom-color: var(--accent);
+    }
+    .value-col ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .value-col li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      .value-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .highlight-box .highlight-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 10px;
+    }
+    .highlight-box h3 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 16px;
+      color: var(--surface);
+    }
+    .highlight-box ul {
+      list-style: none;
+      margin: 0;
+    }
+    .highlight-box ul li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.8);
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-left: 0;
+    }
+    .highlight-box ul li:last-child { border-bottom: none; }
+    .highlight-box ul li strong { color: var(--surface); font-weight: 600; }
+
+    /* ═══ Series Card ═══ */
+    .series-card {
+      display: block;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 32px;
+      text-decoration: none;
+      color: var(--ink);
+      transition: border-color 0.15s;
+    }
+    .series-card:hover { border-color: var(--ink-secondary); }
+    .series-card .series-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .series-card .series-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .series-card .series-desc {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      max-width: 560px;
+      margin-bottom: 20px;
+    }
+    .series-card .series-stats {
+      display: flex;
+      gap: 32px;
+    }
+    .series-card .series-stat .stat-num {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .series-card .series-stat .stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+    .series-card .series-cta {
+      margin-top: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ═══ Footer ═══ */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 13px;
+      color: var(--ink-tertiary);
+    }
+    .footer a {
+      color: var(--ink-secondary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer a:hover { color: var(--ink); }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 30px; }
+      .nav-links { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ Identity Bar ═══ -->
+  <header class="identity-bar">
+    <div class="container-wide">
+      <div class="brand-group">
+        <a href="https://www.cityyear.org" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="../assets/cityyear-logo.svg" alt="City Year" style="height: 48px; width: auto;">
+        </a>
+        <span class="brand-divider">/</span>
+        <a href="https://www.appliedwisdomfornonprofits.org" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; text-decoration: none;">
+          <img src="../assets/awnp-logo.svg" alt="Applied Wisdom for the Nonprofit Sector" style="height: 34px; width: auto;">
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="../../../outreach-playbook-site/series-index.html">Full Series</a>
+        <a href="../episode-17.html">Episode 17</a>
+        <a href="https://www.appliedwisdomfornonprofits.org">Free Book</a>
+        <a href="https://www.cityyear.org/apply-now/" style="color: var(--accent); font-weight: 600;">Join City Year</a>
+      </nav>
+    </div>
+    <div style="text-align: center; padding-top: 8px; font-size: 12px; color: var(--ink-tertiary); letter-spacing: 0.5px;">A co-branded podcast partnership conversation</div>
+  </header>
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero">
+    <div class="container">
+      <div class="page-label">Partner Preview</div>
+      <h1>AWNP × City Year</h1>
+      <p class="subtitle">Applied Wisdom for Nonprofits: Co-Branded Podcast Program</p>
+      <p class="meta">Monday, March 23, 2026 · 3:00 PM PT · Zoom</p>
+    </div>
+  </section>
+
+  <!-- ═══ Attendees ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">In This Meeting</div>
+      <h2>Attendees</h2>
+      <div class="attendees-grid">
+        <div class="attendee">
+          <div class="name">Luke Hostetter</div>
+          <div class="role">SVP & Executive Director, City Year Bay Area</div>
+        </div>
+        <div class="attendee">
+          <div class="name">Kathleen King</div>
+          <div class="role">AWNP</div>
+        </div>
+        <div class="attendee">
+          <div class="name">Jim Morgan</div>
+          <div class="role">Author, Applied Wisdom</div>
+        </div>
+        <div class="attendee">
+          <div class="name">Jim McDonough</div>
+          <div class="role">AWNP</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Agenda ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Meeting Agenda</div>
+      <h2>Today's Conversation</h2>
+
+      <div class="agenda-list">
+
+        <div class="agenda-item">
+          <div class="agenda-num">1</div>
+          <div class="agenda-content">
+            <h3>Welcome & Why City Year</h3>
+            <div class="time">5 minutes</div>
+            <ul>
+              <li>How Kathleen connected us</li>
+              <li>Why we reached out to City Year specifically: your mission of developing young adults into leaders through service is a natural fit for Applied Wisdom</li>
+              <li>We're only selecting about half a dozen partners this year</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-why-specifically.png" alt="Why City Year: mission alignment with Applied Wisdom">
+          <div class="visual-caption">City Year's model as proof of concept for Ep. 17's thesis</div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-curated-partnership.png" alt="Curated partnership, six selected partners">
+          <div class="visual-caption">A curated program: six partners, full production for each</div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-num">2</div>
+          <div class="agenda-content">
+            <h3>The Series</h3>
+            <div class="time">10 minutes</div>
+            <ul>
+              <li>66-episode podcast series from Jim Morgan's book, one leadership concept per episode, see the <a class="inline-link" href="../../../outreach-playbook-site/series-index.html" target="_blank" rel="noopener noreferrer">full series listing</a></li>
+              <li>Full asset package: audio, video intro, slides, infographic, mind map, transcript</li>
+              <li>Demo Episode 17: <a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">Culture of Continuous Learning</a></li>
+            </ul>
+            <div class="inline-links">
+              <span><a class="inline-link" href="https://www.appliedwisdomfornonprofits.org/city-year/" target="_blank" rel="noopener noreferrer">View V1 prototype</a></span>
+              <span><a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">Open Ep. 17 preview</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-66-episodes.png" alt="66 Episodes of Applied Wisdom: thematic cluster grid">
+          <div class="visual-caption">66 episodes across 8 leadership themes</div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-asset-package.png" alt="The Full Asset Package: 6 asset types per episode">
+          <div class="visual-caption">Every episode includes the complete production suite</div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="morganism-culture-strategy.png" alt="Jim Morgan quote: Culture eats strategy for breakfast.">
+          <div class="visual-caption">Morgan on what really drives performance</div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-num">3</div>
+          <div class="agenda-content">
+            <h3>The Partner Program</h3>
+            <div class="time">10 minutes</div>
+            <ul>
+              <li>A dedicated episode exploring City Year's impact through Morgan's leadership framework</li>
+              <li>Co-branded landing page with full asset suite, see the <a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">live City Year example</a></li>
+              <li>We handle all production and promote through our channels. The real value comes when City Year shares it with your community: donors, alumni, board, partners</li>
+              <li>Live walkthrough: <a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">Ep. 17 partner preview</a> (Culture of Continuous Learning)</li>
+            </ul>
+            <div class="inline-links">
+              <span><a class="inline-link" href="../../outreach-playbook-site/cityyear.html" target="_blank" rel="noopener noreferrer">Partner page</a></span>
+              <span><a class="inline-link" href="../../outreach-playbook-site/ep17-cityyear.html" target="_blank" rel="noopener noreferrer">Episode brief</a></span>
+              <span><a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">Podcast landing page</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-flywheel.png" alt="The Partner Flywheel: We Produce, City Year Promotes, Audience Engages, Both Brands Grow">
+          <div class="visual-caption">The partnership model: production meets distribution</div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-mutual-value.png" alt="Mutual Value: City Year and Applied Wisdom, 3 points each">
+          <div class="visual-caption">What this creates for both of us</div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="morganism-partner-success.png" alt="Jim Morgan quote: Treat a partner's success as equal to your own.">
+          <div class="visual-caption">The spirit of the partnership</div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-num">4</div>
+          <div class="agenda-content">
+            <h3>The Value</h3>
+            <div class="time">10 minutes</div>
+            <p>Walk through how this creates value across City Year's entire ecosystem: the organization, leadership, corps members, and alumni network, then anchor it in the <a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">Episode 17 experience</a> and the broader <a class="inline-link" href="../../../outreach-playbook-site/series-index.html" target="_blank" rel="noopener noreferrer">66-episode series</a>.</p>
+          </div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-ecosystem-value.png" alt="Value Across the City Year Ecosystem: Organization, Leadership, Corps Members, Alumni">
+          <div class="visual-caption">One partnership, four audiences, lasting impact</div>
+        </div>
+
+        <div style="background: var(--navy); border-radius: 8px; padding: 28px 32px; margin: 24px 0;">
+          <div style="font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 16px;">Applied Wisdom Reach</div>
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center;">
+            <div>
+              <div style="font-size: 28px; font-weight: 700; color: #fff;">64,975</div>
+              <div style="font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 4px;">Books Provided</div>
+            </div>
+            <div>
+              <div style="font-size: 28px; font-weight: 700; color: #fff;">7,264</div>
+              <div style="font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 4px;">Nonprofits</div>
+            </div>
+            <div>
+              <div style="font-size: 28px; font-weight: 700; color: #fff;">50</div>
+              <div style="font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 4px;">States</div>
+            </div>
+            <div>
+              <div style="font-size: 28px; font-weight: 700; color: #fff;">192</div>
+              <div style="font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 4px;">Countries</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="morganism-invest-growth.png" alt="Jim Morgan quote: If you want to keep your best people, invest in their growth. Not as a perk. Not as a line item you cut when budgets get tight. As the strategy itself.">
+          <div class="visual-caption">Morgan on retention, development, and why this matters</div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-num">5</div>
+          <div class="agenda-content">
+            <h3>The Review Process</h3>
+            <div class="time">5 minutes</div>
+            <ul>
+              <li><strong>Step 1 - Concept approval:</strong> We share the <a class="inline-link" href="../../outreach-playbook-site/ep17-cityyear.html" target="_blank" rel="noopener noreferrer">episode brief</a> and theme. City Year gives a go/no-go on the concept before we produce.</li>
+              <li><strong>Step 2 - Content fine-tuning:</strong> After production, City Year reviews the <a class="inline-link" href="../episode-17.html" target="_blank" rel="noopener noreferrer">video overview and deep dive podcast</a>. If the tone or emphasis isn't right, we can regenerate with your direction.</li>
+              <li>One focused round of adjustments. Goal: make sure it represents City Year the way you want it.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="agenda-visual">
+          <img src="cityyear-review-process.png" alt="The Review Process: 6 steps from Episode Brief to Live, two phases: Concept and Content">
+          <div class="visual-caption">Clear process. Minimal effort. Maximum quality.</div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-num">6</div>
+          <div class="agenda-content">
+            <h3>Open Discussion</h3>
+            <div class="time">10 minutes</div>
+            <ul>
+              <li>Luke's reaction and questions</li>
+              <li>Who else at City Year should see this?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="agenda-item">
+          <div class="agenda-num">7</div>
+          <div class="agenda-content">
+            <h3>Next Steps</h3>
+            <div class="time">5 minutes</div>
+            <p>If it's a fit: logo files, confirm the episode concept, timeline to publish.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Demo Links ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Episode Demos</div>
+      <h2>See the Podcast in Action</h2>
+      <p class="lede">Two versions: where we started and where we are now.</p>
+      <div class="demo-cards">
+        <a class="demo-card" href="https://www.appliedwisdomfornonprofits.org/city-year/" target="_blank">
+          <div class="version-tag plain">V1 - Early Prototype</div>
+          <div class="card-title">City Year Episode</div>
+          <div class="card-desc">Our first experiment with AI-generated podcast content. Built when the technology was brand new. Shows where we started.</div>
+          <div class="card-cta">View V1 →</div>
+        </a>
+        <a class="demo-card featured" href="https://mcdeeai.github.io/awnp-preview/cityyear/episode-17.html" target="_blank">
+          <div class="version-tag current">V2 - Partner Podcast</div>
+          <div class="card-title">Ep. 17: Culture of Continuous Learning</div>
+          <div class="card-desc">The current co-branded partner experience. Full asset suite: video, audio, slides, infographic, transcript. City Year's mission through Morgan's principles.</div>
+          <div class="card-cta">View V2 →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ The Full Series ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">The Full Series</div>
+      <h2>66 Episodes of Leadership Wisdom</h2>
+      <p class="lede">Everything Jim Morgan distilled into one free resource for nonprofit leaders.</p>
+      <a class="series-card" href="../../../outreach-playbook-site/series-index.html">
+        <div class="series-label">Applied Wisdom Podcast</div>
+        <div class="series-title">The Complete Series Index</div>
+        <div class="series-desc">66 episodes of practical nonprofit leadership wisdom, organized in 3 seasons: Culture, Planning, and Implementation. One leadership concept per episode, drawn from Jim Morgan's book.</div>
+        <div class="series-stats">
+          <div class="series-stat">
+            <div class="stat-num">66</div>
+            <div class="stat-label">Episodes</div>
+          </div>
+          <div class="series-stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Seasons</div>
+          </div>
+          <div class="series-stat">
+            <div class="stat-num">~22</div>
+            <div class="stat-label">Hours</div>
+          </div>
+        </div>
+        <div class="series-cta">Browse all episodes →</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <p>Applied Wisdom for Nonprofits · <a href="https://appliedwisdomfornonprofits.org">appliedwisdomfornonprofits.org</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
