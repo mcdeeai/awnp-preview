@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWNP Weekly Update — March 24, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f5f4f0;
+    color: #1a1a1a;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #c0392b;
+  }
+  .header h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+  .header .meta { font-size: 12px; color: #999; text-align: right; line-height: 1.8; }
+  .header .meta strong { color: #fff; }
+  .container { max-width: 960px; margin: 0 auto; padding: 32px 24px 80px; }
+  .summary-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+  }
+  .summary-item {
+    background: #fff;
+    padding: 20px 24px;
+    text-align: center;
+  }
+  .summary-value {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .summary-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #888;
+    margin-top: 6px;
+  }
+  .green { color: #1a7a4c; }
+  .amber { color: #8a6400; }
+  .red { color: #b42318; }
+  .blue { color: #184a7a; }
+
+  .topic-nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  .topic-nav a {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: all 0.15s;
+  }
+  .topic-nav a:hover { color: #1a1a1a; border-color: #1a1a1a; }
+
+  .topic {
+    margin-bottom: 48px;
+    border-left: 3px solid #ddd;
+    padding-left: 24px;
+  }
+  .topic.hot { border-left-color: #c0392b; }
+  .topic.progress { border-left-color: #1a7a4c; }
+  .topic.new { border-left-color: #184a7a; }
+  .topic.decided { border-left-color: #8a6400; }
+
+  .topic-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .topic h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+  .topic-status {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-bottom: 12px;
+  }
+  .status-live { background: #d4edda; color: #1a7a4c; }
+  .status-decided { background: #fff3cd; color: #8a6400; }
+  .status-active { background: #d6eaf8; color: #184a7a; }
+  .status-next { background: #f0f0f0; color: #555; }
+
+  .topic p { margin-bottom: 10px; color: #333; max-width: 680px; }
+  .topic ul { margin: 8px 0 16px 20px; }
+  .topic li { margin-bottom: 6px; color: #444; }
+  .topic li strong { color: #1a1a1a; }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    margin: 16px 0;
+  }
+  .detail-cell {
+    background: #fff;
+    padding: 16px;
+  }
+  .detail-cell .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .detail-cell .value {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .link-list { margin: 12px 0; }
+  .link-list a {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #184a7a;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1px solid #184a7a;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    transition: all 0.15s;
+  }
+  .link-list a:hover { background: #184a7a; color: #fff; }
+
+  .checklist { list-style: none; margin: 12px 0 16px 0; padding: 0; }
+  .checklist li { padding: 6px 0; border-bottom: 1px solid #eee; font-size: 13px; }
+  .checklist li:last-child { border-bottom: none; }
+  .check { color: #1a7a4c; font-weight: 700; margin-right: 6px; }
+  .pending { color: #888; margin-right: 6px; }
+
+  .footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.08em;
+  }
+  .footer a { color: #888; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>AWNP Weekly Update</h1>
+  <div class="meta">
+    <strong>March 24, 2026</strong><br>
+    Prepared for Linda, Mary &amp; Team
+  </div>
+</div>
+
+<div class="container">
+
+<div class="summary-bar">
+  <div class="summary-item">
+    <div class="summary-value green">Live</div>
+    <div class="summary-label">Gen Z Pipeline</div>
+  </div>
+  <div class="summary-item">
+    <div class="summary-value blue">5</div>
+    <div class="summary-label">City Year Episodes</div>
+  </div>
+  <div class="summary-item">
+    <div class="summary-value amber">6</div>
+    <div class="summary-label">Outreach Pages Built</div>
+  </div>
+  <div class="summary-item">
+    <div class="summary-value">~9,100</div>
+    <div class="summary-label">Active Email Contacts</div>
+  </div>
+</div>
+
+<nav class="topic-nav">
+  <a href="#genz">Gen Z Campaign</a>
+  <a href="#cityyear">City Year Partnership</a>
+  <a href="#outreach">Outreach Playbook</a>
+  <a href="#succession">Succession Crisis</a>
+  <a href="#content">Content Engine</a>
+  <a href="#decisions">Decisions</a>
+</nav>
+
+<!-- ==================== TOPIC 1: GEN Z ==================== -->
+<div class="topic hot" id="genz">
+  <div class="topic-label">Topic 1 — Hottest</div>
+  <h2>Gen Z Campaign: Pipeline Verified Live</h2>
+  <span class="topic-status status-live">LIVE</span>
+
+  <p>The Gen Z Emerging Leaders Hub at <strong>genz.appliedwisdomfornonprofits.org</strong> has been end-to-end tested today and confirmed working in production.</p>
+
+  <div class="detail-grid">
+    <div class="detail-cell">
+      <div class="label">Situation Solver</div>
+      <div class="value green">Working</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Gemini AI</div>
+      <div class="value green">Generating Plans</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Email Capture</div>
+      <div class="value green">Brevo Verified</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Analytics</div>
+      <div class="value green">PostHog Live</div>
+    </div>
+  </div>
+
+  <p>Full flow tested: visitor selects a pain point (Burned Out / Underpaid / No Voice), fills in their situation, receives an AI-generated personalized game plan using Jim Morgan's Applied Wisdom frameworks, and can save it via email. Email confirmed landing in correct Brevo list (List 33: Burnout).</p>
+
+  <p><strong>Three landing paths available:</strong></p>
+  <ul>
+    <li><strong>/burnout</strong> — Burnout &amp; health track</li>
+    <li><strong>/low-pay</strong> — Compensation &amp; pay track</li>
+    <li><strong>/no-voice</strong> — Voice &amp; influence track</li>
+  </ul>
+
+  <p><strong>Brevo list segmentation:</strong> List 33 (Burnout), List 34 (Pay), List 35 (Voice), List 36 (Multi/Culture), Lists 37-42 (Tool-specific), List 43 (Waitlist)</p>
+
+  <ul class="checklist">
+    <li><span class="check">✓</span> Situation Solver generating personalized game plans</li>
+    <li><span class="check">✓</span> Email capture flowing to Brevo with correct list assignment</li>
+    <li><span class="check">✓</span> PostHog analytics tracking page views, submissions, tool usage</li>
+    <li><span class="check">✓</span> Three pain-point entry paths live via Vercel rewrites</li>
+    <li><span class="pending">○</span> Community CTA: switching to waitlist-first model</li>
+    <li><span class="pending">○</span> Ad campaigns: ready to launch (Google/Meta)</li>
+    <li><span class="pending">○</span> Welcome email sequences: need review</li>
+  </ul>
+
+  <p><strong>Community Strategy (decided today):</strong> Waitlist-first approach. Collect interest via Brevo List 43, seed a community space with content, then launch when we hit ~50 signups so day one feels alive.</p>
+</div>
+
+<!-- ==================== TOPIC 2: CITY YEAR ==================== -->
+<div class="topic new" id="cityyear">
+  <div class="topic-label">Topic 2 — New Partnership</div>
+  <h2>City Year Partnership</h2>
+  <span class="topic-status status-active">ACTIVE</span>
+
+  <p>Met with <strong>Luke Hostetter</strong> (SVP/Executive Director, City Year Bay Area) on March 23. Very receptive to co-branded podcast episodes.</p>
+
+  <div class="detail-grid">
+    <div class="detail-cell">
+      <div class="label">Episodes Selected</div>
+      <div class="value blue">5</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Pilot Market</div>
+      <div class="value">Bay Area</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Audiences</div>
+      <div class="value">3 Segments</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Status</div>
+      <div class="value blue">In Progress</div>
+    </div>
+  </div>
+
+  <p><strong>Three audience segments confirmed:</strong></p>
+  <ul>
+    <li><strong>Corps Members</strong> — 2,000+ active in current program year</li>
+    <li><strong>Alumni Network</strong> — 40,000+ former corps members nationwide</li>
+    <li><strong>Staff</strong> — organizational leadership and operations</li>
+  </ul>
+
+  <p><strong>Partner model clarification:</strong> Partners get a URL to share with their audience. Production pipeline is not customizable per partner. Partners can review briefs and provide one round of adjustments before publish.</p>
+
+  <p><strong>Next steps:</strong> Share sandbox access with Luke, finalize episode briefs, Bay Area pilot first with alumni outreach starting immediately. CEO conversation possible at Chicago convening.</p>
+
+  <div class="link-list">
+    <a href="city-year-followup/index.html">City Year Follow-Up Page</a>
+    <a href="outreach-playbook-site/cityyear.html">City Year Partner Page</a>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 3: OUTREACH PLAYBOOK ==================== -->
+<div class="topic progress" id="outreach">
+  <div class="topic-label">Topic 3</div>
+  <h2>Outreach Playbook Site</h2>
+  <span class="topic-status status-live">6 PAGES BUILT</span>
+
+  <p>A complete partner outreach toolkit has been built as static HTML pages, ready for sharing with potential partners and the team.</p>
+
+  <ul>
+    <li><strong>Index/Overview</strong> — playbook entry point and partner program summary</li>
+    <li><strong>Playbook</strong> — full partner strategy, pitch framework, and co-brand model</li>
+    <li><strong>Growth Projections</strong> — audience reach and growth modeling</li>
+    <li><strong>City Year Partner Page</strong> — City Year-specific content and episode details</li>
+    <li><strong>ALF Partner Page</strong> — ALF Silicon Valley content and episode details</li>
+    <li><strong>PCA/CalNonprofits Partner Page</strong> — PCA-specific content</li>
+  </ul>
+
+  <p>Each partner page includes co-branded episode details, organization context, audience alignment, and suggested distribution approach. These are shareable URLs that partners can use internally.</p>
+
+  <div class="link-list">
+    <a href="outreach-playbook-site/index.html">Playbook Home</a>
+    <a href="outreach-playbook-site/playbook.html">Full Playbook</a>
+    <a href="outreach-playbook-site/growth.html">Growth Projections</a>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 4: SUCCESSION CRISIS ==================== -->
+<div class="topic progress" id="succession">
+  <div class="topic-label">Topic 4</div>
+  <h2>The Succession Crisis — Q2 Campaign</h2>
+  <span class="topic-status status-active">IN DEVELOPMENT</span>
+
+  <p>The Q2 flagship campaign is defined and editorially refined. It addresses the broken intergenerational leadership handoff in nonprofits.</p>
+
+  <div class="detail-grid">
+    <div class="detail-cell">
+      <div class="label">Tracks</div>
+      <div class="value">2 (Legacy + Bridge)</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Morganism Callouts</div>
+      <div class="value">7</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Named Frameworks</div>
+      <div class="value">4</div>
+    </div>
+    <div class="detail-cell">
+      <div class="label">Quarter</div>
+      <div class="value">Q2 2026</div>
+    </div>
+  </div>
+
+  <ul>
+    <li><strong>Track 1 — Boomer/Legacy:</strong> "You built something worth preserving." Messenger: Jim Morgan.</li>
+    <li><strong>Track 2 — Bridge:</strong> "Neither generation caused this." Mid-career leaders connecting both cohorts.</li>
+    <li><strong>Named frameworks:</strong> The Passion Discount, The Silver Tsunami, Moral Injury, Felt Listening</li>
+    <li><strong>Strip quote:</strong> "The people who built this sector are leaving. The people who should replace them don't want the job. That's the crisis."</li>
+  </ul>
+
+  <p>Editorial framework applied: One True Sentence (full stop headlines), Earned Reframes Only, Facts First / Hope Earned, Name the Frameworks. Seven Morganism callouts placed throughout.</p>
+
+  <div class="link-list">
+    <a href="succession-crisis-campaign.html">Campaign Page</a>
+  </div>
+</div>
+
+<!-- ==================== TOPIC 5: CONTENT ENGINE ==================== -->
+<div class="topic" id="content">
+  <div class="topic-label">Topic 5</div>
+  <h2>Content Engine &amp; Episode Assets</h2>
+  <span class="topic-status status-active">ONGOING</span>
+
+  <p>The content flywheel continues: Podcast Episode → Audio → Infographic → Slides → Partner Newsletter → Email Signups. Co-branded episodes serve as the anchor for partner acquisition.</p>
+
+  <p><strong>Episode landing pages live:</strong></p>
+  <ul>
+    <li>Episode 1 — CalNonprofits</li>
+    <li>Episode 5 — PCA</li>
+    <li>Episode 14 — ALF Silicon Valley</li>
+    <li>Episode 17 — City Year (in development)</li>
+  </ul>
+
+  <p><strong>2026 Campaign Sequence:</strong></p>
+  <ul>
+    <li><strong>Q1:</strong> Gen Z Campaign (live, pipeline verified)</li>
+    <li><strong>Q2:</strong> The Succession Crisis / Boomer campaign</li>
+    <li><strong>Q3:</strong> Millennial campaign (placeholder)</li>
+    <li><strong>Q4:</strong> Gen X campaign (placeholder)</li>
+    <li><strong>Always-on:</strong> General Book + Podcast campaigns as evergreen growth engines</li>
+  </ul>
+</div>
+
+<!-- ==================== DECISIONS ==================== -->
+<div class="topic decided" id="decisions">
+  <div class="topic-label">Decisions &amp; Key Calls</div>
+  <h2>Recent Decisions</h2>
+
+  <ul>
+    <li><strong>Gen Z Community: Waitlist-first</strong> (March 24) — Collect interest before launching community to avoid empty room. Seeded launch at ~50 signups.</li>
+    <li><strong>City Year Partnership: 5 episodes, Bay Area pilot</strong> (March 23) — Luke Hostetter receptive. Three audiences confirmed.</li>
+    <li><strong>Partner Model:</strong> Partners get a URL to share. Production is not customizable per partner. One round of brief review before publish.</li>
+    <li><strong>Campaign Sequence:</strong> Q1 Gen Z, Q2 Succession Crisis, Q3 Millennial, Q4 Gen X.</li>
+    <li><strong>Editorial Framework:</strong> One True Sentence, Earned Reframes Only, Facts First / Hope Earned, Name the Frameworks.</li>
+    <li><strong>Email Stack Direction:</strong> Resend + Loops preferred over Brevo long-term (agent-friendly APIs).</li>
+  </ul>
+</div>
+
+</div>
+
+<div class="footer">
+  Applied Wisdom for Nonprofits &mdash; Weekly Update &mdash; March 24, 2026<br>
+  <a href="https://mcdeeai.github.io/awnp-preview/">Preview Hub</a>
+</div>
+
+</body>
+</html>
