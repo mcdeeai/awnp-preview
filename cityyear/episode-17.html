@@ -143,6 +143,7 @@
       display: flex;
       gap: 24px;
       align-items: center;
+      flex-wrap: wrap;
     }
     .nav-links a {
       font-size: 13px;
@@ -521,7 +522,16 @@
       .partner-grid { grid-template-columns: 1fr; gap: 40px; }
       .hero h1 { font-size: 36px; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .nav-links { display: none; }
+      .identity-bar .container-wide {
+        justify-content: center;
+        text-align: center;
+      }
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px 16px;
+        width: 100%;
+      }
     }
 
     /* ═══ FAQ ═══ */
