@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>The Idealist's Journey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f3f5fa; --cream2:#e9eef7; --ink:#160f41; --ink2:#4b4a6b;
+    --line:#c2cce0; --rule-dark:#aab6d2; --red:#0072bc; --red-deep:#160f41; --amber:#00aeef; --amber-soft:#d6f3fd;
+    --teal:#3d3a75; --teal-soft:#e7e9f4; --shadow:0 1px 2px rgba(22,15,65,.08),0 12px 32px -12px rgba(22,15,65,.22);
+    --maxw:960px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3,.serif{font-family:"Fraunces",Georgia,serif}
+
+  /* progress + nav */
+  .progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--red),var(--amber));z-index:60;transition:width .08s linear}
+  nav{position:sticky;top:0;z-index:50;background:rgba(251,247,240,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:16px}
+  .brand{font-family:"Fraunces",serif;font-weight:600;font-size:16px;color:var(--red-deep);letter-spacing:.2px}
+  .brand span{color:var(--ink2);font-weight:400}
+  .tabs{display:flex;gap:4px;background:var(--cream2);padding:4px;border-radius:999px}
+  .tabs button{font-family:inherit;font-size:13px;font-weight:500;color:var(--ink2);border:0;background:transparent;padding:7px 15px;border-radius:999px;cursor:pointer;transition:.2s;white-space:nowrap}
+  .tabs button.on{background:#fff;color:var(--red-deep);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+
+  /* hero */
+  header.hero{padding:70px 0 46px;text-align:center}
+  .kicker{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:18px}
+  header.hero h1{font-size:clamp(34px,6vw,60px);font-weight:600;line-height:1.05;letter-spacing:-1px}
+  header.hero h1 em{font-style:italic;color:var(--red)}
+  header.hero p{max-width:620px;margin:20px auto 0;color:var(--ink2);font-size:17px}
+  .meta{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:30px;color:var(--ink2);font-size:13.5px}
+  .meta b{color:var(--ink);font-weight:600}
+  .scrollcue{margin-top:40px;color:var(--ink2);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;opacity:.7}
+
+  /* timeline */
+  .view{display:none}
+  .view.on{display:block}
+  .timeline{position:relative;padding:30px 0 80px}
+  .spine{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--line);transform:translateX(-50%)}
+  .spine-fill{position:absolute;top:0;left:50%;width:2px;background:linear-gradient(var(--red),var(--amber));transform:translateX(-50%);height:0}
+  .stage{position:relative;width:50%;padding:22px 46px;transition:opacity .6s ease,transform .6s ease}
+  .js .stage{opacity:0;transform:translateY(26px)}
+  .stage.in{opacity:1;transform:none}
+  .stage:nth-child(odd){left:0;text-align:right}
+  .stage:nth-child(even){left:50%}
+  .node{position:absolute;top:34px;width:18px;height:18px;border-radius:50%;background:#fff;border:3px solid var(--red);z-index:2}
+  .stage:nth-child(odd) .node{right:-9px}
+  .stage:nth-child(even) .node{left:-9px}
+  .stage.jim .node{border-color:var(--amber);box-shadow:0 0 0 5px var(--amber-soft)}
+  .num{font-family:"Fraunces",serif;font-size:13px;color:var(--ink2);letter-spacing:1px}
+  .card{display:inline-block;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);max-width:380px}
+  .stage:nth-child(odd) .card{text-align:left}
+  .card h3{font-size:21px;font-weight:600;letter-spacing:-.3px;margin-bottom:7px;color:var(--ink)}
+  .card .mean{color:var(--ink2);font-size:14.5px;margin-bottom:14px}
+  .chip{display:inline-flex;align-items:center;gap:6px;background:var(--cream2);color:var(--red-deep);font-size:12.5px;font-weight:500;padding:6px 12px;border-radius:999px;line-height:1.35}
+  .chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red);flex:none}
+  .jimbadge{display:inline-block;background:var(--amber-soft);color:#0c4a6e;font-size:11.5px;font-weight:600;padding:5px 11px;border-radius:999px;margin-top:12px}
+  .jimbadge b{color:var(--red)}
+
+  /* version B spine steps */
+  .practice-intro{text-align:center;padding:46px 0 8px}
+  .practice-intro h2{font-size:clamp(26px,4vw,38px);font-weight:600;letter-spacing:-.5px}
+  .practice-intro p{max-width:560px;margin:14px auto 0;color:var(--ink2);font-size:16px}
+  .spine-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:40px 0 10px}
+  .step{background:var(--teal-soft);border:1px solid #c5c8e0;border-radius:16px;padding:20px 18px;transition:.55s}
+  .js .step{opacity:0;transform:translateY(20px)}
+  .step.in{opacity:1;transform:none}
+  .step .n{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);font-weight:600}
+  .step .q{font-family:"Fraunces",serif;font-size:18px;color:#2a2856;margin-top:8px;line-height:1.25}
+  .arrowrow{text-align:center;color:var(--ink2);font-size:13px;margin:6px 0 4px}
+
+  /* version B month timeline */
+  .months{position:relative;padding:18px 0 60px;margin-top:14px}
+  .months .spine,.months .spine-fill{background:var(--line)}
+  .months .spine-fill{background:linear-gradient(var(--teal),#7d8bc0)}
+  .month{position:relative;width:50%;padding:20px 46px;transition:.6s}
+  .js .month{opacity:0;transform:translateY(24px)}
+  .month.in{opacity:1;transform:none}
+  .month:nth-child(odd){left:0;text-align:right}
+  .month:nth-child(even){left:50%}
+  .month .node{border-color:var(--teal)}
+  .month.jim .node{border-color:var(--amber);box-shadow:0 0 0 5px var(--amber-soft)}
+  .when{font-family:"Fraunces",serif;font-size:15px;color:var(--teal);font-weight:600}
+  .mcard{display:inline-block;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);max-width:380px}
+  .month:nth-child(odd) .mcard{text-align:left}
+  .mcard h3{font-size:18px;font-weight:600;margin:4px 0 8px}
+  .outcome{font-size:14px;color:var(--ink2)}
+  .outcome b{color:var(--ink);font-weight:600}
+  .mtool{display:inline-block;background:var(--teal-soft);color:#2a2856;font-size:12px;font-weight:500;padding:5px 11px;border-radius:999px;margin-top:11px}
+
+  /* changed note */
+  .note{max-width:760px;margin:0 auto 80px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 30px;box-shadow:var(--shadow)}
+  .note h3{font-size:20px;font-weight:600;margin-bottom:12px;color:var(--red-deep)}
+  .note ul{list-style:none;display:grid;gap:10px}
+  .note li{padding-left:22px;position:relative;color:var(--ink2);font-size:14.5px}
+  .note li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--amber)}
+  .note li b{color:var(--ink)}
+
+  /* compare / trade-offs */
+  .compare-intro{text-align:center;padding:46px 0 8px}
+  .compare-intro h2{font-size:clamp(26px,4vw,38px);font-weight:600;letter-spacing:-.5px}
+  .compare-intro p{max-width:580px;margin:14px auto 0;color:var(--ink2);font-size:16px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:40px 0 70px}
+  .col{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0;overflow:hidden;box-shadow:var(--shadow);transition:.55s}
+  .js .col{opacity:0;transform:translateY(22px)}
+  .col.in{opacity:1;transform:none}
+  .col .top{padding:24px 26px 18px;border-top:5px solid var(--red)}
+  .col.b .top{border-top-color:var(--teal)}
+  .col .label{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;font-weight:600;color:var(--red)}
+  .col.b .label{color:var(--teal)}
+  .col h3{font-family:"Fraunces",serif;font-size:23px;font-weight:600;margin:7px 0 4px;letter-spacing:-.3px}
+  .col .tag2{color:var(--ink2);font-size:14px}
+  .pc{padding:6px 26px 24px}
+  .pc h4{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink2);margin:18px 0 10px;font-weight:600}
+  .pc ul{list-style:none;display:grid;gap:11px}
+  .pc li{position:relative;padding-left:28px;font-size:14.5px;color:#3a3a55;line-height:1.5}
+  .pc li::before{position:absolute;left:0;top:1px;font-weight:700;font-size:14px}
+  .pc .pro li::before{content:"+";color:var(--teal);background:var(--teal-soft);width:18px;height:18px;border-radius:50%;text-align:center;line-height:18px;font-size:13px}
+  .pc .con li::before{content:"–";color:#4b4a6b;background:#e6e3ee;width:18px;height:18px;border-radius:50%;text-align:center;line-height:17px;font-size:14px}
+  .verdict{max-width:760px;margin:0 auto 80px;text-align:center;background:var(--cream2);border-radius:18px;padding:28px 32px}
+  .verdict h4{font-family:"Fraunces",serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:10px}
+  .verdict p{color:var(--ink);font-size:16px;line-height:1.6}
+  .verdict em{color:var(--red);font-style:italic}
+  @media(max-width:720px){.cols{grid-template-columns:1fr}}
+
+  /* asset engine */
+  .reveal{transition:.55s}
+  .js .reveal{opacity:0;transform:translateY(20px)}
+  .reveal.in{opacity:1;transform:none}
+  .eng-intro{text-align:center;padding:46px 0 8px}
+  .eng-intro h2{font-size:clamp(26px,4vw,38px);font-weight:600;letter-spacing:-.5px}
+  .eng-intro p{max-width:620px;margin:14px auto 0;color:var(--ink2);font-size:16px}
+  .eyebrow{font-family:"Fraunces",serif;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink2);font-weight:600;text-align:center;margin:48px 0 4px}
+  .flow{display:flex;align-items:stretch;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px 0 8px}
+  .fnode{flex:1;min-width:210px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+  .fnode .ft{font-family:"Fraunces",serif;font-size:17px;font-weight:600;margin-bottom:10px}
+  .fnode.engine{border:2px solid var(--red);background:#fff}
+  .fnode.engine .ft{color:var(--red-deep)}
+  .src{display:block;background:var(--cream2);color:#2a2856;font-size:13px;padding:7px 12px;border-radius:9px;margin:7px 0}
+  .fnode .sub{color:var(--ink2);font-size:12.5px;margin-top:10px}
+  .fnode ul{list-style:none;display:grid;gap:7px}
+  .fnode li{font-size:13px;color:#3a3a55;padding-left:16px;position:relative}
+  .fnode li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--amber)}
+  .farrow{display:flex;align-items:center;color:var(--ink2);font-size:24px}
+  .assets{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:18px 0 10px}
+  .asset{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+  .asset .k{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--amber);font-weight:600}
+  .asset h4{font-family:"Fraunces",serif;font-size:19px;font-weight:600;margin:7px 0 7px}
+  .asset p{color:var(--ink2);font-size:14px}
+  .asset .use{display:block;margin-top:11px;font-size:12.5px;color:#3a3a55;border-top:1px dashed var(--line);padding-top:9px}
+  .asset .use b{color:var(--red-deep);font-weight:600}
+  .asset .schip{float:right;background:var(--cream2);color:var(--ink2);font-size:10px;font-weight:600;padding:3px 9px;border-radius:999px;letter-spacing:.2px;margin-top:-2px}
+  .tiers{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0 10px}
+  .tier{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+  .tier .head{padding:22px 26px 16px;border-top:5px solid var(--red)}
+  .tier.you .head{border-top-color:var(--teal)}
+  .tier .ph{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;color:var(--red)}
+  .tier.you .ph{color:var(--teal)}
+  .tier h3{font-family:"Fraunces",serif;font-size:22px;font-weight:600;margin:6px 0 3px}
+  .tier .sub{color:var(--ink2);font-size:13.5px}
+  .tier ul{list-style:none;padding:4px 26px 24px;display:grid;gap:10px}
+  .tier li{position:relative;padding-left:26px;font-size:14px;color:#3a3a55;line-height:1.5}
+  .tier li::before{content:"";position:absolute;left:2px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--red)}
+  .tier.you li::before{background:var(--teal)}
+  .play{display:grid;gap:12px;max-width:760px;margin:18px auto 10px}
+  .pstep{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow)}
+  .pstep .pn{font-family:"Fraunces",serif;font-size:22px;font-weight:600;color:var(--red);line-height:1;min-width:30px}
+  .pstep .pt b{font-size:15px;color:var(--ink)}
+  .pstep .pt span{display:block;color:var(--ink2);font-size:13.5px;margin-top:3px}
+  .guard{max-width:760px;margin:24px auto 80px;background:var(--cream2);border-radius:18px;padding:24px 30px}
+  .guard h4{font-family:"Fraunces",serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:12px;text-align:center}
+  .guard .g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .guard .gi b{display:block;font-size:14px;color:var(--ink);margin-bottom:3px}
+  .guard .gi span{font-size:13px;color:var(--ink2)}
+  @media(max-width:720px){.tiers{grid-template-columns:1fr}.guard .g{grid-template-columns:1fr}.farrow{transform:rotate(90deg)}}
+
+  footer{text-align:center;padding:34px 0 60px;color:var(--ink2);font-size:13px;border-top:1px solid var(--line)}
+  footer em{color:var(--red)}
+
+  @media(max-width:720px){
+    .spine,.spine-fill{left:20px}
+    .stage,.month{width:100%;left:0!important;text-align:left!important;padding:18px 0 18px 48px}
+    .stage:nth-child(odd){text-align:left}
+    .node{left:11px!important;right:auto!important}
+    .card,.mcard{max-width:none;display:block}
+    .spine-steps{grid-template-columns:1fr 1fr}
+  }
+
+  /* ===== AWNP editorial skin ===== */
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.26;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.086 0 0 0 0 0.059 0 0 0 0 0.255 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+  nav,header,.view,footer{position:relative;z-index:2}
+  .masthead-band{background:var(--cream);padding-top:22px}
+  .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:12px}
+  .masthead img{height:38px;display:block}
+  .slug{font-family:"Courier Prime",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);text-align:right;line-height:1.55}
+  .double-rule{border-top:3px solid var(--ink);position:relative}
+  .double-rule::after{content:"";position:absolute;top:5px;left:0;right:0;border-top:1px solid var(--amber)}
+  nav{background:rgba(243,245,250,.9)!important;border-bottom-color:var(--rule-dark)}
+  .brand{font-family:"Courier Prime",monospace;font-weight:700;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink)}
+  .brand span{color:var(--teal);font-weight:400}
+  .tabs{background:transparent;padding:0;gap:2px;border-radius:0}
+  .tabs button{font-family:"Courier Prime",monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);border-radius:0;border-bottom:2px solid transparent;padding:8px 11px}
+  .tabs button.on{background:transparent;color:var(--ink);box-shadow:none;border-bottom:2px solid var(--amber)}
+  .kicker,.scrollcue,.eyebrow,.col .label,.pc h4,.tier .ph,.asset .k,.step .n,.guard h4,.verdict h4,.meta,.schip,.src,footer{font-family:"Courier Prime",monospace}
+  .kicker,.eyebrow,.asset .k{color:var(--red)}
+  .eyebrow{font-weight:700;letter-spacing:.16em}
+  header.hero h1{font-weight:900;letter-spacing:-.018em}
+  .col h3,.tier h3,.asset h4,.fnode .ft,.card h3,.mcard h3,.eng-intro h2,.practice-intro h2,.compare-intro h2{font-weight:700}
+  .card,.mcard,.note,.col,.tier,.pstep,.fnode,.asset,.guard,.verdict,.step{border-radius:3px}
+  .chip,.jimbadge,.mtool,.schip,.src{border-radius:3px}
+  footer{color:var(--teal);font-size:12px;border-top-color:var(--rule-dark)}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+
+<header class="masthead-band"><div class="wrap">
+  <div class="masthead">
+    <img src="awnp-logo.png" alt="Applied Wisdom for the Nonprofit Sector">
+    <div class="slug">Idealist's Journey · Program Brief<br>City Year &times; Applied Wisdom</div>
+  </div>
+  <div class="double-rule"></div>
+</div></header>
+
+<nav><div class="wrap">
+  <div class="brand">The Idealist's Journey <span>· powered by Applied Wisdom</span></div>
+  <div class="tabs">
+    <button class="on" data-view="journey">The Journey</button>
+    <button data-view="practice">Monthly Practice</button>
+    <button data-view="compare">Trade-offs</button>
+    <button data-view="engine">Asset Engine</button>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="kicker">A year that changes you</div>
+  <h1>Your service year, told as a <em>journey</em>.</h1>
+  <p>Ten stages, from the day you answered the call to the day you graduate with your own leadership toolkit — each paired with one practical tool from Jim Morgan's <em>Applied Wisdom</em>. Jim's four sessions are recorded; Team Leaders run the live discussion around them.</p>
+  <div class="meta">
+    <span><b>60-min</b> L&amp;D-day sessions</span>
+    <span><b>4</b> recorded sessions with Jim</span>
+    <span>Led by your <b>Team Leader</b></span>
+  </div>
+  <div class="scrollcue">Scroll to begin ↓</div>
+</div></header>
+
+<!-- ============ VIEW A: THE JOURNEY ============ -->
+<div class="view on" id="journey"><div class="wrap">
+  <div class="timeline" id="tl-journey">
+    <div class="spine"></div><div class="spine-fill" data-fill></div>
+
+    <div class="stage"><div class="node"></div><div class="card">
+      <div class="num">01</div><h3>Call to adventure</h3>
+      <p class="mean">Why you joined. Reconnect with the inspirational "why" underneath it all.</p>
+      <span class="chip">Align daily actions with long-term goals</span>
+    </div></div>
+
+    <div class="stage"><div class="node"></div><div class="card">
+      <div class="num">02</div><h3>Refusal of the call</h3>
+      <p class="mean">The fear and doubt that surface before you fully commit.</p>
+      <span class="chip">Face the elevator door — change is opportunity</span>
+    </div></div>
+
+    <div class="stage"><div class="node"></div><div class="card">
+      <div class="num">03</div><h3>Meeting the mentor</h3>
+      <p class="mean">Building real relationships with teammates, teachers, students, and partners.</p>
+      <span class="chip">Develop a listening culture</span>
+    </div></div>
+
+    <div class="stage jim"><div class="node"></div><div class="card">
+      <div class="num">04</div><h3>Crossing the threshold</h3>
+      <p class="mean">You step fully into your school role — training becomes real action.</p>
+      <span class="chip">Book it and ship it · decide with imperfect info</span>
+      <div class="jimbadge"><b>Jim · Oct/Nov</b> — Decisions with imperfect information</div>
+    </div></div>
+
+    <div class="stage jim"><div class="node"></div><div class="card">
+      <div class="num">05</div><h3>Tests, allies &amp; enemies</h3>
+      <p class="mean">Two or three months in: the system, the partnerships, the obstacles.</p>
+      <span class="chip">Create accountability, not victims</span>
+      <div class="jimbadge"><b>Jim · Jan</b> — The hardest people problem I ever had</div>
+    </div></div>
+
+    <div class="stage jim"><div class="node"></div><div class="card">
+      <div class="num">06</div><h3>Ordeals</h3>
+      <p class="mean">The hardest point of the year — a major breakdown, or breakthrough.</p>
+      <span class="chip">Who's got the monkey? Own it</span>
+      <div class="jimbadge"><b>Jim · Feb/Mar</b> — My greatest leadership failure</div>
+    </div></div>
+
+    <div class="stage"><div class="node"></div><div class="card">
+      <div class="num">07</div><h3>Reward</h3>
+      <p class="mean">Coming through it — and seeing real, tangible impact on students.</p>
+      <span class="chip">Hope and optimism are our driving forces</span>
+    </div></div>
+
+    <div class="stage jim"><div class="node"></div><div class="card">
+      <div class="num">08</div><h3>The road back</h3>
+      <p class="mean">The final two months. You turn toward life after City Year.</p>
+      <span class="chip">The Rule of Three · find your ikigai</span>
+      <div class="jimbadge"><b>Jim · Apr/May</b> — What comes next?</div>
+    </div></div>
+
+    <div class="stage"><div class="node"></div><div class="card">
+      <div class="num">09</div><h3>Resurrection</h3>
+      <p class="mean">End of year. You compare who you were to who you've become.</p>
+      <span class="chip">Kaizen · leapfrog your past self</span>
+    </div></div>
+
+    <div class="stage"><div class="node"></div><div class="card">
+      <div class="num">10</div><h3>Return with the elixir</h3>
+      <p class="mean">Graduation. You synthesize the year into your own leadership story.</p>
+      <span class="chip">Build your own management toolkit</span>
+      <div class="jimbadge"><b>Optional capstone</b> — Passing the torch</div>
+    </div></div>
+
+  </div>
+</div></div>
+
+<!-- ============ VIEW B: MONTHLY PRACTICE ============ -->
+<div class="view" id="practice"><div class="wrap">
+  <div class="practice-intro">
+    <h2>The same arc, as a monthly habit.</h2>
+    <p>Campbell stays backstage. Every L&amp;D day, members run the same four questions — then try one thing before the next.</p>
+  </div>
+
+  <div class="spine-steps">
+    <div class="step"><div class="n">1 · Locate</div><div class="q">Where am I in the journey?</div></div>
+    <div class="step"><div class="n">2 · Name it</div><div class="q">What challenge am I facing right now?</div></div>
+    <div class="step"><div class="n">3 · Reach for a tool</div><div class="q">Which Applied Wisdom tool helps this month?</div></div>
+    <div class="step"><div class="n">4 · Commit</div><div class="q">What do I try before next time?</div></div>
+  </div>
+  <div class="arrowrow">↻ repeat every L&amp;D day</div>
+
+  <div class="months" id="tl-months">
+    <div class="spine"></div><div class="spine-fill" data-fill></div>
+
+    <div class="month"><div class="node"></div><div class="mcard">
+      <div class="when">Sep – Oct</div><h3>Arrival &amp; crossing in</h3>
+      <p class="outcome">Members leave able to <b>name their "why" and take one real action</b> despite imperfect information.</p>
+      <span class="mtool">Book it and ship it</span>
+    </div></div>
+
+    <div class="month jim"><div class="node"></div><div class="mcard">
+      <div class="when">November · with Jim</div><h3>Deciding under uncertainty</h3>
+      <p class="outcome">Members leave able to <b>make one stuck decision and own the consequences</b>.</p>
+      <span class="mtool">Decide with imperfect information</span>
+    </div></div>
+
+    <div class="month jim"><div class="node"></div><div class="mcard">
+      <div class="when">January · with Jim</div><h3>People &amp; conflict</h3>
+      <p class="outcome">Members leave able to <b>reframe one conflict without making a villain</b>.</p>
+      <span class="mtool">Accountability, not victims</span>
+    </div></div>
+
+    <div class="month jim"><div class="node"></div><div class="mcard">
+      <div class="when">Feb – Mar · with Jim</div><h3>Failure &amp; the hardest point</h3>
+      <p class="outcome">Members leave able to <b>name one failure and pick one accountable next step</b>.</p>
+      <span class="mtool">Who's got the monkey?</span>
+    </div></div>
+
+    <div class="month jim"><div class="node"></div><div class="mcard">
+      <div class="when">Apr – May · with Jim</div><h3>What comes next</h3>
+      <p class="outcome">Members leave able to <b>write a Rule of Three for their next chapter</b>.</p>
+      <span class="mtool">Rule of Three · ikigai</span>
+    </div></div>
+
+    <div class="month"><div class="node"></div><div class="mcard">
+      <div class="when">End of year</div><h3>Make meaning</h3>
+      <p class="outcome">Members leave able to <b>state one personal maxim and pass it forward</b>.</p>
+      <span class="mtool">Build your own toolkit</span>
+    </div></div>
+  </div>
+
+  <div class="note">
+    <h3>Why this version</h3>
+    <ul>
+      <li><b>One repeating spine</b> — four questions a member can feel and a Team Leader can run.</li>
+      <li><b>Outcomes, not themes</b> — every session names what members <em>leave able to do</em>.</li>
+      <li><b>Fewer stages</b> — collapsed to six so each lands on a day that's actually facilitated.</li>
+      <li><b>Plain language</b> — "an Applied Wisdom tool," not "Morganism." Keep the skill, lose the jargon.</li>
+      <li><b>Honest fits</b> — lean on the strong tool-to-stage pairings; don't force the stretched ones.</li>
+    </ul>
+  </div>
+</div></div>
+
+<!-- ============ VIEW C: TRADE-OFFS ============ -->
+<div class="view" id="compare"><div class="wrap">
+  <div class="compare-intro">
+    <h2>Two ways to run the same year.</h2>
+    <p>The full hero's-journey arc and the tightened monthly practice each buy something — and each cost something. Here's the honest comparison.</p>
+  </div>
+
+  <div class="cols">
+    <div class="col a">
+      <div class="top">
+        <div class="label">Version A</div>
+        <h3>The full journey</h3>
+        <div class="tag2">Ten stages · Campbell on the syllabus</div>
+      </div>
+      <div class="pc">
+        <h4>Strengths</h4>
+        <ul class="pro">
+          <li>Complete narrative arc — every emotional beat of the year is named and honored.</li>
+          <li>Strong meaning-making; members see a coherent story, not a grind.</li>
+          <li>Generous room for reflection, flexible to different members' experiences.</li>
+          <li>Faithful to the Applied Wisdom source material — substantial and credible.</li>
+        </ul>
+        <h4>Costs</h4>
+        <ul class="con">
+          <li>Dense and theory-heavy; Campbell can feel academic mid-service.</li>
+          <li>Ten stages outrun the ~5 L&amp;D days, so several beats get no session.</li>
+          <li>Themes name topics, not outcomes — harder to know what "done" looks like.</li>
+          <li>"Morganism" branding risks sounding culty; members learn words, not skills.</li>
+          <li>A few tool-to-stage fits are stretched (refusal, resurrection).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col b">
+      <div class="top">
+        <div class="label">Version B</div>
+        <h3>The monthly practice</h3>
+        <div class="tag2">Four questions · mapped to the calendar</div>
+      </div>
+      <div class="pc">
+        <h4>Strengths</h4>
+        <ul class="pro">
+          <li>One repeating spine members can feel and Team Leaders can actually run.</li>
+          <li>Outcome-based — every session says what members leave able to do.</li>
+          <li>Maps cleanly to the real L&amp;D calendar; no orphaned stages.</li>
+          <li>Plain language lowers the barrier and keeps focus on the skill.</li>
+          <li>Consistent and low-prep, so quality stays even across teams.</li>
+        </ul>
+        <h4>Costs</h4>
+        <ul class="con">
+          <li>Loses some of the narrative richness and ceremony of the full arc.</li>
+          <li>Collapsing to six stages drops distinct beats (refusal, reward, resurrection).</li>
+          <li>Repetition can feel like a checklist if facilitated flatly.</li>
+          <li>Campbell is hidden from members — some will want the "why."</li>
+          <li>Leans harder on the Team Leader to keep the four questions fresh.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="verdict">
+    <h4>The likely best of both</h4>
+    <p>Keep the <em>hero's-journey map for facilitators</em> — the richness and meaning live there — but give <em>members the four questions</em> as their monthly habit. Story backstage, practice up front.</p>
+  </div>
+</div></div>
+
+<!-- ============ VIEW D: ASSET ENGINE ============ -->
+<div class="view" id="engine"><div class="wrap">
+  <div class="eng-intro">
+    <h2>One notebook. A library of training assets.</h2>
+    <p>We load Jim Morgan's <em>Applied Wisdom</em>, his four recorded sessions, his maxims, and City Year's own materials into a single NotebookLM notebook — all read through the Hero's Journey lens. From that one source of truth, we generate stage-by-stage assets the team can use and keep refreshing.</p>
+  </div>
+
+  <div class="eyebrow">How the engine works</div>
+  <div class="flow">
+    <div class="fnode reveal">
+      <div class="ft">Sources</div>
+      <span class="src">Applied Wisdom insights</span>
+      <span class="src">Jim's 4 recorded sessions</span>
+      <span class="src">City Year materials</span>
+      <div class="sub">Curated and read through the Hero's Journey training frame.</div>
+    </div>
+    <div class="farrow reveal">→</div>
+    <div class="fnode engine reveal">
+      <div class="ft">NotebookLM notebook</div>
+      <div class="sub">A single, source-grounded notebook organized by the ten journey stages. Every output traces back to a cited source — nothing invented.</div>
+    </div>
+    <div class="farrow reveal">→</div>
+    <div class="fnode reveal">
+      <div class="ft">Assets per stage</div>
+      <ul>
+        <li>Audio &amp; video overviews</li>
+        <li>Study guides &amp; briefings</li>
+        <li>FAQs, quizzes, infographics</li>
+        <li>Interactive "ask Jim" audio</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="eyebrow">What we generate</div>
+  <div class="assets">
+    <div class="asset reveal">
+      <div class="k">Audio</div><h4>Audio Overviews</h4>
+      <p>Podcast-style "deep dives" where two AI hosts talk through a stage's leadership idea in City Year context.</p>
+      <span class="use"><b>For:</b> members listening before or after a session — on the commute, on their own time.</span>
+    </div>
+    <div class="asset reveal">
+      <div class="k">Video</div><h4>Video Overviews &amp; decks</h4>
+      <p>Narrated, slide-style recaps that summarize each stage's concept with visuals.</p>
+      <span class="use"><b>For:</b> opening a session, or async catch-up when someone misses an L&amp;D day.</span>
+    </div>
+    <div class="asset reveal">
+      <div class="k">Read</div><h4>Study guides &amp; briefings</h4>
+      <p>A one-page synthesis per session — a facilitator brief and a member study guide.</p>
+      <span class="use"><b>For:</b> Team Leader prep and member reflection between days.</span>
+    </div>
+    <div class="asset reveal">
+      <div class="k">Reinforce</div><h4>FAQs, quizzes &amp; infographics</h4>
+      <p>Quick-reference answers, knowledge checks, and one-glance infographics.</p>
+      <span class="use"><b>For:</b> reinforcement between sessions and shareable handouts or Slack posts.</span>
+    </div>
+    <div class="asset reveal">
+      <div class="k">Ask</div><h4>The notebook &amp; interactive audio</h4>
+      <p>A source-grounded Q&amp;A partner — including NotebookLM's talk-back audio, an on-demand "ask Jim" stand-in grounded in his recordings.</p>
+      <span class="use"><b>For:</b> between-session questions and in-the-moment prep — "what does Jim say about conflict?"</span>
+    </div>
+  </div>
+
+  <div class="eyebrow">Examples in the program</div>
+  <div class="assets">
+    <div class="asset reveal">
+      <span class="schip">Refusal of the call</span>
+      <div class="k">Audio Overview</div><h4>"Change is the medium of opportunity"</h4>
+      <p>Two hosts unpack "face the elevator door" with a first-week-of-service story.</p>
+      <span class="use"><b>Used:</b> members listen the week before the October L&amp;D day.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">Nov · Jim</span>
+      <div class="k">Audio primer</div><h4>"Deciding when you can't see the whole board"</h4>
+      <p>Sets up Jim's recorded session on imperfect-information decisions.</p>
+      <span class="use"><b>Used:</b> pushed to members three days before the November session.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">Ordeals · Feb–Mar</span>
+      <div class="k">Video opener</div><h4>"Who's got the monkey?"</h4>
+      <p>A four-minute narrated recap of owning the problem closest to you.</p>
+      <span class="use"><b>Used:</b> the TL plays it to open the hardest session of the year.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">Jan · Jim</span>
+      <div class="k">Facilitator brief</div><h4>People &amp; conflict — session brief</h4>
+      <p>Concept, the tool (accountability, not victims), three prompts, the outcome.</p>
+      <span class="use"><b>Used:</b> TL prep the morning of the January session.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">Jan · Jim</span>
+      <div class="k">Scenario quiz</div><h4>"What would you do?" — 5 conflict scenarios</h4>
+      <p>A knowledge check built from real City Year partnership situations.</p>
+      <span class="use"><b>Used:</b> sent in Slack the week after the January session.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">Monthly spine</span>
+      <div class="k">Infographic</div><h4>The four questions, one glance</h4>
+      <p>A Bento-grid card of Locate &rarr; Name it &rarr; Tool &rarr; Commit.</p>
+      <span class="use"><b>Used:</b> pinned in each school team's channel all year.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">Feb–Mar · Jim</span>
+      <div class="k">Interactive audio</div><h4>"Ask Jim about your setback"</h4>
+      <p>Talk-back audio grounded in Jim's recorded failure session.</p>
+      <span class="use"><b>Used:</b> members bring their own challenge before the failure session.</span>
+    </div>
+    <div class="asset reveal">
+      <span class="schip">EOY · Capstone</span>
+      <div class="k">Co-build</div><h4>The FY27 leadership playbook</h4>
+      <p>Members query the notebook to assemble next year's maxims — which become next year's source material.</p>
+      <span class="use"><b>Used:</b> End-of-Year "Passing the Torch."</span>
+    </div>
+  </div>
+
+  <div class="eyebrow">How we support you — launch, then handoff</div>
+  <div class="tiers">
+    <div class="tier we reveal">
+      <div class="head"><div class="ph">Tier 1 · We launch it</div><h3>Done with you</h3><div class="sub">We stand up the notebook and the starter asset library.</div></div>
+      <ul>
+        <li>Curate and load every source — Applied Wisdom, the maxims, City Year materials.</li>
+        <li>Structure the notebook around the ten journey stages.</li>
+        <li>Generate the starter asset set for each stage (audio, video, guides, FAQs).</li>
+        <li>Review everything for accuracy, plain language, and on-stage fit.</li>
+        <li>Hand over a ready-to-use notebook and asset library.</li>
+      </ul>
+    </div>
+    <div class="tier you reveal">
+      <div class="head"><div class="ph">Tier 2 · You run it</div><h3>Ongoing, self-serve</h3><div class="sub">A repeatable playbook so the team keeps assets fresh.</div></div>
+      <ul>
+        <li>Saved stage prompts so outputs stay in the journey framing.</li>
+        <li>Add new sources as the service year evolves.</li>
+        <li>One-click regenerate any asset for any stage.</li>
+        <li>A quality checklist to keep outputs accurate and on-voice.</li>
+        <li>A light cadence so the library refreshes each L&amp;D cycle.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="eyebrow">Run it yourself — the five-step playbook</div>
+  <div class="play">
+    <div class="pstep reveal"><div class="pn">1</div><div class="pt"><b>Add sources</b><span>Drop new Applied Wisdom excerpts, session notes, or City Year materials into the notebook.</span></div></div>
+    <div class="pstep reveal"><div class="pn">2</div><div class="pt"><b>Set the lens</b><span>Use the saved stage prompt so the output stays in the Hero's Journey framing.</span></div></div>
+    <div class="pstep reveal"><div class="pn">3</div><div class="pt"><b>Generate</b><span>One click in NotebookLM's Studio for an audio overview, video, study guide, FAQ, or quiz.</span></div></div>
+    <div class="pstep reveal"><div class="pn">4</div><div class="pt"><b>Review</b><span>Run the quality checklist: true to source, plain language, and the right stage.</span></div></div>
+    <div class="pstep reveal"><div class="pn">5</div><div class="pt"><b>Publish &amp; reuse</b><span>Share to facilitators and members, then archive it in the asset library.</span></div></div>
+  </div>
+
+  <div class="guard reveal">
+    <h4>Three guardrails on every asset</h4>
+    <div class="g">
+      <div class="gi"><b>Source-grounded</b><span>Everything traces back to a cited source — no invented content.</span></div>
+      <div class="gi"><b>Plain language</b><span>"An Applied Wisdom tool," not "Morganism." Keep the skill, lose the jargon.</span></div>
+      <div class="gi"><b>Human in the loop</b><span>A person reviews and approves before anything reaches members.</span></div>
+    </div>
+  </div>
+</div></div>
+
+<footer><div class="wrap">Less curriculum essay, more monthly practice — something that helps members <em>survive the year, grow through it, and make meaning of it.</em></div></footer>
+
+<script>
+  document.body.classList.add('js');
+  var tabs=document.querySelectorAll('.tabs button'), views=document.querySelectorAll('.view');
+  tabs.forEach(function(b){b.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('on')}); b.classList.add('on');
+    views.forEach(function(v){v.classList.remove('on')});
+    document.getElementById(b.dataset.view).classList.add('on');
+    window.scrollTo({top:0}); requestAnimationFrame(reveal); requestAnimationFrame(fills);
+  })});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
+  function observe(){document.querySelectorAll('.stage,.month,.step,.col,.reveal').forEach(function(el){io.observe(el)})}
+  function reveal(){document.querySelectorAll('.view.on .stage,.view.on .month,.view.on .step,.view.on .col,.view.on .reveal').forEach(function(el){
+    var r=el.getBoundingClientRect(); if(r.top<window.innerHeight*0.9) el.classList.add('in');})}
+
+  function fills(){
+    document.querySelectorAll('.view.on [data-fill]').forEach(function(f){
+      var tl=f.parentElement, r=tl.getBoundingClientRect(), mid=window.innerHeight*0.5;
+      var h=Math.min(Math.max(mid-r.top,0),r.height); f.style.height=h+'px';
+    });
+    var st=document.documentElement.scrollTop||document.body.scrollTop;
+    var max=(document.documentElement.scrollHeight-window.innerHeight);
+    document.getElementById('prog').style.width=(max>0?(st/max*100):0)+'%';
+  }
+  window.addEventListener('scroll',function(){fills();reveal()},{passive:true});
+  window.addEventListener('resize',fills);
+  observe(); reveal(); fills();
+</script>
+</body>
+</html>
