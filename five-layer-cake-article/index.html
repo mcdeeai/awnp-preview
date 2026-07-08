@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Myth of the Five-Layer Cake · Applied Wisdom for Nonprofits</title>
+<style>
+/* ============================================================
+   AWNP Brand Kit - shared stylesheet for HTML deliverables
+   Applied Wisdom for the Nonprofit Sector
+   Source of truth for campaign/prototype HTML (briefs, trackers,
+   one-pagers, interactive explainers).
+   NOT for the live site (awnp-website/ has its own Astro system).
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Courier+Prime:wght@400;700&display=swap");
+
+:root{
+  /* palette */
+  --navy:#160f41;        /* primary ink */
+  --navy-soft:#4b4a6b;   /* secondary text */
+  --sky:#00aeef;         /* bright accent / highlights */
+  --blue:#0072bc;        /* primary accent / links */
+  --indigo:#3d3a75;      /* secondary accent */
+  --paper:#f3f5fa;       /* page background */
+  --sheet:#ffffff;       /* card surface */
+  --rule:#c2cce0;        /* light border */
+  --rule-dark:#aab6d2;   /* stronger border */
+  /* tints */
+  --sky-soft:#d6f3fd;
+  --blue-soft:#e9eef7;
+  --indigo-soft:#e7e9f4;
+  /* type */
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Source Serif 4",Georgia,serif;
+  --font-mono:"Courier Prime",ui-monospace,monospace;
+  /* effects */
+  --shadow:0 1px 2px rgba(22,15,65,.08),0 12px 32px -12px rgba(22,15,65,.22);
+  --maxw:1060px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper); color:var(--navy);
+  font-family:var(--font-body); line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+
+/* faint navy paper grain - apply by adding class="grain" to <body> */
+body.grain::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:1; opacity:.26;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.086 0 0 0 0 0.059 0 0 0 0 0.255 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body.grain > *{position:relative; z-index:2}
+
+/* layout */
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+
+/* masthead: logo left, slug right, over a double rule */
+.masthead{display:flex; align-items:flex-end; justify-content:space-between; gap:24px; padding:22px 0 12px}
+.masthead img{height:38px; display:block}
+.slug{font-family:var(--font-mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--indigo); text-align:right; line-height:1.55}
+.double-rule{border-top:3px solid var(--navy); position:relative}
+.double-rule::after{content:""; position:absolute; top:5px; left:0; right:0; border-top:1px solid var(--sky)}
+
+/* headings */
+h1,h2,h3,h4,.display{font-family:var(--font-display); color:var(--navy); letter-spacing:-.015em}
+h1{font-weight:900; font-size:clamp(30px,4.6vw,46px); line-height:1.05}
+h2{font-weight:700; font-size:clamp(24px,3.4vw,34px); line-height:1.1}
+h3{font-weight:700; font-size:21px}
+a{color:var(--blue)}
+
+/* mono labels: kicker (section eyebrow) + slug + meta */
+.kicker{font-family:var(--font-mono); font-size:13px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--blue)}
+.eyebrow{font-family:var(--font-mono); font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--blue)}
+.meta{font-family:var(--font-mono); font-size:13px; color:var(--navy-soft)}
+.meta b{color:var(--navy)}
+
+/* sheet / card - sharp-edged with layered shadow */
+.sheet,.card{background:var(--sheet); border:1px solid var(--rule-dark); border-radius:3px; box-shadow:var(--shadow); padding:24px 26px}
+.card-accent{border-top:5px solid var(--blue)}
+.card-accent.sky{border-top-color:var(--sky)}
+.card-accent.indigo{border-top-color:var(--indigo)}
+
+/* tags / chips / badges - rectangular, editorial */
+.tag,.chip{display:inline-block; background:var(--blue-soft); color:var(--navy); font-family:var(--font-mono); font-size:12px; padding:5px 10px; border-radius:3px; letter-spacing:.02em}
+.badge-sky{display:inline-block; background:var(--sky-soft); color:#0c4a6e; font-size:11.5px; font-weight:600; padding:5px 11px; border-radius:3px}
+.badge-sky b{color:var(--blue)}
+
+/* tab bar - mono, underline indicator */
+.tabs{display:flex; gap:2px}
+.tabs button{font-family:var(--font-mono); font-size:11.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--navy-soft); background:transparent; border:0; border-bottom:2px solid transparent; padding:8px 12px; cursor:pointer}
+.tabs button.on{color:var(--navy); border-bottom-color:var(--sky)}
+
+/* button */
+.btn{display:inline-block; font-family:var(--font-mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:var(--blue); color:#fff; border:0; border-radius:3px; padding:10px 18px; cursor:pointer; text-decoration:none}
+.btn.ghost{background:transparent; color:var(--blue); border:1px solid var(--blue)}
+
+/* footer */
+.brand-footer{margin-top:30px; padding-top:12px; border-top:1px solid var(--rule-dark); font-family:var(--font-mono); font-size:12px; color:var(--indigo)}
+
+/* scroll-reveal utility: add class="reveal", JS toggles .in */
+.reveal{transition:opacity .55s ease, transform .55s ease}
+.js .reveal{opacity:0; transform:translateY(20px)}
+.reveal.in{opacity:1; transform:none}
+
+@media (prefers-reduced-motion: reduce){ .reveal{transition:none; opacity:1; transform:none} }
+
+
+/* Article page */
+a{text-decoration:underline;text-underline-offset:3px;transition:color .2s ease}
+a:hover{color:var(--sky)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--sky);outline-offset:4px}
+.article-shell{padding-top:52px}
+.article-content{max-width:70ch;margin:0 auto;padding-top:56px}
+.article-hero{margin-bottom:48px}
+.article-hero .kicker{margin-bottom:14px}
+.article-hero h1{font-size:clamp(38px,6vw,72px);line-height:.98;letter-spacing:-.025em;text-wrap:balance}
+.byline{margin-top:18px;color:var(--navy-soft)}
+.hero-image{margin:30px 0 0;border:1px solid var(--rule-dark);border-radius:3px;overflow:hidden;background:var(--blue-soft)}
+.hero-image img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.article-body{font-size:18px;line-height:1.68;color:var(--navy-soft)}
+.article-body p{margin-bottom:24px;text-wrap:pretty}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-section{padding:38px 0 10px}
+.article-section + .article-section{border-top:1px solid var(--rule);margin-top:22px}
+.assembly-break{border-top:1px solid var(--rule);margin:42px 0 34px}
+.article-section .kicker{margin-bottom:10px}
+.article-section h2{margin-bottom:18px;font-weight:900}
+.video-card,.two-cakes,.stat-card,.cta-card{margin:34px 0}
+.video-poster{position:relative;display:block;overflow:hidden;border-radius:3px;background:var(--blue-soft);border:1px solid var(--rule-dark);box-shadow:none;text-decoration:none}
+.video-poster img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.video-card-short{max-width:370px;margin-left:auto;margin-right:auto}
+.video-iframe-wrapper{position:relative;width:100%;aspect-ratio:9/16;border-radius:3px;overflow:hidden;border:1px solid var(--rule-dark);background:var(--sheet)}
+.video-iframe-wrapper iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.play-mark{position:absolute;inset:0;display:grid;place-items:center}
+.play-mark svg{width:76px;height:76px;filter:drop-shadow(0 2px 8px rgba(22,15,65,.25))}
+.media-caption{margin-top:12px;text-align:center;letter-spacing:.12em;text-transform:uppercase}
+.stat-card .media-caption{font-size:16px;font-weight:700;color:var(--navy);letter-spacing:.14em}
+.two-cakes-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.cake-svg{display:block;width:100%;height:auto;background:var(--sheet)}
+.cake-title{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;fill:var(--blue);font-weight:700}
+.cake text:not(.cake-title){font-family:var(--font-mono);font-size:13px;letter-spacing:.08em;fill:var(--sheet);font-weight:700}
+.cake .dark-label{fill:var(--navy)}
+.conditions{margin:30px 0 34px}
+.condition-list{padding-left:22px;color:var(--navy);font-size:17.5px;line-height:1.6}
+.condition-list li{margin:0 0 14px;padding-left:6px}
+.condition-list li:last-child{margin-bottom:0}
+.condition-list li::marker{font-family:var(--font-mono);font-weight:700;color:var(--blue)}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.stat-item{display:flex;flex-direction:column;justify-content:flex-start;text-align:center;padding:10px 12px}
+.stat-item + .stat-item{border-left:1px solid var(--rule)}
+.stat-number{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:16px;color:var(--navy)}
+.stat-label{font-family:var(--font-mono);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.stat-value{font-family:var(--font-display);font-weight:900;font-size:clamp(64px,12vw,118px);line-height:.82;letter-spacing:-.035em}
+.stat-item p{max-width:24ch;margin:0 auto;font-size:15px;line-height:1.35;color:var(--navy-soft)}
+.stat-item p strong{font-weight:700;color:var(--navy);font-size:1.16em}
+.binder-figure{margin:34px 0}
+.binder-frame{border:1px solid var(--rule-dark);border-radius:3px;background:linear-gradient(135deg,var(--blue-soft),var(--indigo-soft));min-height:280px;display:grid;place-items:center;overflow:hidden}
+.binder-frame img{display:block;width:100%;max-height:540px;object-fit:cover;background:var(--blue-soft)}
+.binder-frame.image-missing img{visibility:hidden}
+.closing-quote{margin:48px 0 34px;padding:0;border:0;color:var(--navy)}
+.closing-quote p{font-family:var(--font-display);font-weight:900;font-size:clamp(30px,5vw,54px);line-height:1.04;letter-spacing:-.018em;margin:0 0 14px;color:var(--navy)}
+.cta-card{margin-bottom:0}
+.cta-card h2{margin-bottom:10px}
+.cta-card p{font-size:17px;color:var(--navy-soft);margin-bottom:20px}
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+.brand-footer{margin:56px 0 32px}
+@media (max-width:640px){
+  .masthead{align-items:flex-start;flex-direction:column}
+  .slug{text-align:left}
+  .article-content{padding-top:38px}
+  .two-cakes-grid,.stat-grid{grid-template-columns:1fr}
+  .stat-item + .stat-item{border-left:0;border-top:1px solid var(--rule);padding-top:24px}
+  .cta-actions{flex-direction:column;align-items:flex-start}
+}
+
+</style>
+</head>
+<body class="grain">
+<header class="wrap">
+  <div class="masthead">
+    <img src="./awnp-logo.png" alt="Applied Wisdom for the Nonprofit Sector">
+    <div class="slug">Essay · The Myth of the Five-Layer Cake<br>Applied Wisdom for Nonprofits</div>
+  </div>
+  <div class="double-rule"></div>
+</header>
+
+<main class="wrap article-shell">
+  <article class="article-content">
+    <header class="article-hero reveal">
+      <div class="kicker">Essay</div>
+      <h1>The Myth of the Five-Layer Cake</h1>
+      <p class="byline meta">By James McDonough</p>
+      <figure class="hero-image">
+        <img src="header-image.jpg" alt="A desk with a vintage management file box, paper notes, laptop, and a small layer cake sketch">
+      </figure>
+    </header>
+    <div class="article-body">
+<p>I want to tell you about a myth. I call it that because I can't prove it. A myth is true pieces, assembled by someone who wanted them to mean something.</p>
+<p>And I think they do.</p>
+<p>I've spent a lot of time with Jim Morgan. He's 87. He ran Applied Materials for nearly three decades, and in the semiconductor industry his name works like a passport. What he works on now is getting fifty years of management wisdom into the hands of nonprofit leaders.</p>
+<p>On one of our calls, Jensen Huang came up. Jim likes Jensen. &quot;One of the good ones,&quot; he said, and from Jim that's not a throwaway line. I like Jensen too, though from a different distance. To me, he may be the most interesting technology leader working today: clear, intense, hard to fake, and unusually good at turning complicated systems into language people can truly understand.</p>
+<p>Then, offhand, the way you'd mention lending someone a ladder: something about layers, a frame he'd shared with Jensen years back, after Jensen heard Jim had written a book, or was writing one, and asked for some of the materials. An email, Jim thinks. Jim sent a stack. He doesn't remember what was in it.</p>
+<p>That was the whole story, as far as Jim was concerned.</p>
+<p>But he said <em>layers</em>, and something clicked.</p>
+<p>If you follow AI at all, you've seen Jensen explain it: the five-layer cake. Energy, then chips, then infrastructure, then models, then applications on top, where the value shows up. He used it at GTC. He used it at Davos. It's now, more or less, how the world explains the AI economy to itself.</p>
+<figure class="video-card sheet reveal video-card-short">
+  <div class="video-iframe-wrapper">
+    <iframe src="https://www.youtube-nocookie.com/embed/tE22q10eiXg?origin=https://mcdeeai.github.io" title="Jensen Huang explains the five-layer cake" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <figcaption class="meta media-caption">JENSEN HUANG · FIVE-LAYER CAKE SHORT</figcaption>
+</figure>
+<p>Jim hadn't seen it. But when he said <em>layers</em>, the clip came back to me all at once, and what I was thinking on my end of the phone was: <em>of course this made sense to me after working with Jim for so long. A simple way of saying something very complicated could have come from the kind of materials Jim had been collecting for decades.</em></p>
+<figure class="two-cakes sheet reveal">
+  <div class="two-cakes-grid">
+    <svg class="cake-svg" viewBox="0 0 360 300" role="img" aria-labelledby="jim-cake-title" aria-describedby="jim-cake-desc">
+      <title id="jim-cake-title">How Jim draws an organization</title>
+      <desc id="jim-cake-desc">A three-layer cake diagram labeled from bottom to top: culture, planning, implementation.</desc>
+      <text x="180" y="28" text-anchor="middle" class="cake-title">How Jim draws an organization</text>
+      <g class="cake jim-cake">
+        <rect x="42" y="192" width="276" height="56" rx="3" fill="var(--navy)"/>
+        <rect x="62" y="128" width="236" height="56" rx="3" fill="var(--indigo)"/>
+        <rect x="82" y="64" width="196" height="56" rx="3" fill="var(--blue)"/>
+        <text x="180" y="226" text-anchor="middle">CULTURE</text>
+        <text x="180" y="162" text-anchor="middle">PLANNING</text>
+        <text x="180" y="98" text-anchor="middle">IMPLEMENTATION</text>
+      </g>
+    </svg>
+    <svg class="cake-svg" viewBox="0 0 360 300" role="img" aria-labelledby="jensen-cake-title" aria-describedby="jensen-cake-desc">
+      <title id="jensen-cake-title">How Jensen explains AI</title>
+      <desc id="jensen-cake-desc">A five-layer cake diagram labeled from bottom to top: energy, chips, infrastructure, models, applications.</desc>
+      <text x="180" y="28" text-anchor="middle" class="cake-title">How Jensen explains AI</text>
+      <g class="cake jensen-cake">
+        <rect x="42" y="216" width="276" height="36" rx="3" fill="var(--navy)"/>
+        <rect x="58" y="174" width="244" height="36" rx="3" fill="var(--indigo)"/>
+        <rect x="74" y="132" width="212" height="36" rx="3" fill="var(--blue)"/>
+        <rect x="90" y="90" width="180" height="36" rx="3" fill="var(--sky)"/>
+        <rect x="106" y="48" width="148" height="36" rx="3" fill="var(--sky-soft)" stroke="var(--blue)"/>
+        <text x="180" y="241" text-anchor="middle">ENERGY</text>
+        <text x="180" y="199" text-anchor="middle">CHIPS</text>
+        <text x="180" y="157" text-anchor="middle">INFRASTRUCTURE</text>
+        <text x="180" y="115" text-anchor="middle">MODELS</text>
+        <text x="180" y="73" text-anchor="middle" class="dark-label">APPLICATIONS</text>
+      </g>
+    </svg>
+  </div>
+  <figcaption class="meta media-caption">NOBODY KEEPS RECEIPTS.</figcaption>
+</figure>
+<div class="assembly-break reveal" aria-hidden="true"></div>
+<p>I think there's a decent chance the most famous explanatory frame in the AI industry spent time, somewhere in its childhood, in a stack of paper Jim Morgan mailed to a young CEO who asked.</p>
+<p>Can I prove it? No. Does Jim claim it? No. When I floated it, he waved it off the porch. Would Jensen remember? Probably not, and that's no mark against him. Nobody keeps receipts on ideas. The ones you use become yours because you use them.</p>
+<p>But look what the myth needs to be believable:</p>
+<section class="sheet card-accent conditions reveal" aria-label="Three believability conditions">
+  <ol class="condition-list">
+    <li><strong>A rising leader had the humility to ask</strong> a wise man for his materials.</li>
+    <li><strong>The wise man had materials ready</strong>, and sent them without ceremony.</li>
+    <li><strong>The idea mattered more than the credit.</strong> So much that neither man thought about it again.</li>
+  </ol>
+</section>
+<p>Every one of those says something good about both men. Put the pieces together any way you want. Every version makes both men look good.</p>
+<section class="article-section reveal" aria-labelledby="why-i-keep-telling-it">
+<div class="kicker">WHY I KEEP TELLING IT</div>
+<h2 id="why-i-keep-telling-it">Why I keep telling it</h2>
+<p>Because I work on the problem this myth is secretly about.</p>
+<p>Up to 75% of nonprofit leaders plan to leave their positions within the next five to ten years. Only about a third of boards have a written succession plan. In cake terms, the top layer, decades of judgment and trust, is about to walk out the door, and almost nobody's written down the recipe.</p>
+<aside class="sheet stat-card reveal" aria-label="Nonprofit leadership succession statistics">
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-number"><span class="stat-label">UP TO</span><span class="stat-value">75%</span></div>
+      <p>of <strong>nonprofit leaders</strong> plan to leave their positions within the next five to ten years</p>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span class="stat-label">ABOUT</span><span class="stat-value">1/3</span></div>
+      <p>of <strong>nonprofit boards</strong> have a written CEO succession plan.</p>
+    </div>
+  </div>
+  <div class="meta media-caption">ONE FOOT OUT THE DOOR</div>
+</aside>
+<p>The myth is the solution in miniature. A leader asked. A leader had a stack ready. The stack traveled further than either of them could have imagined. That's the whole technology.</p>
+<p>And Jim never stopped building his. His archive is folders, handwritten notes, sticky tabs, three-ring binders, going back decades. He calls it his collection of management tips, and he urges every leader to keep one. When Jensen asked, the stack was already on the shelf. That's the lesson hiding in the myth: the stack existed before the ask.</p>
+<figure class="binder-figure reveal">
+  <div class="binder-frame">
+    <img src="binder-photo.jpg" alt="A vintage management tips file box beside a laptop and smartphone showing a digital My Collection of Management Tips worksheet" onerror="this.closest('.binder-frame').classList.add('image-missing')">
+  </div>
+  <figcaption class="meta media-caption">THE STACK EXISTED BEFORE THE ASK.</figcaption>
+</figure>
+<p>Jim grew up in a family cannery in Indiana, and that's the right image for what we're building at Applied Wisdom for Nonprofits: putting things up for winter. Sealing what's perishable into something that keeps, so it's on the shelf when someone comes asking.</p>
+<p>Somebody is going to ask for your materials someday. Will you have a stack to send?</p>
+<p>Everything we offer, the ideas and the tools and the book, is free, sponsored by Jim. The only ask is an email address, so we can keep handing you ideas like the layer cake. Forever free.</p>
+</section>
+<div class="closing-copy reveal">
+<p>And if some idea of yours turns up years later on a stage in Davos with someone else's fingerprints on it, congratulations.</p>
+<p>You won't get credit. That's how you'll know it worked.</p>
+</div>
+<section class="sheet cta-card reveal" aria-label="Start your own collection">
+  <h2>Start your own collection</h2>
+  <p>Jim's 'My Collection of Management Tips' worksheet and everything else we offer is free, sponsored by Jim Morgan. The only ask is an email address.</p>
+  <div class="cta-actions">
+    <a class="btn" href="https://www.appliedwisdomfornonprofits.org/never-stop-collecting-great-tips-and-quotations/">Get Jim's collection worksheet</a>
+    <a class="btn ghost" href="https://www.appliedwisdomfornonprofits.org/">Get the free book and tools</a>
+  </div>
+</section>
+    </div>
+  </article>
+  <div class="brand-footer">Applied Wisdom for Nonprofits · Campaign prototype · Five-layer cake essay</div>
+</main>
+
+<script>
+  document.body.classList.add('js');
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduced && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+  }
+</script>
+</body>
+</html>
